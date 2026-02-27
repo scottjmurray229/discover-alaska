@@ -1,0 +1,193 @@
+{
+  "destinations": {
+    "anchorage": {
+      "title": "Anchorage",
+      "tagline": "Alaska's urban basecamp",
+      "region": "southcentral",
+      "highlights": ["Tony Knowles Coastal Trail", "Flattop Mountain", "Alaska Wildlife Conservation Center", "Anchorage Museum", "Ship Creek Salmon"],
+      "bestMonths": ["June", "July", "August", "September"],
+      "budgetPerDay": { "backpacker": 95, "midRange": 250, "luxury": 550 },
+      "gettingThere": "Ted Stevens Anchorage International Airport (ANC). Major hub for Alaska flights."
+    },
+    "fairbanks": {
+      "title": "Fairbanks",
+      "tagline": "Aurora capital of North America",
+      "region": "interior",
+      "highlights": ["Northern Lights", "Chena Hot Springs", "Gold Dredge No. 8", "Museum of the North", "Midnight Sun"],
+      "bestMonths": ["June", "July", "August", "September", "February", "March"],
+      "budgetPerDay": { "backpacker": 85, "midRange": 230, "luxury": 480 },
+      "gettingThere": "Fairbanks International Airport (FAI). Alaska Railroad from Anchorage (12 hours)."
+    },
+    "juneau": {
+      "title": "Juneau",
+      "tagline": "Capital city at the edge of wilderness",
+      "region": "southeast",
+      "highlights": ["Mendenhall Glacier", "Whale Watching", "Tracy Arm Fjord", "Mount Roberts Tramway", "Tongass Rainforest"],
+      "bestMonths": ["May", "June", "July", "August", "September"],
+      "budgetPerDay": { "backpacker": 105, "midRange": 280, "luxury": 600 },
+      "gettingThere": "Juneau International Airport (JNU). No road access — fly or take Alaska Marine Highway ferry."
+    },
+    "denali-national-park": {
+      "title": "Denali National Park",
+      "tagline": "Home of North America's tallest peak",
+      "region": "interior",
+      "highlights": ["Denali (20,310 ft)", "Wildlife Bus Tour", "Wonder Lake", "Savage River Trail", "Sled Dog Kennel"],
+      "bestMonths": ["June", "July", "August", "September"],
+      "budgetPerDay": { "backpacker": 75, "midRange": 250, "luxury": 600 },
+      "gettingThere": "Drive 4.5 hours north from Anchorage on Parks Highway or take the Alaska Railroad."
+    },
+    "glacier-bay": {
+      "title": "Glacier Bay",
+      "tagline": "Where glaciers meet the sea",
+      "region": "southeast",
+      "highlights": ["Margerie Glacier", "Humpback Whales", "Sea Kayaking", "Bartlett Cove", "Tlingit Heritage"],
+      "bestMonths": ["May", "June", "July", "August"],
+      "budgetPerDay": { "backpacker": 80, "midRange": 300, "luxury": 750 },
+      "gettingThere": "Fly from Juneau to Gustavus (30 min) or take Alaska Marine Highway ferry."
+    },
+    "kenai-fjords": {
+      "title": "Kenai Fjords",
+      "tagline": "Ice, ocean, and wildlife collide",
+      "region": "southcentral",
+      "highlights": ["Exit Glacier", "Harding Icefield Trail", "Boat Tour", "Marine Wildlife", "Resurrection Bay"],
+      "bestMonths": ["June", "July", "August", "September"],
+      "budgetPerDay": { "backpacker": 90, "midRange": 275, "luxury": 650 },
+      "gettingThere": "Drive 2.5 hours south from Anchorage to Seward, the park gateway."
+    },
+    "sitka": {
+      "title": "Sitka",
+      "tagline": "Where Russian and Tlingit heritage meet the sea",
+      "region": "southeast",
+      "highlights": ["Sitka National Historical Park", "Whale Watching", "Alaska Raptor Center", "Castle Hill", "Sea Kayaking"],
+      "bestMonths": ["May", "June", "July", "August", "September"],
+      "budgetPerDay": { "backpacker": 95, "midRange": 260, "luxury": 575 },
+      "gettingThere": "Sitka Rocky Gutierrez Airport (SIT). Alaska Marine Highway ferry from Juneau (8 hours)."
+    },
+    "ketchikan": {
+      "title": "Ketchikan",
+      "tagline": "Salmon capital of the world",
+      "region": "southeast",
+      "highlights": ["Totem Poles", "Creek Street", "Misty Fjords", "Salmon Fishing", "Tongass National Forest"],
+      "bestMonths": ["May", "June", "July", "August", "September"],
+      "budgetPerDay": { "backpacker": 95, "midRange": 260, "luxury": 550 },
+      "gettingThere": "Ketchikan International Airport (KTN). First stop for northbound Alaska Marine Highway ferries."
+    },
+    "skagway": {
+      "title": "Skagway",
+      "tagline": "Gateway to the Gold Rush",
+      "region": "southeast",
+      "highlights": ["White Pass Railway", "Klondike Gold Rush NHP", "Chilkoot Trail", "Historic Broadway", "Gold Panning"],
+      "bestMonths": ["May", "June", "July", "August", "September"],
+      "budgetPerDay": { "backpacker": 90, "midRange": 240, "luxury": 500 },
+      "gettingThere": "Alaska Marine Highway ferry from Juneau (4.5 hours) or cruise ship. Road access via Klondike Highway from Whitehorse, Yukon."
+    },
+    "seward": {
+      "title": "Seward",
+      "tagline": "Where mountains meet the sea",
+      "region": "southcentral",
+      "highlights": ["Kenai Fjords Boat Tours", "Exit Glacier", "Alaska SeaLife Center", "Resurrection Bay", "Mount Marathon"],
+      "bestMonths": ["June", "July", "August", "September"],
+      "budgetPerDay": { "backpacker": 100, "midRange": 280, "luxury": 600 },
+      "gettingThere": "Drive 2.5 hours south from Anchorage on Seward Highway (one of America's most scenic drives)."
+    },
+    "homer": {
+      "title": "Homer",
+      "tagline": "The end of the road",
+      "region": "southcentral",
+      "highlights": ["Homer Spit", "Halibut Fishing", "Bear Viewing", "Kachemak Bay", "Art Galleries"],
+      "bestMonths": ["June", "July", "August", "September"],
+      "budgetPerDay": { "backpacker": 100, "midRange": 260, "luxury": 575 },
+      "gettingThere": "Drive 5 hours south from Anchorage or fly via Ravn Alaska."
+    },
+    "kodiak": {
+      "title": "Kodiak",
+      "tagline": "Island of the great bear",
+      "region": "southwest",
+      "highlights": ["Kodiak Bears", "Sport Fishing", "Fort Abercrombie", "Baranov Museum", "Emerald Island"],
+      "bestMonths": ["June", "July", "August", "September"],
+      "budgetPerDay": { "backpacker": 110, "midRange": 290, "luxury": 650 },
+      "gettingThere": "Fly from Anchorage to Kodiak (1 hour) or take Alaska Marine Highway ferry (10 hours)."
+    },
+    "valdez": {
+      "title": "Valdez",
+      "tagline": "Alaska's Little Switzerland",
+      "region": "southcentral",
+      "highlights": ["Columbia Glacier", "Keystone Canyon", "Prince William Sound", "Pipeline Terminal", "Worthington Glacier"],
+      "bestMonths": ["June", "July", "August", "September"],
+      "budgetPerDay": { "backpacker": 100, "midRange": 260, "luxury": 550 },
+      "gettingThere": "Drive 6 hours east from Anchorage via Glenn and Richardson Highways."
+    },
+    "wrangell-st-elias": {
+      "title": "Wrangell-St. Elias",
+      "tagline": "America's last true frontier",
+      "region": "southcentral",
+      "highlights": ["Kennecott Mines", "Root Glacier", "McCarthy", "Flightseeing", "Backcountry"],
+      "bestMonths": ["June", "July", "August", "September"],
+      "budgetPerDay": { "backpacker": 85, "midRange": 240, "luxury": 500 },
+      "gettingThere": "Drive 5 hours from Anchorage to Chitina, then 60 miles on gravel McCarthy Road."
+    },
+    "katmai-national-park": {
+      "title": "Katmai National Park",
+      "tagline": "Where giants feast on silver",
+      "region": "southwest",
+      "highlights": ["Brooks Falls Bears", "Valley of Ten Thousand Smokes", "Salmon Run", "Backcountry Camping"],
+      "bestMonths": ["July", "August", "September"],
+      "budgetPerDay": { "backpacker": 120, "midRange": 350, "luxury": 800 },
+      "gettingThere": "Fly to King Salmon (AKN) from Anchorage, then floatplane to Brooks Camp."
+    },
+    "nome": {
+      "title": "Nome",
+      "tagline": "Where the trail meets the sea",
+      "region": "arctic",
+      "highlights": ["Iditarod Finish Line", "Gold Panning", "Bering Sea Coast", "Birding", "Three Roads"],
+      "bestMonths": ["June", "July", "August"],
+      "budgetPerDay": { "backpacker": 110, "midRange": 260, "luxury": 500 },
+      "gettingThere": "Fly from Anchorage to Nome (1.5 hours). No road access from the highway system."
+    },
+    "utqiagvik": {
+      "title": "Utqiagvik",
+      "tagline": "Life at the top of the world",
+      "region": "arctic",
+      "highlights": ["Northernmost City", "Midnight Sun", "Inupiat Heritage Center", "Whale Bone Arch", "Polar Night"],
+      "bestMonths": ["June", "July", "August"],
+      "budgetPerDay": { "backpacker": 120, "midRange": 290, "luxury": 550 },
+      "gettingThere": "Fly from Anchorage or Fairbanks to Utqiagvik (formerly Barrow). No road access."
+    },
+    "haines": {
+      "title": "Haines",
+      "tagline": "Valley of the eagles",
+      "region": "southeast",
+      "highlights": ["Eagle Preserve", "Fort Seward", "Chilkat Valley", "Art Galleries", "Alaska Highway Access"],
+      "bestMonths": ["May", "June", "July", "August", "September", "October", "November"],
+      "budgetPerDay": { "backpacker": 95, "midRange": 240, "luxury": 500 },
+      "gettingThere": "Alaska Marine Highway ferry from Juneau (4.5 hours) or drive from Haines Junction, Yukon."
+    },
+    "talkeetna": {
+      "title": "Talkeetna",
+      "tagline": "Small town beneath the Great One",
+      "region": "interior",
+      "highlights": ["Denali Flightseeing", "River Rafting", "Historic Main Street", "Breweries", "Mountaineering Museum"],
+      "bestMonths": ["June", "July", "August", "September"],
+      "budgetPerDay": { "backpacker": 85, "midRange": 220, "luxury": 550 },
+      "gettingThere": "Drive 2.5 hours north from Anchorage on Parks Highway or take Alaska Railroad."
+    },
+    "whittier": {
+      "title": "Whittier",
+      "tagline": "One tunnel, infinite wilderness",
+      "region": "southcentral",
+      "highlights": ["Prince William Sound Cruises", "Glaciers", "Sea Kayaking", "Begich Towers", "Portage Pass"],
+      "bestMonths": ["June", "July", "August", "September"],
+      "budgetPerDay": { "backpacker": 90, "midRange": 260, "luxury": 600 },
+      "gettingThere": "Drive 1.5 hours south from Anchorage through Anton Anderson Memorial Tunnel (toll, scheduled)."
+    },
+    "petersburg": {
+      "title": "Petersburg",
+      "tagline": "Alaska's authentic Little Norway",
+      "region": "southeast",
+      "highlights": ["LeConte Glacier", "Norwegian Heritage", "Whale Watching", "Petroglyph Beach", "Fishing Fleet"],
+      "bestMonths": ["May", "June", "July", "August", "September"],
+      "budgetPerDay": { "backpacker": 90, "midRange": 220, "luxury": 450 },
+      "gettingThere": "Fly from Juneau or take Alaska Marine Highway ferry. No large cruise ships dock here."
+    }
+  }
+}

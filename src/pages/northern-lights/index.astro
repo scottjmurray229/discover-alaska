@@ -1,0 +1,904 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Northern Lights Guide', url: '/northern-lights/' },
+];
+
+const pageTitle = 'Alaska Northern Lights Guide — Where, When & How to See the Aurora';
+const pageDescription = 'The complete guide to seeing the Northern Lights in Alaska — best viewing locations from Fairbanks to Coldfoot, ideal timing from September to March, camera settings, clothing tips, and forecast tools.';
+
+interface ViewingSpot {
+  name: string;
+  image?: string;
+  destination: string;
+  slug: string;
+  price: string;
+  description: string;
+  tag?: string;
+}
+
+interface AuroraSection {
+  region: string;
+  tagline: string;
+  gradient: string;
+  spots: ViewingSpot[];
+}
+
+const sections: AuroraSection[] = [
+  {
+    region: 'Fairbanks & Interior Alaska',
+    tagline: 'The aurora capital of North America — directly under the auroral oval with 200+ viewable nights per year',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #0077B6 100%)',
+    spots: [
+      {
+        name: 'Chena Hot Springs Resort',
+        destination: 'Fairbanks (60 miles east)',
+        slug: 'fairbanks',
+        price: '$15 hot springs entry — Lodging from $250/night — Aurora wake-up calls included',
+        description: 'The most popular aurora viewing destination in Alaska. Soak in natural hot springs under the Northern Lights — an experience that tops most travelers\' bucket lists. The resort is far from city light pollution, offers aurora wake-up calls for overnight guests, and has a yurt with warm drinks for late-night viewing. The ice museum and geothermal energy tour are bonuses.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Cleary Summit',
+        destination: 'Fairbanks (20 miles north)',
+        slug: 'fairbanks',
+        price: 'Free — Pull-off areas along Steese Highway',
+        description: 'A favorite roadside aurora viewing spot for Fairbanks locals. At 2,233 feet elevation with unobstructed views to the north, Cleary Summit offers some of the best aurora photography opportunities in the Interior. There are no facilities — bring your own thermos and hand warmers. The lack of light pollution this far out on the Steese Highway makes the sky extraordinary.',
+        tag: 'Free',
+      },
+      {
+        name: 'Murphy Dome',
+        destination: 'Fairbanks (20 miles northwest)',
+        slug: 'fairbanks',
+        price: 'Free — Road may be icy, 4WD recommended in winter',
+        description: 'A hilltop with 360-degree views and virtually zero light pollution. The old military radar dome at the summit is a distinctive foreground element for aurora photography. The drive up Murphy Dome Road can be treacherous in winter conditions, so check road status and bring traction devices. When conditions align, the aurora fills the entire sky here.',
+        tag: 'Photography',
+      },
+      {
+        name: 'University of Alaska Fairbanks Campus',
+        destination: 'Fairbanks',
+        slug: 'fairbanks',
+        price: 'Free — UAF Geophysical Institute issues the aurora forecast',
+        description: 'UAF is home to the Geophysical Institute, which produces the most trusted aurora forecast in Alaska (gi.alaska.edu/monitors/aurora-forecast). The campus hilltop parking lots offer decent viewing with some light pollution from Fairbanks below. The real value here is timing your trip around the institute\'s predictions — they forecast aurora activity 27 days out.',
+        tag: 'Forecast Hub',
+      },
+      {
+        name: 'Guided Aurora Tours from Fairbanks',
+        destination: 'Fairbanks',
+        slug: 'fairbanks',
+        price: '$100–200 per person — Includes transport, warm clothing, hot drinks',
+        description: 'Several outfitters run nightly aurora tours from Fairbanks hotels during season. Guides drive to optimal viewing locations based on real-time conditions, provide warm gear (arctic parkas, boots, hand warmers), set up tripods for your camera, and serve hot cocoa. For first-time aurora chasers, a guided tour significantly increases your chances of a great viewing.',
+        tag: 'Must-Visit',
+      },
+    ],
+  },
+  {
+    region: 'Denali & Parks Highway Corridor',
+    tagline: 'Aurora dancing above the highest peak in North America — where wilderness meets the lights',
+    gradient: 'linear-gradient(135deg, #0077B6 0%, #005A8C 100%)',
+    spots: [
+      {
+        name: 'Denali National Park (Fall/Winter)',
+        destination: 'Denali National Park',
+        slug: 'denali-national-park',
+        price: 'Free — Park entrance fee waived in winter — Limited services',
+        description: 'Seeing the Northern Lights with Denali as the foreground is one of Alaska\'s most iconic images. The park road is only open to mile 3 in winter, but that is enough — pull off near the park entrance and face north. The mountain is often visible on clear aurora nights. September is ideal because lodges are still open and nights are getting dark. By October, most facilities close.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Talkeetna',
+        destination: 'Talkeetna',
+        slug: 'talkeetna',
+        price: 'Free viewing — Lodging from $100/night in shoulder season',
+        description: 'This quirky mountain town sits at the base of the Alaska Range and offers clear northern views. The Talkeetna riverfront and open areas along the Susitna River are good viewing spots. Late September through March, before the deep cold of Fairbanks sets in, Talkeetna offers a more moderate climate for aurora chasing. Several lodges cater to aurora visitors.',
+        tag: 'Charming',
+      },
+      {
+        name: 'Cantwell & Broad Pass Area',
+        destination: 'Cantwell (Parks Highway Mile 210)',
+        slug: 'denali-national-park',
+        price: 'Free — Pull-offs along Parks Highway',
+        description: 'The Broad Pass area between Denali and Fairbanks sits at 2,400 feet elevation in wide-open tundra terrain. The low vegetation means unobstructed horizons in every direction. The Parks Highway has multiple pull-offs where you can safely stop. Light pollution is nonexistent. This stretch is one of the best roadside aurora viewing corridors in the state.',
+        tag: 'Hidden Gem',
+      },
+    ],
+  },
+  {
+    region: 'Arctic Alaska — Coldfoot & Dalton Highway',
+    tagline: 'Above the Arctic Circle where darkness dominates winter and the aurora is overhead',
+    gradient: 'linear-gradient(135deg, #0077B6 0%, #00A5CF 100%)',
+    spots: [
+      {
+        name: 'Coldfoot Camp',
+        destination: 'Coldfoot (Arctic Circle)',
+        slug: 'fairbanks',
+        price: 'Lodging from $200/night — Aurora tours $75–150/person',
+        description: 'Located 60 miles north of the Arctic Circle on the Dalton Highway, Coldfoot Camp is one of the most remote aurora viewing locations accessible by road in Alaska. At 67 degrees north latitude, you are directly under the auroral oval. The camp offers basic lodging, guided aurora tours, and a visitor center. The isolation and darkness here produce some of the most vivid aurora displays in the state.',
+        tag: 'Adventure',
+      },
+      {
+        name: 'Wiseman',
+        destination: 'Wiseman (Dalton Highway Mile 188)',
+        slug: 'fairbanks',
+        price: 'Free viewing — B&B lodging from $150/night',
+        description: 'A tiny mining community of about 14 year-round residents, just north of Coldfoot. Wiseman offers absolute darkness and silence — no street lights, no traffic, no ambient noise. A handful of B&Bs and cabins cater to aurora seekers. Standing in the village at midnight with the lights overhead and the Brooks Range behind you is an experience that borders on spiritual.',
+        tag: 'Wilderness',
+      },
+      {
+        name: 'Dalton Highway Pull-Offs (Atigun Pass)',
+        destination: 'Dalton Highway (north of Coldfoot)',
+        slug: 'fairbanks',
+        price: 'Free — Requires winter driving preparation, 4WD essential',
+        description: 'For the truly adventurous, driving the Dalton Highway in winter puts you in some of the most remote aurora territory on the continent. Atigun Pass (4,739 feet) in the Brooks Range offers spectacular mountain-framed aurora viewing. This is not casual tourism — the road is unpaved, conditions are extreme, and help is far away. But the reward is aurora in absolute wilderness.',
+        tag: 'Expert Only',
+      },
+    ],
+  },
+  {
+    region: 'Southcentral — Anchorage & Kenai Peninsula',
+    tagline: 'Lower latitude but still viable — aurora visible on active nights from Alaska\'s most accessible region',
+    gradient: 'linear-gradient(135deg, #FF6B35 0%, #CC5529 100%)',
+    spots: [
+      {
+        name: 'Glen Alps Trailhead (Anchorage)',
+        destination: 'Anchorage',
+        slug: 'anchorage',
+        price: '$5 parking — Chugach State Park',
+        description: 'The closest aurora viewing to downtown Anchorage. Glen Alps sits above the city lights in Chugach State Park, and on nights with strong geomagnetic activity (Kp 4+), the aurora is visible dancing above the city skyline and reflecting off Cook Inlet. The trailhead is plowed in winter and just a 20-minute drive from downtown. Not as reliable as Fairbanks, but excellent when storms are strong.',
+        tag: 'Accessible',
+      },
+      {
+        name: 'Knik River Road (Palmer/Wasilla)',
+        destination: 'Palmer',
+        slug: 'anchorage',
+        price: 'Free — Multiple pull-offs along the road',
+        description: 'About 45 minutes north of Anchorage, Knik River Road runs east into the Chugach Mountains with open views to the north. Light pollution drops significantly past the residential areas. The road parallels the Knik River with dramatic mountain backdrops. On active aurora nights, this is one of the most reliable viewing spots in the Anchorage metro area.',
+        tag: 'Local Favorite',
+      },
+      {
+        name: 'Turnagain Arm (Seward Highway)',
+        destination: 'South of Anchorage',
+        slug: 'anchorage',
+        price: 'Free — Multiple pull-offs along Seward Highway',
+        description: 'The drive south from Anchorage along Turnagain Arm offers dramatic mountain scenery and, on active nights, aurora reflecting off the calm waters of the arm. Bird Point and Beluga Point are popular pull-offs. The aurora needs to be fairly strong (Kp 5+) to put on a show this far south, but when it does, the mountain-and-water reflections are stunning.',
+      },
+      {
+        name: 'Hatchers Pass',
+        destination: 'Palmer (north of Anchorage)',
+        slug: 'anchorage',
+        price: 'Free — Road closed above Independence Mine in winter',
+        description: 'A mountain pass northeast of Palmer that rises above tree line into alpine tundra. The open terrain and distance from city lights make it an excellent aurora viewing location when the road is accessible. The lower parking areas near the Independence Mine trailhead remain reachable in early fall and late spring. The combination of alpine scenery and aurora is remarkable.',
+        tag: 'Scenic',
+      },
+    ],
+  },
+];
+
+const faqItems = [
+  { question: 'When is the best time to see the Northern Lights in Alaska?', answer: 'September through March, with peak viewing around the equinoxes (late September/early October and late March). You need dark skies, so the midnight sun of summer rules out June and July entirely. August is marginal. September offers the best combination of dark nights, mild temperatures, and open roads and lodges. Deep winter (December-February) offers the most hours of darkness but the coldest temperatures (-20 to -40 F in Fairbanks).' },
+  { question: 'Is Fairbanks or Anchorage better for Northern Lights?', answer: 'Fairbanks, by a wide margin. Fairbanks sits directly under the auroral oval at 64.8 degrees north latitude and averages 200+ aurora-viewable nights per year. Anchorage is 360 miles further south (61.2 N) and sees the aurora far less frequently — only on nights with strong geomagnetic activity (Kp 4+). If seeing the Northern Lights is a priority, fly to Fairbanks. Anchorage is a bonus, not a destination for aurora.' },
+  { question: 'What camera settings do I need for aurora photos?', answer: 'Manual mode, wide-angle lens (14-24mm ideal), f/2.8 or wider, ISO 1600-6400, shutter speed 5-15 seconds depending on aurora movement. Use a sturdy tripod and a remote shutter release or 2-second timer. Turn off image stabilization on a tripod. Focus manually on a bright star or distant light and tape the focus ring. Shoot RAW for maximum editing flexibility. Bring spare batteries — cold drains them fast.' },
+  { question: 'How cold does it get during aurora season in Alaska?', answer: 'It varies dramatically by month and location. September in Fairbanks averages 30-50 F — quite comfortable with layers. By December through February, Fairbanks regularly drops to -20 to -40 F. Anchorage is milder (10-30 F in winter). Dress in layers: moisture-wicking base, insulating mid-layer, windproof outer shell. Insulated boots (rated to -40 F), heavy mittens, and a balaclava are essential for extended winter viewing.' },
+  { question: 'How do I check the aurora forecast?', answer: 'The UAF Geophysical Institute aurora forecast (gi.alaska.edu/monitors/aurora-forecast) is the gold standard — it predicts aurora activity on a scale of 0-9 for Fairbanks, updated frequently. The NOAA Space Weather Prediction Center (swpc.noaa.gov) provides global forecasts. The My Aurora Forecast app is excellent for mobile alerts. A Kp index of 3+ usually means visible aurora in Fairbanks; Kp 5+ for Anchorage.' },
+  { question: 'Can I see the Northern Lights from Juneau or Southeast Alaska?', answer: 'Rarely. Southeast Alaska is at a lower latitude (Juneau is 58.3 N) and has persistent cloud cover from maritime weather. The aurora is occasionally visible during very strong geomagnetic storms (Kp 6+), but you cannot plan a trip to Southeast Alaska expecting to see the Northern Lights. If aurora viewing is your goal, go to Fairbanks. Southeast is for glaciers, whales, and rainforest.' },
+  { question: 'Do I need to book an aurora tour or can I see them on my own?', answer: 'You can absolutely see them on your own if you have a car and are willing to drive to dark-sky locations outside of town. Guided tours ($100-200/person) are worth it for first-timers because guides know the best spots, monitor conditions in real-time, provide warm gear, and help with camera settings. If you are staying at Chena Hot Springs or Coldfoot Camp, you do not need a separate tour — just walk outside.' },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  faqItems={faqItems}
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="menu-hero">
+    <div class="menu-hero-bg"></div>
+    <div class="menu-hero-gradient"></div>
+    <div class="menu-hero-noise"></div>
+    <div class="menu-hero-content">
+      <h1 class="menu-hero-title">Alaska Northern Lights</h1>
+      <p class="menu-hero-subtitle">From the aurora capital of Fairbanks to the Arctic wilderness of the Dalton Highway, the complete guide to seeing the Northern Lights in Alaska — where to go, when to go, and how to make the most of the experience.</p>
+      <div class="menu-hero-meta">
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Viewing Spots</span>
+          <span class="menu-hero-meta-value">15</span>
+        </div>
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Regions</span>
+          <span class="menu-hero-meta-value">4</span>
+        </div>
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Season</span>
+          <span class="menu-hero-meta-value">Sep–Mar</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="menu-personal reveal">
+    <div class="container-content">
+      <blockquote class="menu-personal-quote">
+        <p>The first time I saw the Northern Lights in Alaska, I stood outside in Fairbanks at 2 AM in September and watched a faint green arc slowly brighten, then suddenly explode into curtains of green and purple light rippling across the entire sky. It lasted forty minutes and I forgot I was cold. The aurora is not something you just see — it moves, it pulses, it changes color, and it makes you feel very small and very lucky to be standing under it.</p>
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="menu-intro reveal">
+    <div class="container-content">
+      <div class="menu-intro-card">
+        <p class="menu-intro-text">We've organized Alaska's best aurora viewing locations by region — <strong>Fairbanks & Interior</strong>, <strong>Denali Corridor</strong>, <strong>Arctic Alaska</strong>, and <strong>Southcentral</strong>. Each listing includes costs, access details, and what makes each spot worth the cold nights.</p>
+        <div class="menu-intro-legend">
+          <span class="menu-tag menu-tag--iconic">Iconic</span>
+          <span class="menu-tag menu-tag--mustvisit">Must-Visit</span>
+          <span class="menu-tag menu-tag--free">Free</span>
+          <span class="menu-tag menu-tag--adventure">Adventure</span>
+          <span class="menu-tag menu-tag--hiddengem">Hidden Gem</span>
+          <span class="menu-tag menu-tag--photography">Photography</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aurora Sections -->
+  {sections.map((section) => (
+    <section class="menu-region reveal">
+      <div class="container-content">
+        <div class="menu-region-header" style={`background: ${section.gradient};`}>
+          <div class="menu-region-header-inner">
+            <h2 class="menu-region-name">{section.region}</h2>
+            <p class="menu-region-tagline">{section.tagline}</p>
+            <span class="menu-region-count">{section.spots.length} viewing spots</span>
+          </div>
+          <div class="menu-region-ornament">&#10024;</div>
+        </div>
+
+        <div class="menu-dish-grid">
+          {section.spots.map((spot) => (
+            <div class="menu-dish-card">
+              <div class="menu-dish-media" style={`background: ${section.gradient};`}>
+                {spot.tag && (
+                  <span class={`menu-tag menu-tag--${spot.tag.toLowerCase().replace(/[^a-z]/g, '')}`}>{spot.tag}</span>
+                )}
+              </div>
+              <div class="menu-dish-body">
+                <div class="menu-dish-top">
+                  <h3 class="menu-dish-name">{spot.name}</h3>
+                </div>
+                <p class="menu-dish-destination">{spot.destination}</p>
+                <p class="menu-dish-price-line">{spot.price}</p>
+                <p class="menu-dish-desc">{spot.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Bottom CTA -->
+  <section class="menu-cta-section reveal">
+    <div class="container-content">
+      <div class="menu-cta-card">
+        <h2 class="menu-cta-heading">Plan Your Aurora Trip</h2>
+        <p class="menu-cta-text">Tell our AI planner when you want to visit and it will build a Northern Lights itinerary — with the best viewing locations, lodging, and backup plans for cloudy nights.</p>
+        <a href="/plan/" class="menu-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQ items={faqItems} />
+
+  <!-- Email Capture -->
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Free Alaska Aurora Guide"
+      description="A printable guide to seeing the Northern Lights in Alaska — with best dates, camera settings, clothing checklists, and forecast tools."
+      bullets={[
+        'All 15 viewing spots with access details and costs',
+        'Month-by-month aurora probability chart',
+        'Camera settings cheat sheet for aurora photography',
+        'Cold-weather gear checklist rated to -40F',
+      ]}
+      guideTag="pillar-northern-lights"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="menu-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="menu-crosslinks-heading">Explore More</h3>
+      <div class="menu-crosslinks-grid">
+        <a href="/glaciers/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#9974;</span>
+          <span class="menu-crosslink-label">Glacier Guide</span>
+          <span class="menu-crosslink-desc">Tidewater glaciers, ice hiking, helicopter tours, and kayaking</span>
+        </a>
+        <a href="/wildlife/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#128059;</span>
+          <span class="menu-crosslink-label">Wildlife Guide</span>
+          <span class="menu-crosslink-desc">Bears, moose, whales, eagles, and where to find them</span>
+        </a>
+        <a href="/cuisine/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#127869;</span>
+          <span class="menu-crosslink-label">Alaska Cuisine</span>
+          <span class="menu-crosslink-desc">King crab, wild salmon, reindeer sausage, and craft brews</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<!-- Scroll Reveal Observer -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
+
+<style>
+  /* ================================================================
+     HERO
+     ================================================================ */
+  .menu-hero {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5rem var(--space-6) 60px;
+    overflow: hidden;
+  }
+
+  .menu-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: linear-gradient(135deg, #1A2332 0%, #0B3D2E 50%, #1A2332 100%);
+  }
+
+  .menu-hero-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.4) 100%);
+  }
+
+  .menu-hero-noise {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .menu-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 720px;
+  }
+
+  .menu-hero-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 var(--space-3);
+  }
+
+  .menu-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0 0 var(--space-5);
+    max-width: 580px;
+  }
+
+  .menu-hero-meta {
+    display: flex;
+    gap: var(--space-5);
+    flex-wrap: wrap;
+  }
+
+  .menu-hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .menu-hero-meta-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .menu-hero-meta-value {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: #fff;
+  }
+
+  .menu-scroll-hint {
+    position: absolute;
+    bottom: 16px;
+    right: var(--space-6);
+    z-index: 3;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.35);
+    text-align: center;
+    animation: menuBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes menuBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+  }
+
+  /* ================================================================
+     INTRO
+     ================================================================ */
+  .menu-intro {
+    padding: var(--space-8) 0 var(--space-4);
+  }
+
+  .menu-intro-card {
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    padding: var(--space-5) var(--space-6);
+    text-align: center;
+  }
+
+  .menu-intro-text {
+    font-size: 1rem;
+    color: var(--color-slate);
+    line-height: 1.7;
+    max-width: 640px;
+    margin: 0 auto var(--space-4);
+  }
+
+  .menu-intro-legend {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  /* ================================================================
+     TAGS
+     ================================================================ */
+  .menu-tag {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 3px 8px;
+    border-radius: 6px;
+    line-height: 1.4;
+  }
+
+  .menu-tag--iconic {
+    background: rgba(0, 119, 182, 0.12);
+    color: #0077B6;
+  }
+
+  .menu-tag--mustvisit {
+    background: rgba(255, 107, 53, 0.12);
+    color: #CC5529;
+  }
+
+  .menu-tag--free {
+    background: rgba(46, 125, 50, 0.15);
+    color: #1B5E20;
+  }
+
+  .menu-tag--adventure {
+    background: rgba(106, 27, 154, 0.1);
+    color: #6A1B9A;
+  }
+
+  .menu-tag--hiddengem {
+    background: rgba(106, 27, 154, 0.1);
+    color: #6A1B9A;
+  }
+
+  .menu-tag--photography {
+    background: rgba(0, 119, 182, 0.12);
+    color: #0077B6;
+  }
+
+  .menu-tag--forecasthub {
+    background: rgba(0, 150, 136, 0.1);
+    color: #00796B;
+  }
+
+  .menu-tag--wilderness {
+    background: rgba(46, 125, 50, 0.1);
+    color: #2E7D32;
+  }
+
+  .menu-tag--expertonly {
+    background: rgba(191, 54, 12, 0.1);
+    color: #BF360C;
+  }
+
+  .menu-tag--charming {
+    background: rgba(106, 27, 154, 0.1);
+    color: #6A1B9A;
+  }
+
+  .menu-tag--accessible {
+    background: rgba(46, 125, 50, 0.1);
+    color: #2E7D32;
+  }
+
+  .menu-tag--localfavorite {
+    background: rgba(255, 107, 53, 0.12);
+    color: #CC5529;
+  }
+
+  .menu-tag--scenic {
+    background: rgba(0, 119, 182, 0.12);
+    color: #0077B6;
+  }
+
+  /* ================================================================
+     REGION SECTION
+     ================================================================ */
+  .menu-region {
+    padding: var(--space-6) 0;
+  }
+
+  .menu-region-header {
+    position: relative;
+    border-radius: 20px;
+    padding: var(--space-6) var(--space-6);
+    margin-bottom: var(--space-6);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-region-header-inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu-region-name {
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    margin: 0 0 var(--space-1);
+    line-height: 1.1;
+  }
+
+  .menu-region-tagline {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 var(--space-3);
+    max-width: 480px;
+    line-height: 1.5;
+  }
+
+  .menu-region-count {
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+
+  .menu-region-ornament {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.08);
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ================================================================
+     VIEWING SPOT CARD GRID
+     ================================================================ */
+  .menu-dish-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  @media (min-width: 1024px) {
+    .menu-dish-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .menu-dish-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .menu-dish-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .menu-dish-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  }
+
+  .menu-dish-media {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: var(--space-2);
+    overflow: hidden;
+  }
+
+  .menu-dish-media .menu-tag {
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu-dish-body {
+    padding: var(--space-3) var(--space-4) var(--space-4);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .menu-dish-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-2);
+    margin-bottom: 4px;
+  }
+
+  .menu-dish-name {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    margin: 0;
+    line-height: 1.25;
+  }
+
+  .menu-dish-destination {
+    font-size: 0.72rem;
+    color: #0077B6;
+    font-weight: var(--weight-medium);
+    margin: 0 0 var(--space-1);
+  }
+
+  .menu-dish-price-line {
+    font-size: 0.68rem;
+    font-weight: var(--weight-semibold);
+    color: #FF6B35;
+    margin: 0 0 var(--space-2);
+    line-height: 1.4;
+  }
+
+  .menu-dish-desc {
+    font-size: 0.78rem;
+    color: var(--color-slate);
+    line-height: 1.55;
+    margin: 0;
+    flex: 1;
+  }
+
+  /* ================================================================
+     BOTTOM CTA
+     ================================================================ */
+  .menu-cta-section {
+    padding: var(--space-6) 0 var(--space-8);
+  }
+
+  .menu-cta-card {
+    background: linear-gradient(135deg, #1A2332 0%, #0B3D2E 100%);
+    border-radius: 20px;
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+    color: #fff;
+  }
+
+  .menu-cta-heading {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: var(--weight-bold);
+    margin: 0 0 var(--space-3);
+    color: #fff;
+  }
+
+  .menu-cta-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 520px;
+    margin: 0 auto var(--space-5);
+    line-height: 1.6;
+  }
+
+  .menu-cta-button {
+    display: inline-block;
+    background: #FF6B35;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: var(--weight-semibold);
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .menu-cta-button:hover {
+    background: #CC5529;
+    transform: translateY(-2px);
+  }
+
+  /* ================================================================
+     CROSS-LINKS
+     ================================================================ */
+  .menu-crosslinks {
+    padding: 0 0 var(--space-10);
+  }
+
+  .menu-crosslinks-heading {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    text-align: center;
+    margin: 0 0 var(--space-4);
+  }
+
+  .menu-crosslinks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
+    .menu-crosslinks-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .menu-crosslink-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-5) var(--space-4);
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .menu-crosslink-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .menu-crosslink-icon {
+    font-size: 1.8rem;
+  }
+
+  .menu-crosslink-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+  }
+
+  .menu-crosslink-desc {
+    font-size: 0.78rem;
+    color: var(--color-slate);
+    line-height: 1.4;
+  }
+
+  /* ================================================================
+     PERSONAL QUOTE
+     ================================================================ */
+  .menu-personal {
+    padding-block: var(--space-8);
+  }
+
+  .menu-personal-quote {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-8);
+    border-left: 4px solid #FF6B35;
+    background: var(--color-sky);
+    border-radius: 0 12px 12px 0;
+  }
+
+  .menu-personal-quote p {
+    font-size: var(--text-body);
+    color: var(--color-heading);
+    line-height: var(--leading-body);
+    font-style: italic;
+    margin-bottom: var(--space-3);
+  }
+
+  .menu-personal-quote cite {
+    font-size: var(--text-caption);
+    color: #FF6B35;
+    font-weight: var(--weight-semibold);
+    font-style: normal;
+  }
+
+  /* ================================================================
+     RESPONSIVE
+     ================================================================ */
+  @media (max-width: 640px) {
+    .menu-hero {
+      min-height: 55vh;
+      padding: 0 var(--space-4) 40px;
+    }
+
+    .menu-hero-meta {
+      gap: var(--space-4);
+    }
+
+    .menu-scroll-hint {
+      display: none;
+    }
+
+    .menu-region-header {
+      padding: var(--space-5) var(--space-4);
+    }
+
+    .menu-region-ornament {
+      display: none;
+    }
+  }
+</style>

@@ -1,0 +1,453 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Alaska History Guide', url: '/history/' },
+];
+
+const pageTitle = 'Alaska History — Gold Rush, Indigenous Cultures & Frontier Legacy';
+const pageDescription = 'Explore Alaska\'s rich history — from 10,000 years of Indigenous culture to the Klondike Gold Rush, Russian colonial era, and the Trans-Alaska Pipeline.';
+
+interface HistoricSite {
+  name: string;
+  destination: string;
+  slug: string;
+  era: string;
+  description: string;
+  tag?: string;
+}
+
+interface HistorySection {
+  period: string;
+  icon: string;
+  tagline: string;
+  gradient: string;
+  sites: HistoricSite[];
+}
+
+const sections: HistorySection[] = [
+  {
+    period: 'Indigenous Peoples',
+    icon: '&#127758;',
+    tagline: '10,000+ years of Tlingit, Haida, Athabascan, Inupiat, and Yupik heritage',
+    gradient: 'linear-gradient(135deg, #065F46 0%, #059669 100%)',
+    sites: [
+      {
+        name: 'Sitka National Historical Park',
+        destination: 'Sitka',
+        slug: 'sitka',
+        era: 'Tlingit culture — thousands of years to present',
+        description: 'The site of the 1804 Battle of Sitka between Tlingit warriors and Russian colonists. A rainforest trail winds past 18 original and replica totem poles. The Southeast Alaska Indian Cultural Center inside has master carvers at work. $10 admission.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Alaska Native Heritage Center',
+        destination: 'Anchorage',
+        slug: 'anchorage',
+        era: 'All eras — 11 cultural groups represented',
+        description: 'A 26-acre cultural center showcasing all 11 Alaska Native cultural groups. Full-scale traditional dwellings surround a lake. Native artisans demonstrate carving, beading, and dance. The best single-stop introduction to Alaska\'s Indigenous cultures. $25 admission.',
+        tag: 'Must-Visit',
+      },
+      {
+        name: 'Totem Heritage Center',
+        destination: 'Ketchikan',
+        slug: 'ketchikan',
+        era: 'Original 19th-century poles',
+        description: 'Houses the world\'s largest collection of unrestored 19th-century totem poles, retrieved from abandoned Tlingit and Haida villages. These are the real deal — weathered, cracked, and profoundly powerful. $6 admission.',
+        tag: 'Historic',
+      },
+      {
+        name: 'Inupiat Heritage Center',
+        destination: 'Utqiagvik',
+        slug: 'utqiagvik',
+        era: '10,000+ years of Arctic culture',
+        description: 'At America\'s northernmost point, learn about the Inupiat people who have thrived in the Arctic for millennia. Traditional whaling exhibits, skin-sewing demonstrations, and blanket toss. Part of the New Bedford Whaling National Historical Park network. $10 admission.',
+        tag: 'Free',
+      },
+    ],
+  },
+  {
+    period: 'Russian Colonial Era',
+    icon: '&#9876;',
+    tagline: 'From fur traders to Orthodox churches — Russia\'s 126 years in Alaska (1741–1867)',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #0077B6 100%)',
+    sites: [
+      {
+        name: 'Russian Bishop\'s House',
+        destination: 'Sitka',
+        slug: 'sitka',
+        era: 'Built 1842 — one of only 4 surviving Russian colonial buildings',
+        description: 'One of the oldest intact Russian structures in North America. The restored log building served as residence for the Bishop of Russian Orthodox missions. Period furnishings and a working chapel inside. Part of Sitka National Historical Park. $10 admission.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Castle Hill / Baranof Castle Site',
+        destination: 'Sitka',
+        slug: 'sitka',
+        era: '1804–1867 — capital of Russian America',
+        description: 'The hilltop where the official transfer ceremony from Russia to the U.S. took place on October 18, 1867. The Russian flag came down and the American flag went up. Panoramic views of Sitka Sound and Mount Edgecumbe. Free.',
+        tag: 'Historic',
+      },
+      {
+        name: 'Holy Assumption Orthodox Church',
+        destination: 'Kenai',
+        slug: 'kenai-fjords',
+        era: 'Built 1895 — active Russian Orthodox parish',
+        description: 'One of the oldest Russian Orthodox churches in Alaska, still holding regular services. The white clapboard church with blue onion dome is a striking landmark on the Kenai Peninsula. The adjacent Chapel of St. Nicholas (1906) is equally beautiful. Free.',
+        tag: 'Free',
+      },
+      {
+        name: 'Baranov Museum',
+        destination: 'Kodiak',
+        slug: 'kodiak',
+        era: 'Built ~1808 — oldest building in Alaska',
+        description: 'The Erskine House, originally a Russian fur storage warehouse, is the oldest surviving building in Alaska. Now a museum covering Alutiiq, Russian, and American periods. Artifacts include samovars, icons, and sea otter pelts that drove the entire colonial enterprise. $7 admission.',
+        tag: 'Must-Visit',
+      },
+    ],
+  },
+  {
+    period: 'The Gold Rush',
+    icon: '&#129351;',
+    tagline: 'When the cry of "Gold!" drew hundreds of thousands north and forged modern Alaska',
+    gradient: 'linear-gradient(135deg, #78350F 0%, #B45309 100%)',
+    sites: [
+      {
+        name: 'Klondike Gold Rush NHP — Skagway',
+        destination: 'Skagway',
+        slug: 'skagway',
+        era: '1897–1898 Klondike Gold Rush',
+        description: 'Skagway\'s entire downtown is a National Historical Park. The restored 1890s buildings along Broadway look nearly identical to Gold Rush photos. Rangers give free walking tours of Soapy Smith\'s saloon, the Red Onion, and the trailhead where 100,000 stampeders began the brutal climb over the Chilkoot Pass. Free.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Gold Dredge No. 8',
+        destination: 'Fairbanks',
+        slug: 'fairbanks',
+        era: '1928 — industrial-scale gold mining',
+        description: 'Tour a massive 5-deck gold dredge that once ate through riverbanks extracting gold. Then pan for gold yourself — the pans are seeded with real gold and everyone goes home with some. A fascinating look at how mining industrialized after the individual prospector era. $45 admission.',
+        tag: 'Must-Visit',
+      },
+      {
+        name: 'Kennecott Mines / McCarthy',
+        destination: 'Wrangell-St. Elias',
+        slug: 'wrangell-st-elias',
+        era: '1903–1938 — $200M copper extracted',
+        description: 'A red-painted ghost town of massive mill buildings perched on a glacier in America\'s largest national park. The Kennecott copper mine was one of the richest in world history. Ranger-led tours explore the 14-story concentration mill and the abandoned hospital. $25 for guided tour.',
+        tag: 'Epic',
+      },
+      {
+        name: 'Nome Historic District',
+        destination: 'Nome',
+        slug: 'nome',
+        era: '1898–1900s — beach gold rush',
+        description: 'Gold was literally found in the beach sand at Nome, triggering a rush of 20,000 people to this remote Bering Sea coast town. Today you can still pan for gold on the beach. The Carrie M. McLain Memorial Museum tells the full story, including the 1925 serum run (inspiration for the Iditarod). Free beach panning.',
+        tag: 'Adventure',
+      },
+    ],
+  },
+  {
+    period: 'Statehood & the Pipeline Era',
+    icon: '&#128640;',
+    tagline: 'From territory to 49th state — and the pipeline that changed everything',
+    gradient: 'linear-gradient(135deg, #0077B6 0%, #005A8C 100%)',
+    sites: [
+      {
+        name: 'Alaska Statehood Monument',
+        destination: 'Juneau',
+        slug: 'juneau',
+        era: 'January 3, 1959 — Alaska becomes the 49th state',
+        description: 'Alaska was purchased from Russia in 1867 for $7.2 million (about 2 cents per acre) and spent 92 years as a territory before achieving statehood. The Alaska State Museum in Juneau chronicles this journey with artifacts from every era. $15 admission.',
+        tag: 'Historic',
+      },
+      {
+        name: 'Trans-Alaska Pipeline Viewpoint',
+        destination: 'Fairbanks',
+        slug: 'fairbanks',
+        era: '1974–1977 — 800-mile engineering marvel',
+        description: 'The 800-mile pipeline from Prudhoe Bay to Valdez was the largest private construction project in history at the time. A free viewpoint near Fairbanks lets you see and touch the 48-inch diameter pipe. The pipeline still carries about 500,000 barrels per day.',
+        tag: 'Free',
+      },
+      {
+        name: 'Valdez Museum & Pipeline Terminal',
+        destination: 'Valdez',
+        slug: 'valdez',
+        era: '1977 – present',
+        description: 'Valdez is where the pipeline ends and tankers begin. The museum covers the pipeline construction, the devastating 1964 Good Friday earthquake (which destroyed the original town), and the 1989 Exxon Valdez oil spill. $9 admission.',
+        tag: 'Must-Visit',
+      },
+      {
+        name: 'Aleutian WWII National Historic Area',
+        destination: 'Unalaska/Dutch Harbor',
+        slug: 'kodiak',
+        era: '1942–1943 — the forgotten battle',
+        description: 'Japan bombed Dutch Harbor and occupied Attu and Kiska islands — the only foreign occupation of U.S. soil since the War of 1812. The visitor center tells this largely forgotten chapter with artifacts, bunker remains, and personal stories. Free admission.',
+        tag: 'Historic',
+      },
+    ],
+  },
+];
+
+const faqItems = [
+  { question: 'Why did the U.S. buy Alaska from Russia?', answer: 'Secretary of State William Seward negotiated the purchase in 1867 for $7.2 million (about 2 cents per acre). Critics called it "Seward\'s Folly" and "Seward\'s Icebox." Russia sold because it couldn\'t defend the territory and wanted to keep it from Britain. The deal proved spectacularly wise — Alaska\'s gold, oil, fisheries, and strategic location have been worth trillions.' },
+  { question: 'What was the Klondike Gold Rush?', answer: 'In 1896, gold was discovered in Canada\'s Klondike region. By 1897-1898, an estimated 100,000 people set out for the gold fields, with most passing through Skagway or Dyea in Alaska\'s Inside Passage. Stampeders had to haul a year\'s worth of supplies over the Chilkoot or White Pass before reaching the Yukon River. Visit Skagway\'s Klondike Gold Rush National Historical Park to walk in their footsteps.' },
+  { question: 'How many Alaska Native cultural groups are there?', answer: 'Alaska has 11 distinct Indigenous cultural groups: Inupiat, Yupik, Cup\'ik, St. Lawrence Island Yupik, Aleut/Unangan, Alutiiq/Sugpiaq, Eyak, Tlingit, Haida, Tsimshian, and Athabascan. Each has distinct languages, traditions, and territories. The Alaska Native Heritage Center in Anchorage ($25) is the best introduction to all 11 groups in one visit.' },
+  { question: 'Can you visit the Trans-Alaska Pipeline?', answer: 'Yes — there\'s a free public viewpoint near Fairbanks where you can see and touch the 48-inch diameter pipeline. The pipeline runs 800 miles from Prudhoe Bay on the Arctic coast to the port of Valdez, crossing three mountain ranges and over 800 rivers. Built 1974-1977, it was the largest private construction project in history at the time.' },
+  { question: 'What happened at Dutch Harbor in WWII?', answer: 'Japan bombed Dutch Harbor in June 1942 and then occupied the islands of Attu and Kiska in the Aleutian chain — the only foreign occupation of U.S. soil since the War of 1812. The Aleutian Islands campaign lasted until August 1943. The Aleutian WWII National Historic Area in Unalaska preserves bunkers, ruins, and tells the story of the evacuated Aleut people.' },
+  { question: 'What is the oldest building in Alaska?', answer: 'The Erskine House in Kodiak, built around 1808 as a Russian fur storage warehouse, is the oldest surviving building in Alaska. Now the Baranov Museum ($7), it chronicles Kodiak\'s journey through Alutiiq, Russian, and American periods.' },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  faqItems={faqItems}
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="menu-hero">
+    <div class="menu-hero-bg"></div>
+    <div class="menu-hero-gradient"></div>
+    <div class="menu-hero-noise"></div>
+    <div class="menu-hero-content">
+      <h1 class="menu-hero-title">Alaska History</h1>
+      <p class="menu-hero-subtitle">From 10,000 years of Indigenous culture to Russian fur traders, the Klondike Gold Rush, and the pipeline that changed everything.</p>
+      <div class="menu-hero-meta">
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Eras Covered</span>
+          <span class="menu-hero-meta-value">4</span>
+        </div>
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Sites</span>
+          <span class="menu-hero-meta-value">16</span>
+        </div>
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Years of History</span>
+          <span class="menu-hero-meta-value">10,000+</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="menu-personal reveal">
+    <div class="container-content">
+      <blockquote class="menu-personal-quote">
+        <p>Standing in the abandoned Kennecott copper mill, five stories of rusted machinery surrounded by glaciers in every direction, I realized Alaska's history is unlike anywhere else in the U.S. And walking through the totem poles at Sitka National Historical Park — where Tlingit warriors fought Russian colonists in 1804 — the layers of human story here are staggering. Alaska isn't just wilderness; it's where American frontier history happened.</p>
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="menu-intro reveal">
+    <div class="container-content">
+      <div class="menu-intro-card">
+        <p class="menu-intro-text">We've organized Alaska's most significant historic sites by era — <strong>Indigenous Peoples</strong>, <strong>Russian Colonial</strong>, <strong>The Gold Rush</strong>, and <strong>Statehood & the Pipeline Era</strong>. Each includes admission costs, context, and what makes it worth visiting.</p>
+        <div class="menu-intro-legend">
+          <span class="menu-tag menu-tag--iconic">Iconic</span>
+          <span class="menu-tag menu-tag--mustvisit">Must-Visit</span>
+          <span class="menu-tag menu-tag--free">Free</span>
+          <span class="menu-tag menu-tag--historic">Historic</span>
+          <span class="menu-tag menu-tag--adventure">Adventure</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- History Sections -->
+  {sections.map((section) => (
+    <section class="menu-region reveal">
+      <div class="container-content">
+        <div class="menu-region-header" style={`background: ${section.gradient};`}>
+          <div class="menu-region-header-inner">
+            <h2 class="menu-region-name">{section.period}</h2>
+            <p class="menu-region-tagline">{section.tagline}</p>
+            <span class="menu-region-count">{section.sites.length} sites</span>
+          </div>
+          <div class="menu-region-ornament" set:html={section.icon} />
+        </div>
+
+        <div class="menu-dish-grid">
+          {section.sites.map((site) => (
+            <div class="menu-dish-card">
+              <div class="menu-dish-media" style={`background: ${section.gradient};`}>
+                {site.tag && (
+                  <span class={`menu-tag menu-tag--${site.tag.toLowerCase().replace(/[^a-z]/g, '')}`}>{site.tag}</span>
+                )}
+              </div>
+              <div class="menu-dish-body">
+                <div class="menu-dish-top">
+                  <h3 class="menu-dish-name">{site.name}</h3>
+                </div>
+                <p class="menu-dish-destination">{site.destination}</p>
+                <p class="menu-dish-price-line">{site.era}</p>
+                <p class="menu-dish-desc">{site.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Bottom CTA -->
+  <section class="menu-cta-section reveal">
+    <div class="container-content">
+      <div class="menu-cta-card">
+        <h2 class="menu-cta-heading">Plan a History-Focused Trip</h2>
+        <p class="menu-cta-text">Tell our AI planner which eras interest you — Indigenous culture, Russian colonial, Gold Rush, pipeline — and it will build a day-by-day itinerary with the best historic sites and museums.</p>
+        <a href="/plan/" class="menu-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQ items={faqItems} />
+
+  <!-- Email Capture -->
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Free Alaska History Guide"
+      description="A printable guide to Alaska's most significant historic sites — with timelines, admission info, and self-guided walking tours."
+      bullets={[
+        'All 16 historic sites with costs and hours',
+        'Alaska history timeline from Indigenous era to present',
+        'Self-guided Skagway Gold Rush walking tour',
+        'Sitka Russian colonial heritage trail',
+      ]}
+      guideTag="pillar-history"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="menu-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="menu-crosslinks-heading">Explore More</h3>
+      <div class="menu-crosslinks-grid">
+        <a href="/glaciers/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#127956;</span>
+          <span class="menu-crosslink-label">Glacier Guide</span>
+          <span class="menu-crosslink-desc">Tidewater glaciers, icefields, and glacier treks</span>
+        </a>
+        <a href="/wildlife/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#128059;</span>
+          <span class="menu-crosslink-label">Wildlife Guide</span>
+          <span class="menu-crosslink-desc">Bears, whales, eagles, and moose encounters</span>
+        </a>
+        <a href="/northern-lights/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#127756;</span>
+          <span class="menu-crosslink-label">Northern Lights</span>
+          <span class="menu-crosslink-desc">Best viewing spots and aurora photography tips</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => { entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); }); },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
+
+<style>
+  .menu-hero { position: relative; min-height: 60vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 5rem var(--space-6) 60px; overflow: hidden; }
+  .menu-hero-bg { position: absolute; inset: 0; z-index: 0; background: linear-gradient(135deg, #0077B6 0%, #005A8C 40%, #003F5C 100%); }
+  .menu-hero-gradient { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.4) 100%); }
+  .menu-hero-noise { position: absolute; inset: 0; z-index: 2; background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E"); pointer-events: none; }
+  .menu-hero-content { position: relative; z-index: 3; max-width: 720px; }
+  .menu-hero-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: var(--weight-bold); color: #fff; line-height: 1.1; margin: 0 0 var(--space-3); }
+  .menu-hero-subtitle { font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255,255,255,0.85); line-height: 1.6; margin: 0 0 var(--space-5); max-width: 580px; }
+  .menu-hero-meta { display: flex; gap: var(--space-5); flex-wrap: wrap; }
+  .menu-hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .menu-hero-meta-label { font-size: 0.65rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); }
+  .menu-hero-meta-value { font-size: 1.1rem; font-weight: var(--weight-bold); color: #fff; }
+  .menu-scroll-hint { position: absolute; bottom: 16px; right: var(--space-6); z-index: 3; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.35); text-align: center; animation: menuBounce 2s ease-in-out infinite; }
+  @keyframes menuBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+
+  .menu-intro { padding: var(--space-8) 0 var(--space-4); }
+  .menu-intro-card { background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: var(--space-5) var(--space-6); text-align: center; }
+  .menu-intro-text { font-size: 1rem; color: var(--color-slate); line-height: 1.7; max-width: 640px; margin: 0 auto var(--space-4); }
+  .menu-intro-legend { display: flex; justify-content: center; gap: var(--space-2); flex-wrap: wrap; }
+
+  .menu-tag { display: inline-block; font-size: 0.6rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 8px; border-radius: 6px; line-height: 1.4; }
+  .menu-tag--iconic { background: rgba(0,119,182,0.12); color: #0077B6; }
+  .menu-tag--mustvisit { background: rgba(255,107,53,0.12); color: #CC5529; }
+  .menu-tag--free { background: rgba(46,125,50,0.15); color: #1B5E20; }
+  .menu-tag--historic { background: rgba(191,54,12,0.1); color: #BF360C; }
+  .menu-tag--adventure { background: rgba(106,27,154,0.1); color: #6A1B9A; }
+  .menu-tag--stunning { background: rgba(212,168,83,0.15); color: #9A7B2E; }
+  .menu-tag--epic { background: rgba(0,119,182,0.12); color: #0077B6; }
+
+  .menu-region { padding: var(--space-6) 0; }
+  .menu-region-header { position: relative; border-radius: 20px; padding: var(--space-6); margin-bottom: var(--space-6); overflow: hidden; display: flex; align-items: center; justify-content: space-between; }
+  .menu-region-header-inner { position: relative; z-index: 1; }
+  .menu-region-name { font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: var(--weight-bold); color: #fff; margin: 0 0 var(--space-1); line-height: 1.1; }
+  .menu-region-tagline { font-size: 0.95rem; color: rgba(255,255,255,0.8); margin: 0 0 var(--space-3); max-width: 480px; line-height: 1.5; }
+  .menu-region-count { font-size: 0.7rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.55); background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 20px; }
+  .menu-region-ornament { font-size: 3rem; color: rgba(255,255,255,0.15); position: relative; z-index: 1; }
+
+  .menu-dish-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
+  @media (min-width: 1024px) { .menu-dish-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px) { .menu-dish-grid { grid-template-columns: 1fr; } }
+
+  .menu-dish-card { position: relative; display: flex; flex-direction: column; background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 14px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .menu-dish-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+  .menu-dish-media { position: relative; aspect-ratio: 16/9; display: flex; align-items: flex-start; justify-content: flex-end; padding: var(--space-2); overflow: hidden; }
+  .menu-dish-media .menu-tag { position: relative; z-index: 1; }
+  .menu-dish-body { padding: var(--space-3) var(--space-4) var(--space-4); display: flex; flex-direction: column; flex: 1; }
+  .menu-dish-top { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-2); margin-bottom: 4px; }
+  .menu-dish-name { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); margin: 0; line-height: 1.25; }
+  .menu-dish-destination { font-size: 0.72rem; color: #0077B6; font-weight: var(--weight-medium); margin: 0 0 var(--space-1); }
+  .menu-dish-price-line { font-size: 0.68rem; font-weight: var(--weight-semibold); color: #FF6B35; margin: 0 0 var(--space-2); line-height: 1.4; }
+  .menu-dish-desc { font-size: 0.78rem; color: var(--color-slate); line-height: 1.55; margin: 0; flex: 1; }
+
+  .menu-cta-section { padding: var(--space-6) 0 var(--space-8); }
+  .menu-cta-card { background: linear-gradient(135deg, #0077B6 0%, #005A8C 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
+  .menu-cta-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); color: #fff; }
+  .menu-cta-text { font-size: 1rem; color: rgba(255,255,255,0.75); max-width: 520px; margin: 0 auto var(--space-5); line-height: 1.6; }
+  .menu-cta-button { display: inline-block; background: #FF6B35; color: #fff; font-size: 0.9rem; font-weight: var(--weight-semibold); padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
+  .menu-cta-button:hover { background: #CC5529; transform: translateY(-2px); }
+
+  .menu-crosslinks { padding: 0 0 var(--space-10); }
+  .menu-crosslinks-heading { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); text-align: center; margin: 0 0 var(--space-4); }
+  .menu-crosslinks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); max-width: 800px; margin: 0 auto; }
+  @media (max-width: 640px) { .menu-crosslinks-grid { grid-template-columns: 1fr; } }
+  .menu-crosslink-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; text-decoration: none; color: inherit; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .menu-crosslink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  .menu-crosslink-icon { font-size: 1.8rem; }
+  .menu-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); }
+  .menu-crosslink-desc { font-size: 0.78rem; color: var(--color-slate); line-height: 1.4; }
+
+  .menu-personal { padding-block: var(--space-8); }
+  .menu-personal-quote { max-width: 680px; margin: 0 auto; padding: var(--space-6) var(--space-8); border-left: 4px solid #FF6B35; background: var(--color-sky); border-radius: 0 12px 12px 0; }
+  .menu-personal-quote p { font-size: var(--text-body); color: var(--color-heading); line-height: var(--leading-body); font-style: italic; margin-bottom: var(--space-3); }
+  .menu-personal-quote cite { font-size: var(--text-caption); color: #FF6B35; font-weight: var(--weight-semibold); font-style: normal; }
+
+  @media (max-width: 640px) {
+    .menu-hero { min-height: 55vh; padding: 0 var(--space-4) 40px; }
+    .menu-hero-meta { gap: var(--space-4); }
+    .menu-scroll-hint { display: none; }
+    .menu-region-header { padding: var(--space-5) var(--space-4); }
+    .menu-region-ornament { display: none; }
+  }
+</style>

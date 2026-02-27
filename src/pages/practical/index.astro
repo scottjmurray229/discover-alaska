@@ -1,0 +1,426 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Alaska Travel Tips', url: '/practical/' },
+];
+
+const pageTitle = 'Alaska Travel Tips — Getting Around, Weather Safety & Budget Guide';
+const pageDescription = 'Everything you need to know before visiting Alaska — best time to visit, the Alaska Railroad, bush planes, budget planning, bear safety, and what to pack for the Last Frontier.';
+
+interface Tip {
+  title: string;
+  description: string;
+  tag?: string;
+}
+
+interface TipSection {
+  topic: string;
+  icon: string;
+  tagline: string;
+  gradient: string;
+  tips: Tip[];
+}
+
+const sections: TipSection[] = [
+  {
+    topic: 'Best Time to Visit',
+    icon: '&#9728;',
+    tagline: 'Alaska is a year-round destination, but each season delivers a completely different experience',
+    gradient: 'linear-gradient(135deg, #FF6B35 0%, #CC5529 100%)',
+    tips: [
+      {
+        title: 'Peak Season: June – August',
+        description: 'Summer is when Alaska comes alive — 18-22 hours of daylight, temperatures in the 55-75°F range, and every road, lodge, and tour is open. This is also the most expensive and crowded time. Denali and Glacier Bay fill up months ahead. Book accommodation and popular tours 3-6 months in advance. Expect to pay 40-60% more than shoulder season.',
+        tag: 'Popular',
+      },
+      {
+        title: 'Shoulder Season: May & September',
+        description: 'Our recommended sweet spot. May brings spring blooms, migrating birds, and opening-week deals at lodges. September delivers fall tundra colors, fewer crowds, and the first aurora sightings. Prices drop 20-40% from peak. Some remote lodges and unpaved roads may not yet be open in early May or may close in late September.',
+        tag: 'Best Value',
+      },
+      {
+        title: 'Aurora Season: September – March',
+        description: 'Fairbanks is one of the best places on Earth to see the northern lights, with aurora visible an average of 240 nights per year. Peak viewing is September through March when skies are dark enough. Winter temperatures can plunge to -20°F to -40°F, but Chena Hot Springs and aurora lodges make it comfortable. Dog sledding, ice fishing, and snowmobiling round out winter trips.',
+        tag: 'Hidden Gem',
+      },
+      {
+        title: 'Winter: October – April',
+        description: 'Alaska in winter is not for the unprepared, but it rewards those who come ready. Short days (Anchorage gets ~5.5 hours of daylight in December), extreme cold in the Interior, and limited road access. But winter also brings northern lights, world-class skiing at Alyeska, the Iditarod in March, and Fur Rendezvous in Anchorage. Flights and hotels are at their cheapest outside holiday weeks.',
+      },
+    ],
+  },
+  {
+    topic: 'Getting Around Alaska',
+    icon: '&#128663;',
+    tagline: 'Alaska has a limited road system — plan your transport carefully or you will miss half the state',
+    gradient: 'linear-gradient(135deg, #0077B6 0%, #005A8C 100%)',
+    tips: [
+      {
+        title: 'Rental Cars & the Road System',
+        description: 'A rental car is the most flexible option for road-accessible destinations. Expect $75-150/day in summer from Anchorage or Fairbanks. The major highways (Seward, Parks, Glenn, Richardson, Sterling) are paved and well-maintained. Total paved road mileage in Alaska is less than most Lower 48 states — you cannot drive to Juneau, Kodiak, Nome, or most of Southeast Alaska. Fill up at every gas station; stretches of 100+ miles without fuel are common.',
+        tag: 'Essential',
+      },
+      {
+        title: 'Alaska Railroad',
+        description: 'The Alaska Railroad runs from Seward through Anchorage to Fairbanks, with a spur to Whittier. The Denali Star route (Anchorage to Fairbanks, ~12 hours, $150-350+) is one of the most scenic train rides in North America. GoldStar dome service is worth the splurge for panoramic views of Denali. The Coastal Classic (Anchorage to Seward, ~4 hours) passes glaciers and is a fantastic way to reach Kenai Fjords.',
+        tag: 'Popular',
+      },
+      {
+        title: 'Alaska Marine Highway (AMHS)',
+        description: 'The state ferry system connects 33 communities from Bellingham, WA, through Southeast Alaska\'s Inside Passage and across to Kodiak and Dutch Harbor. The Bellingham-to-Juneau run takes 3 days and is a budget-friendly alternative to cruises ($350+ one-way with a cabin). Vehicles can be ferried between towns. Book vehicle spots early in summer — they sell out fast. Schedules are limited and change yearly, so check dot.alaska.gov/amhs.',
+        tag: 'Pro Tip',
+      },
+      {
+        title: 'Bush Planes',
+        description: 'Bush planes are not a novelty in Alaska — they are essential transportation. Roughly 80% of Alaska communities are not accessible by road. Flightseeing tours to Denali, bear-viewing trips to Katmai (Brooks Falls), and access to remote lodges all depend on small aircraft. Expect $200-600+ per person for a flightseeing tour, $600-800+ for a Katmai day trip from Anchorage. Weather delays are common — always build buffer days into your itinerary.',
+        tag: 'Important',
+      },
+    ],
+  },
+  {
+    topic: 'Budget Planning',
+    icon: '&#128176;',
+    tagline: 'Alaska is one of the most expensive U.S. destinations — plan ahead to keep costs manageable',
+    gradient: 'linear-gradient(135deg, #FF6B35 0%, #E85D2A 100%)',
+    tips: [
+      {
+        title: 'Budget Traveler: $100-150/day',
+        description: 'Camp at state and federal campgrounds ($10-25/night) or stay at hostels in Anchorage, Juneau, and Seward ($35-60/night). Cook your own meals — bring a camp stove and stock up at Walmart or Fred Meyer in Anchorage before heading out. Free hiking trails are Alaska\'s best attraction. Take the Anchorage public bus (People Mover, $2) to trailheads. Prioritize free or low-cost activities: glaciers, wildlife viewing from the road, and ranger-led programs in national parks.',
+        tag: 'Budget',
+      },
+      {
+        title: 'Mid-Range: $200-350/day',
+        description: 'Stay at 3-star hotels, B&Bs, or vacation rentals ($150-250/night). Eat at local restaurants for lunch ($15-25) and cook some dinners. Rent a car ($80-120/day). Budget one paid excursion every other day ($75-250). This is where most visitors land, and it gives you a comfortable trip with a mix of splurge-worthy tours and self-guided exploration.',
+        tag: 'Sweet Spot',
+      },
+      {
+        title: 'Luxury: $500-1,500+/day',
+        description: 'Wilderness lodges ($500-2,000+/night, often all-inclusive with meals and guided activities). Helicopter glacier landings ($300-500/person). Guided fishing charters ($300-500/day). Flightseeing with glacier landings ($250-600/person). Private bear-viewing trips to Katmai or Lake Clark ($800-1,200/person). Alaska does remote luxury like nowhere else.',
+      },
+      {
+        title: 'Money-Saving Tips',
+        description: 'Visit in May or September for 20-40% lower prices. Buy an America the Beautiful pass ($80) for free entry to Denali, Kenai Fjords, Glacier Bay, and all national parks and forests. Grocery prices outside Anchorage are 30-50% higher — stock up in the city. Bring your own camping gear from home if possible. Shoulder-season ferry fares are significantly cheaper. Happy hour specials in Anchorage and Juneau can cut dining costs substantially.',
+        tag: 'Pro Tip',
+      },
+    ],
+  },
+  {
+    topic: 'Weather & Safety',
+    icon: '&#127744;',
+    tagline: 'Respect the wilderness — Alaska\'s biggest dangers come from weather, wildlife, and remoteness',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #0077B6 100%)',
+    tips: [
+      {
+        title: 'Bear Safety',
+        description: 'Alaska is home to brown bears (grizzlies), black bears, and polar bears (Arctic coast). Carry bear spray ($40-50, available at REI and Walmart in Anchorage) on every hike and know how to use it — practice drawing and deploying before you hit the trail. Make noise on trails to avoid surprising bears. Store food in bear-resistant containers when camping. Never run from a bear. If you encounter a brown bear, speak calmly and back away slowly. Bear safety is not optional — it is fundamental to every Alaska outdoor activity.',
+        tag: 'Critical',
+      },
+      {
+        title: 'Hypothermia & Cold Weather',
+        description: 'Hypothermia can occur even in summer when rain and wind combine with temperatures in the 40s-50s°F. Dress in layers with moisture-wicking base layers — cotton kills in cold, wet conditions. Always carry rain gear, even on sunny days. In winter, exposed skin can get frostbite in minutes at -20°F and below. Carry emergency supplies (blanket, food, water, headlamp) on every hike, no matter how short.',
+        tag: 'Important',
+      },
+      {
+        title: 'Daylight Extremes',
+        description: 'In summer, Anchorage gets 19+ hours of daylight in June; Fairbanks gets nearly 24 hours. This is exhilarating but disorienting — bring a sleep mask and set alarms, because your body clock will lose all reference points. In December, Anchorage sees roughly 5.5 hours of daylight, and Utqiagvik (Barrow) has 67 days of complete polar night. Plan activities and driving accordingly.',
+        tag: 'Know This',
+      },
+      {
+        title: 'No Cell Service in Remote Areas',
+        description: 'Cell coverage in Alaska is limited to major towns and highways near population centers. Once you leave the main road system, expect zero coverage. The Parks Highway has spotty service between Anchorage and Fairbanks. Denali backcountry, Wrangell-St. Elias, and most of the Bush have no service at all. Rent or buy a satellite communicator (Garmin inReach, $15-50/month plan) if you are heading into remote areas. It could save your life.',
+        tag: 'Essential',
+      },
+      {
+        title: 'Water & Tide Safety',
+        description: 'Alaska\'s rivers are glacially fed — frigid (35-45°F) and fast-moving, even when they look calm. Never wade deeper than knee height without proper gear. Turnagain Arm near Anchorage has extreme tidal flats that act like quicksand; people have died after getting stuck and being caught by the incoming bore tide. Stay on marked trails near tidal areas and never walk out onto glacial mud flats.',
+        tag: 'Be Prepared',
+      },
+    ],
+  },
+  {
+    topic: 'What to Pack',
+    icon: '&#127890;',
+    tagline: 'Layering is everything — Alaska weather can shift from sunshine to sideways rain in an hour',
+    gradient: 'linear-gradient(135deg, #0077B6 0%, #00A5CF 100%)',
+    tips: [
+      {
+        title: 'The Layering System',
+        description: 'Base layer: moisture-wicking synthetic or merino wool (never cotton). Mid layer: fleece or down jacket for insulation. Outer layer: waterproof, breathable rain jacket and rain pants. This three-layer system works for summer hiking in Denali, whale watching in Juneau, and glacier cruises in Kenai Fjords. In winter, add a heavy insulated parka, insulated pants, and a balaclava.',
+        tag: 'Essential',
+      },
+      {
+        title: 'Rain Gear',
+        description: 'Southeast Alaska (Juneau, Ketchikan, Sitka) gets 60-90+ inches of rain per year. Even Anchorage averages rain on 40% of summer days. A quality waterproof jacket is the single most important item you will pack. Bring waterproof pants too — you will want them on boat tours, glacier hikes, and rainy trail days. Rubber boots (Xtratuf brand) are the unofficial shoe of Alaska and can be bought in any town.',
+        tag: 'Critical',
+      },
+      {
+        title: 'Bear Spray & Binoculars',
+        description: 'Bear spray ($40-50) is essential for any hiking outside of towns. Buy it in Anchorage — you cannot fly with it. Binoculars are nearly as important: spotting wildlife (moose, bears, eagles, whales, puffins) from a safe distance is a daily occurrence in Alaska. A good 8x42 or 10x42 pair transforms every drive and hike. Compact binoculars work but full-size are noticeably better.',
+        tag: 'Important',
+      },
+      {
+        title: 'Mosquito Protection',
+        description: 'Alaska mosquitoes are legendary — thick clouds of them from June through mid-August, especially in Interior Alaska, tundra areas, and anywhere near standing water. Bring DEET-based repellent (30%+ concentration) or Picaridin. A head net ($5-10) is invaluable for serious hiking in backcountry. Permethrin-treated clothing adds another layer of protection. The mosquitoes are worst in late June and early July.',
+        tag: 'Be Prepared',
+      },
+      {
+        title: 'Other Essentials',
+        description: 'Sunglasses and sunscreen (summer sun is intense at high latitudes and reflected off snow/glaciers). Sleep mask for summer midnight sun. Reusable water bottle. Hiking shoes with ankle support — trails are often rooty, rocky, and muddy. Camera with zoom lens for wildlife. Headlamp for shoulder-season trips. Dry bags for boat excursions. And a small daypack you can carry everywhere.',
+      },
+    ],
+  },
+];
+
+const faqItems = [
+  { question: 'Do I need a car in Alaska?', answer: 'For road-accessible destinations like Denali, the Kenai Peninsula, and the drive between Anchorage and Fairbanks, yes — a rental car gives you the most flexibility. Exceptions: Juneau, Skagway, and other Southeast Alaska towns are best explored on foot or with tours (you cannot drive to them anyway). Anchorage has limited public transit. The Alaska Railroad connects Anchorage, Denali, and Fairbanks if you prefer not to drive. For remote areas like Katmai, Kodiak, or Nome, you will need a bush plane.' },
+  { question: 'Is Alaska safe for tourists?', answer: 'Alaska is generally safe for tourists, but wilderness risks are real and must be respected. The biggest dangers are hypothermia from sudden weather changes, bear encounters on trails, drowning in cold rivers, and getting stranded in remote areas without cell service. Always carry bear spray when hiking, tell someone your plans, and carry a satellite communicator in the backcountry. In towns, standard precautions apply. Wildlife encounters are common but manageable with proper behavior.' },
+  { question: 'How much should I budget for an Alaska vacation?', answer: 'Budget travelers: $100-150/day (camping, cooking, free hikes). Mid-range: $200-350/day (hotels, restaurants, one paid tour every other day). Luxury: $500-1,500+/day (wilderness lodges, helicopter tours, private fishing). A typical 10-day mid-range Alaska trip for two costs $5,000-8,000 including flights, car rental, accommodation, food, and 3-4 excursions. Flights from the Lower 48 typically run $300-600 round-trip to Anchorage.' },
+  { question: 'What is the cheapest time to visit Alaska?', answer: 'May and September offer the best combination of lower prices and decent weather. Hotel rates drop 20-40% from peak summer. Winter (October-April) has the absolute lowest prices — Anchorage hotel rates can drop below $100/night — but most remote lodges, tours, and some roads are closed. Shoulder seasons give you most of the Alaska experience at significantly reduced cost.' },
+  { question: 'Can I see the northern lights in Alaska?', answer: 'Yes — Fairbanks is one of the top aurora destinations in the world, with visible aurora approximately 240 nights per year. The best viewing season is September through March, when skies are dark. You need clear skies and low light pollution. Chena Hot Springs Resort, about 60 miles from Fairbanks, is a popular viewing spot with hot spring soaking under the lights. The aurora is not visible in summer due to 24-hour daylight.' },
+  { question: 'How bad are the mosquitoes in Alaska?', answer: 'In Interior Alaska and tundra areas from mid-June through mid-August, mosquitoes are genuinely intense — clouds of them. Coastal areas (Juneau, Seward) are significantly better. Anchorage is moderate. DEET or Picaridin repellent is essential. A head net is invaluable in backcountry. The mosquitoes peak in late June and early July, then taper off by mid-August. After the first hard frost in fall, they disappear entirely.' },
+  { question: 'What is the best Alaska road trip route?', answer: 'The classic loop: Fly into Anchorage, drive south to Seward and Kenai Fjords (2.5 hours), explore the Kenai Peninsula, then drive north on the Parks Highway to Denali National Park (4.5 hours from Anchorage), continue to Fairbanks (2.5 hours from Denali), and fly out from Fairbanks. Allow 10-14 days minimum. Add the Glenn Highway to Valdez for glaciers and the Richardson Highway for remote scenery. The Seward Highway from Anchorage is one of the most scenic drives in America.' },
+  { question: 'Do I need prior hiking experience for Alaska trails?', answer: 'Many of Alaska\'s best trails are beginner-friendly: Exit Glacier\'s Harding Icefield Trail access point, Flattop Mountain near Anchorage, and the paved Tony Knowles Coastal Trail. But conditions are different from the Lower 48 — trails can be muddy, rooty, poorly marked, and you must always be bear-aware. Carry bear spray, make noise, and hike in groups when possible. Backcountry hiking in Denali or Wrangell-St. Elias requires strong navigation skills and wilderness experience.' },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  faqItems={faqItems}
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="menu-hero">
+    <div class="menu-hero-bg"></div>
+    <div class="menu-hero-gradient"></div>
+    <div class="menu-hero-noise"></div>
+    <div class="menu-hero-content">
+      <h1 class="menu-hero-title">Alaska Travel Tips</h1>
+      <p class="menu-hero-subtitle">Everything you need to know before visiting the Last Frontier — from bear safety and bush planes to budget planning and packing for unpredictable weather.</p>
+      <div class="menu-hero-meta">
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Topics</span>
+          <span class="menu-hero-meta-value">5</span>
+        </div>
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Tips</span>
+          <span class="menu-hero-meta-value">22</span>
+        </div>
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">FAQ</span>
+          <span class="menu-hero-meta-value">8</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="menu-personal reveal">
+    <div class="container-content">
+      <blockquote class="menu-personal-quote">
+        <p>The biggest mistake first-time Alaska visitors make is underestimating the scale. Anchorage to Denali is 4.5 hours. Anchorage to Fairbanks is 6 hours. And you cannot drive to most of Southeast Alaska at all — Juneau, Ketchikan, and Sitka are only reachable by plane or ferry. The second mistake is not packing rain gear. It will rain on your trip, guaranteed. Plan around these two realities and everything else falls into place.</p>
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="menu-intro reveal">
+    <div class="container-content">
+      <div class="menu-intro-card">
+        <p class="menu-intro-text">We've organized essential Alaska travel advice into five categories — <strong>Best Time to Visit</strong>, <strong>Getting Around</strong>, <strong>Budget Planning</strong>, <strong>Weather & Safety</strong>, and <strong>What to Pack</strong>. Practical, honest, no-fluff guidance for the Last Frontier.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tip Sections -->
+  {sections.map((section) => (
+    <section class="menu-region reveal">
+      <div class="container-content">
+        <div class="menu-region-header" style={`background: ${section.gradient};`}>
+          <div class="menu-region-header-inner">
+            <h2 class="menu-region-name">{section.topic}</h2>
+            <p class="menu-region-tagline">{section.tagline}</p>
+            <span class="menu-region-count">{section.tips.length} tips</span>
+          </div>
+          <div class="menu-region-ornament" set:html={section.icon} />
+        </div>
+
+        <div class="menu-tip-list">
+          {section.tips.map((tip) => (
+            <div class="menu-tip-card">
+              <div class="menu-tip-body">
+                <div class="menu-tip-top">
+                  <h3 class="menu-tip-title">{tip.title}</h3>
+                  {tip.tag && (
+                    <span class={`menu-tag menu-tag--${tip.tag.toLowerCase().replace(/[^a-z]/g, '')}`}>{tip.tag}</span>
+                  )}
+                </div>
+                <p class="menu-tip-desc">{tip.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Bottom CTA -->
+  <section class="menu-cta-section reveal">
+    <div class="container-content">
+      <div class="menu-cta-card">
+        <h2 class="menu-cta-heading">Plan Your Alaska Trip</h2>
+        <p class="menu-cta-text">Tell our AI planner your dates, budget, and interests and it will build a complete day-by-day itinerary — with lodges, restaurants, and driving routes.</p>
+        <a href="/plan/" class="menu-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQ items={faqItems} />
+
+  <!-- Email Capture -->
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Free Alaska Trip Planning Kit"
+      description="A printable PDF with packing checklists, budget worksheets, driving distance charts, and seasonal planning calendars for the Last Frontier."
+      bullets={[
+        'Complete Alaska layering and packing checklist by season',
+        'Budget worksheet with average costs for lodging, food, and tours',
+        'Driving distance and time chart between 20 destinations',
+        'Bear safety quick-reference card',
+      ]}
+      guideTag="pillar-practical"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="menu-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="menu-crosslinks-heading">Explore More</h3>
+      <div class="menu-crosslinks-grid">
+        <a href="/glaciers/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#129476;</span>
+          <span class="menu-crosslink-label">Alaska Glaciers</span>
+          <span class="menu-crosslink-desc">Tidewater glaciers, ice fields, and glacier hikes across the state</span>
+        </a>
+        <a href="/wildlife/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#128059;</span>
+          <span class="menu-crosslink-label">Alaska Wildlife</span>
+          <span class="menu-crosslink-desc">Bears, moose, whales, eagles, and where to see them safely</span>
+        </a>
+        <a href="/northern-lights/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#127752;</span>
+          <span class="menu-crosslink-label">Northern Lights</span>
+          <span class="menu-crosslink-desc">Aurora viewing seasons, best locations, and photography tips</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => { entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); }); },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
+
+<style>
+  .menu-hero { position: relative; min-height: 60vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 5rem var(--space-6) 60px; overflow: hidden; }
+  .menu-hero-bg { position: absolute; inset: 0; z-index: 0; background: linear-gradient(135deg, #0077B6 0%, #005A8C 40%, #003F5C 100%); }
+  .menu-hero-gradient { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.4) 100%); }
+  .menu-hero-noise { position: absolute; inset: 0; z-index: 2; background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E"); pointer-events: none; }
+  .menu-hero-content { position: relative; z-index: 3; max-width: 720px; }
+  .menu-hero-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: var(--weight-bold); color: #fff; line-height: 1.1; margin: 0 0 var(--space-3); }
+  .menu-hero-subtitle { font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255,255,255,0.85); line-height: 1.6; margin: 0 0 var(--space-5); max-width: 580px; }
+  .menu-hero-meta { display: flex; gap: var(--space-5); flex-wrap: wrap; }
+  .menu-hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .menu-hero-meta-label { font-size: 0.65rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); }
+  .menu-hero-meta-value { font-size: 1.1rem; font-weight: var(--weight-bold); color: #fff; }
+  .menu-scroll-hint { position: absolute; bottom: 16px; right: var(--space-6); z-index: 3; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.35); text-align: center; animation: menuBounce 2s ease-in-out infinite; }
+  @keyframes menuBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+
+  .menu-intro { padding: var(--space-8) 0 var(--space-4); }
+  .menu-intro-card { background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: var(--space-5) var(--space-6); text-align: center; }
+  .menu-intro-text { font-size: 1rem; color: var(--color-slate); line-height: 1.7; max-width: 640px; margin: 0 auto; }
+
+  .menu-tag { display: inline-block; font-size: 0.6rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 8px; border-radius: 6px; line-height: 1.4; white-space: nowrap; }
+  .menu-tag--popular { background: rgba(0,119,182,0.12); color: #0077B6; }
+  .menu-tag--bestvalue { background: rgba(46,125,50,0.15); color: #1B5E20; }
+  .menu-tag--hiddengem { background: rgba(106,27,154,0.1); color: #6A1B9A; }
+  .menu-tag--essential { background: rgba(255,107,53,0.12); color: #CC5529; }
+  .menu-tag--new { background: rgba(0,119,182,0.12); color: #0077B6; }
+  .menu-tag--important { background: rgba(191,54,12,0.1); color: #BF360C; }
+  .menu-tag--knowthis { background: rgba(191,54,12,0.1); color: #BF360C; }
+  .menu-tag--protip { background: rgba(46,125,50,0.1); color: #2E7D32; }
+  .menu-tag--budget { background: rgba(106,27,154,0.1); color: #6A1B9A; }
+  .menu-tag--sweetspot { background: rgba(46,125,50,0.15); color: #1B5E20; }
+  .menu-tag--critical { background: rgba(191,54,12,0.15); color: #BF360C; }
+  .menu-tag--beprepared { background: rgba(255,107,53,0.12); color: #CC5529; }
+
+  .menu-region { padding: var(--space-6) 0; }
+  .menu-region-header { position: relative; border-radius: 20px; padding: var(--space-6); margin-bottom: var(--space-6); overflow: hidden; display: flex; align-items: center; justify-content: space-between; }
+  .menu-region-header-inner { position: relative; z-index: 1; }
+  .menu-region-name { font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: var(--weight-bold); color: #fff; margin: 0 0 var(--space-1); line-height: 1.1; }
+  .menu-region-tagline { font-size: 0.95rem; color: rgba(255,255,255,0.8); margin: 0 0 var(--space-3); max-width: 480px; line-height: 1.5; }
+  .menu-region-count { font-size: 0.7rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.55); background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 20px; }
+  .menu-region-ornament { font-size: 3rem; color: rgba(255,255,255,0.15); position: relative; z-index: 1; }
+
+  .menu-tip-list { display: flex; flex-direction: column; gap: var(--space-4); }
+
+  .menu-tip-card { background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 14px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .menu-tip-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  .menu-tip-body { padding: var(--space-4) var(--space-5); }
+  .menu-tip-top { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-2); }
+  .menu-tip-title { font-size: 1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); margin: 0; line-height: 1.3; }
+  .menu-tip-desc { font-size: 0.85rem; color: var(--color-slate); line-height: 1.65; margin: 0; }
+
+  .menu-cta-section { padding: var(--space-6) 0 var(--space-8); }
+  .menu-cta-card { background: linear-gradient(135deg, #0077B6 0%, #005A8C 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
+  .menu-cta-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); color: #fff; }
+  .menu-cta-text { font-size: 1rem; color: rgba(255,255,255,0.75); max-width: 520px; margin: 0 auto var(--space-5); line-height: 1.6; }
+  .menu-cta-button { display: inline-block; background: #FF6B35; color: #fff; font-size: 0.9rem; font-weight: var(--weight-semibold); padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
+  .menu-cta-button:hover { background: #CC5529; transform: translateY(-2px); }
+
+  .menu-crosslinks { padding: 0 0 var(--space-10); }
+  .menu-crosslinks-heading { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); text-align: center; margin: 0 0 var(--space-4); }
+  .menu-crosslinks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); max-width: 800px; margin: 0 auto; }
+  @media (max-width: 640px) { .menu-crosslinks-grid { grid-template-columns: 1fr; } }
+  .menu-crosslink-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; text-decoration: none; color: inherit; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .menu-crosslink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  .menu-crosslink-icon { font-size: 1.8rem; }
+  .menu-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); }
+  .menu-crosslink-desc { font-size: 0.78rem; color: var(--color-slate); line-height: 1.4; }
+
+  .menu-personal { padding-block: var(--space-8); }
+  .menu-personal-quote { max-width: 680px; margin: 0 auto; padding: var(--space-6) var(--space-8); border-left: 4px solid #FF6B35; background: var(--color-sky); border-radius: 0 12px 12px 0; }
+  .menu-personal-quote p { font-size: var(--text-body); color: var(--color-heading); line-height: var(--leading-body); font-style: italic; margin-bottom: var(--space-3); }
+  .menu-personal-quote cite { font-size: var(--text-caption); color: #FF6B35; font-weight: var(--weight-semibold); font-style: normal; }
+
+  @media (max-width: 640px) {
+    .menu-hero { min-height: 55vh; padding: 0 var(--space-4) 40px; }
+    .menu-hero-meta { gap: var(--space-4); }
+    .menu-scroll-hint { display: none; }
+    .menu-region-header { padding: var(--space-5) var(--space-4); }
+    .menu-region-ornament { display: none; }
+  }
+</style>

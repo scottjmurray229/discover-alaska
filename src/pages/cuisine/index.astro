@@ -1,0 +1,1003 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Alaska Cuisine Guide', url: '/cuisine/' },
+];
+
+const pageTitle = 'Alaska Cuisine Guide — King Crab, Wild Salmon & Northern Flavors';
+const pageDescription = 'A region-by-region guide to Alaska\'s best food — from Anchorage\'s king crab and reindeer sausage to Homer\'s halibut, Juneau\'s fresh catch, and the state\'s booming craft beer scene. Prices, restaurants, and what to order.';
+
+interface Dish {
+  name: string;
+  image?: string;
+  destination: string;
+  slug: string;
+  price: string;
+  description: string;
+  tag?: string;
+}
+
+interface MenuSection {
+  region: string;
+  tagline: string;
+  gradient: string;
+  dishes: Dish[];
+}
+
+const menu: MenuSection[] = [
+  {
+    region: 'Wild Salmon — Alaska\'s Defining Food',
+    tagline: 'Five species, millions of fish, and the freshest salmon you will ever eat',
+    gradient: 'linear-gradient(135deg, #FF6B35 0%, #CC5529 100%)',
+    dishes: [
+      {
+        name: 'King Salmon (Chinook)',
+        destination: 'Statewide — Kenai, Copper River, Yukon',
+        slug: 'kenai-fjords',
+        price: '$35–55 per plate (restaurant) — $25–40/lb retail',
+        description: 'The crown jewel of Alaska salmon. King salmon is rich, buttery, and deeply flavored — the highest fat content of any Pacific salmon. Copper River kings (available mid-May through June) are the most prized in the world, flown fresh to restaurants within hours of being caught. The Kenai River produces the largest kings, sometimes exceeding 70 pounds. Order it simply prepared — grilled or pan-seared — to let the fish speak for itself.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Sockeye Salmon (Red Salmon)',
+        destination: 'Kenai, Bristol Bay, Copper River',
+        slug: 'kenai-fjords',
+        price: '$25–40 per plate — $15–25/lb retail',
+        description: 'Deep red flesh, firm texture, and a bold flavor that holds up to smoking, grilling, and searing. Sockeye is the most commercially valuable Alaska salmon and what most people picture when they think of wild salmon. Copper River sockeye arrives in late May and is celebrated statewide. Bristol Bay produces the world\'s largest wild sockeye run — over 60 million fish in a good year.',
+        tag: 'Must-Try',
+      },
+      {
+        name: 'Smoked Salmon',
+        destination: 'Statewide',
+        slug: 'anchorage',
+        price: '$12–30 per package (retail) — $8–15 per appetizer plate',
+        description: 'Smoked salmon is the flavor of Alaska. Hot-smoked strips, cold-smoked lox, candied salmon (sweet and smoky), and salmon jerky are available everywhere from fish markets to gas stations. The best comes from small smokehouses using alder wood. Salmon dip — smoked salmon with cream cheese and dill — appears on every bar menu in the state. Buy vacuum-sealed packages to bring home.',
+        tag: 'Essential',
+      },
+      {
+        name: 'Salmon Bake',
+        destination: 'Juneau / Fairbanks / Denali',
+        slug: 'juneau',
+        price: '$35–55 per person (all-you-can-eat)',
+        description: 'A quintessential Alaska dining experience — wild salmon grilled over an open alder wood fire, typically served outdoors with side dishes, cornbread, and blueberry dessert. The Gold Creek Salmon Bake in Juneau and the Alaska Salmon Bake in Fairbanks are the most established. Touristy? Somewhat. Worth doing once? Absolutely. The fish is genuinely excellent and the setting is memorable.',
+        tag: 'Experience',
+      },
+    ],
+  },
+  {
+    region: 'Crab & Shellfish',
+    tagline: 'King crab legs, Dungeness, and the freshest shellfish straight from icy Alaska waters',
+    gradient: 'linear-gradient(135deg, #0077B6 0%, #005A8C 100%)',
+    dishes: [
+      {
+        name: 'Alaska King Crab',
+        destination: 'Anchorage / Juneau / Kodiak',
+        slug: 'anchorage',
+        price: '$60–120 per plate (restaurant) — $40–70/lb retail (market price varies)',
+        description: 'Massive, meaty legs filled with sweet, tender crab meat — Alaska king crab is one of the great luxury foods of the world. Most king crab is harvested in the Bering Sea and available statewide. In Anchorage, the Glacier Brewhouse and Simon & Seafort\'s serve excellent king crab. In Juneau, Tracy\'s King Crab Shack on the waterfront is a must-visit — a crab leg and bisque for around $35. Expensive, but unforgettable.',
+        tag: 'Legendary',
+      },
+      {
+        name: 'Dungeness Crab',
+        destination: 'Southeast Alaska — Juneau, Ketchikan, Sitka',
+        slug: 'juneau',
+        price: '$30–50 per plate — $15–25/lb retail (whole cooked)',
+        description: 'Sweeter and more delicate than king crab, Dungeness is the everyday crab of Southeast Alaska. It is often served whole, steamed, with drawn butter. Many restaurants in Juneau, Ketchikan, and Sitka serve Dungeness caught that morning. You can also buy them off the dock from fishermen in smaller ports. The experience of cracking open a fresh Dungeness on a waterfront deck is peak Alaska dining.',
+        tag: 'Fresh Catch',
+      },
+      {
+        name: 'Spot Prawns & Shrimp',
+        destination: 'Southeast Alaska / Prince William Sound',
+        slug: 'sitka',
+        price: '$20–35 per plate — $18–28/lb retail',
+        description: 'Alaska spot prawns are large, sweet, and nothing like the farmed shrimp you buy at home. They are harvested from deep cold water and have a clean, briny sweetness. Sitka and Petersburg are particularly good for fresh spot prawns. In Valdez and Cordova, local shrimp appear on restaurant menus during season. Ask what is fresh and local — it makes all the difference.',
+        tag: 'Seasonal',
+      },
+    ],
+  },
+  {
+    region: 'Halibut & Whitefish',
+    tagline: 'Barn-door halibut, black cod, and the fish that feeds coastal Alaska',
+    gradient: 'linear-gradient(135deg, #0077B6 0%, #00A5CF 100%)',
+    dishes: [
+      {
+        name: 'Alaska Halibut',
+        destination: 'Homer / Seward / Juneau',
+        slug: 'homer',
+        price: '$25–45 per plate — $18–30/lb retail',
+        description: 'White, flaky, and mild — halibut is the most versatile fish in Alaska. It can weigh over 300 pounds and is caught by commercial and sport fishermen throughout the state. Homer calls itself the "Halibut Fishing Capital of the World" and the fish shacks on the Spit serve it fresh daily. Beer-battered halibut and chips is the quintessential Alaska lunch. Pan-seared with a citrus butter is the upscale version.',
+        tag: 'Must-Try',
+      },
+      {
+        name: 'Halibut Cheeks',
+        destination: 'Statewide',
+        slug: 'homer',
+        price: '$28–45 per plate',
+        description: 'The best-kept secret in Alaska seafood. Halibut cheeks are small, tender medallions of meat from the head of the fish — slightly sweeter and more succulent than regular halibut fillets. They are prized by chefs and locals but rarely make it to menus outside Alaska. When you see them on a menu, order them. Pan-seared halibut cheeks in brown butter are extraordinary.',
+        tag: 'Hidden Gem',
+      },
+      {
+        name: 'Black Cod (Sablefish)',
+        destination: 'Sitka / Juneau / Seward',
+        slug: 'sitka',
+        price: '$30–50 per plate — $20–35/lb retail',
+        description: 'Also called butterfish for good reason — black cod has a rich, silky texture and a buttery flavor that rivals the best salmon. The Japanese-inspired miso-glazed preparation (popularized by Nobu) works beautifully with Alaska black cod. Sitka is the sablefish capital of Alaska, and restaurants there serve it at peak freshness. Ask for it grilled or broiled with a simple glaze.',
+        tag: 'Chef Favorite',
+      },
+      {
+        name: 'Fish and Chips (Alaska-Style)',
+        destination: 'Statewide',
+        slug: 'anchorage',
+        price: '$14–22',
+        description: 'Alaska fish and chips uses fresh halibut or cod, beer-battered and fried to order, served with thick-cut fries and coleslaw. It is nothing like the chain restaurant version — the fish is thick, flaky, and genuinely fresh. Every coastal town has its version. Humpy\'s Great Alaskan Alehouse in Anchorage, the Salty Dawg Saloon area in Homer, and local spots in Seward all do it well.',
+      },
+    ],
+  },
+  {
+    region: 'Alaska Specialties & Wild Foods',
+    tagline: 'Reindeer sausage, birch syrup, sourdough bread, and the wild foods unique to the Last Frontier',
+    gradient: 'linear-gradient(135deg, #FF6B35 0%, #E85D2A 100%)',
+    dishes: [
+      {
+        name: 'Reindeer Sausage',
+        destination: 'Anchorage / Fairbanks',
+        slug: 'anchorage',
+        price: '$6–12 (street cart/restaurant) — $12–18/lb retail',
+        description: 'A distinctly Alaska street food — reindeer sausage is served from carts in downtown Anchorage with grilled onions on a bun. The flavor is leaner and slightly gamier than pork sausage, with a hint of sweetness. The International House of Hotdogs cart on 4th Avenue and the street vendors near the Anchorage Museum are the most popular. Breakfast menus statewide serve it alongside eggs.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Sourdough Bread & Pancakes',
+        destination: 'Statewide (historic tradition)',
+        slug: 'fairbanks',
+        price: '$8–15 (pancake breakfast) — $6–10 per loaf (bakery)',
+        description: 'Sourdough has been an Alaska staple since the Gold Rush, when miners carried starters in their pockets to keep the yeast alive. The tangy, chewy bread is still a point of pride. Sourdough pancakes are a classic Alaska breakfast — look for them at every diner and lodge. The Pump House in Fairbanks and Snow City Cafe in Anchorage make excellent versions. Some starters have been kept alive for over a century.',
+        tag: 'Heritage',
+      },
+      {
+        name: 'Birch Syrup',
+        destination: 'Interior Alaska / Talkeetna',
+        slug: 'fairbanks',
+        price: '$15–25 per small bottle (retail) — $3–5 drizzle on pancakes',
+        description: 'Made from the sap of Alaska birch trees, birch syrup is darker, more complex, and less sweet than maple syrup — with caramel, butterscotch, and slightly bitter notes. It takes about 100 gallons of sap to make one gallon of syrup, making it rare and expensive. Kahiltna Birchworks near Talkeetna is the most well-known producer. Try it on sourdough pancakes, ice cream, or as a glaze on salmon.',
+        tag: 'Unique',
+      },
+      {
+        name: 'Wild Berry Desserts',
+        destination: 'Statewide',
+        slug: 'anchorage',
+        price: '$8–14 per dessert',
+        description: 'Alaska\'s long summer days produce intensely flavored wild berries — blueberries, salmonberries, lingonberries, and cloudberries. They appear in pies, crumbles, jams, and ice cream throughout the state. Wild Alaska blueberry pie is a revelation if you are used to commercial blueberries. The Alaska Wild Berry Products store in Anchorage sells chocolates, jams, and sauces. Ask for berry desserts at any restaurant — they are a point of pride.',
+        tag: 'Seasonal',
+      },
+      {
+        name: 'Game Meats — Bison, Elk & Caribou',
+        destination: 'Anchorage / Fairbanks',
+        slug: 'anchorage',
+        price: '$25–45 per plate',
+        description: 'Alaska restaurants serve locally raised bison and elk alongside wild-inspired preparations. Caribou and moose appear on some menus, though most wild game served commercially is farm-raised. Orso in Anchorage and Lavelle\'s Bistro in Fairbanks feature creative game preparations. Bison burgers are a popular alternative to beef at many restaurants. The lean, rich meat pairs well with Alaska\'s wild berry sauces.',
+        tag: 'Adventure',
+      },
+    ],
+  },
+  {
+    region: 'Alaska Craft Beer & Coffee',
+    tagline: 'A thriving craft brewery scene and a coffee culture fueled by dark winters and long days',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #0077B6 100%)',
+    dishes: [
+      {
+        name: 'Alaskan Brewing Company',
+        destination: 'Juneau',
+        slug: 'juneau',
+        price: '$6–8 per pint — $12–16 per 6-pack — Brewery tours free',
+        description: 'Alaska\'s original craft brewery, operating since 1986 in Juneau. Alaskan Amber is the flagship — a malty, smooth altbier that pairs perfectly with salmon. The Smoked Porter (made with malt smoked over alder wood from a local fish smokehouse) has won more awards than any other craft beer in history. The taproom in Juneau offers free tours and tastings. Available statewide.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Anchorage Craft Beer Scene',
+        destination: 'Anchorage',
+        slug: 'anchorage',
+        price: '$7–10 per pint',
+        description: 'Anchorage has over 20 craft breweries within city limits. The Glacier Brewhouse downtown serves excellent beer alongside king crab and halibut. Midnight Sun Brewing (Sockeye Red, Arctic Devil Barleywine) is a local institution. 49th State Brewing has locations in Anchorage and Denali with great food. Anchorage Brewing Company makes wild ales and sours. A brewery crawl through downtown Anchorage is an excellent way to spend an evening.',
+        tag: 'Must-Try',
+      },
+      {
+        name: 'Fairbanks Breweries',
+        destination: 'Fairbanks',
+        slug: 'fairbanks',
+        price: '$6–9 per pint',
+        description: 'HooDoo Brewing is Fairbanks\' standout brewery — their Kolsch and IPAs are excellent, and the taproom has a warm, community vibe that is perfect after a day of aurora chasing. Silver Gulch Brewing in nearby Fox was once the northernmost brewery in America. Both offer food trucks or in-house kitchens. Pair a pint with reindeer sausage for the full Interior Alaska experience.',
+        tag: 'Local Favorite',
+      },
+      {
+        name: 'Alaska Coffee Culture',
+        destination: 'Statewide',
+        slug: 'anchorage',
+        price: '$4–7 per drink',
+        description: 'Alaskans drink more coffee per capita than almost anywhere else in the U.S. — dark winters and long work days demand it. Kaladi Brothers Coffee is the state\'s beloved local chain, roasting in Anchorage since 1986 and serving some of the best coffee in the Pacific Northwest. SteamDot Coffee in Anchorage is the specialty shop for pour-overs and single origins. Heritage Coffee in Juneau has been the capital city\'s go-to since 1974. Espresso stands are on every corner.',
+        tag: 'Essential',
+      },
+      {
+        name: 'Alaska Distilleries & Cocktails',
+        destination: 'Anchorage / Homer',
+        slug: 'anchorage',
+        price: '$12–18 per cocktail',
+        description: 'Alaska\'s craft distillery scene is growing. Anchorage Distillery makes gin, vodka, and whiskey in small batches. Bear Creek Distillery in Homer produces spirits using local ingredients. Several Anchorage bars create Alaska-themed cocktails with birch syrup, spruce tips, and wild berries. The Bubbly Mermaid Oyster Bar in Anchorage and The Narrows Bar in Homer are standout cocktail spots.',
+      },
+    ],
+  },
+  {
+    region: 'Regional Dining — Where to Eat',
+    tagline: 'The best restaurants and food experiences by Alaska destination',
+    gradient: 'linear-gradient(135deg, #FF6B35 0%, #CC5529 50%, #0077B6 100%)',
+    dishes: [
+      {
+        name: 'Anchorage Restaurants',
+        destination: 'Anchorage',
+        slug: 'anchorage',
+        price: '$15–60 per person depending on restaurant',
+        description: 'Alaska\'s largest city has the state\'s most diverse food scene. Moose\'s Tooth Pub & Pizzeria has the best pizza and beer in Alaska (expect a wait). Snow City Cafe for breakfast. Orso for upscale Alaska cuisine. Glacier Brewhouse for beer and salmon. Humpy\'s for halibut tacos and live music. South Restaurant + Coffeehouse for modern Alaskan food. The Anchorage Market on weekends has food vendors.',
+        tag: 'City Dining',
+      },
+      {
+        name: 'Homer Seafood',
+        destination: 'Homer',
+        slug: 'homer',
+        price: '$14–45 per person',
+        description: 'Homer\'s Spit is a 4.5-mile sand bar lined with restaurants serving fish caught that morning. Captain Pattie\'s Fish House for halibut and chips. La Baleine Cafe for upscale seafood with a French touch. The Fresh Catch Cafe for no-frills fish straight off the boats. Fritz Creek General Store for a quirky breakfast. Homer is arguably the best food town in Alaska for its size.',
+        tag: 'Fresh Catch',
+      },
+      {
+        name: 'Juneau Fresh Catch',
+        destination: 'Juneau',
+        slug: 'juneau',
+        price: '$12–55 per person',
+        description: 'Tracy\'s King Crab Shack on the downtown waterfront is a must (king crab legs and bisque). The Hangar on the Wharf for halibut and local beer. Salt for fine dining with Southeast Alaska ingredients. Pel\'meni dumpling stand for late-night comfort food (a Juneau institution — tiny Russian dumplings with sour cream for $8). Alaskan Brewing taproom for free tastings.',
+        tag: 'Must-Try',
+      },
+      {
+        name: 'Fairbanks & Interior Eats',
+        destination: 'Fairbanks',
+        slug: 'fairbanks',
+        price: '$12–40 per person',
+        description: 'The Pump House on the Chena River for a historic setting and great seafood. Lavelle\'s Bistro for Alaska\'s best fine dining outside Anchorage. Pike\'s Landing for halibut overlooking the river. Cookie Jar for breakfast. Big Daddy\'s BBQ for excellent smoked meats. Fairbanks also has surprisingly good Thai food — Thai House and Lemongrass are local favorites. Alaska Salmon Bake for the all-you-can-eat outdoor experience.',
+        tag: 'Heritage',
+      },
+    ],
+  },
+];
+
+const faqItems = [
+  { question: 'What is the most iconic Alaska food?', answer: 'Wild-caught salmon is Alaska\'s defining food — five species, available fresh from May through September, and prepared every way imaginable. King crab legs are the luxury icon. Beyond seafood, reindeer sausage from an Anchorage street cart is the most distinctly Alaska food experience. Sourdough bread and birch syrup connect to Gold Rush history. Alaska does not have one dish — it has an entire seafood and wild food culture.' },
+  { question: 'When is the best time for fresh seafood in Alaska?', answer: 'Copper River salmon arrives mid-May and is the first premium run of the year. King salmon peaks in June and July. Sockeye runs through July and August. Halibut season runs March through November (best June-September). King crab is available year-round but is primarily harvested October through January. Dungeness crab is best in summer. For the widest variety of fresh seafood, visit June through August.' },
+  { question: 'How much should I budget for food in Alaska?', answer: 'Alaska food is more expensive than the lower 48. Budget meals: $12-20 (fish and chips, reindeer sausage, diner breakfast). Mid-range restaurants: $25-50 per person. King crab dinner: $60-120 per person. Grocery prices are 30-50% higher than the national average, especially in remote areas. A realistic daily food budget is $50-80 per person eating at local restaurants, or $100-150 if you want king crab and fine dining.' },
+  { question: 'Can I buy fresh fish to take home from Alaska?', answer: 'Yes. Most fish processors in Seward, Homer, Juneau, and Ketchikan will flash-freeze and pack your fish for airline transport in insulated boxes. If you go sport fishing (halibut charters from $250-350/person), your catch can be processed and shipped home. Without fishing, buy flash-frozen vacuum-sealed salmon and halibut from fish markets — it travels well in checked luggage with cold packs. 10th & M Seafoods in Anchorage is excellent for retail purchases.' },
+  { question: 'Is Alaska food just seafood?', answer: 'Seafood dominates, but Alaska\'s food scene is broader than you might expect. Reindeer sausage, bison, and game meats offer alternatives. The sourdough tradition is deeply rooted. Wild berries (blueberry, salmonberry, lingonberry) appear in desserts statewide. Birch syrup is uniquely Alaskan. Anchorage has growing Thai, Korean, and Mexican food scenes. The craft beer and coffee cultures are excellent. And every town has a great breakfast spot.' },
+  { question: 'What should I bring home from Alaska?', answer: 'Smoked salmon (vacuum-sealed, TSA-friendly) is the number one souvenir food. Birch syrup from Kahiltna Birchworks. Wild berry jams and sauces from Alaska Wild Berry Products. Alaskan Brewing beer (available in cans for easy packing). Reindeer sausage (vacuum-sealed). Kelp seasonings from Alaska Pure Sea Salt. Avoid buying fish that is not properly frozen and packed — it will not survive the flight home without processing.' },
+  { question: 'Are there good vegetarian options in Alaska?', answer: 'Anchorage has the best vegetarian options — Snow City Cafe, Moose\'s Tooth, and several Thai and Indian restaurants. Outside Anchorage, vegetarian options thin out quickly. Seafood dominates menus in coastal towns. Fairbanks has some options at the university area restaurants. If you are strict vegetarian, you will eat well in Anchorage and need to be flexible elsewhere. Many restaurants can modify dishes — just ask.' },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  faqItems={faqItems}
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="menu-hero">
+    <div class="menu-hero-bg"></div>
+    <div class="menu-hero-gradient"></div>
+    <div class="menu-hero-noise"></div>
+    <div class="menu-hero-content">
+      <h1 class="menu-hero-title">The Alaska Menu</h1>
+      <p class="menu-hero-subtitle">From king crab legs in Juneau to reindeer sausage in Anchorage, wild salmon fresh from the Copper River to sourdough pancakes in Fairbanks — eat your way across the Last Frontier.</p>
+      <div class="menu-hero-meta">
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Dishes</span>
+          <span class="menu-hero-meta-value">26</span>
+        </div>
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Categories</span>
+          <span class="menu-hero-meta-value">6</span>
+        </div>
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Regions</span>
+          <span class="menu-hero-meta-value">Statewide</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="menu-personal reveal">
+    <div class="container-content">
+      <blockquote class="menu-personal-quote">
+        <p>Alaska's food scene is defined by one thing: freshness. When a restaurant says the halibut was caught that morning, they mean it — the boat is tied up at the dock out back. I have had king crab legs so fresh they were still warm from the steamer at Tracy's in Juneau, sourdough pancakes with birch syrup in Fairbanks, and reindeer sausage from a street cart in Anchorage at midnight under a pink Alaska sky. The seafood is world-class, but the wild foods — berries, game, birch syrup — are what make Alaska cuisine genuinely unique.</p>
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Menu Intro -->
+  <section class="menu-intro reveal">
+    <div class="container-content">
+      <div class="menu-intro-card">
+        <p class="menu-intro-text">Think of this as your tasting menu for Alaska. We've organized the state's essential dishes by category — <strong>Wild Salmon</strong>, <strong>Crab & Shellfish</strong>, <strong>Halibut & Whitefish</strong>, <strong>Alaska Specialties</strong>, <strong>Craft Beer & Coffee</strong>, and <strong>Regional Dining</strong>. Real prices, real restaurants, and honest recommendations.</p>
+        <div class="menu-intro-legend">
+          <span class="menu-tag menu-tag--iconic">Iconic</span>
+          <span class="menu-tag menu-tag--musttry">Must-Try</span>
+          <span class="menu-tag menu-tag--heritage">Heritage</span>
+          <span class="menu-tag menu-tag--freshcatch">Fresh Catch</span>
+          <span class="menu-tag menu-tag--hiddengem">Hidden Gem</span>
+          <span class="menu-tag menu-tag--essential">Essential</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Sections by Cuisine -->
+  {menu.map((section) => (
+    <section class="menu-region reveal">
+      <div class="container-content">
+        <div class="menu-region-header" style={`background: ${section.gradient};`}>
+          <div class="menu-region-header-inner">
+            <h2 class="menu-region-name">{section.region}</h2>
+            <p class="menu-region-tagline">{section.tagline}</p>
+            <span class="menu-region-count">{section.dishes.length} dishes</span>
+          </div>
+          <div class="menu-region-ornament">&#9733;</div>
+        </div>
+
+        <div class="menu-dish-grid">
+          {section.dishes.map((dish) => (
+            <div class="menu-dish-card">
+              <div class="menu-dish-media" style={`background: ${section.gradient};`}>
+                {dish.tag && (
+                  <span class={`menu-tag menu-tag--${dish.tag.toLowerCase().replace(/[^a-z]/g, '')}`}>{dish.tag}</span>
+                )}
+              </div>
+              <div class="menu-dish-body">
+                <div class="menu-dish-top">
+                  <h3 class="menu-dish-name">{dish.name}</h3>
+                  <span class="menu-dish-price">{dish.price}</span>
+                </div>
+                <p class="menu-dish-destination">{dish.destination}</p>
+                <p class="menu-dish-desc">{dish.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Bottom CTA -->
+  <section class="menu-cta-section reveal">
+    <div class="container-content">
+      <div class="menu-cta-card">
+        <h2 class="menu-cta-heading">Plan Your Food Trip</h2>
+        <p class="menu-cta-text">Tell our AI planner which dishes you want to try and it will build a region-by-region itinerary — with the best restaurants, fish markets, and food experiences across Alaska.</p>
+        <a href="/plan/" class="menu-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQ items={faqItems} />
+
+  <!-- Email Capture -->
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Free Alaska Food Guide"
+      description="A region-by-region PDF guide to Alaska cuisine — with the best restaurants, dishes you can't miss, and prices for every budget."
+      bullets={[
+        'All 26 dishes with where to find the best version',
+        'Price guide — from $6 reindeer sausage to $120 king crab',
+        'Seasonal seafood calendar for every month',
+        'Top restaurants in Anchorage, Juneau, Homer, and Fairbanks',
+      ]}
+      guideTag="pillar-cuisine"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="menu-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="menu-crosslinks-heading">Explore More</h3>
+      <div class="menu-crosslinks-grid">
+        <a href="/glaciers/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#9974;</span>
+          <span class="menu-crosslink-label">Glacier Guide</span>
+          <span class="menu-crosslink-desc">Tidewater glaciers, ice hiking, helicopter tours, and kayaking</span>
+        </a>
+        <a href="/wildlife/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#128059;</span>
+          <span class="menu-crosslink-label">Wildlife Guide</span>
+          <span class="menu-crosslink-desc">Bears, moose, whales, eagles, and where to find them</span>
+        </a>
+        <a href="/destinations/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#127956;</span>
+          <span class="menu-crosslink-label">All Destinations</span>
+          <span class="menu-crosslink-desc">Every Alaska destination with honest reviews</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<!-- Scroll Reveal Observer -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
+
+<style>
+  /* ================================================================
+     HERO
+     ================================================================ */
+  .menu-hero {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5rem var(--space-6) 60px;
+    overflow: hidden;
+  }
+
+  .menu-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: linear-gradient(135deg, #FF6B35 0%, #CC5529 40%, #0077B6 100%);
+  }
+
+  .menu-hero-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.4) 100%);
+  }
+
+  .menu-hero-noise {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .menu-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 720px;
+  }
+
+  .menu-hero-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 var(--space-3);
+  }
+
+  .menu-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0 0 var(--space-5);
+    max-width: 580px;
+  }
+
+  .menu-hero-meta {
+    display: flex;
+    gap: var(--space-5);
+    flex-wrap: wrap;
+  }
+
+  .menu-hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .menu-hero-meta-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .menu-hero-meta-value {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: #fff;
+  }
+
+  .menu-scroll-hint {
+    position: absolute;
+    bottom: 16px;
+    right: var(--space-6);
+    z-index: 3;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.35);
+    text-align: center;
+    animation: menuBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes menuBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+  }
+
+  /* ================================================================
+     MENU INTRO
+     ================================================================ */
+  .menu-intro {
+    padding: var(--space-8) 0 var(--space-4);
+  }
+
+  .menu-intro-card {
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    padding: var(--space-5) var(--space-6);
+    text-align: center;
+  }
+
+  .menu-intro-text {
+    font-size: 1rem;
+    color: var(--color-slate);
+    line-height: 1.7;
+    max-width: 640px;
+    margin: 0 auto var(--space-4);
+  }
+
+  .menu-intro-legend {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  /* ================================================================
+     TAGS
+     ================================================================ */
+  .menu-tag {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 3px 8px;
+    border-radius: 6px;
+    line-height: 1.4;
+  }
+
+  .menu-tag--iconic {
+    background: rgba(0, 119, 182, 0.12);
+    color: #0077B6;
+  }
+
+  .menu-tag--musttry {
+    background: rgba(255, 107, 53, 0.12);
+    color: #CC5529;
+  }
+
+  .menu-tag--heritage {
+    background: rgba(191, 54, 12, 0.1);
+    color: #BF360C;
+  }
+
+  .menu-tag--freshcatch {
+    background: rgba(33, 150, 243, 0.1);
+    color: #1565C0;
+  }
+
+  .menu-tag--hiddengem {
+    background: rgba(106, 27, 154, 0.1);
+    color: #6A1B9A;
+  }
+
+  .menu-tag--essential {
+    background: rgba(0, 119, 182, 0.12);
+    color: #0077B6;
+  }
+
+  .menu-tag--legendary {
+    background: rgba(212, 168, 83, 0.15);
+    color: #9A7B2E;
+  }
+
+  .menu-tag--seasonal {
+    background: rgba(46, 125, 50, 0.1);
+    color: #2E7D32;
+  }
+
+  .menu-tag--unique {
+    background: rgba(106, 27, 154, 0.1);
+    color: #6A1B9A;
+  }
+
+  .menu-tag--experience {
+    background: rgba(0, 119, 182, 0.12);
+    color: #0077B6;
+  }
+
+  .menu-tag--adventure {
+    background: rgba(106, 27, 154, 0.1);
+    color: #6A1B9A;
+  }
+
+  .menu-tag--cheffavorite {
+    background: rgba(212, 168, 83, 0.15);
+    color: #9A7B2E;
+  }
+
+  .menu-tag--localfavorite {
+    background: rgba(255, 107, 53, 0.12);
+    color: #CC5529;
+  }
+
+  .menu-tag--citydining {
+    background: rgba(0, 150, 136, 0.1);
+    color: #00796B;
+  }
+
+  /* ================================================================
+     REGION SECTION
+     ================================================================ */
+  .menu-region {
+    padding: var(--space-6) 0;
+  }
+
+  .menu-region-header {
+    position: relative;
+    border-radius: 20px;
+    padding: var(--space-6) var(--space-6);
+    margin-bottom: var(--space-6);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-region-header-inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu-region-name {
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    margin: 0 0 var(--space-1);
+    line-height: 1.1;
+  }
+
+  .menu-region-tagline {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 var(--space-3);
+    max-width: 480px;
+    line-height: 1.5;
+  }
+
+  .menu-region-count {
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+
+  .menu-region-ornament {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.08);
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ================================================================
+     DISH GRID
+     ================================================================ */
+  .menu-dish-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  @media (min-width: 1024px) {
+    .menu-dish-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .menu-dish-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .menu-dish-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .menu-dish-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  }
+
+  .menu-dish-media {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: var(--space-2);
+    overflow: hidden;
+  }
+
+  .menu-dish-media .menu-tag {
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu-dish-body {
+    padding: var(--space-3) var(--space-4) var(--space-4);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .menu-dish-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-2);
+    margin-bottom: 4px;
+  }
+
+  .menu-dish-name {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    margin: 0;
+    line-height: 1.25;
+  }
+
+  .menu-dish-price {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    color: #FF6B35;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .menu-dish-destination {
+    font-size: 0.72rem;
+    color: #0077B6;
+    font-weight: var(--weight-medium);
+    margin: 0 0 var(--space-2);
+  }
+
+  .menu-dish-desc {
+    font-size: 0.78rem;
+    color: var(--color-slate);
+    line-height: 1.55;
+    margin: 0;
+    flex: 1;
+  }
+
+  /* ================================================================
+     BOTTOM CTA
+     ================================================================ */
+  .menu-cta-section {
+    padding: var(--space-6) 0 var(--space-8);
+  }
+
+  .menu-cta-card {
+    background: linear-gradient(135deg, #0077B6 0%, #005A8C 100%);
+    border-radius: 20px;
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+    color: #fff;
+  }
+
+  .menu-cta-heading {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: var(--weight-bold);
+    margin: 0 0 var(--space-3);
+    color: #fff;
+  }
+
+  .menu-cta-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 520px;
+    margin: 0 auto var(--space-5);
+    line-height: 1.6;
+  }
+
+  .menu-cta-button {
+    display: inline-block;
+    background: #FF6B35;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: var(--weight-semibold);
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .menu-cta-button:hover {
+    background: #CC5529;
+    transform: translateY(-2px);
+  }
+
+  /* ================================================================
+     CROSS-LINKS
+     ================================================================ */
+  .menu-crosslinks {
+    padding: 0 0 var(--space-10);
+  }
+
+  .menu-crosslinks-heading {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    text-align: center;
+    margin: 0 0 var(--space-4);
+  }
+
+  .menu-crosslinks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
+    .menu-crosslinks-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .menu-crosslink-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-5) var(--space-4);
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .menu-crosslink-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .menu-crosslink-icon {
+    font-size: 1.8rem;
+  }
+
+  .menu-crosslink-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+  }
+
+  .menu-crosslink-desc {
+    font-size: 0.78rem;
+    color: var(--color-slate);
+    line-height: 1.4;
+  }
+
+  /* ================================================================
+     PERSONAL QUOTE
+     ================================================================ */
+  .menu-personal {
+    padding-block: var(--space-8);
+  }
+
+  .menu-personal-quote {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-8);
+    border-left: 4px solid #FF6B35;
+    background: var(--color-sky);
+    border-radius: 0 12px 12px 0;
+  }
+
+  .menu-personal-quote p {
+    font-size: var(--text-body);
+    color: var(--color-heading);
+    line-height: var(--leading-body);
+    font-style: italic;
+    margin-bottom: var(--space-3);
+  }
+
+  .menu-personal-quote cite {
+    font-size: var(--text-caption);
+    color: #FF6B35;
+    font-weight: var(--weight-semibold);
+    font-style: normal;
+  }
+
+  /* ================================================================
+     RESPONSIVE
+     ================================================================ */
+  @media (max-width: 640px) {
+    .menu-hero {
+      min-height: 55vh;
+      padding: 0 var(--space-4) 40px;
+    }
+
+    .menu-hero-meta {
+      gap: var(--space-4);
+    }
+
+    .menu-scroll-hint {
+      display: none;
+    }
+
+    .menu-region-header {
+      padding: var(--space-5) var(--space-4);
+    }
+
+    .menu-region-ornament {
+      display: none;
+    }
+  }
+</style>

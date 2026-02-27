@@ -1,0 +1,907 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Alaska Glaciers Guide', url: '/glaciers/' },
+];
+
+const pageTitle = "Alaska's Glaciers — A Region-by-Region Guide to Ice";
+const pageDescription = 'A region-by-region guide to Alaska\'s most spectacular glaciers — from the tidewater giants of Kenai Fjords and Glacier Bay to the valley glaciers near Denali. Boat tours, helicopter landings, ice hiking, and kayaking.';
+
+interface Glacier {
+  name: string;
+  image?: string;
+  destination: string;
+  slug: string;
+  price: string;
+  description: string;
+  tag?: string;
+}
+
+interface GlacierSection {
+  region: string;
+  tagline: string;
+  gradient: string;
+  glaciers: Glacier[];
+}
+
+const sections: GlacierSection[] = [
+  {
+    region: 'Southcentral — Kenai Peninsula',
+    tagline: 'Tidewater glaciers calving into the sea and ice fields accessible from the road system',
+    gradient: 'linear-gradient(135deg, #0077B6 0%, #005A8C 100%)',
+    glaciers: [
+      {
+        name: 'Exit Glacier (Kenai Fjords)',
+        destination: 'Seward',
+        slug: 'kenai-fjords',
+        price: '$15 per vehicle (NPS fee) — Free with America the Beautiful Pass',
+        description: 'The only glacier in Kenai Fjords National Park accessible by road. A short trail leads to the face of the glacier, and trail markers show where the ice reached in past decades — a striking visual timeline of retreat. The Harding Icefield Trail (8.2 miles round-trip, strenuous) climbs to a viewpoint over the 700-square-mile ice field that feeds 40 glaciers.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Aialik Glacier (Kenai Fjords Boat Tour)',
+        destination: 'Seward',
+        slug: 'kenai-fjords',
+        price: '$200–250 per person (full-day boat tour)',
+        description: 'A massive tidewater glacier at the end of Aialik Bay, actively calving bus-sized chunks of ice into the ocean. Full-day boat tours from Seward spend time in front of the glacier face, and the thunder of calving ice is something you feel in your chest. You will also see humpback whales, puffins, sea otters, and sea lions along the way.',
+        tag: 'Must-Visit',
+      },
+      {
+        name: 'Holgate Glacier (Kenai Fjords Boat Tour)',
+        destination: 'Seward',
+        slug: 'kenai-fjords',
+        price: '$170–220 per person (half-day boat tour)',
+        description: 'One of the most active tidewater glaciers in Kenai Fjords. Half-day tours from Seward reach Holgate in about three hours and spend 30–45 minutes at the face. The glacier is roughly a mile wide and drops into deep teal water filled with bergy bits. A more affordable option than the full-day Aialik tours.',
+        tag: 'Value',
+      },
+      {
+        name: 'Portage Glacier',
+        destination: 'Girdwood / Portage',
+        slug: 'anchorage',
+        price: '$42 per person (boat cruise) — Visitor center free',
+        description: 'Just an hour south of Anchorage on the Seward Highway. The glacier has retreated out of view from the visitor center, but the MV Ptarmigan cruise across Portage Lake brings you within 300 yards of the glacier face. The Begich Boggs Visitor Center has excellent exhibits on glaciology. An easy add-on from Anchorage.',
+      },
+      {
+        name: 'Spencer Glacier',
+        destination: 'Portage / Alaska Railroad',
+        slug: 'anchorage',
+        price: '$99–149 per person (Alaska Railroad Glacier Discovery route)',
+        description: 'Accessible only by train or float, Spencer Glacier sits in a pristine valley with no road access. The Alaska Railroad runs the Glacier Discovery route from Anchorage or Portage to a whistle stop where you can hike to the glacier face or kayak among icebergs on Spencer Lake. It feels genuinely remote despite being only 60 miles from Anchorage.',
+        tag: 'Hidden Gem',
+      },
+    ],
+  },
+  {
+    region: 'Southcentral — Prince William Sound',
+    tagline: 'Columbia Glacier and the iceberg-filled fjords of one of Alaska\'s wildest coastlines',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #0077B6 100%)',
+    glaciers: [
+      {
+        name: 'Columbia Glacier',
+        destination: 'Valdez',
+        slug: 'valdez',
+        price: '$150–200 per person (boat tour from Valdez)',
+        description: 'Once the largest tidewater glacier in Alaska, Columbia Glacier has been in dramatic retreat since the 1980s but remains extraordinary. Boat tours from Valdez navigate through a field of icebergs — some as large as houses — to get as close as conditions allow to the 3-mile-wide face. The scale is difficult to comprehend until you are there.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Meares Glacier',
+        destination: 'Valdez',
+        slug: 'valdez',
+        price: '$150–200 per person (boat tour from Valdez)',
+        description: 'A tidewater glacier in Unakwik Inlet that is actually advancing, which makes it unusual in an era of glacial retreat. Tour boats can get remarkably close to the face, and calving events are frequent. Often combined with Columbia Glacier on full-day tours from Valdez. Sea otters and harbor seals are common in the surrounding waters.',
+        tag: 'Advancing',
+      },
+      {
+        name: 'Shoup Glacier',
+        destination: 'Valdez',
+        slug: 'valdez',
+        price: '$75–120 per person (kayak tour) or free (hike from Valdez)',
+        description: 'A less-visited tidewater glacier at the end of Shoup Bay, reachable by kayak or a challenging 10-mile round-trip trail from Valdez. Kayaking among the icebergs in the bay is a quieter, more intimate glacier experience than the larger boat tours. Harbor seals often haul out on the ice.',
+        tag: 'Adventure',
+      },
+      {
+        name: 'Worthington Glacier',
+        destination: 'Thompson Pass (near Valdez)',
+        slug: 'valdez',
+        price: 'Free — State recreation site, no fee',
+        description: 'A roadside glacier on the Richardson Highway at Thompson Pass, about 30 miles from Valdez. A short trail leads to the glacier face. It is one of the most accessible glaciers in Alaska — you can see it clearly from the parking lot. A quick stop on the drive between Valdez and the Interior, and a good introduction to valley glaciers.',
+        tag: 'Roadside',
+      },
+    ],
+  },
+  {
+    region: 'Southeast — Glacier Bay & Juneau',
+    tagline: 'Massive tidewater glaciers in America\'s glacier national park and helicopter tours over the Juneau Icefield',
+    gradient: 'linear-gradient(135deg, #0077B6 0%, #00A5CF 100%)',
+    glaciers: [
+      {
+        name: 'Margerie Glacier (Glacier Bay)',
+        destination: 'Glacier Bay National Park',
+        slug: 'glacier-bay',
+        price: 'Free (NPS — no entrance fee) — Day boat tour $250–300/person from Gustavus',
+        description: 'The crown jewel of Glacier Bay National Park. Margerie Glacier is a mile wide and 250 feet tall at the face, and it calves constantly — you will hear the crack and roar of falling ice echoing across the bay. The day boat from Gustavus spends an hour in front of the face. Cruise ships also visit, but the day boat is far more intimate.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Johns Hopkins Glacier (Glacier Bay)',
+        destination: 'Glacier Bay National Park',
+        slug: 'glacier-bay',
+        price: 'Accessible by boat or kayak within Glacier Bay',
+        description: 'The most dramatic inlet in Glacier Bay, with 10 glaciers flowing into a single fjord. The main glacier is over a mile wide. Access is restricted during harbor seal pupping season (May through mid-June), but when open, this is the most spectacular glacial landscape in the park. Experienced kayakers can paddle the inlet with a permit.',
+        tag: 'Wilderness',
+      },
+      {
+        name: 'Mendenhall Glacier',
+        destination: 'Juneau',
+        slug: 'juneau',
+        price: '$5 per person (visitor center) — Helicopter tours $300–450/person',
+        description: 'Alaska\'s most visited glacier, just 12 miles from downtown Juneau. The visitor center overlooks the glacier and Mendenhall Lake, where icebergs drift after calving. Trails lead to Nugget Falls (a massive waterfall beside the glacier) and up to the ice itself. Helicopter tours land on the glacier for ice hiking — the most popular excursion for cruise visitors.',
+        tag: 'Must-Visit',
+      },
+      {
+        name: 'Juneau Icefield Helicopter Tour',
+        destination: 'Juneau',
+        slug: 'juneau',
+        price: '$300–500 per person (varies by tour length)',
+        description: 'The Juneau Icefield covers 1,500 square miles and feeds over 30 glaciers. Helicopter tours land on the ice for guided walks through crevasse fields and blue moulins. Some tours include dog sledding on the glacier in summer. It is expensive, but flying over endless blue ice and landing in the middle of it is a once-in-a-lifetime experience.',
+        tag: 'Splurge',
+      },
+      {
+        name: 'LeConte Glacier',
+        destination: 'Petersburg',
+        slug: 'petersburg',
+        price: '$200–275 per person (boat tour from Petersburg)',
+        description: 'The southernmost tidewater glacier in North America, flowing into LeConte Bay near Petersburg. Boat tours navigate through a dense field of icebergs to reach the glacier face. Harbor seals pup on the ice floes here, and the small-town atmosphere of Petersburg means you will likely share the experience with fewer people than at Glacier Bay or Mendenhall.',
+        tag: 'Hidden Gem',
+      },
+    ],
+  },
+  {
+    region: 'Interior — Denali & Alaska Range',
+    tagline: 'Alpine glaciers flowing from North America\'s highest peak through dramatic mountain valleys',
+    gradient: 'linear-gradient(135deg, #FF6B35 0%, #CC5529 100%)',
+    glaciers: [
+      {
+        name: 'Ruth Glacier & the Great Gorge',
+        destination: 'Denali / Talkeetna',
+        slug: 'denali-national-park',
+        price: '$350–500 per person (flightseeing from Talkeetna, glacier landing)',
+        description: 'Ruth Glacier flows through the Great Gorge, where the walls rise over 5,000 feet on either side — making it one of the deepest gorges in North America (deeper than the Grand Canyon when you count the ice). Flightseeing tours from Talkeetna land on the glacier, and standing on the ice with Denali towering above is genuinely awe-inspiring.',
+        tag: 'Must-Visit',
+      },
+      {
+        name: 'Muldrow Glacier',
+        destination: 'Denali National Park',
+        slug: 'denali-national-park',
+        price: 'Free with park entrance ($15/person) — Visible from park road',
+        description: 'A 32-mile-long valley glacier on the north side of Denali, visible from the park road near Eielson Visitor Center (mile 66). Muldrow is a surge-type glacier that periodically advances rapidly. The Eielson area offers spectacular views of the glacier\'s debris-covered lower section with Denali as the backdrop, weather permitting.',
+      },
+      {
+        name: 'Kahiltna Glacier',
+        destination: 'Denali / Talkeetna',
+        slug: 'denali-national-park',
+        price: '$275–450 per person (flightseeing from Talkeetna)',
+        description: 'The longest glacier in the Alaska Range at 44 miles. Kahiltna\'s base camp at 7,200 feet is where climbers start their summit attempt on Denali. Flightseeing tours from Talkeetna often include a flyover or landing on Kahiltna. Seeing the tiny dots of base camp tents against the vastness of the glacier puts the scale of this landscape into perspective.',
+        tag: 'Adventure',
+      },
+      {
+        name: 'Matanuska Glacier',
+        destination: 'Palmer / Glenn Highway',
+        slug: 'anchorage',
+        price: '$30 per person (guided access) — Ice hiking tours $75–150/person',
+        description: 'Alaska\'s largest glacier accessible by car, stretching 27 miles from the Chugach Mountains to the Glenn Highway about two hours northeast of Anchorage. Unlike most Alaska glaciers, you can walk onto the ice with a guide, exploring crevasses, moulins, and ice caves. The blue ice is extraordinary. Crampons are provided on guided tours. A must-do day trip from Anchorage.',
+        tag: 'Iconic',
+      },
+    ],
+  },
+];
+
+const faqItems = [
+  { question: 'When is the best time to visit Alaska\'s glaciers?', answer: 'June through September offers the best conditions. Boat tours, flightseeing, and hiking trails are all operational during summer months. July and August are peak season with the warmest weather and longest days. Late May and early September are shoulder season with lower prices and fewer crowds, though some tours may not yet be running or may have ended. Calving activity tends to be most dramatic in mid to late summer as temperatures rise.' },
+  { question: 'Are Alaska\'s glaciers safe to visit?', answer: 'Viewing glaciers from boats, visitor centers, and maintained trails is very safe. Walking on glacial ice requires proper equipment (crampons, ice axes) and ideally a guide — crevasses, ice caves, and unstable ice are real hazards. Never approach a glacier face on foot; calving ice can create massive waves. On boat tours, captains maintain safe distances. Helicopter tours operated by licensed companies have strong safety records.' },
+  { question: 'What is a tidewater glacier?', answer: 'A tidewater glacier flows from land into the ocean, where its face (terminus) stands in seawater. When chunks of ice break off the face and crash into the water, that is called calving. Alaska has more tidewater glaciers than anywhere else in the Americas. Glacier Bay alone has seven active tidewater glaciers. The calving process creates the icebergs, bergy bits, and growlers you see floating in the fjords.' },
+  { question: 'How much do glacier tours cost in Alaska?', answer: 'Costs vary widely by experience. Roadside glacier viewing (Exit Glacier, Worthington, Matanuska access) runs $0–30. Half-day boat tours are $150–220 per person. Full-day boat tours are $200–300. Helicopter tours with glacier landing are $300–500. Kayaking near glaciers is $75–200. Flightseeing with glacier landing from Talkeetna is $275–500. The cheapest glacier experiences are self-guided hikes at Exit Glacier and Worthington Glacier.' },
+  { question: 'Can I walk on a glacier in Alaska?', answer: 'Yes, but with proper equipment and ideally a guide. Matanuska Glacier is the most accessible for ice hiking — guided tours provide crampons and instruction. Helicopter tours land on glaciers near Juneau and in the Alaska Range for guided walks. Exit Glacier\'s Harding Icefield Trail reaches the edge of the ice field but does not cross it. Never walk on glacial ice alone without proper training and gear.' },
+  { question: 'Which glacier is best for seeing calving?', answer: 'Margerie Glacier in Glacier Bay is the most reliably active for calving — the day boat spends about an hour at the face and you will almost certainly see and hear major calving events. Aialik and Holgate Glaciers in Kenai Fjords are also very active. Columbia Glacier near Valdez calves enormous icebergs. Mendenhall Glacier calves into its lake, though less frequently than the tidewater glaciers.' },
+  { question: 'Are Alaska glaciers retreating?', answer: 'Most Alaska glaciers are retreating due to climate change. Exit Glacier\'s trail markers show dramatic retreat over the past century. Mendenhall Glacier has retreated significantly since the 1950s. Columbia Glacier has lost over half its length since the 1980s. A few glaciers, like Meares and Hubbard, are advancing. Visiting glaciers today provides both a spectacular experience and a sobering look at the pace of environmental change.' },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  faqItems={faqItems}
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="menu-hero">
+    <div class="menu-hero-bg"></div>
+    <div class="menu-hero-gradient"></div>
+    <div class="menu-hero-noise"></div>
+    <div class="menu-hero-content">
+      <h1 class="menu-hero-title">Alaska's Glaciers</h1>
+      <p class="menu-hero-subtitle">From the calving tidewater giants of Kenai Fjords and Glacier Bay to the alpine ice fields of the Alaska Range, explore the state's most spectacular frozen landscapes — region by region, glacier by glacier.</p>
+      <div class="menu-hero-meta">
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Glaciers</span>
+          <span class="menu-hero-meta-value">19</span>
+        </div>
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Regions</span>
+          <span class="menu-hero-meta-value">4</span>
+        </div>
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Glacier Count (Statewide)</span>
+          <span class="menu-hero-meta-value">100,000+</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="menu-personal reveal">
+    <div class="container-content">
+      <blockquote class="menu-personal-quote">
+        <p>Nothing in Alaska stops you in your tracks quite like standing in front of a tidewater glacier. The scale is disorienting — a mile-wide wall of blue ice rising 200 feet out of the water, groaning and cracking, and then a piece the size of a building drops into the ocean with a sound like thunder. I have seen glaciers by boat in Kenai Fjords, by helicopter in Juneau, and on foot at Matanuska, and each experience is completely different. This is what Alaska does better than anywhere else on Earth.</p>
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="menu-intro reveal">
+    <div class="container-content">
+      <div class="menu-intro-card">
+        <p class="menu-intro-text">We've organized Alaska's best glacier experiences by region — <strong>Kenai Peninsula</strong>, <strong>Prince William Sound</strong>, <strong>Southeast Alaska</strong>, and <strong>Interior & Alaska Range</strong>. Each listing includes access details, costs, and what makes the experience worth your time.</p>
+        <div class="menu-intro-legend">
+          <span class="menu-tag menu-tag--iconic">Iconic</span>
+          <span class="menu-tag menu-tag--mustvisit">Must-Visit</span>
+          <span class="menu-tag menu-tag--adventure">Adventure</span>
+          <span class="menu-tag menu-tag--hiddengem">Hidden Gem</span>
+          <span class="menu-tag menu-tag--value">Value</span>
+          <span class="menu-tag menu-tag--splurge">Splurge</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Glacier Sections -->
+  {sections.map((section) => (
+    <section class="menu-region reveal">
+      <div class="container-content">
+        <div class="menu-region-header" style={`background: ${section.gradient};`}>
+          <div class="menu-region-header-inner">
+            <h2 class="menu-region-name">{section.region}</h2>
+            <p class="menu-region-tagline">{section.tagline}</p>
+            <span class="menu-region-count">{section.glaciers.length} glaciers</span>
+          </div>
+          <div class="menu-region-ornament">&#9974;</div>
+        </div>
+
+        <div class="menu-dish-grid">
+          {section.glaciers.map((glacier) => (
+            <div class="menu-dish-card">
+              <div class="menu-dish-media" style={`background: ${section.gradient};`}>
+                {glacier.tag && (
+                  <span class={`menu-tag menu-tag--${glacier.tag.toLowerCase().replace(/[^a-z]/g, '')}`}>{glacier.tag}</span>
+                )}
+              </div>
+              <div class="menu-dish-body">
+                <div class="menu-dish-top">
+                  <h3 class="menu-dish-name">{glacier.name}</h3>
+                </div>
+                <p class="menu-dish-destination">{glacier.destination}</p>
+                <p class="menu-dish-price-line">{glacier.price}</p>
+                <p class="menu-dish-desc">{glacier.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Bottom CTA -->
+  <section class="menu-cta-section reveal">
+    <div class="container-content">
+      <div class="menu-cta-card">
+        <h2 class="menu-cta-heading">Plan Your Glacier Trip</h2>
+        <p class="menu-cta-text">Tell our AI planner which glaciers you want to see and it will build a day-by-day itinerary — with tour bookings, travel logistics, and the best bases for each region.</p>
+        <a href="/plan/" class="menu-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQ items={faqItems} />
+
+  <!-- Email Capture -->
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Free Alaska Glacier Guide"
+      description="A region-by-region PDF guide to Alaska's most spectacular glaciers — with tour costs, access details, and seasonal recommendations."
+      bullets={[
+        'All 19 glaciers with access info and tour pricing',
+        'Best glaciers by activity — boat tours, ice hiking, helicopter, kayaking',
+        'Month-by-month conditions and booking windows',
+        'Packing list for glacier excursions',
+      ]}
+      guideTag="pillar-glaciers"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="menu-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="menu-crosslinks-heading">Explore More</h3>
+      <div class="menu-crosslinks-grid">
+        <a href="/wildlife/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#128059;</span>
+          <span class="menu-crosslink-label">Wildlife Guide</span>
+          <span class="menu-crosslink-desc">Bears, moose, whales, eagles, and where to find them</span>
+        </a>
+        <a href="/northern-lights/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#10024;</span>
+          <span class="menu-crosslink-label">Northern Lights</span>
+          <span class="menu-crosslink-desc">Best viewing locations, timing, and photography tips</span>
+        </a>
+        <a href="/cuisine/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#127869;</span>
+          <span class="menu-crosslink-label">Alaska Cuisine</span>
+          <span class="menu-crosslink-desc">King crab, wild salmon, reindeer sausage, and craft brews</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<!-- Scroll Reveal Observer -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
+
+<style>
+  /* ================================================================
+     HERO
+     ================================================================ */
+  .menu-hero {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5rem var(--space-6) 60px;
+    overflow: hidden;
+  }
+
+  .menu-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: linear-gradient(135deg, #0077B6 0%, #005A8C 40%, #003F5C 100%);
+  }
+
+  .menu-hero-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.4) 100%);
+  }
+
+  .menu-hero-noise {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .menu-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 720px;
+  }
+
+  .menu-hero-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 var(--space-3);
+  }
+
+  .menu-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0 0 var(--space-5);
+    max-width: 580px;
+  }
+
+  .menu-hero-meta {
+    display: flex;
+    gap: var(--space-5);
+    flex-wrap: wrap;
+  }
+
+  .menu-hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .menu-hero-meta-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .menu-hero-meta-value {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: #fff;
+  }
+
+  .menu-scroll-hint {
+    position: absolute;
+    bottom: 16px;
+    right: var(--space-6);
+    z-index: 3;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.35);
+    text-align: center;
+    animation: menuBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes menuBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+  }
+
+  /* ================================================================
+     INTRO
+     ================================================================ */
+  .menu-intro {
+    padding: var(--space-8) 0 var(--space-4);
+  }
+
+  .menu-intro-card {
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    padding: var(--space-5) var(--space-6);
+    text-align: center;
+  }
+
+  .menu-intro-text {
+    font-size: 1rem;
+    color: var(--color-slate);
+    line-height: 1.7;
+    max-width: 640px;
+    margin: 0 auto var(--space-4);
+  }
+
+  .menu-intro-legend {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  /* ================================================================
+     TAGS
+     ================================================================ */
+  .menu-tag {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 3px 8px;
+    border-radius: 6px;
+    line-height: 1.4;
+  }
+
+  .menu-tag--iconic {
+    background: rgba(0, 119, 182, 0.12);
+    color: #0077B6;
+  }
+
+  .menu-tag--mustvisit {
+    background: rgba(255, 107, 53, 0.12);
+    color: #CC5529;
+  }
+
+  .menu-tag--adventure {
+    background: rgba(106, 27, 154, 0.1);
+    color: #6A1B9A;
+  }
+
+  .menu-tag--hiddengem {
+    background: rgba(106, 27, 154, 0.1);
+    color: #6A1B9A;
+  }
+
+  .menu-tag--value {
+    background: rgba(0, 150, 136, 0.1);
+    color: #00796B;
+  }
+
+  .menu-tag--splurge {
+    background: rgba(212, 168, 83, 0.15);
+    color: #9A7B2E;
+  }
+
+  .menu-tag--wilderness {
+    background: rgba(46, 125, 50, 0.1);
+    color: #2E7D32;
+  }
+
+  .menu-tag--roadside {
+    background: rgba(46, 125, 50, 0.1);
+    color: #2E7D32;
+  }
+
+  .menu-tag--advancing {
+    background: rgba(0, 119, 182, 0.12);
+    color: #0077B6;
+  }
+
+  /* ================================================================
+     REGION SECTION
+     ================================================================ */
+  .menu-region {
+    padding: var(--space-6) 0;
+  }
+
+  .menu-region-header {
+    position: relative;
+    border-radius: 20px;
+    padding: var(--space-6) var(--space-6);
+    margin-bottom: var(--space-6);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-region-header-inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu-region-name {
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    margin: 0 0 var(--space-1);
+    line-height: 1.1;
+  }
+
+  .menu-region-tagline {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 var(--space-3);
+    max-width: 480px;
+    line-height: 1.5;
+  }
+
+  .menu-region-count {
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+
+  .menu-region-ornament {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.08);
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ================================================================
+     GLACIER CARD GRID
+     ================================================================ */
+  .menu-dish-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  @media (min-width: 1024px) {
+    .menu-dish-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .menu-dish-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .menu-dish-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .menu-dish-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  }
+
+  .menu-dish-media {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: var(--space-2);
+    overflow: hidden;
+  }
+
+  .menu-dish-media .menu-tag {
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu-dish-body {
+    padding: var(--space-3) var(--space-4) var(--space-4);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .menu-dish-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-2);
+    margin-bottom: 4px;
+  }
+
+  .menu-dish-name {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    margin: 0;
+    line-height: 1.25;
+  }
+
+  .menu-dish-destination {
+    font-size: 0.72rem;
+    color: #0077B6;
+    font-weight: var(--weight-medium);
+    margin: 0 0 var(--space-1);
+  }
+
+  .menu-dish-price-line {
+    font-size: 0.68rem;
+    font-weight: var(--weight-semibold);
+    color: #FF6B35;
+    margin: 0 0 var(--space-2);
+    line-height: 1.4;
+  }
+
+  .menu-dish-desc {
+    font-size: 0.78rem;
+    color: var(--color-slate);
+    line-height: 1.55;
+    margin: 0;
+    flex: 1;
+  }
+
+  /* ================================================================
+     BOTTOM CTA
+     ================================================================ */
+  .menu-cta-section {
+    padding: var(--space-6) 0 var(--space-8);
+  }
+
+  .menu-cta-card {
+    background: linear-gradient(135deg, #0077B6 0%, #005A8C 100%);
+    border-radius: 20px;
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+    color: #fff;
+  }
+
+  .menu-cta-heading {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: var(--weight-bold);
+    margin: 0 0 var(--space-3);
+    color: #fff;
+  }
+
+  .menu-cta-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 520px;
+    margin: 0 auto var(--space-5);
+    line-height: 1.6;
+  }
+
+  .menu-cta-button {
+    display: inline-block;
+    background: #FF6B35;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: var(--weight-semibold);
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .menu-cta-button:hover {
+    background: #CC5529;
+    transform: translateY(-2px);
+  }
+
+  /* ================================================================
+     CROSS-LINKS
+     ================================================================ */
+  .menu-crosslinks {
+    padding: 0 0 var(--space-10);
+  }
+
+  .menu-crosslinks-heading {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    text-align: center;
+    margin: 0 0 var(--space-4);
+  }
+
+  .menu-crosslinks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
+    .menu-crosslinks-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .menu-crosslink-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-5) var(--space-4);
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .menu-crosslink-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .menu-crosslink-icon {
+    font-size: 1.8rem;
+  }
+
+  .menu-crosslink-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+  }
+
+  .menu-crosslink-desc {
+    font-size: 0.78rem;
+    color: var(--color-slate);
+    line-height: 1.4;
+  }
+
+  /* ================================================================
+     PERSONAL QUOTE
+     ================================================================ */
+  .menu-personal {
+    padding-block: var(--space-8);
+  }
+
+  .menu-personal-quote {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-8);
+    border-left: 4px solid #FF6B35;
+    background: var(--color-sky);
+    border-radius: 0 12px 12px 0;
+  }
+
+  .menu-personal-quote p {
+    font-size: var(--text-body);
+    color: var(--color-heading);
+    line-height: var(--leading-body);
+    font-style: italic;
+    margin-bottom: var(--space-3);
+  }
+
+  .menu-personal-quote cite {
+    font-size: var(--text-caption);
+    color: #FF6B35;
+    font-weight: var(--weight-semibold);
+    font-style: normal;
+  }
+
+  /* ================================================================
+     RESPONSIVE
+     ================================================================ */
+  @media (max-width: 640px) {
+    .menu-hero {
+      min-height: 55vh;
+      padding: 0 var(--space-4) 40px;
+    }
+
+    .menu-hero-meta {
+      gap: var(--space-4);
+    }
+
+    .menu-scroll-hint {
+      display: none;
+    }
+
+    .menu-region-header {
+      padding: var(--space-5) var(--space-4);
+    }
+
+    .menu-region-ornament {
+      display: none;
+    }
+  }
+</style>

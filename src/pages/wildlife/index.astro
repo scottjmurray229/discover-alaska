@@ -1,0 +1,518 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Alaska Wildlife Guide', url: '/wildlife/' },
+];
+
+const pageTitle = 'Alaska Wildlife — Bears, Moose, Whales, Eagles & More';
+const pageDescription = 'Where to see brown bears, moose, humpback whales, bald eagles, caribou, and other iconic Alaska wildlife — with seasonal tips, safety guidelines, and the best parks and viewing locations.';
+
+interface Encounter {
+  name: string;
+  destination: string;
+  slug: string;
+  season: string;
+  description: string;
+  tag?: string;
+}
+
+interface WildlifeSection {
+  animal: string;
+  icon: string;
+  tagline: string;
+  gradient: string;
+  encounters: Encounter[];
+}
+
+const sections: WildlifeSection[] = [
+  {
+    animal: 'Brown & Grizzly Bears',
+    icon: '&#128059;',
+    tagline: 'Alaska is home to 30,000 brown bears — more than all other U.S. states combined',
+    gradient: 'linear-gradient(135deg, #FF6B35 0%, #CC5529 100%)',
+    encounters: [
+      {
+        name: 'Katmai National Park — Brooks Falls',
+        destination: 'King Salmon (fly-in)',
+        slug: 'katmai-national-park',
+        season: 'July (peak salmon run) & September (fat bears)',
+        description: 'The most famous bear viewing location in the world. Stand on the Brooks Falls platform and watch brown bears catch leaping sockeye salmon out of mid-air — the image you have seen a thousand times. July is peak action at the falls. September\'s "Fat Bear Week" showcases bears at their heaviest before hibernation. Access by floatplane from King Salmon ($250–350 round-trip). Day trips and multi-day lodge stays available.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Pack Creek Bear Sanctuary',
+        destination: 'Admiralty Island (near Juneau)',
+        slug: 'juneau',
+        season: 'July – August',
+        description: 'Admiralty Island has the densest brown bear population in North America — roughly one bear per square mile. Pack Creek offers guided viewing from platforms on the creek during salmon runs. Access by floatplane or boat from Juneau (day trips $600–800 per person). A permit system limits visitors to 24 per day, making encounters intimate and uncrowded.',
+        tag: 'Must-Visit',
+      },
+      {
+        name: 'Denali National Park',
+        destination: 'Denali National Park',
+        slug: 'denali-national-park',
+        season: 'June – September',
+        description: 'Grizzly bears roam the open tundra and river valleys of Denali, and sightings from the park bus are common. The bus system along the 92-mile park road is the primary way to see wildlife — bears are most often spotted between miles 50 and 80. Bring binoculars and expect to see bears digging for roots, grazing on berries, or fishing in braided rivers. Bus tickets $55–75 per person.',
+        tag: 'Family',
+      },
+      {
+        name: 'Hallo Bay (Katmai Coast)',
+        destination: 'Katmai coast (fly-in from Homer)',
+        slug: 'katmai-national-park',
+        season: 'June – September',
+        description: 'A less-visited alternative to Brooks Falls on Katmai\'s Pacific coast. Bears dig for clams on the tidal flats and graze in the sedge meadows. Groups are small (8–10 people), and you walk on the beach with guides — no platforms. The proximity to bears here is extraordinary, sometimes within 30 feet. Day trips by floatplane from Homer run $650–800 per person.',
+        tag: 'Adventure',
+      },
+      {
+        name: 'Wolverine Creek (Lake Clark)',
+        destination: 'Lake Clark National Park (fly-in from Anchorage or Soldotna)',
+        slug: 'homer',
+        season: 'July – August',
+        description: 'Brown bears gather at Wolverine Creek on the shore of Big River Lakes to feed on sockeye salmon. A viewing platform provides close encounters. Access is by floatplane or water taxi. Day trips from Soldotna or Homer cost $450–650. Fewer crowds than Katmai and excellent photography opportunities. The bears are remarkably habituated to quiet human presence.',
+      },
+    ],
+  },
+  {
+    animal: 'Moose',
+    icon: '&#129420;',
+    tagline: 'The largest member of the deer family — 1,500 pounds, six-foot antlers, and surprisingly common in Alaska',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #0077B6 100%)',
+    encounters: [
+      {
+        name: 'Anchorage — Urban Moose',
+        destination: 'Anchorage',
+        slug: 'anchorage',
+        price: 'Free',
+        season: 'Year-round (most visible May–June with calves, Sept–Oct rut)',
+        description: 'Anchorage has roughly 1,500 moose living within city limits — you may see one walking through a parking lot, browsing in a front yard, or blocking traffic on the Coastal Trail. Kincaid Park and the Tony Knowles Coastal Trail are hotspots. In spring, cow moose with newborn calves are common and extremely protective — give them at least 50 feet. Moose cause more injuries in Alaska than bears.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Denali National Park',
+        destination: 'Denali National Park',
+        slug: 'denali-national-park',
+        season: 'May – September (rut in late Sept is spectacular)',
+        description: 'Moose are frequently spotted from the park bus, particularly in the willow thickets along the Savage River and in the Wonder Lake area. During the September rut, bulls with massive antlers spar for mates — an unforgettable sight against the backdrop of Denali. Park entrance $15/person, bus $55–75.',
+        tag: 'Must-Visit',
+      },
+      {
+        name: 'Kenai National Wildlife Refuge',
+        destination: 'Soldotna / Kenai Peninsula',
+        slug: 'kenai-fjords',
+        season: 'Year-round',
+        description: 'Nearly two million acres of boreal forest, wetlands, and mountains on the Kenai Peninsula that are prime moose habitat. Drive the Skilak Lake Loop Road and the Swanson River Road for roadside sightings. The Kenai Peninsula moose are among the largest in Alaska. Free admission; the visitor center near Soldotna has interpretive displays.',
+        tag: 'Free',
+      },
+      {
+        name: 'Alaska Wildlife Conservation Center',
+        destination: 'Portage (south of Anchorage)',
+        slug: 'anchorage',
+        season: 'Year-round',
+        description: 'A rescue and rehabilitation facility on the Seward Highway where you can see moose, bears, bison, musk ox, caribou, and other Alaska animals up close. The animals are rescues that cannot be released into the wild. A great option for families or anyone who wants guaranteed sightings. Admission $13 adults, $9 children.',
+        tag: 'Family',
+      },
+    ],
+  },
+  {
+    animal: 'Humpback Whales & Marine Life',
+    icon: '&#128011;',
+    tagline: 'Thousands of humpbacks feed in Alaska\'s nutrient-rich waters every summer',
+    gradient: 'linear-gradient(135deg, #0077B6 0%, #005A8C 100%)',
+    encounters: [
+      {
+        name: 'Kenai Fjords Boat Tours',
+        destination: 'Seward',
+        slug: 'kenai-fjords',
+        season: 'May – September (peak July–Aug)',
+        description: 'Full-day and half-day boat tours from Seward combine glacier viewing with world-class marine wildlife. Humpback whales, orca (killer whales), sea otters, Steller sea lions, harbor seals, and puffins are regularly spotted. The combination of tidewater glaciers calving into the sea while whales breach nearby is quintessential Alaska. Full-day tours $200–250; half-day $170–220.',
+        tag: 'Must-Visit',
+      },
+      {
+        name: 'Juneau Whale Watching',
+        destination: 'Juneau',
+        slug: 'juneau',
+        season: 'May – September',
+        description: 'Juneau is one of the best whale watching destinations in the world. Humpbacks feed in the channels around Auke Bay and Point Retreat, often performing spectacular bubble-net feeding. Half-day tours run $150–200 per person and have near-100% sighting rates in summer. You will also see bald eagles, sea lions, and harbor seals. Several operators guarantee sightings or refund your money.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Glacier Bay Whale Watching',
+        destination: 'Glacier Bay National Park',
+        slug: 'glacier-bay',
+        season: 'June – September',
+        description: 'Glacier Bay attracts a large concentration of humpback whales every summer. The day boat tour from Gustavus passes through whale-rich waters on the way to Margerie Glacier. Kayakers in the bay often have close encounters with curious whales surfacing nearby. Whale sightings are included on the glacier day tour ($250–300) — no separate whale tour needed.',
+      },
+      {
+        name: 'Sea Otters — Resurrection Bay',
+        destination: 'Seward',
+        slug: 'kenai-fjords',
+        season: 'Year-round',
+        description: 'Resurrection Bay in Seward has one of the densest sea otter populations in Alaska. You can often see them from the Seward waterfront, floating on their backs cracking shellfish. Kayaking in the bay puts you at water level with rafts of otters. Kayak rentals from $55/half-day. Boat tours into Kenai Fjords pass through large otter congregations.',
+        tag: 'Charming',
+      },
+      {
+        name: 'Puffins — Alaska Islands & Visitors Center',
+        destination: 'Seward / Homer',
+        slug: 'homer',
+        season: 'June – August',
+        description: 'Horned and tufted puffins nest on rocky islands throughout the Gulf of Alaska. The best sightings are on Kenai Fjords boat tours from Seward, where boats pass nesting colonies on the Chiswell Islands. From Homer, boat tours to Gull Island offer close puffin encounters. The Alaska Islands & Ocean Visitor Center in Homer (free admission) has excellent marine bird exhibits.',
+        tag: 'Birding',
+      },
+    ],
+  },
+  {
+    animal: 'Bald Eagles',
+    icon: '&#129413;',
+    tagline: 'Alaska has more bald eagles than all other U.S. states combined — over 30,000 breeding pairs',
+    gradient: 'linear-gradient(135deg, #0077B6 0%, #00A5CF 100%)',
+    encounters: [
+      {
+        name: 'Alaska Chilkat Bald Eagle Preserve',
+        destination: 'Haines',
+        slug: 'haines',
+        season: 'October – February (peak Nov–Dec, up to 4,000 eagles)',
+        description: 'The largest concentration of bald eagles in the world gathers along the Chilkat River near Haines every fall and early winter. Warm upwelling water keeps the river from freezing, sustaining a late chum salmon run that attracts up to 4,000 eagles. They line every tree along the river — the density is staggering. The preserve is free and accessible by road. November is the peak month.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Homer Spit',
+        destination: 'Homer',
+        slug: 'homer',
+        season: 'Year-round (peak March–April during herring runs)',
+        description: 'The Homer Spit and Kachemak Bay host a permanent population of bald eagles. They perch on light poles, circle above the fishing boats, and dive for fish in the harbor. During spring herring runs, dozens congregate along the Spit. The Alaska Islands & Ocean Visitor Center provides context. You do not need binoculars — they are everywhere and close.',
+        tag: 'Accessible',
+      },
+      {
+        name: 'Sitka Raptor Center',
+        destination: 'Sitka',
+        slug: 'sitka',
+        season: 'Year-round (center open seasonally)',
+        description: 'A rehabilitation center for injured raptors, primarily bald eagles. You can see eagles up close that cannot be released to the wild — a rare opportunity to study these birds at arm\'s length. The center\'s educational programs explain eagle biology and conservation. Admission $12 adults. Sitka\'s wild eagle population is also abundant — look up along any waterfront.',
+        tag: 'Educational',
+      },
+      {
+        name: 'Ketchikan Creek',
+        destination: 'Ketchikan',
+        slug: 'ketchikan',
+        season: 'July – September (salmon runs)',
+        description: 'During salmon spawning season, bald eagles gather along Ketchikan Creek — right through the center of town. You can watch eagles fishing from the walkway along the creek near the fish ladder. The combination of eagles, spawning salmon, and totem poles makes this a uniquely Alaska scene. Free to observe; no tour needed.',
+        tag: 'Free',
+      },
+    ],
+  },
+  {
+    animal: 'Caribou & Dall Sheep',
+    icon: '&#129428;',
+    tagline: 'Massive caribou herds migrating across the tundra and white Dall sheep on mountain ridgelines',
+    gradient: 'linear-gradient(135deg, #FF6B35 0%, #E85D2A 100%)',
+    encounters: [
+      {
+        name: 'Denali National Park — Caribou & Dall Sheep',
+        destination: 'Denali National Park',
+        slug: 'denali-national-park',
+        season: 'June – September',
+        description: 'Denali is the best place in Alaska to see both caribou and Dall sheep in a single trip. Caribou roam the open tundra throughout the park, and Dall sheep cling to the steep slopes of Polychrome Pass and the Igloo Creek area. The park bus drivers are skilled spotters. Binoculars are essential for sheep. On a clear day with Denali visible and caribou crossing the road, this is wildlife viewing at its finest.',
+        tag: 'Must-Visit',
+      },
+      {
+        name: 'Dalton Highway — Arctic Caribou',
+        destination: 'Dalton Highway (north of Fairbanks)',
+        slug: 'fairbanks',
+        season: 'June – September (migration) & March – April (return)',
+        description: 'The Western Arctic caribou herd — over 200,000 animals — migrates across the North Slope and Dalton Highway corridor. In late summer and early fall, you can encounter thousands of caribou crossing the road near Atigun Pass and the Brooks Range. The migration is unpredictable in timing but spectacular when it happens. The Dalton Highway requires preparation: fuel, tires, and self-sufficiency.',
+        tag: 'Adventure',
+      },
+      {
+        name: 'Turnagain Arm (Dall Sheep)',
+        destination: 'Seward Highway (south of Anchorage)',
+        slug: 'anchorage',
+        season: 'Year-round (most visible in winter on lower slopes)',
+        description: 'Dall sheep are visible on the rocky cliffs along Turnagain Arm on the Seward Highway, just 20 minutes south of Anchorage. Windy Corner (mile 107) is a well-known pull-off where sheep graze close to the road, especially in late fall and winter when snow pushes them down from higher elevations. Bring binoculars. This is one of the most accessible Dall sheep viewing locations in Alaska.',
+        tag: 'Accessible',
+      },
+      {
+        name: 'Arctic National Wildlife Refuge',
+        destination: 'Arctic Alaska (fly-in access)',
+        slug: 'fairbanks',
+        season: 'June – July (calving season)',
+        description: 'The Porcupine caribou herd — roughly 200,000 animals — calves on the coastal plain of the Arctic Refuge every June. This is one of the great wildlife spectacles on Earth, but access requires a bush plane charter from Fairbanks or Fort Yukon ($2,000+ per person for multi-day guided trips). Not a casual outing, but for serious wildlife enthusiasts, it is unmatched.',
+        tag: 'Wilderness',
+      },
+    ],
+  },
+];
+
+const faqItems = [
+  { question: 'How close can I get to bears in Alaska?', answer: 'National Park Service guidelines recommend staying at least 300 yards (900 feet) from bears. At designated viewing areas like Brooks Falls (Katmai) and Pack Creek, platforms allow closer viewing under controlled conditions. Never approach a bear on your own. If a bear approaches you, stand your ground, speak calmly, and slowly back away. Carry bear spray in bear country and know how to use it. Most bear encounters in Alaska are peaceful if you follow the rules.' },
+  { question: 'What should I do if I encounter a moose?', answer: 'Give moose at least 50 feet of space — they are more dangerous than bears in Alaska, responsible for more injuries annually. Cow moose with calves and bull moose in rut (September-October) are the most aggressive. If a moose charges, run and get behind a tree or vehicle — unlike bears, running from moose is the right call. They kick with devastating force. In Anchorage, be especially alert on trails and in neighborhoods during spring calving.' },
+  { question: 'When is the best time for wildlife viewing in Alaska?', answer: 'Summer (June through September) is the primary wildlife viewing season. Bears at Brooks Falls peak in July and September. Whale watching is best July through August. Eagles at Haines peak in November. Caribou migration happens in late summer (August-September) and spring (March-April). Moose are visible year-round but rut in September. Each species has its own optimal window — plan your trip around the animals you most want to see.' },
+  { question: 'Do I need bear spray in Alaska?', answer: 'Yes, carry bear spray whenever you are hiking or camping outside of developed areas. It is the single most effective defense against bear charges — more effective than firearms in most encounters. Buy it in Alaska (it cannot fly in checked luggage on most airlines). Practice drawing and deploying it before you need it. Bear spray is effective to about 20 feet and creates a cloud of capsaicin. It is sold at outdoor stores throughout Alaska for $40–55.' },
+  { question: 'Can I see wildlife without an expensive tour?', answer: 'Absolutely. Moose are free and everywhere in Anchorage. The Seward Highway offers free Dall sheep viewing. Bald eagles are common in every coastal town. Denali National Park bus rides ($55–75) are one of the best wildlife viewing values in Alaska. The Alaska Wildlife Conservation Center near Portage ($13) guarantees sightings of bears, moose, bison, and more. The expensive fly-in bear viewing and whale watching tours are amazing but not the only option.' },
+  { question: 'What wildlife can I see from a cruise ship?', answer: 'Alaska cruise ships regularly spot humpback whales, orca, sea otters, harbor seals, Steller sea lions, bald eagles, and sometimes bears on shore. Glacier Bay is excellent for whales and sea otters. Ports like Juneau, Ketchikan, and Sitka offer whale watching, bear viewing, and eagle encounters as shore excursions. Bring binoculars and spend time on deck. Early morning and late evening are best for spotting wildlife from the ship.' },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  faqItems={faqItems}
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="menu-hero">
+    <div class="menu-hero-bg"></div>
+    <div class="menu-hero-gradient"></div>
+    <div class="menu-hero-noise"></div>
+    <div class="menu-hero-content">
+      <h1 class="menu-hero-title">Alaska Wildlife</h1>
+      <p class="menu-hero-subtitle">Brown bears catching salmon at Brooks Falls, humpback whales breaching in Glacier Bay, 4,000 bald eagles lining the Chilkat River, and moose wandering through Anchorage neighborhoods — Alaska's wildlife is extraordinary and accessible.</p>
+      <div class="menu-hero-meta">
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Species Covered</span>
+          <span class="menu-hero-meta-value">8 Animals</span>
+        </div>
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Locations</span>
+          <span class="menu-hero-meta-value">22</span>
+        </div>
+        <div class="menu-hero-meta-item">
+          <span class="menu-hero-meta-label">Peak Season</span>
+          <span class="menu-hero-meta-value">Jun–Sep</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="menu-personal reveal">
+    <div class="container-content">
+      <blockquote class="menu-personal-quote">
+        <p>Watching a brown bear pluck a salmon out of the air at Brooks Falls is the kind of thing you plan a whole trip around — and it delivers every time. But what surprised me most about Alaska wildlife was how accessible it all is. Moose in Anchorage parking lots. Eagles on every light pole in Homer. Whales breaching so close to the boat that you get splashed. You do not need to go deep into the backcountry to have world-class wildlife encounters here. The animals are everywhere, and they are magnificent.</p>
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="menu-intro reveal">
+    <div class="container-content">
+      <div class="menu-intro-card">
+        <p class="menu-intro-text">We've organized Alaska's best wildlife encounters by animal — <strong>Brown Bears</strong>, <strong>Moose</strong>, <strong>Whales & Marine Life</strong>, <strong>Bald Eagles</strong>, and <strong>Caribou & Dall Sheep</strong>. Each listing includes the best season to visit, what to expect, and approximate costs.</p>
+        <div class="menu-intro-legend">
+          <span class="menu-tag menu-tag--iconic">Iconic</span>
+          <span class="menu-tag menu-tag--mustvisit">Must-Visit</span>
+          <span class="menu-tag menu-tag--family">Family</span>
+          <span class="menu-tag menu-tag--free">Free</span>
+          <span class="menu-tag menu-tag--adventure">Adventure</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wildlife Sections -->
+  {sections.map((section) => (
+    <section class="menu-region reveal">
+      <div class="container-content">
+        <div class="menu-region-header" style={`background: ${section.gradient};`}>
+          <div class="menu-region-header-inner">
+            <h2 class="menu-region-name">{section.animal}</h2>
+            <p class="menu-region-tagline">{section.tagline}</p>
+            <span class="menu-region-count">{section.encounters.length} locations</span>
+          </div>
+          <div class="menu-region-ornament" set:html={section.icon} />
+        </div>
+
+        <div class="menu-dish-grid">
+          {section.encounters.map((enc) => (
+            <div class="menu-dish-card">
+              <div class="menu-dish-media" style={`background: ${section.gradient};`}>
+                {enc.tag && (
+                  <span class={`menu-tag menu-tag--${enc.tag.toLowerCase().replace(/[^a-z]/g, '')}`}>{enc.tag}</span>
+                )}
+              </div>
+              <div class="menu-dish-body">
+                <div class="menu-dish-top">
+                  <h3 class="menu-dish-name">{enc.name}</h3>
+                </div>
+                <p class="menu-dish-destination">{enc.destination}</p>
+                <p class="menu-dish-price-line">{enc.season}</p>
+                <p class="menu-dish-desc">{enc.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Bottom CTA -->
+  <section class="menu-cta-section reveal">
+    <div class="container-content">
+      <div class="menu-cta-card">
+        <h2 class="menu-cta-heading">Plan a Wildlife-Focused Trip</h2>
+        <p class="menu-cta-text">Tell our AI planner which animals you want to see and it will build a day-by-day itinerary — with the best parks, seasonal timing, and nearby places to stay.</p>
+        <a href="/plan/" class="menu-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQ items={faqItems} />
+
+  <!-- Email Capture -->
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Free Alaska Wildlife Guide"
+      description="A printable guide to Alaska's best wildlife encounters — with seasonal calendars, safety guidelines, and viewing location maps."
+      bullets={[
+        'All 22 wildlife locations with seasons and costs',
+        'Month-by-month wildlife viewing calendar',
+        'Bear safety and moose encounter guidelines',
+        'Packing list for wildlife excursions',
+      ]}
+      guideTag="pillar-wildlife"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="menu-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="menu-crosslinks-heading">Explore More</h3>
+      <div class="menu-crosslinks-grid">
+        <a href="/glaciers/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#9974;</span>
+          <span class="menu-crosslink-label">Glacier Guide</span>
+          <span class="menu-crosslink-desc">Tidewater glaciers, ice hiking, helicopter tours, and kayaking</span>
+        </a>
+        <a href="/northern-lights/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#10024;</span>
+          <span class="menu-crosslink-label">Northern Lights</span>
+          <span class="menu-crosslink-desc">Best viewing locations, timing, and photography tips</span>
+        </a>
+        <a href="/cuisine/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#127869;</span>
+          <span class="menu-crosslink-label">Alaska Cuisine</span>
+          <span class="menu-crosslink-desc">King crab, wild salmon, reindeer sausage, and craft brews</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<!-- Scroll Reveal Observer -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
+
+<style>
+  .menu-hero { position: relative; min-height: 60vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 5rem var(--space-6) 60px; overflow: hidden; }
+  .menu-hero-bg { position: absolute; inset: 0; z-index: 0; background: linear-gradient(135deg, #0077B6 0%, #005A8C 40%, #003F5C 100%); }
+  .menu-hero-gradient { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.4) 100%); }
+  .menu-hero-noise { position: absolute; inset: 0; z-index: 2; background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E"); pointer-events: none; }
+  .menu-hero-content { position: relative; z-index: 3; max-width: 720px; }
+  .menu-hero-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: var(--weight-bold); color: #fff; line-height: 1.1; margin: 0 0 var(--space-3); }
+  .menu-hero-subtitle { font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255,255,255,0.85); line-height: 1.6; margin: 0 0 var(--space-5); max-width: 580px; }
+  .menu-hero-meta { display: flex; gap: var(--space-5); flex-wrap: wrap; }
+  .menu-hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .menu-hero-meta-label { font-size: 0.65rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); }
+  .menu-hero-meta-value { font-size: 1.1rem; font-weight: var(--weight-bold); color: #fff; }
+  .menu-scroll-hint { position: absolute; bottom: 16px; right: var(--space-6); z-index: 3; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.35); text-align: center; animation: menuBounce 2s ease-in-out infinite; }
+  @keyframes menuBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+
+  .menu-intro { padding: var(--space-8) 0 var(--space-4); }
+  .menu-intro-card { background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; padding: var(--space-5) var(--space-6); text-align: center; }
+  .menu-intro-text { font-size: 1rem; color: var(--color-slate); line-height: 1.7; max-width: 640px; margin: 0 auto var(--space-4); }
+  .menu-intro-legend { display: flex; justify-content: center; gap: var(--space-2); flex-wrap: wrap; }
+
+  .menu-tag { display: inline-block; font-size: 0.6rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 8px; border-radius: 6px; line-height: 1.4; }
+  .menu-tag--iconic { background: rgba(0,119,182,0.12); color: #0077B6; }
+  .menu-tag--mustvisit { background: rgba(255,107,53,0.12); color: #CC5529; }
+  .menu-tag--family { background: rgba(46,125,50,0.1); color: #2E7D32; }
+  .menu-tag--free { background: rgba(46,125,50,0.15); color: #1B5E20; }
+  .menu-tag--adventure { background: rgba(106,27,154,0.1); color: #6A1B9A; }
+  .menu-tag--charming { background: rgba(106,27,154,0.1); color: #6A1B9A; }
+  .menu-tag--birding { background: rgba(0,119,182,0.12); color: #0077B6; }
+  .menu-tag--accessible { background: rgba(46,125,50,0.1); color: #2E7D32; }
+  .menu-tag--educational { background: rgba(0,150,136,0.1); color: #00796B; }
+  .menu-tag--wilderness { background: rgba(46,125,50,0.1); color: #2E7D32; }
+
+  .menu-region { padding: var(--space-6) 0; }
+  .menu-region-header { position: relative; border-radius: 20px; padding: var(--space-6); margin-bottom: var(--space-6); overflow: hidden; display: flex; align-items: center; justify-content: space-between; }
+  .menu-region-header-inner { position: relative; z-index: 1; }
+  .menu-region-name { font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: var(--weight-bold); color: #fff; margin: 0 0 var(--space-1); line-height: 1.1; }
+  .menu-region-tagline { font-size: 0.95rem; color: rgba(255,255,255,0.8); margin: 0 0 var(--space-3); max-width: 480px; line-height: 1.5; }
+  .menu-region-count { font-size: 0.7rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.55); background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 20px; }
+  .menu-region-ornament { font-size: 3rem; color: rgba(255,255,255,0.15); position: relative; z-index: 1; }
+
+  .menu-dish-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
+  @media (min-width: 1024px) { .menu-dish-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 640px) { .menu-dish-grid { grid-template-columns: 1fr; } }
+
+  .menu-dish-card { position: relative; display: flex; flex-direction: column; background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 14px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .menu-dish-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+  .menu-dish-media { position: relative; aspect-ratio: 16/9; display: flex; align-items: flex-start; justify-content: flex-end; padding: var(--space-2); overflow: hidden; }
+  .menu-dish-media .menu-tag { position: relative; z-index: 1; }
+  .menu-dish-body { padding: var(--space-3) var(--space-4) var(--space-4); display: flex; flex-direction: column; flex: 1; }
+  .menu-dish-top { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-2); margin-bottom: 4px; }
+  .menu-dish-name { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); margin: 0; line-height: 1.25; }
+  .menu-dish-destination { font-size: 0.72rem; color: #0077B6; font-weight: var(--weight-medium); margin: 0 0 var(--space-1); }
+  .menu-dish-price-line { font-size: 0.68rem; font-weight: var(--weight-semibold); color: #FF6B35; margin: 0 0 var(--space-2); line-height: 1.4; }
+  .menu-dish-desc { font-size: 0.78rem; color: var(--color-slate); line-height: 1.55; margin: 0; flex: 1; }
+
+  .menu-cta-section { padding: var(--space-6) 0 var(--space-8); }
+  .menu-cta-card { background: linear-gradient(135deg, #0077B6 0%, #005A8C 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
+  .menu-cta-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); color: #fff; }
+  .menu-cta-text { font-size: 1rem; color: rgba(255,255,255,0.75); max-width: 520px; margin: 0 auto var(--space-5); line-height: 1.6; }
+  .menu-cta-button { display: inline-block; background: #FF6B35; color: #fff; font-size: 0.9rem; font-weight: var(--weight-semibold); padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
+  .menu-cta-button:hover { background: #CC5529; transform: translateY(-2px); }
+
+  .menu-crosslinks { padding: 0 0 var(--space-10); }
+  .menu-crosslinks-heading { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); text-align: center; margin: 0 0 var(--space-4); }
+  .menu-crosslinks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); max-width: 800px; margin: 0 auto; }
+  @media (max-width: 640px) { .menu-crosslinks-grid { grid-template-columns: 1fr; } }
+  .menu-crosslink-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); background: var(--color-white); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; text-decoration: none; color: inherit; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .menu-crosslink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  .menu-crosslink-icon { font-size: 1.8rem; }
+  .menu-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); }
+  .menu-crosslink-desc { font-size: 0.78rem; color: var(--color-slate); line-height: 1.4; }
+
+  .menu-personal { padding-block: var(--space-8); }
+  .menu-personal-quote { max-width: 680px; margin: 0 auto; padding: var(--space-6) var(--space-8); border-left: 4px solid #FF6B35; background: var(--color-sky); border-radius: 0 12px 12px 0; }
+  .menu-personal-quote p { font-size: var(--text-body); color: var(--color-heading); line-height: var(--leading-body); font-style: italic; margin-bottom: var(--space-3); }
+  .menu-personal-quote cite { font-size: var(--text-caption); color: #FF6B35; font-weight: var(--weight-semibold); font-style: normal; }
+
+  @media (max-width: 640px) {
+    .menu-hero { min-height: 55vh; padding: 0 var(--space-4) 40px; }
+    .menu-hero-meta { gap: var(--space-4); }
+    .menu-scroll-hint { display: none; }
+    .menu-region-header { padding: var(--space-5) var(--space-4); }
+    .menu-region-ornament { display: none; }
+  }
+</style>
