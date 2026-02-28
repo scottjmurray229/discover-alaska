@@ -1,0 +1,908 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'The Finer Things', url: '/finer-things/' },
+];
+
+const pageTitle = 'The Finer Things — Luxury Alaska Lodges, Fine Dining & Premium Experiences 2026';
+const pageDescription = 'Glacier Bay lodge experiences, Gold Star rail service, bear-viewing lodges, helicopter glacier tours, Northern Lights glamping, and fine dining in Anchorage — Alaska at its most elevated.';
+
+interface TopicSection {
+  id: string;
+  icon: string;
+  title: string;
+  gradient: string;
+  items: { label: string; text: string; link?: string }[];
+}
+
+const topics: TopicSection[] = [
+  {
+    id: 'lodges',
+    icon: '🏔️',
+    title: 'Premium Wilderness Lodges',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #0077B6 100%)',
+    items: [
+      { label: 'Glacier Bay Lodge', link: '/destinations/glacier-bay/', text: 'The only lodge inside Glacier Bay National Park — and you feel it. Wake up to the sound of calving glaciers and humpback whales breaching from your window. The lodge sits at Bartlett Cove with guided boat tours departing daily to the tidewater glaciers. Rooms run $250–400/night in peak season (June–August), and you need to book months in advance. The dining room serves fresh Alaskan seafood with a view that no restaurant in the Lower 48 can match. This is the kind of place where you sit on the porch with coffee and watch eagles fish.' },
+      { label: 'Katmai Bear-Viewing Lodges', link: '/destinations/katmai-national-park/', text: 'Brooks Lodge is the iconic base for watching brown bears catch salmon at Brooks Falls — the scene you\'ve seen in every nature documentary. $750–1,000/night all-inclusive with floatplane access from King Salmon. Limited to 60 guests per day at the falls viewing platform. The alternative is Katmai Wilderness Lodge on the coast — more remote, fewer crowds, and guided bear-viewing hikes along the beaches. Either way, you\'re watching 1,000-pound bears fish from 20 yards. No zoo, no barrier — just you, a ranger, and apex predators doing their thing.' },
+      { label: 'Sheldon Chalet', text: 'The most exclusive lodge in Alaska — a 5-guest chalet at 6,000 feet on a nunatak in Denali National Park. Helicopter access only. $2,400/person/night, 2-night minimum. You get a private chef, guided glacier walks, and aurora viewing from a hot tub with Denali as your backdrop. This isn\'t a hotel — it\'s a once-in-a-lifetime experience. Booked out months in advance, and the waitlist is long. If money is no object and you want the most dramatic overnight in North America, this is it.' },
+      { label: 'Tutka Bay Lodge', link: '/destinations/homer/', text: 'A boutique wilderness lodge across Kachemak Bay from Homer — accessible only by water taxi. Eight rooms, organic garden, and a James Beard-nominated chef. $600–900/night all-inclusive with guided kayaking, hiking, and bear-viewing excursions. The meals alone are worth the trip — locally foraged greens, fresh halibut, and house-baked sourdough. The kind of place where you disconnect completely because there\'s nothing to connect to except the wilderness.' },
+      { label: 'Tordrillo Mountain Lodge', text: 'A luxury fly-in lodge in the Alaska Range — primarily known as a heli-skiing destination in winter, but summer brings heli-hiking, bear viewing, and salmon fishing on private stretches of river. $1,200–2,000/night. The lodge is small (16 guests max), the helicopter is included, and the terrain is unlike anything you\'ll access from a road. If you want Alaska without seeing another tourist, this is how.' },
+    ],
+  },
+  {
+    id: 'rail',
+    icon: '🚂',
+    title: 'Alaska Railroad Gold Star Service',
+    gradient: 'linear-gradient(135deg, #78350F 0%, #D4A574 100%)',
+    items: [
+      { label: 'What Is Gold Star?', text: 'The Alaska Railroad\'s premium tier — a glass-domed observation car with upper-level seating, a dedicated outdoor viewing platform, and full-service dining below. It\'s the difference between seeing Alaska through a window and being immersed in it. Gold Star runs on the Denali Star (Anchorage to Fairbanks) and the Coastal Classic (Anchorage to Seward) routes. $250–500 one-way depending on the route, compared to $100–200 for Adventure Class. Worth every penny on a clear day.' },
+      { label: 'Denali Star Route', link: '/destinations/denali-national-park/', text: 'Anchorage to Fairbanks via Denali — 12 hours, 356 miles. The highlight is the stretch between Talkeetna and Denali, where you follow the Susitna River valley with Denali looming on clear days. The dining car serves Alaskan king crab, reindeer sausage, and local craft beer. The upper dome is first-come seating, so grab your spot early after Talkeetna. Most people break the trip with an overnight at Denali.' },
+      { label: 'Coastal Classic Route', link: '/destinations/seward/', text: 'Anchorage to Seward — 4 hours through the Chugach Mountains and along Turnagain Arm. Glaciers, waterfalls, and moose sightings from your seat. This is the route that sells out first because it\'s shorter and the scenery per mile is incredible. Gold Star gives you the outdoor platform to feel the mountain air and photograph Spencer Glacier without glass in the way.' },
+      { label: 'Booking Strategy', text: 'Gold Star sells out 2–3 months in advance for June and July departures. Book as soon as your dates are confirmed. Sit on the left side (heading north to Denali) for the best mountain views. The railroad offers multi-day packages with Denali lodging and Kenai Fjords cruises bundled in — often a better deal than booking separately. Round-trip Gold Star Anchorage-Denali-Anchorage runs about $700–800/person.' },
+    ],
+  },
+  {
+    id: 'dining',
+    icon: '🍽️',
+    title: 'Fine Dining in Alaska',
+    gradient: 'linear-gradient(135deg, #4C1D95 0%, #E8654A 100%)',
+    items: [
+      { label: 'Orso (Anchorage)', link: '/destinations/anchorage/', text: 'Mediterranean-meets-Alaska in downtown Anchorage. Wood-fired dishes with local ingredients — think Kachemak Bay oysters, reindeer osso buco, and house-made pasta with Alaskan king crab. Entrees $28–55. The wine list is serious and the atmosphere is warm without being stuffy. Reservations essential in summer. This is where Anchorage locals celebrate anniversaries.' },
+      { label: 'Crow\'s Nest (Anchorage)', link: '/destinations/anchorage/', text: 'The top-floor restaurant at the Hotel Captain Cook — Anchorage\'s most iconic fine dining room since 1965. Panoramic views of Cook Inlet, the Alaska Range, and on clear days, Denali. Classic American fine dining — Alaskan king crab legs, filet mignon, and a tableside Caesar. Entrees $40–75. The view alone is worth the price, and the sunset service in June when it doesn\'t get dark is something else entirely.' },
+      { label: 'The Saltry (Halibut Cove)', link: '/destinations/homer/', text: 'A restaurant you reach by boat from Homer — across Kachemak Bay in the tiny artist community of Halibut Cove. Fresh sushi-grade halibut, locally caught oysters, and a deck overlooking the harbor. The Danny J ferry runs daily in summer ($35 round trip). The food is outstanding and the setting is pure Alaska — eagles overhead, otters in the harbor, and no cell service. Entrees $25–45. Cash or check only.' },
+      { label: 'Tracy\'s King Crab Shack (Juneau)', link: '/destinations/juneau/', text: 'Not fine dining in the traditional sense — it\'s a waterfront shack — but the king crab legs here are the best in Alaska. Massive, fresh-cracked legs served on paper plates at picnic tables with a view of the Gastineau Channel. A full king crab leg plate runs $40–60 and it\'s worth it. The bisque is phenomenal. Get here before the cruise ship crowds — it opens at 11am and the line gets long by noon.' },
+      { label: 'Ludvig\'s Bistro (Sitka)', link: '/destinations/sitka/', text: 'A 30-seat restaurant in downtown Sitka that punches way above its weight. Mediterranean and Spanish-influenced dishes using Southeast Alaska seafood — seared halibut with saffron risotto, Dungeness crab cakes, and a rotating tapas menu. Entrees $30–50. The chef sources directly from local fishermen, and the nightly specials depend on what came off the boat that morning. Reservations required — this place has a cult following.' },
+      { label: 'Homestead Restaurant (Homer)', link: '/destinations/homer/', text: 'Fine farm-to-table dining on the way to Homer Spit — set in a log cabin with views of Kachemak Bay. Alaskan king salmon, halibut cheeks, and locally raised beef. Entrees $30–55. The setting is quintessentially Alaskan and the food reflects the Homer ethos of sourcing everything within fishing distance. Save room for the berry cobbler made with whatever\'s in season.' },
+    ],
+  },
+  {
+    id: 'helicopter',
+    icon: '🚁',
+    title: 'Helicopter & Glacier Experiences',
+    gradient: 'linear-gradient(135deg, #0E4D5C 0%, #14B8A6 100%)',
+    items: [
+      { label: 'Helicopter Glacier Landing (Juneau)', link: '/destinations/juneau/', text: 'The signature Southeast Alaska splurge — a helicopter ride over the Juneau Icefield followed by a landing on Mendenhall or Herbert Glacier. You walk on ice that\'s thousands of years old, peer into moulins (glacier wells), and drink glacially filtered water. $300–450/person for 2–3 hours. Multiple operators run daily in summer. The views from the helicopter alone — crevasse fields, nunataks, and the icefield stretching to the horizon — justify the price.' },
+      { label: 'Glacier Dog Sledding', text: 'Only in Alaska: a helicopter flies you to a glacier camp where professional mushers run dog sled teams on snow year-round. The dogs are insanely enthusiastic — these aren\'t pets, they\'re athletes who live to run. Available from Juneau ($550–650/person) and Seward/Girdwood ($500–600/person). About 3 hours total including flight time. You get to drive the sled and play with the puppies. Genuinely one of the most fun things I\'ve done in Alaska.' },
+      { label: 'Flightseeing Denali', link: '/destinations/denali-national-park/', text: 'Talkeetna is the base for Denali flightseeing tours — small bush planes that circle North America\'s tallest peak and land on glaciers. $300–500/person for a 90-minute flight with glacier landing. K2 Aviation and Talkeetna Air Taxi are the established operators. Clear weather days are the key — about 30% of flights are cancelled due to clouds, so build flexibility into your schedule. When it\'s clear, there\'s nothing like banking around the summit at 20,310 feet.' },
+      { label: 'Exit Glacier Ice Hiking (Seward)', link: '/destinations/seward/', text: 'Guided ice hiking on Exit Glacier in Kenai Fjords National Park — crampons, ice axes, and a certified guide leading you across crevasse fields and blue ice formations. $180–250/person for a half-day trek. This is the most accessible glacier hiking in Alaska because you can drive to the trailhead (no helicopter required). The Harding Icefield Trail nearby is free and strenuous — 8 miles round trip to a viewpoint overlooking 700 square miles of ice.' },
+    ],
+  },
+  {
+    id: 'aurora',
+    icon: '🌌',
+    title: 'Northern Lights & Glamping',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #4C1D95 50%, #14B8A6 100%)',
+    items: [
+      { label: 'Borealis Basecamp (Fairbanks)', link: '/destinations/fairbanks/', text: 'Purpose-built aurora-viewing domes outside Fairbanks — heated glass igloos with unobstructed views of the northern sky. Fall asleep watching the lights dance overhead. $300–500/night from September through March. The location is 20 miles from city lights, on a hilltop with 360-degree views. They provide wake-up calls when the aurora appears, which means you don\'t have to stay up all night hoping. Easily the most comfortable way to watch the northern lights in Alaska.' },
+      { label: 'Chena Hot Springs Resort', link: '/destinations/fairbanks/', text: 'A natural hot springs resort 60 miles from Fairbanks — soak in 106°F mineral water while watching the aurora overhead. The resort has its own ice museum (kept frozen year-round), aurora viewing tours, and dog sled rides. Rooms $200–350/night. The springs-plus-aurora combination is unforgettable — steam rising off the water while green curtains ripple across the sky. Open year-round, but September through March is aurora season.' },
+      { label: 'Arctic Circle Glamping', text: 'Several operators now offer glamping experiences above the Arctic Circle — canvas-walled heated tents or yurts with real beds and wood stoves. Coldfoot Camp (250 miles north of Fairbanks on the Dalton Highway) is the most accessible, with aurora-viewing packages at $200–400/night. For something more remote, fly-in camps near Bettles offer multi-night aurora packages with guided snowshoe treks and traditional campfire meals under the lights.' },
+      { label: 'Best Time to See the Aurora', text: 'September and March are the sweet spots — long enough nights for good darkness, but not so cold that you can\'t stand outside comfortably. Fairbanks averages 240+ aurora displays per year. The university\'s Geophysical Institute runs a nightly forecast (gi.alaska.edu/monitors/aurora-forecast) that\'s your best planning tool. A Kp index of 3+ usually means visible activity. Stay at least 3 nights to maximize your chances — even in a good week, clouds can block one or two nights.' },
+      { label: 'Photography Tips', text: 'Bring a tripod and a camera that handles high ISO well. Settings: ISO 1600–3200, f/2.8 or wider, 10–15 second exposure. Smartphone cameras have gotten surprisingly good at aurora shots — iPhone 15 Pro and Samsung Galaxy S24 Ultra both have night modes that capture decent aurora images. Bring extra batteries — cold drains them fast. The best shots come when there\'s a foreground element (trees, cabin, lake reflection). Dress warmer than you think — standing still at -10°F for an hour is brutal.' },
+    ],
+  },
+  {
+    id: 'cruise',
+    icon: '🚢',
+    title: 'Premium Cruise Experiences',
+    gradient: 'linear-gradient(135deg, #064E3B 0%, #0077B6 100%)',
+    items: [
+      { label: 'Small Ship vs. Mega Ship', text: 'The biggest decision in Alaska cruising: a small expedition ship (50–250 passengers) or a mega ship (2,000–5,000 passengers). Small ships go where the big ones can\'t — narrow fjords, tidewater glaciers up close, and remote wildlife-viewing coves. UnCruise Adventures, Lindblad Expeditions, and Alaskan Dream Cruises are the premium small ship operators. $5,000–12,000/person for 7–10 days. Mega ships (Holland America, Princess, Celebrity) are $1,500–4,000/person and offer Broadway-style shows and buffets, but the Alaska experience is filtered through a much larger lens.' },
+      { label: 'Holland America\'s Inside Passage', text: 'If you\'re going big-ship, Holland America\'s Glacier Bay/Inside Passage route is the gold standard. Their relationship with the park means preferred entry permits. The Pinnacle Grill onboard serves outstanding Alaskan king crab. Choose a veranda stateroom on the starboard side (northbound) for the best glacier views. The ship slows to a crawl through Glacier Bay, and the naturalist narration is excellent. Expect $2,500–5,000/person for a 7-day veranda cabin, depending on the season.' },
+      { label: 'Yacht & Charter Options', text: 'For the ultimate Alaska experience, private yacht charters run $15,000–50,000/week for groups of 6–12. You set the itinerary — whale watching in Frederick Sound, bear viewing in Katmai, glacier calving in Tracy Arm. Companies like Alaska Sea Adventures and Adventure Sixty North offer semi-private expeditions at more accessible price points ($6,000–10,000/person for 7 days). It\'s the difference between sharing a glacier with 3,000 passengers and sharing it with 8.' },
+      { label: 'Cruise + Land Packages', text: 'The smart play is a cruise-plus-land combo — 7 days on the water through the Inside Passage, then 3–4 days on land at Denali or Kenai. Princess and Holland America own lodges at Denali and offer seamless packages. The Denali Star train transfer between Whittier/Seward and Fairbanks is included in most premium packages. Budget $4,000–8,000/person for a 10–12 day cruise-land combo. This is the single best way to see both coastal and interior Alaska in one trip.' },
+    ],
+  },
+  {
+    id: 'fishing',
+    icon: '🎣',
+    title: 'Luxury Fishing Lodges',
+    gradient: 'linear-gradient(135deg, #0E7490 0%, #059669 100%)',
+    items: [
+      { label: 'Alyeska Resort & Spa', link: '/destinations/anchorage/', text: 'Alaska\'s premier four-season resort in Girdwood, 40 miles south of Anchorage. The Nordic Spa has an outdoor saltwater pool, hot tubs, and a cold plunge — all with mountain views. Rooms $300–600/night. The Seven Glaciers restaurant at the top of the tram is fine dining at 2,300 feet with panoramic glacier views — halibut, elk, and an impressive wine list. Entrees $45–80. The tram ride alone is $35, but it\'s complimentary for hotel guests and diners.' },
+      { label: 'King Salmon Fishing Lodges', text: 'The Kenai River is the king salmon capital of the world — and the premium lodges along the river offer guided fishing, private chef-prepared meals, and riverside cabins. Great Alaska Adventure Lodge and Kenai Riverside Lodge run $500–1,200/night all-inclusive. The king salmon season (May–July) is when you want to be here, and a 40–60 pound king on the line is an experience that humbles even experienced anglers. Most lodges clean, vacuum-pack, and ship your catch home.' },
+      { label: 'Fly-In Fishing', text: 'The true Alaska fishing luxury: a bush plane drops you on a remote river where the salmon are stacked and you\'re the only human for miles. Bristol Bay and Katmai are the prime zones. Rainbow trout, king salmon, and silver salmon depending on the month. Day trips from lodges run $600–1,000/person. Multi-day fly-in camps with tent cabins and a guide-chef are $1,500–3,000/person/night. The fishing is unbelievable because the pressure is essentially zero — these rivers see a handful of anglers per week.' },
+      { label: 'Halibut Fishing Charters', text: 'Homer ("Halibut Fishing Capital of the World") and Seward are the epicenters. A full-day halibut charter runs $300–500/person with all gear provided. The thrill is hooking a barn-door halibut — 100+ pounds, which takes 30–45 minutes to bring to the surface. Processing and shipping services at the dock will vacuum-pack and FedEx your catch home for $2–3/pound. A successful day means 50–100 pounds of premium halibut fillets in your freezer within the week.' },
+    ],
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="ft-hero">
+    <div class="ft-hero-gradient"></div>
+    <div class="ft-hero-noise"></div>
+    <div class="ft-hero-content">
+      <h1 class="ft-hero-title">The Finer Things</h1>
+      <p class="ft-hero-subtitle">Glacier Bay lodges at the edge of the ice, Gold Star rail service through the Alaska Range, helicopter landings on ancient glaciers, Denali flightseeing from a bush plane, Northern Lights from a heated glass dome, and king crab legs cracked dockside in Juneau.</p>
+      <div class="ft-hero-meta">
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Topics</span>
+          <span class="ft-hero-meta-value">7</span>
+        </div>
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Premium Lodges</span>
+          <span class="ft-hero-meta-value">10+</span>
+        </div>
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Fine Dining</span>
+          <span class="ft-hero-meta-value">6</span>
+        </div>
+      </div>
+    </div>
+    <div class="ft-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="ft-personal ft-reveal">
+    <div class="container-content">
+      <blockquote class="ft-personal-quote">
+        <p>Alaska doesn't do luxury the way most places do. There are no velvet ropes or champagne towers — the luxury is access. It's a helicopter dropping you on a glacier that no road will ever reach. It's a lodge where the chef caught the halibut you're eating that morning. It's watching a thousand-pound brown bear fish twenty yards from your platform at Brooks Falls. The best experiences in Alaska cost real money, but they deliver something no five-star hotel in a city ever could — a front-row seat to wilderness that hasn't changed in ten thousand years.</p>
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Quick Facts Strip -->
+  <section class="ft-quickfacts ft-reveal">
+    <div class="container-content">
+      <div class="ft-quickfacts-bar">
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Peak Season</span>
+          <span class="ft-quickfact-value">Jun–Aug</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Lodge (Luxury)</span>
+          <span class="ft-quickfact-value">$400–2,400/nt</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Fine Dining</span>
+          <span class="ft-quickfact-value">$30–80/entree</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Heli Tour</span>
+          <span class="ft-quickfact-value">$300–650</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Tipping</span>
+          <span class="ft-quickfact-value">18–20%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Nav -->
+  <section class="ft-quicknav ft-reveal">
+    <div class="container-content">
+      <div class="ft-quicknav-grid">
+        {topics.map((t) => (
+          <a href={`#${t.id}`} class="ft-quicknav-chip">
+            <span class="ft-quicknav-icon">{t.icon}</span>
+            <span class="ft-quicknav-label">{t.title.split(' ').slice(0, 2).join(' ')}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Topic Sections -->
+  {topics.map((topic) => (
+    <section class="ft-topic ft-reveal" id={topic.id}>
+      <div class="container-content">
+        <div class="ft-topic-header" style={`background: ${topic.gradient};`}>
+          <div class="ft-topic-header-inner">
+            <span class="ft-topic-icon">{topic.icon}</span>
+            <h2 class="ft-topic-title">{topic.title}</h2>
+            <span class="ft-topic-count">{topic.items.length} tips</span>
+          </div>
+        </div>
+
+        <div class="ft-tip-grid">
+          {topic.items.map((item) => (
+            <div class="ft-tip-card">
+              <h3 class="ft-tip-label">{item.label}</h3>
+              <p class="ft-tip-text" set:html={item.text} />
+              {item.link && (
+                <a href={item.link} class="ft-tip-link">Explore {item.label.split('(')[0].trim()} &rarr;</a>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Scott's Pro Tips -->
+  <section class="ft-protips ft-reveal">
+    <div class="container-content">
+      <div class="ft-protips-card">
+        <h2 class="ft-protips-heading">Scott's Pro Tips</h2>
+        <div class="scott-tips">
+          <ul>
+            <li><strong>Book Early:</strong> Premium lodges, Gold Star rail, and helicopter tours sell out 3–4 months ahead for June and July. January is when you should be booking your summer Alaska trip. Shoulder season (May and September) has better availability and lower prices, but some seasonal operations won't be running.</li>
+            <li><strong>Weather Flexibility:</strong> Build buffer days into any helicopter or flightseeing itinerary. Weather cancellations are common — Denali flightseeing has about a 30% cancellation rate due to clouds. Don't book a flightseeing tour the day before your flight home.</li>
+            <li><strong>Lodge Tipping:</strong> At all-inclusive lodges, standard tipping is 15–20% of the package price, split among guides and staff. Most lodges provide envelopes and guidance on the last day. Budget an extra $200–500 for tips on a week-long lodge stay.</li>
+            <li><strong>Fishing Catch Shipping:</strong> Most fishing lodges and charters will vacuum-pack and ship your catch via FedEx. Expect $2–3/pound for processing and shipping. A good halibut day can mean 50+ pounds of premium fish in your freezer at home — at a fraction of what you'd pay retail.</li>
+            <li><strong>Aurora Planning:</strong> Stay at least 3 nights in Fairbanks for Northern Lights. Even in peak season, cloud cover can block 1–2 nights. Check gi.alaska.edu for the aurora forecast and plan outdoor viewing on clear nights with Kp 3+.</li>
+            <li><strong>Small Ship vs. Big Ship:</strong> If this is your first Alaska cruise, a small ship (under 250 passengers) is worth the premium. You'll see more wildlife, visit more remote locations, and have naturalists who know every eagle nest and bear den on the route. The big ships are floating resorts that happen to pass by Alaska.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="ft-cta-section ft-reveal">
+    <div class="container-content">
+      <div class="ft-cta-card">
+        <h2 class="ft-cta-heading">Plan Your Premium Alaska Trip</h2>
+        <p class="ft-cta-text">Tell our AI planner your dates and interests — it'll build a custom itinerary with the best lodges, dining, and once-in-a-lifetime experiences.</p>
+        <a href="/plan/" class="ft-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Capture -->
+  <div class="container-content ft-reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get Our Free Alaska Luxury Travel Guide"
+      description="Premium lodges, fine dining, and bucket-list experiences across Alaska — packed into one PDF."
+      bullets={[
+        'Top wilderness lodges ranked by experience and value',
+        'Complete Gold Star rail guide with booking strategy',
+        'Best helicopter and flightseeing tours by region',
+        'Aurora viewing guide with photography tips',
+      ]}
+      guideTag="pillar-finer-things"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="ft-crosslinks ft-reveal">
+    <div class="container-content">
+      <h3 class="ft-crosslinks-heading">Explore More</h3>
+      <div class="ft-crosslinks-grid">
+        <a href="/cuisine/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#127860;</span>
+          <span class="ft-crosslink-label">Alaska Cuisine</span>
+          <span class="ft-crosslink-desc">King crab, wild salmon, and northern flavors across the state</span>
+        </a>
+        <a href="/wildlife/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#128059;</span>
+          <span class="ft-crosslink-label">Wildlife Guide</span>
+          <span class="ft-crosslink-desc">Bears, whales, eagles, and where to see them</span>
+        </a>
+        <a href="/glaciers/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#127956;</span>
+          <span class="ft-crosslink-label">Glacier Guide</span>
+          <span class="ft-crosslink-desc">Tidewater glaciers, ice hiking, and frozen landscapes</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+</BaseLayout>
+
+<!-- Scroll Reveal Observer (uses ft-reveal/ft-visible to avoid Tailwind .visible conflict) -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const ftRevealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('ft-visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.ft-reveal').forEach((el) => ftRevealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.ft-reveal').forEach((el) => el.classList.add('ft-visible'));
+  }
+</script>
+
+<style>
+  /* ================================================================
+     HERO
+     ================================================================ */
+  .ft-hero {
+    position: relative;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5rem var(--space-6) 60px;
+    overflow: hidden;
+  }
+
+  .ft-hero-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(135deg, #1A2332 0%, #0077B6 40%, #14B8A6 100%);
+  }
+
+  .ft-hero-noise {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .ft-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 720px;
+  }
+
+  .ft-hero-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 var(--space-3);
+  }
+
+  .ft-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0 0 var(--space-5);
+    max-width: 580px;
+  }
+
+  .ft-hero-meta {
+    display: flex;
+    gap: var(--space-5);
+    flex-wrap: wrap;
+  }
+
+  .ft-hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .ft-hero-meta-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .ft-hero-meta-value {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: #fff;
+  }
+
+  .ft-scroll-hint {
+    position: absolute;
+    bottom: 16px;
+    right: var(--space-6);
+    z-index: 3;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.35);
+    text-align: center;
+    animation: ftBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes ftBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+  }
+
+  /* ================================================================
+     PERSONAL INTRO
+     ================================================================ */
+  .ft-personal {
+    padding-block: var(--space-8);
+  }
+
+  .ft-personal-quote {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-8);
+    border-left: 4px solid #D4A574;
+    background: var(--color-sky);
+    border-radius: 0 12px 12px 0;
+  }
+
+  .ft-personal-quote p {
+    font-size: var(--text-body);
+    color: var(--color-heading);
+    line-height: var(--leading-body);
+    font-style: italic;
+    margin-bottom: var(--space-3);
+  }
+
+  .ft-personal-quote cite {
+    font-size: var(--text-caption);
+    color: #78350F;
+    font-weight: var(--weight-semibold);
+    font-style: normal;
+  }
+
+  /* ================================================================
+     QUICK FACTS STRIP
+     ================================================================ */
+  .ft-quickfacts {
+    padding: 0 0 var(--space-4);
+  }
+
+  .ft-quickfacts-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-5);
+    background: var(--color-sky);
+    border-radius: 16px;
+    padding: var(--space-4) var(--space-6);
+    flex-wrap: wrap;
+  }
+
+  .ft-quickfact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    text-align: center;
+  }
+
+  .ft-quickfact-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-slate);
+  }
+
+  .ft-quickfact-value {
+    font-size: 1.05rem;
+    font-weight: var(--weight-extrabold);
+    color: var(--color-deep-night);
+  }
+
+  .ft-quickfact-divider {
+    width: 1px;
+    height: 28px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  /* ================================================================
+     QUICK NAV — Jump-to chips
+     ================================================================ */
+  .ft-quicknav {
+    padding: 0 0 var(--space-6);
+  }
+
+  .ft-quicknav-grid {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .ft-quicknav-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: var(--weight-medium);
+    color: #4A5568;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+
+  .ft-quicknav-chip:hover {
+    background: #EFF8FF;
+    color: #0077B6;
+    transform: translateY(-2px);
+  }
+
+  .ft-quicknav-icon {
+    font-size: 1rem;
+  }
+
+  .ft-quicknav-label {
+    white-space: nowrap;
+  }
+
+  /* ================================================================
+     TOPIC SECTION
+     ================================================================ */
+  .ft-topic {
+    padding: var(--space-4) 0 var(--space-6);
+    scroll-margin-top: 80px;
+  }
+
+  .ft-topic-header {
+    position: relative;
+    border-radius: 20px;
+    padding: var(--space-5) var(--space-6);
+    margin-bottom: var(--space-5);
+    overflow: hidden;
+  }
+
+  .ft-topic-header-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+  }
+
+  .ft-topic-icon {
+    font-size: 1.6rem;
+  }
+
+  .ft-topic-title {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .ft-topic-count {
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+
+  /* ================================================================
+     TIP CARDS
+     ================================================================ */
+  .ft-tip-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  @media (max-width: 768px) {
+    .ft-tip-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .ft-tip-card {
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    padding: var(--space-5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ft-tip-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .ft-tip-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    margin: 0 0 var(--space-2);
+    line-height: 1.3;
+  }
+
+  .ft-tip-text {
+    font-size: 0.85rem;
+    color: var(--color-slate);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .ft-tip-text :global(a) {
+    color: #0077B6;
+    font-weight: var(--weight-semibold);
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 119, 182, 0.3);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.2s ease;
+  }
+
+  .ft-tip-text :global(a:hover) {
+    text-decoration-color: #0077B6;
+  }
+
+  .ft-tip-link {
+    display: inline-block;
+    margin-top: var(--space-3);
+    font-size: 0.8rem;
+    font-weight: var(--weight-semibold);
+    color: #0077B6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .ft-tip-link:hover {
+    color: #D4A574;
+  }
+
+  /* ================================================================
+     SCOTT'S PRO TIPS
+     ================================================================ */
+  .ft-protips {
+    padding: var(--space-4) 0 var(--space-6);
+  }
+
+  .ft-protips-card {
+    background: linear-gradient(135deg, #1A2332 0%, #2D3748 100%);
+    border-radius: 20px;
+    padding: var(--space-6) var(--space-6);
+  }
+
+  .ft-protips-heading {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: var(--weight-bold);
+    color: #D4A574;
+    margin: 0 0 var(--space-4);
+  }
+
+  .ft-protips-card .scott-tips {
+    background: transparent;
+    border-left: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ft-protips-card .scott-tips ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  .ft-protips-card .scott-tips li {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.65;
+    padding-left: var(--space-4);
+    position: relative;
+  }
+
+  .ft-protips-card .scott-tips li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #D4A574;
+  }
+
+  .ft-protips-card .scott-tips :global(strong) {
+    color: #D4A574;
+    font-weight: var(--weight-semibold);
+  }
+
+  .ft-protips-card .scott-tips :global(a) {
+    color: #FB923C;
+    font-weight: var(--weight-semibold);
+    text-decoration: underline;
+    text-decoration-color: rgba(251, 146, 60, 0.4);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.2s ease;
+  }
+
+  .ft-protips-card .scott-tips :global(a:hover) {
+    text-decoration-color: #FB923C;
+  }
+
+  /* ================================================================
+     BOTTOM CTA
+     ================================================================ */
+  .ft-cta-section {
+    padding: var(--space-6) 0 var(--space-8);
+  }
+
+  .ft-cta-card {
+    background: linear-gradient(135deg, #0077B6 0%, #14B8A6 100%);
+    border-radius: 20px;
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+    color: #fff;
+  }
+
+  .ft-cta-heading {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: var(--weight-bold);
+    margin: 0 0 var(--space-3);
+    color: #fff;
+  }
+
+  .ft-cta-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 520px;
+    margin: 0 auto var(--space-5);
+    line-height: 1.6;
+  }
+
+  .ft-cta-button {
+    display: inline-block;
+    background: var(--color-deep-night);
+    color: #D4A574;
+    font-size: 0.9rem;
+    font-weight: var(--weight-semibold);
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .ft-cta-button:hover {
+    background: #0D1117;
+    transform: translateY(-2px);
+  }
+
+  /* ================================================================
+     CROSS-LINKS
+     ================================================================ */
+  .ft-crosslinks {
+    padding: 0 0 var(--space-10);
+  }
+
+  .ft-crosslinks-heading {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    text-align: center;
+    margin: 0 0 var(--space-4);
+  }
+
+  .ft-crosslinks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
+    .ft-crosslinks-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .ft-crosslink-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-5) var(--space-4);
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ft-crosslink-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .ft-crosslink-icon {
+    font-size: 1.8rem;
+  }
+
+  .ft-crosslink-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: #1A2332;
+  }
+
+  .ft-crosslink-desc {
+    font-size: 0.78rem;
+    color: #4A5568;
+    line-height: 1.4;
+  }
+
+  /* ================================================================
+     SCROLL REVEAL
+     ================================================================ */
+  .ft-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .ft-reveal.ft-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes ftRevealFallback {
+    to { opacity: 1; transform: none; }
+  }
+
+  .ft-reveal {
+    animation: ftRevealFallback 0s 3s forwards;
+  }
+
+  /* ================================================================
+     RESPONSIVE
+     ================================================================ */
+  @media (max-width: 640px) {
+    .ft-hero {
+      min-height: 50vh;
+      padding: 0 var(--space-4) 40px;
+    }
+
+    .ft-hero-meta {
+      gap: var(--space-4);
+    }
+
+    .ft-scroll-hint {
+      display: none;
+    }
+
+    .ft-topic-header {
+      padding: var(--space-4) var(--space-4);
+    }
+
+    .ft-quickfacts-bar {
+      gap: var(--space-3);
+      padding: var(--space-3) var(--space-4);
+    }
+
+    .ft-quickfact-divider {
+      display: none;
+    }
+
+    .ft-quickfact {
+      min-width: 80px;
+    }
+
+    .ft-personal-quote {
+      padding: var(--space-4) var(--space-5);
+    }
+
+    .ft-protips-card {
+      padding: var(--space-5) var(--space-4);
+    }
+  }
+</style>
