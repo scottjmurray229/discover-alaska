@@ -1,0 +1,587 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'About', url: '/about/' },
+  { name: 'Jenice', url: '/about/jenice/' },
+];
+
+const schemaData = {
+  name: 'Jenice Murray',
+  image: '/images/jenice-murray.jpg',
+  bio: 'Cultural explorer, wildlife enthusiast, and the warm perspective behind the personal stories at Discover Alaska.',
+  url: 'https://discoveralaska.info/about/jenice/',
+  knowsAbout: [
+    'Alaska wildlife viewing',
+    'Northern Lights experiences',
+    'Alaska cruise travel',
+    'Glacier hiking',
+    'Alaska cultural experiences',
+    'Family travel in Alaska',
+    'Alaska food and seafood',
+  ],
+  sameAs: [],
+};
+
+const blogPosts: { slug: string; title: string }[] = [];
+
+const destinations = [
+  { slug: 'anchorage', title: 'Anchorage' },
+  { slug: 'juneau', title: 'Juneau' },
+  { slug: 'denali-national-park', title: 'Denali National Park' },
+  { slug: 'glacier-bay', title: 'Glacier Bay' },
+  { slug: 'kenai-fjords', title: 'Kenai Fjords' },
+];
+
+const coverageAreas = [
+  { icon: '🐻', title: 'Wildlife & Nature', desc: 'Bear viewing, whale watching, eagle spotting, and the wildlife encounters that make Alaska unlike anywhere else on earth.' },
+  { icon: '🌌', title: 'Northern Lights & Culture', desc: 'Aurora chasing tips, indigenous cultural experiences, and the magical moments that turn a trip into a lifelong memory.' },
+  { icon: '🦀', title: 'Seafood & Local Food', desc: 'King crab, wild salmon, halibut fish and chips, and the local food spots that define Alaska\'s culinary identity.' },
+  { icon: '🏔️', title: 'Glacier Adventures', desc: 'Glacier hikes, ice climbing, kayaking near calving glaciers, and the experiences that put Alaska\'s scale into perspective.' },
+];
+---
+
+<BaseLayout
+  title="Jenice Murray — Cultural Explorer | Discover Alaska"
+  description="Meet Jenice Murray — cultural explorer, wildlife enthusiast, and the warm perspective behind the personal stories at Discover Alaska."
+  pageType="author"
+  schemaData={schemaData}
+  breadcrumbs={breadcrumbs}
+>
+
+<!-- HERO -->
+<section class="author-hero">
+  <div class="hero-grid"></div>
+  <div class="author-hero-inner">
+    <Breadcrumb items={breadcrumbs} />
+    <div class="hero-eyebrow">Meet the Explorer</div>
+    <div class="author-avatar-wrap">
+      <img src="/images/jenice-murray.jpg" alt="Jenice Murray — Cultural Explorer" class="author-avatar-large" width="120" height="120" loading="eager" />
+    </div>
+    <h1>Jenice Murray</h1>
+    <p class="hero-role">Cultural Explorer & Wildlife Enthusiast</p>
+    <p class="hero-location">San Diego &middot; Alaska</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hero-stat-num">Explorer</div><div class="hero-stat-label">Alaska's wild side</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">Wildlife</div><div class="hero-stat-label">Bears, whales, eagles</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">Culture</div><div class="hero-stat-label">Local experiences</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BIO -->
+<section class="bio-section">
+  <div class="bio-inner">
+    <div class="section-eyebrow">About Jenice</div>
+    <h2 class="section-title">The Personal Perspective Behind Every Story</h2>
+    <div class="bio-content">
+      <p>Alaska was never on my radar until Scott started planning what he called a "bucket list trip." I figured it would be cold, remote, and a lot of hiking I wasn't prepared for. I was wrong about everything. The moment we touched down and I saw those mountains stretching endlessly in every direction, I understood why people fall in love with this place.</p>
+      <p>What surprised me most wasn't the glaciers or the wildlife &mdash; although watching a grizzly catch salmon ten feet away will change you. It was the people. The fishing guides who share stories over coffee at 5 AM. The indigenous artisans who explain the meaning behind every carving. <strong>Alaska isn't just a landscape &mdash; it's a living culture that welcomes you in.</strong></p>
+      <p>I'm the one who notices the details Scott walks right past. The way the light hits Denali at golden hour. The taste of fresh halibut at a harborside restaurant in Juneau. The sound of calving ice echoing across Glacier Bay. Those are the moments that make a trip unforgettable, and those are the stories I bring to Discover Alaska.</p>
+      <p>When Scott maps the routes and calculates the budgets, I find the experiences that give those plans a soul. <strong>Scott has the logistics brain. I have the storytelling instinct.</strong> Together, we cover Alaska from both angles &mdash; the practical and the personal.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="credentials-section">
+  <div class="credentials-inner">
+    <div class="section-eyebrow">Credentials</div>
+    <h2 class="section-title">Why You Can Trust Jenice's Perspective</h2>
+    <ul class="credential-list">
+      <li><strong>Wildlife enthusiast</strong> who has experienced bear viewing, whale watching, and eagle spotting across Alaska</li>
+      <li><strong>Northern Lights chaser</strong> with firsthand aurora viewing experience in Fairbanks and Denali</li>
+      <li><strong>Cultural explorer</strong> with deep appreciation for Alaska's indigenous heritage and local traditions</li>
+      <li>Personal experience with <strong>glacier adventures</strong> &mdash; hiking, kayaking, and witnessing calving ice up close</li>
+      <li>Passionate about <strong>Alaska's seafood scene</strong> &mdash; king crab, wild salmon, halibut, and local restaurants</li>
+      <li>Brings the <strong>human side</strong> of travel &mdash; the emotions, the surprises, and the stories behind the destinations</li>
+      <li>Frequent traveler with <strong>40+ countries</strong> of experience alongside Scott</li>
+    </ul>
+  </div>
+</section>
+
+<!-- WHAT JENICE COVERS -->
+<section class="coverage-section">
+  <div class="coverage-inner">
+    <div class="section-eyebrow">Content Areas</div>
+    <h2 class="section-title">What Jenice Covers</h2>
+    <div class="coverage-grid">
+      {coverageAreas.map((area) => (
+        <div class="coverage-card reveal">
+          <div class="coverage-icon">{area.icon}</div>
+          <div class="coverage-title">{area.title}</div>
+          <p class="coverage-desc">{area.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT BY JENICE -->
+<section class="content-section">
+  <div class="content-inner">
+    <div class="section-eyebrow">Content by Jenice</div>
+    <h2 class="section-title">Articles & Guides</h2>
+
+    <h3 class="content-subhead">Blog Posts</h3>
+    <div class="content-grid">
+      {blogPosts.map((post) => (
+        <a href={`/blog/${post.slug}/`} class="content-card reveal">
+          <div class="content-card-type">Blog</div>
+          <div class="content-card-title">{post.title}</div>
+        </a>
+      ))}
+    </div>
+
+    <h3 class="content-subhead">Destination Guides (Cultural Sections)</h3>
+    <div class="content-grid content-grid--destinations">
+      {destinations.map((dest) => (
+        <a href={`/destinations/${dest.slug}/`} class="content-card content-card--dest reveal">
+          <div class="content-card-type">Destination</div>
+          <div class="content-card-title">{dest.title}</div>
+        </a>
+      ))}
+    </div>
+
+    <div class="content-all-link">
+      <a href="/destinations/">Browse all destination guides &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- EMAIL CAPTURE -->
+<section class="email-section">
+  <div class="email-section-inner">
+    <EmailCapture
+      leadMagnet="Get Jenice's Alaska Experience Guide"
+      description="Insider tips from a cultural explorer who has experienced Alaska's wildlife, glaciers, and local culture firsthand &mdash; the personal details that make your trip unforgettable."
+      bullets={[
+        'Best wildlife viewing spots and what to expect',
+        'Northern Lights viewing tips and best locations',
+        'Top seafood restaurants and local food picks',
+        'Cultural experiences and hidden gems across Alaska',
+      ]}
+      guideTag="author-jenice"
+    />
+  </div>
+</section>
+
+<!-- BACK LINK -->
+<section class="back-section">
+  <div class="back-inner">
+    <a href="/about/" class="back-link">&larr; Back to About Us</a>
+  </div>
+</section>
+
+</BaseLayout>
+
+<script>
+  const ro = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+</script>
+
+<style>
+  /* ===================================================
+     HERO
+     =================================================== */
+  .author-hero {
+    padding: 140px 24px 80px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: linear-gradient(165deg, #141C26 0%, #1B3A4B 30%, #0D7377 55%, #1B3A4B 75%, #141C26 100%);
+  }
+  .author-hero::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -8%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(212,165,116,0.12) 0%, transparent 55%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: orbFloat 12s ease-in-out infinite;
+  }
+  .author-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -25%;
+    left: -12%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(251,191,36,0.07) 0%, transparent 55%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: orbFloat 15s ease-in-out infinite reverse;
+  }
+  @keyframes orbFloat {
+    0%, 100% { transform: translate(0, 0); }
+    33% { transform: translate(20px, -15px); }
+    66% { transform: translate(-10px, 10px); }
+  }
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .author-hero-inner {
+    max-width: 660px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  .author-hero-inner :global(.breadcrumb) {
+    margin-bottom: var(--space-8);
+  }
+  .author-hero-inner :global(.breadcrumb a),
+  .author-hero-inner :global(.breadcrumb span) {
+    color: rgba(255,255,255,0.5);
+  }
+  .author-hero-inner :global(.breadcrumb a:hover) {
+    color: rgba(255,255,255,0.8);
+  }
+  .hero-eyebrow {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-warm-gold);
+    margin-bottom: 24px;
+    opacity: 0;
+    animation: heroUp 1s cubic-bezier(0.16,1,0.3,1) forwards 0.2s;
+  }
+  .author-avatar-wrap {
+    margin-bottom: 24px;
+    opacity: 0;
+    animation: heroUp 1s cubic-bezier(0.16,1,0.3,1) forwards 0.3s;
+  }
+  .author-avatar-large {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    border: 4px solid rgba(255,255,255,0.15);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  }
+  .author-hero h1 {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    opacity: 0;
+    animation: heroUp 1s cubic-bezier(0.16,1,0.3,1) forwards 0.4s;
+  }
+  .hero-role {
+    font-size: 1.05rem;
+    color: var(--color-warm-gold);
+    font-weight: 600;
+    margin-bottom: 4px;
+    opacity: 0;
+    animation: heroUp 1s cubic-bezier(0.16,1,0.3,1) forwards 0.5s;
+  }
+  .hero-location {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 32px;
+    opacity: 0;
+    animation: heroUp 1s cubic-bezier(0.16,1,0.3,1) forwards 0.55s;
+  }
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    opacity: 0;
+    animation: heroUp 1s cubic-bezier(0.16,1,0.3,1) forwards 0.65s;
+  }
+  .hero-stat { text-align: center; }
+  .hero-stat-num {
+    font-family: var(--font-serif);
+    font-size: 1.6rem;
+    color: white;
+  }
+  .hero-stat-label {
+    font-size: 0.65rem;
+    color: rgba(255,255,255,0.45);
+    font-weight: 400;
+    margin-top: 2px;
+  }
+  @keyframes heroUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ===================================================
+     SHARED SECTION STYLES
+     =================================================== */
+  .section-eyebrow {
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-warm-coral);
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: var(--font-serif);
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    color: var(--color-deep-night);
+    line-height: 1.15;
+    margin-bottom: 32px;
+  }
+
+  /* ===================================================
+     BIO
+     =================================================== */
+  .bio-section {
+    padding: 80px 24px 64px;
+    max-width: var(--content-lg);
+    margin: 0 auto;
+  }
+  .bio-inner {
+    max-width: 720px;
+  }
+  .bio-content p {
+    font-size: 1.02rem;
+    line-height: 2;
+    color: var(--color-deep-night);
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  .bio-content strong { font-weight: 600; }
+  .bio-content em { font-style: italic; }
+
+  /* ===================================================
+     CREDENTIALS
+     =================================================== */
+  .credentials-section {
+    padding: 64px 24px 80px;
+    background: var(--color-white);
+  }
+  .credentials-inner {
+    max-width: var(--content-lg);
+    margin: 0 auto;
+  }
+  .credential-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 720px;
+  }
+  .credential-list li {
+    padding-left: 28px;
+    position: relative;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    color: var(--color-slate);
+  }
+  .credential-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-warm-gold), #FBBF24);
+  }
+  .credential-list li strong {
+    color: var(--color-deep-night);
+    font-weight: 600;
+  }
+
+  /* ===================================================
+     COVERAGE AREAS
+     =================================================== */
+  .coverage-section {
+    padding: 80px 24px;
+    background: var(--color-sand);
+  }
+  .coverage-inner {
+    max-width: var(--max-width, 1120px);
+    margin: 0 auto;
+  }
+  .coverage-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .coverage-card {
+    background: var(--color-white);
+    border-radius: 16px;
+    padding: 28px 24px;
+    border: 1px solid transparent;
+    transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+  }
+  .coverage-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 24px rgba(26,35,50,0.08);
+    border-color: var(--color-sand-dark);
+  }
+  .coverage-icon {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+  .coverage-title {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    color: var(--color-deep-night);
+    margin-bottom: 8px;
+  }
+  .coverage-desc {
+    font-size: 0.82rem;
+    color: var(--color-slate);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* ===================================================
+     CONTENT BY JENICE
+     =================================================== */
+  .content-section {
+    padding: 80px 24px;
+    background: var(--color-white);
+  }
+  .content-inner {
+    max-width: var(--max-width, 1120px);
+    margin: 0 auto;
+  }
+  .content-subhead {
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-warm-gold);
+    margin-bottom: 16px;
+  }
+  .content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .content-grid--destinations {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .content-card {
+    display: block;
+    background: var(--color-sand);
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid transparent;
+    transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+  }
+  .content-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(26,35,50,0.08);
+    border-color: var(--color-warm-gold);
+  }
+  .content-card-type {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-warm-coral);
+    margin-bottom: 6px;
+  }
+  .content-card--dest .content-card-type {
+    color: var(--color-warm-gold);
+  }
+  .content-card-title {
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+    color: var(--color-deep-night);
+    line-height: 1.35;
+  }
+  .content-all-link {
+    text-align: center;
+    margin-top: 8px;
+  }
+  .content-all-link a {
+    font-size: 0.88rem;
+    color: var(--color-warm-gold);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .content-all-link a:hover {
+    color: #B8935F;
+  }
+
+  /* ===================================================
+     EMAIL SECTION
+     =================================================== */
+  .email-section {
+    padding: 64px 24px;
+    background: var(--color-sand);
+  }
+  .email-section-inner {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  /* ===================================================
+     BACK LINK
+     =================================================== */
+  .back-section {
+    padding: 40px 24px 64px;
+    background: var(--color-sand);
+  }
+  .back-inner {
+    max-width: var(--content-lg);
+    margin: 0 auto;
+    text-align: center;
+  }
+  .back-link {
+    font-size: 0.88rem;
+    color: var(--color-warm-gold);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .back-link:hover { color: #B8935F; }
+
+  /* ===================================================
+     REVEAL ANIMATION
+     =================================================== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===================================================
+     RESPONSIVE
+     =================================================== */
+  @media (max-width: 768px) {
+    .author-hero { padding: 120px 24px 64px; }
+    .hero-stats { gap: 24px; }
+    .hero-stat-num { font-size: 1.3rem; }
+    .coverage-grid { grid-template-columns: 1fr; }
+    .content-grid { grid-template-columns: 1fr; }
+    .content-grid--destinations { grid-template-columns: 1fr 1fr; }
+    .bio-section { padding: 56px 24px 48px; }
+    .credentials-section { padding: 48px 24px 56px; }
+    .coverage-section { padding: 56px 24px; }
+    .content-section { padding: 56px 24px; }
+  }
+</style>
