@@ -15,6 +15,7 @@ const pageDescription = 'Everything you need to know before visiting Alaska — 
 interface Tip {
   title: string;
   description: string;
+  html?: string;
   tag?: string;
 }
 
@@ -77,7 +78,7 @@ const sections: TipSection[] = [
       },
       {
         title: 'Bush Planes',
-        description: 'Bush planes are not a novelty in Alaska — they are essential transportation. Roughly 80% of Alaska communities are not accessible by road. Flightseeing tours to Denali, bear-viewing trips to Katmai (Brooks Falls), and access to remote lodges all depend on small aircraft. Expect $200-600+ per person for a flightseeing tour, $600-800+ for a Katmai day trip from Anchorage. Weather delays are common — always build buffer days into your itinerary.',
+        description: 'Bush planes are not a novelty in Alaska — they are essential transportation. Roughly 80% of Alaska communities are not accessible by road. Flightseeing tours to Denali, bear-viewing trips to Katmai (Brooks Falls), and access to remote lodges all depend on small aircraft. Expect $200-600+ per person for a flightseeing tour, $600-800+ for a Katmai day trip from Anchorage. Weather delays are common — always build buffer days into your itinerary. Bush planes have strict weight limits — pack light and use a <a href="https://www.amazon.com/dp/B0BZH852G3?tag=discoverak-20" target="_blank" rel="noopener">floating waterproof dry bag</a> to protect electronics and documents.',
         tag: 'Important',
       },
     ],
@@ -117,17 +118,20 @@ const sections: TipSection[] = [
     tips: [
       {
         title: 'Bear Safety',
-        description: 'Alaska is home to brown bears (grizzlies), black bears, and polar bears (Arctic coast). Carry bear spray ($40-50, available at REI and Walmart in Anchorage) on every hike and know how to use it — practice drawing and deploying before you hit the trail. Make noise on trails to avoid surprising bears. Store food in bear-resistant containers when camping. Never run from a bear. If you encounter a brown bear, speak calmly and back away slowly. Bear safety is not optional — it is fundamental to every Alaska outdoor activity.',
+        html: 'Alaska is home to brown bears (grizzlies), black bears, and polar bears (Arctic coast). Carry <a href="https://www.amazon.com/dp/B0CXG2JR68?tag=discoverak-20" target="_blank" rel="noopener">bear spray</a> on every hike and know how to use it — practice drawing and deploying before you hit the trail. Make noise on trails to avoid surprising bears. Store food in bear-resistant containers when camping. Never run from a bear. If you encounter a brown bear, speak calmly and back away slowly. Bear safety is not optional — it is fundamental to every Alaska outdoor activity.',
+        description: 'Alaska is home to brown bears (grizzlies), black bears, and polar bears (Arctic coast). Carry bear spray on every hike and know how to use it — practice drawing and deploying before you hit the trail. Make noise on trails to avoid surprising bears.',
         tag: 'Critical',
       },
       {
         title: 'Hypothermia & Cold Weather',
-        description: 'Hypothermia can occur even in summer when rain and wind combine with temperatures in the 40s-50s°F. Dress in layers with moisture-wicking base layers — cotton kills in cold, wet conditions. Always carry rain gear, even on sunny days. In winter, exposed skin can get frostbite in minutes at -20°F and below. Carry emergency supplies (blanket, food, water, headlamp) on every hike, no matter how short.',
+        html: 'Hypothermia can occur even in summer when rain and wind combine with temperatures in the 40s-50s°F. Dress in layers with moisture-wicking base layers — a <a href="https://www.amazon.com/dp/B0B1937J29?tag=discoverak-20" target="_blank" rel="noopener">Smartwool merino base layer</a> is ideal — and add a <a href="https://www.amazon.com/dp/B083VHBBDL?tag=discoverak-20" target="_blank" rel="noopener">Patagonia Better Sweater</a> as your mid-layer. Cotton kills in cold, wet conditions. Always carry <a href="https://www.amazon.com/dp/B0DD8K3K5R?tag=discoverak-20" target="_blank" rel="noopener">rain gear</a>, even on sunny days. In winter, add a heavy insulated parka and a <a href="https://www.amazon.com/dp/B0CBQM96SX?tag=discoverak-20" target="_blank" rel="noopener">neck gaiter</a>. Carry <a href="https://www.amazon.com/dp/B06ZYW6HDK?tag=discoverak-20" target="_blank" rel="noopener">hand warmers</a> on every hike, no matter how short.',
+        description: 'Hypothermia can occur even in summer when rain and wind combine with temperatures in the 40s-50s°F. Dress in layers with moisture-wicking base layers — cotton kills in cold, wet conditions. Always carry rain gear, even on sunny days.',
         tag: 'Important',
       },
       {
         title: 'Daylight Extremes',
-        description: 'In summer, Anchorage gets 19+ hours of daylight in June; Fairbanks gets nearly 24 hours. This is exhilarating but disorienting — bring a sleep mask and set alarms, because your body clock will lose all reference points. In December, Anchorage sees roughly 5.5 hours of daylight, and Utqiagvik (Barrow) has 67 days of complete polar night. Plan activities and driving accordingly.',
+        html: 'In summer, Anchorage gets 19+ hours of daylight in June; Fairbanks gets nearly 24 hours. This is exhilarating but disorienting — you will need a sleep mask and should set alarms, because your body clock will lose all reference points. In December, Anchorage sees roughly 5.5 hours of daylight, and Utqiagvik (Barrow) has 67 days of complete polar night. In winter, carry a reliable <a href="https://www.amazon.com/dp/B09NQK2581?tag=discoverak-20" target="_blank" rel="noopener">headlamp</a> at all times.',
+        description: 'In summer, Anchorage gets 19+ hours of daylight in June; Fairbanks gets nearly 24 hours. This is exhilarating but disorienting — bring a sleep mask and set alarms, because your body clock will lose all reference points.',
         tag: 'Know This',
       },
       {
@@ -150,27 +154,43 @@ const sections: TipSection[] = [
     tips: [
       {
         title: 'The Layering System',
-        description: 'Base layer: moisture-wicking synthetic or merino wool (never cotton). Mid layer: fleece or down jacket for insulation. Outer layer: waterproof, breathable rain jacket and rain pants. This three-layer system works for summer hiking in Denali, whale watching in Juneau, and glacier cruises in Kenai Fjords. In winter, add a heavy insulated parka, insulated pants, and a balaclava.',
+        html: 'Base layer: <a href="https://www.amazon.com/dp/B0B1937J29?tag=discoverak-20" target="_blank" rel="noopener">Smartwool Classic Thermal 250 Crew</a> or <a href="https://www.amazon.com/dp/B09PTPJSQL?tag=discoverak-20" target="_blank" rel="noopener">bottoms</a> — merino wool is the gold standard (never cotton). Mid layer: <a href="https://www.amazon.com/dp/B083VHBBDL?tag=discoverak-20" target="_blank" rel="noopener">Patagonia Better Sweater</a> or a <a href="https://www.amazon.com/dp/B0738JFRD1?tag=discoverak-20" target="_blank" rel="noopener">packable puffer</a> for insulation. Outer layer: <a href="https://www.amazon.com/dp/B0DD8K3K5R?tag=discoverak-20" target="_blank" rel="noopener">Outdoor Research Helium Rain Jacket</a> — waterproof and breathable. In winter, add insulated pants and a balaclava. The three-layer system works for summer hiking in Denali, whale watching in Juneau, and glacier cruises in Kenai Fjords.',
+        description: 'Base layer: moisture-wicking synthetic or merino wool (never cotton). Mid layer: fleece or down jacket for insulation. Outer layer: waterproof, breathable rain jacket and rain pants.',
         tag: 'Essential',
       },
       {
         title: 'Rain Gear',
-        description: 'Southeast Alaska (Juneau, Ketchikan, Sitka) gets 60-90+ inches of rain per year. Even Anchorage averages rain on 40% of summer days. A quality waterproof jacket is the single most important item you will pack. Bring waterproof pants too — you will want them on boat tours, glacier hikes, and rainy trail days. Rubber boots (Xtratuf brand) are the unofficial shoe of Alaska and can be bought in any town.',
+        html: 'Southeast Alaska (Juneau, Ketchikan, Sitka) gets 60-90+ inches of rain per year. Even Anchorage averages rain on 40% of summer days. The <a href="https://www.amazon.com/dp/B0DD8K3K5R?tag=discoverak-20" target="_blank" rel="noopener">Outdoor Research Helium Rain Jacket</a> is the single most important item you will pack — lightweight, packable, and genuinely waterproof. Bring waterproof pants too — you will want them on boat tours, glacier hikes, and rainy trail days. Rubber boots (Xtratuf brand) are the unofficial shoe of Alaska and can be bought in any town.',
+        description: 'Southeast Alaska (Juneau, Ketchikan, Sitka) gets 60-90+ inches of rain per year. Even Anchorage averages rain on 40% of summer days. A quality waterproof jacket is the single most important item you will pack.',
         tag: 'Critical',
       },
       {
         title: 'Bear Spray & Binoculars',
-        description: 'Bear spray ($40-50) is essential for any hiking outside of towns. Buy it in Anchorage — you cannot fly with it. Binoculars are nearly as important: spotting wildlife (moose, bears, eagles, whales, puffins) from a safe distance is a daily occurrence in Alaska. A good 8x42 or 10x42 pair transforms every drive and hike. Compact binoculars work but full-size are noticeably better.',
+        html: '<a href="https://www.amazon.com/dp/B0CXG2JR68?tag=discoverak-20" target="_blank" rel="noopener">Counter Assault Bear Spray</a> is essential for any hiking outside of towns — buy it in Anchorage, you cannot fly with it. <a href="https://www.amazon.com/dp/B0B3JSRZFJ?tag=discoverak-20" target="_blank" rel="noopener">Nikon PROSTAFF Binoculars</a> are nearly as important: spotting wildlife (moose, bears, eagles, whales, puffins) from a safe distance is a daily occurrence in Alaska. A good 8x42 or 10x42 pair transforms every drive and hike. A <a href="https://www.amazon.com/dp/B0DCM34GXX?tag=discoverak-20" target="_blank" rel="noopener">GoPro HERO13</a> handles the wet conditions that ruin regular cameras.',
+        description: 'Bear spray ($40-50) is essential for any hiking outside of towns. Buy it in Anchorage — you cannot fly with it. Binoculars are nearly as important: spotting wildlife from a safe distance is a daily occurrence.',
         tag: 'Important',
       },
       {
         title: 'Mosquito Protection',
-        description: 'Alaska mosquitoes are legendary — thick clouds of them from June through mid-August, especially in Interior Alaska, tundra areas, and anywhere near standing water. Bring DEET-based repellent (30%+ concentration) or Picaridin. A head net ($5-10) is invaluable for serious hiking in backcountry. Permethrin-treated clothing adds another layer of protection. The mosquitoes are worst in late June and early July.',
+        html: 'Alaska mosquitoes are legendary — thick clouds of them from June through mid-August, especially in Interior Alaska, tundra areas, and anywhere near standing water. Bring DEET-based repellent (30%+ concentration) or Picaridin. An <a href="https://www.amazon.com/dp/B01EKFQFDG?tag=discoverak-20" target="_blank" rel="noopener">EVEN NATURALS bug head net</a> is invaluable for serious backcountry hiking. Permethrin-treated clothing adds another layer of protection. The mosquitoes are worst in late June and early July.',
+        description: 'Alaska mosquitoes are legendary — thick clouds of them from June through mid-August, especially in Interior Alaska. Bring DEET-based repellent (30%+ concentration) or Picaridin. A head net is invaluable for serious hiking in backcountry.',
         tag: 'Be Prepared',
       },
       {
-        title: 'Other Essentials',
-        description: 'Sunglasses and sunscreen (summer sun is intense at high latitudes and reflected off snow/glaciers). Sleep mask for summer midnight sun. Reusable water bottle. Hiking shoes with ankle support — trails are often rooty, rocky, and muddy. Camera with zoom lens for wildlife. Headlamp for shoulder-season trips. Dry bags for boat excursions. And a small daypack you can carry everywhere.',
+        title: 'Hiking Essentials',
+        html: '<a href="https://www.amazon.com/dp/B0C64B38Z8?tag=discoverak-20" target="_blank" rel="noopener">Merrell Moab 3 Waterproof Boots</a> handle Alaska\'s rooty, rocky, muddy trails — ankle support is essential. Carry an <a href="https://www.amazon.com/dp/B01I2P52WU?tag=discoverak-20" target="_blank" rel="noopener">Osprey Daylite Plus 20L</a> daypack. Wear <a href="https://www.amazon.com/dp/B000XIEAH8?tag=discoverak-20" target="_blank" rel="noopener">Darn Tough Hiker Socks</a> — they outlast every other brand. Carry a <a href="https://www.amazon.com/dp/B0988M1RTF?tag=discoverak-20" target="_blank" rel="noopener">Sawyer Squeeze Water Filter</a> for backcountry water sources, a <a href="https://www.amazon.com/dp/B09NQK2581?tag=discoverak-20" target="_blank" rel="noopener">Black Diamond Spot 400 Headlamp</a>, and a <a href="https://www.amazon.com/dp/B09PZ98JXB?tag=discoverak-20" target="_blank" rel="noopener">CamelBak M.U.L.E. 12</a> if you prefer hands-free hydration. Families with young children should consider the <a href="https://www.amazon.com/dp/B0DZ9J8THX?tag=discoverak-20" target="_blank" rel="noopener">Osprey Poco Child Carrier</a>.',
+        description: 'Hiking shoes with ankle support, a quality daypack, moisture-wicking socks, headlamp, and water filter are essentials for Alaska trails. And a small daypack you can carry everywhere.',
+      },
+      {
+        title: 'Cold-Weather & Winter Gear',
+        html: 'For winter and late-season trips: <a href="https://www.amazon.com/dp/B07W4SBGGG?tag=discoverak-20" target="_blank" rel="noopener">MSR Lightning Ascent Snowshoes</a> for backcountry winter access, <a href="https://www.amazon.com/dp/B0030I3Y48?tag=discoverak-20" target="_blank" rel="noopener">Kahtoola MICROspikes</a> for icy trails and parking lots, and <a href="https://www.amazon.com/dp/B0D6SS871C?tag=discoverak-20" target="_blank" rel="noopener">GORE-TEX Gaiters</a> for snow and deep mud. Keep your hands warm with <a href="https://www.amazon.com/dp/B0825RFGR9?tag=discoverak-20" target="_blank" rel="noopener">TRENDOUX Touchscreen Thermal Gloves</a> and top it with a <a href="https://www.amazon.com/dp/B0CMM21PRL?tag=discoverak-20" target="_blank" rel="noopener">Carhartt Knit Beanie</a>. Always bring <a href="https://www.amazon.com/dp/B06ZYW6HDK?tag=discoverak-20" target="_blank" rel="noopener">HotHands hand warmers</a> — they are cheap, light, and invaluable at -20°F.',
+        description: 'For winter and late-season trips: snowshoes, microspikes, gaiters, thermal gloves, warm beanie, and hand warmers are essential additions to the standard layering system.',
+        tag: 'Important',
+      },
+      {
+        title: 'Sun, Power & Road Trip Gear',
+        html: 'Summer sun is intense at high latitudes and reflects blindingly off snow and glaciers — a <a href="https://www.amazon.com/dp/B07NPPJH21?tag=discoverak-20" target="_blank" rel="noopener">Columbia Bora Bora Booney hat</a> and a <a href="https://www.amazon.com/dp/B09R8KRRDX?tag=discoverak-20" target="_blank" rel="noopener">Hydro Flask 32oz</a> are both on my every-trip list. Keep a <a href="https://www.amazon.com/dp/B0DWCPS2Y4?tag=discoverak-20" target="_blank" rel="noopener">high-capacity Anker power bank</a> charged for remote areas with no outlets. For road trips, an <a href="https://www.amazon.com/dp/B01KIFISX2?tag=discoverak-20" target="_blank" rel="noopener">EcoNour car sun shade</a> is essential when you are parked during 20-hour days. A <a href="https://www.amazon.com/dp/B0D5MT8XBY?tag=discoverak-20" target="_blank" rel="noopener">pack cover</a> protects your bag on boat tours. And if you are an angler, a <a href="https://www.amazon.com/dp/B07N454L81?tag=discoverak-20" target="_blank" rel="noopener">KastKing telescopic fishing rod</a> packs small and handles Alaska salmon — pair it with <a href="https://www.amazon.com/dp/B01AYH1O7Q?tag=discoverak-20" target="_blank" rel="noopener">NRS neoprene paddle gloves</a> for kayak fishing in cold water.',
+        description: 'Sun hat, hydration, power bank, and car sun shade for road trips. Anglers should pack a telescopic fishing rod for opportunistic salmon fishing. A waterproof dry bag protects electronics on boat tours.',
       },
     ],
   },
@@ -210,7 +230,7 @@ const faqItems = [
         </div>
         <div class="menu-hero-meta-item">
           <span class="menu-hero-meta-label">Tips</span>
-          <span class="menu-hero-meta-value">22</span>
+          <span class="menu-hero-meta-value">24</span>
         </div>
         <div class="menu-hero-meta-item">
           <span class="menu-hero-meta-label">FAQ</span>
@@ -268,7 +288,7 @@ const faqItems = [
                     <span class={`menu-tag menu-tag--${tip.tag.toLowerCase().replace(/[^a-z]/g, '')}`}>{tip.tag}</span>
                   )}
                 </div>
-                <p class="menu-tip-desc">{tip.description}</p>
+                <p class="menu-tip-desc" set:html={tip.html ?? tip.description} />
               </div>
             </div>
           ))}
@@ -393,6 +413,8 @@ const faqItems = [
   .menu-tip-top { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-2); }
   .menu-tip-title { font-size: 1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); margin: 0; line-height: 1.3; }
   .menu-tip-desc { font-size: 0.85rem; color: var(--color-slate); line-height: 1.65; margin: 0; }
+  .menu-tip-desc :global(a) { color: #0077B6; font-weight: var(--weight-semibold); text-decoration: underline; text-decoration-color: rgba(0,119,182,0.3); text-underline-offset: 2px; transition: text-decoration-color 0.2s ease; }
+  .menu-tip-desc :global(a:hover) { text-decoration-color: #0077B6; }
 
   .menu-cta-section { padding: var(--space-6) 0 var(--space-8); }
   .menu-cta-card { background: linear-gradient(135deg, #0077B6 0%, #005A8C 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
