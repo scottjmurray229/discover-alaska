@@ -1,0 +1,554 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PackingList from '../components/PackingList.astro';
+import FAQ from '../components/FAQ.astro';
+import EmailCapture from '../components/EmailCapture.astro';
+import FTCDisclosure from '../components/FTCDisclosure.astro';
+import { ALASKA_PACKING_FAQS, ALASKA_CONFIG } from '../data/packing-list';
+import { PACKING_BASE } from '../data/packing-base';
+
+const config = ALASKA_CONFIG;
+const allItems = [...PACKING_BASE, ...config.destinationEssentials];
+
+// Build HowTo schema sections by category
+const categoryLabels: Record<string, string> = {
+  documents: 'Documents & Money',
+  clothing: 'Clothing',
+  toiletries: 'Toiletries & Health',
+  electronics: 'Electronics',
+  gear: 'Gear & Accessories',
+  destination: 'Alaska Essentials',
+  activity: 'Activity Gear',
+};
+
+// Group items for schema
+const byCategory: Record<string, typeof allItems> = {};
+allItems.forEach(item => {
+  if (!byCategory[item.category]) byCategory[item.category] = [];
+  byCategory[item.category].push(item);
+});
+
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to Pack for Alaska',
+  description: 'Complete interactive packing checklist for Alaska travelers — customized by season, region, and activities.',
+  totalTime: 'PT15M',
+  step: Object.entries(byCategory).map(([catId, items]) => ({
+    '@type': 'HowToSection',
+    name: categoryLabels[catId] || catId,
+    itemListElement: items.slice(0, 8).map((item, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      text: item.name + (item.description ? ` — ${item.description}` : ''),
+    })),
+  })),
+};
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Alaska Packing List — Essential Gear',
+  description: 'Gear we recommend for every Alaska trip',
+  itemListElement: config.gearRecommendations.map((item, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: item.name,
+    description: item.reason,
+    offers: {
+      '@type': 'Offer',
+      price: item.affiliatePrice ? item.affiliatePrice.replace(/[^0-9–]/g, '').split('–')[0] : '0',
+      priceCurrency: 'USD',
+      url: item.amazonAsin
+        ? `https://www.amazon.com/dp/${item.amazonAsin}?tag=${config.affiliateTag}`
+        : `https://www.amazon.com/s?k=${item.amazonSearchFallback}&tag=${config.affiliateTag}`,
+    },
+  })),
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: ALASKA_PACKING_FAQS.map(faq => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Packing List', url: '/packing-list/' },
+];
+---
+
+<BaseLayout
+  title="Alaska Packing List 2026 — Interactive Checklist | Discover Alaska"
+  description="Free interactive packing checklist for Alaska. Check off what you have, see what you need, get Alaska-specific recommendations. 60+ items, customized for your trip."
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Inline schema (HowTo + ItemList + FAQPage) -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- BreadcrumbList schema -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbs.map((b, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: b.name,
+      item: `https://discoveralaska.info${b.url}`,
+    })),
+  })} />
+
+  <!-- Hero -->
+  <section class="pl-hero">
+    <div class="pl-hero-inner container-content">
+      <nav class="pl-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Packing List</span>
+      </nav>
+      <h1 class="pl-hero-title">Alaska Packing List 2026</h1>
+      <p class="pl-hero-subtitle">
+        Interactive checklist for Alaska. Covers bear country hiking, Southeast Alaska rain, glacier adventures, and wildlife viewing.
+      </p>
+      <div class="pl-hero-meta">
+        <span class="pl-meta-chip">🐻 Cold / Alpine</span>
+        <span class="pl-meta-chip">⚡ 120V / Type A/B</span>
+        <span class="pl-meta-chip">💵 USD</span>
+        <span class="pl-meta-chip">🐾 Bear spray required backcountry</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FTC Disclosure -->
+  <FTCDisclosure placement="inline" />
+
+  <!-- Laundry Strategy -->
+  <section class="pl-laundry container-prose">
+    <div class="pl-laundry-inner">
+      <div class="pl-laundry-header">
+        <span class="pl-laundry-icon">🎒</span>
+        <h2 class="pl-laundry-title">Scott's Packing Philosophy: Pack Technical, Not for Quantity</h2>
+      </div>
+      <p>
+        Alaska packing is different from most destinations. The focus is on gear quality and layering capability rather than outfit variety. Laundry is available in Anchorage, Juneau, Fairbanks, and most towns — but limited or unavailable in remote areas. Pack for 5–7 days, prioritizing technical fabrics over quantity.
+      </p>
+      <p>
+        The cold-weather and rain-gear items are non-negotiable. Southeast Alaska (Juneau, Ketchikan, Sitka) gets 60–90 inches of rain per year — not as occasional showers but as persistent, day-long wet. A proper waterproof shell is not a nice-to-have.
+      </p>
+      <p>
+        <strong>Weight matters differently in Alaska.</strong> If you're flying into remote lodges or bush camps, weight limits on small planes are strict — sometimes 20–30 pounds total including gear. Check with your outfitter before packing. For cruise-ship-based Alaska travel, packing rules are much more relaxed.
+      </p>
+    </div>
+  </section>
+
+  <!-- Interactive Packing List -->
+  <section class="pl-section">
+    <PackingList />
+  </section>
+
+  <!-- Gear We Recommend (SEO ItemList section) -->
+  <section class="pl-gear-section container-prose">
+    <h2>Gear We Recommend for Alaska</h2>
+    <p>These are the items that make the biggest difference on an Alaska trip. Each pick is chosen for a specific reason — not just "bring layers" but why it matters here, specifically.</p>
+
+    <div class="pl-gear-cards">
+      {config.gearRecommendations.map((item, i) => {
+        const amazonUrl = item.amazonAsin
+          ? `https://www.amazon.com/dp/${item.amazonAsin}?tag=${config.affiliateTag}`
+          : `https://www.amazon.com/s?k=${item.amazonSearchFallback}&tag=${config.affiliateTag}`;
+        return (
+          <div class="pl-gear-card">
+            <div class="pl-gear-card-num">{i + 1}</div>
+            <div class="pl-gear-card-body">
+              <h3 class="pl-gear-card-name">{item.name}</h3>
+              <p class="pl-gear-card-reason">{item.reason}</p>
+              <div class="pl-gear-card-footer">
+                <span class="pl-gear-price">{item.affiliatePrice}</span>
+                <a href={amazonUrl} class="pl-gear-link" target="_blank" rel="noopener noreferrer sponsored">
+                  See on Amazon →
+                </a>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- Bridge to Travel Tips -->
+  <section class="pl-editorial container-prose">
+    <p>
+      For the full story on what to buy, what to skip, and why — including specific product recommendations
+      for rain gear, boots, and backcountry safety — see our
+      <a href="/practical/">Alaska Travel Tips guide</a>.
+    </p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="pl-faq container-prose">
+    <h2>Alaska Packing — Frequently Asked Questions</h2>
+    <FAQ items={ALASKA_PACKING_FAQS} />
+  </section>
+
+  <!-- Email Capture -->
+  <div class="container-prose">
+    <EmailCapture
+      leadMagnet="Get Our Free Alaska Packing Guide PDF"
+      description="The complete printable checklist for your Alaska trip — organized by activity type and region."
+      bullets={[
+        'Full 60+ item checklist, print-ready',
+        'Bear safety gear and protocols',
+        'Southeast Alaska rain vs. interior summer packing differences',
+        'What to rent in Anchorage vs. bring from home',
+      ]}
+      guideTag="packing-alaska"
+    />
+  </div>
+
+  <!-- Related Links -->
+  <section class="pl-related container-content">
+    <h2>Plan the Rest of Your Alaska Trip</h2>
+    <div class="pl-related-links">
+      <a href="/plan/" class="pl-related-card">
+        <span class="pl-related-icon">🗺️</span>
+        <div>
+          <div class="pl-related-title">AI Trip Planner</div>
+          <div class="pl-related-desc">Build a custom day-by-day itinerary</div>
+        </div>
+      </a>
+      <a href="/practical/" class="pl-related-card">
+        <span class="pl-related-icon">🛠️</span>
+        <div>
+          <div class="pl-related-title">Practical Guide</div>
+          <div class="pl-related-desc">Transport, money, safety, seasons</div>
+        </div>
+      </a>
+      <a href="/wildlife/" class="pl-related-card">
+        <span class="pl-related-icon">🐻</span>
+        <div>
+          <div class="pl-related-title">Wildlife Guide</div>
+          <div class="pl-related-desc">Bears, moose, whales, and eagles</div>
+        </div>
+      </a>
+      <a href="/destinations/" class="pl-related-card">
+        <span class="pl-related-icon">🏔️</span>
+        <div>
+          <div class="pl-related-title">Destinations</div>
+          <div class="pl-related-desc">Denali, Juneau, Kenai Fjords and more</div>
+        </div>
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Laundry Strategy */
+  .pl-laundry {
+    padding: var(--space-6) 0 var(--space-2);
+  }
+
+  .pl-laundry-inner {
+    background: var(--color-sky, #E8F4F5);
+    border-radius: 12px;
+    padding: var(--space-6) var(--space-7);
+    border-left: 4px solid var(--color-ocean-teal);
+  }
+
+  .pl-laundry-header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+  }
+
+  .pl-laundry-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .pl-laundry-title {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    margin: 0;
+    line-height: 1.35;
+  }
+
+  .pl-laundry-inner p {
+    font-size: 0.95rem;
+    color: var(--color-slate);
+    line-height: 1.65;
+    margin: 0 0 var(--space-4);
+  }
+
+  .pl-laundry-inner p:last-child {
+    margin-bottom: 0;
+  }
+
+  .pl-laundry-inner strong {
+    color: var(--color-deep-night);
+  }
+
+  @media (max-width: 640px) {
+    .pl-laundry-inner {
+      padding: var(--space-5) var(--space-5);
+    }
+  }
+
+  /* Hero */
+  .pl-hero {
+    background: linear-gradient(135deg, #0D7377 0%, #095456 60%, #1A2332 100%);
+    color: white;
+    padding: calc(80px + var(--space-10)) 0 var(--space-10);
+  }
+
+  .pl-hero-inner {
+    max-width: 760px;
+  }
+
+  .pl-breadcrumb {
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: var(--space-3);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .pl-breadcrumb a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+  }
+
+  .pl-breadcrumb a:hover {
+    color: white;
+  }
+
+  .pl-hero-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 0 0 var(--space-3);
+  }
+
+  .pl-hero-subtitle {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.65;
+    max-width: 580px;
+    margin: 0 0 var(--space-5);
+  }
+
+  .pl-hero-meta {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .pl-meta-chip {
+    font-size: 0.78rem;
+    font-weight: var(--weight-medium);
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 4px 12px;
+    backdrop-filter: blur(4px);
+  }
+
+  /* Sections */
+  .pl-section {
+    background: var(--color-sky, #E8F4F5);
+    padding: var(--space-4) 0;
+  }
+
+  .pl-gear-section {
+    padding: var(--space-10) var(--space-5);
+  }
+
+  .pl-gear-section h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.75rem;
+    color: var(--color-deep-night);
+    margin: 0 0 var(--space-3);
+  }
+
+  .pl-gear-section > p {
+    color: var(--color-slate);
+    line-height: 1.7;
+    margin: 0 0 var(--space-6);
+  }
+
+  .pl-gear-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .pl-gear-card {
+    display: flex;
+    gap: var(--space-4);
+    background: var(--color-sand, #F5F0E8);
+    border-radius: 10px;
+    padding: var(--space-4);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .pl-gear-card-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    color: var(--color-ocean-teal);
+    opacity: 0.3;
+    flex-shrink: 0;
+    width: 28px;
+    padding-top: 2px;
+  }
+
+  .pl-gear-card-name {
+    font-size: 0.95rem;
+    font-weight: var(--weight-semibold);
+    color: var(--color-deep-night);
+    margin: 0 0 var(--space-1);
+  }
+
+  .pl-gear-card-reason {
+    font-size: 0.85rem;
+    color: var(--color-slate);
+    line-height: 1.6;
+    margin: 0 0 var(--space-2);
+  }
+
+  .pl-gear-card-footer {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .pl-gear-price {
+    font-size: 0.78rem;
+    color: var(--color-slate);
+    opacity: 0.7;
+  }
+
+  .pl-gear-link {
+    font-size: 0.82rem;
+    font-weight: var(--weight-semibold);
+    color: var(--color-warm-coral);
+    text-decoration: none;
+  }
+
+  .pl-gear-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Editorial */
+  .pl-editorial {
+    padding: var(--space-8) var(--space-5);
+  }
+
+  .pl-editorial p {
+    color: var(--color-slate);
+    line-height: 1.75;
+    margin: 0 0 var(--space-4);
+  }
+
+  /* FAQ */
+  .pl-faq {
+    padding: 0 var(--space-5) var(--space-8);
+  }
+
+  .pl-faq h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    color: var(--color-deep-night);
+    margin: 0 0 var(--space-4);
+  }
+
+  /* Related */
+  .pl-related {
+    padding: var(--space-10) var(--space-5);
+  }
+
+  .pl-related h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    color: var(--color-deep-night);
+    margin: 0 0 var(--space-5);
+  }
+
+  .pl-related-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-3);
+  }
+
+  .pl-related-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    background: var(--color-sand, #F5F0E8);
+    border-radius: 10px;
+    padding: var(--space-4);
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+  }
+
+  .pl-related-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transform: translateY(-1px);
+  }
+
+  .pl-related-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .pl-related-title {
+    font-size: 0.88rem;
+    font-weight: var(--weight-semibold);
+    color: var(--color-deep-night);
+    margin-bottom: 2px;
+  }
+
+  .pl-related-desc {
+    font-size: 0.75rem;
+    color: var(--color-slate);
+    opacity: 0.7;
+  }
+
+  /* Print */
+  @media print {
+    .pl-hero {
+      padding: var(--space-6) 0;
+      background: none;
+      color: var(--color-deep-night);
+    }
+
+    .pl-hero-meta,
+    .pl-breadcrumb,
+    .pl-related,
+    .pl-gear-section,
+    .pl-editorial {
+      display: none;
+    }
+
+    .pl-hero-title {
+      font-size: 1.5rem;
+    }
+
+    .pl-section {
+      background: none;
+    }
+  }
+</style>
