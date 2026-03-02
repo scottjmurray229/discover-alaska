@@ -1,0 +1,707 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Alaska Festival Calendar', url: '/festivals/' },
+];
+
+const pageTitle = 'Alaska Festival Calendar 2026 — Events Worth Planning Your Trip Around';
+const pageDescription = "From the Iditarod's epic sled dog race to Fur Rondy's wild winter carnival — Alaska's festivals are as big and untamed as the state itself. Here's what to see and when to go.";
+
+const festivals = [
+  {
+    month: 'Jan',
+    monthIndex: 0,
+    name: 'Anchorage Fur Rendezvous',
+    location: 'Anchorage',
+    dates: 'Mid-February (10 days)',
+    description: 'Alaska\'s oldest and largest winter festival — "Fur Rondy" has been running since 1935 and it\'s a genuine Alaskan institution. The Running of the Reindeer through downtown is absurd and wonderful. The World Championship Sled Dog Race kicks off from 4th Avenue. Blanket toss, outhouse races, carnival rides on frozen ground, fur auctions, and the kind of crowd that can actually appreciate -10°F as good parade weather.',
+    tag: 'Iconic',
+    gradient: 'linear-gradient(135deg, #1E3A5F 0%, #2E86AB 100%)',
+  },
+  {
+    month: 'Feb',
+    monthIndex: 1,
+    name: 'Iditarod Trail Sled Dog Race',
+    location: 'Anchorage to Nome',
+    dates: 'First Saturday of March (ceremonial start Anchorage)',
+    description: 'The Last Great Race on Earth. Over 1,000 miles from Anchorage to Nome across some of the most punishing terrain on the planet. The ceremonial start in downtown Anchorage draws 30,000 spectators — mushers, hundreds of dogs, and the entire city showing up in their best cold-weather gear. The restart in Willow is quieter but more raw. Track mushers via GPS for two weeks as they cross mountain ranges and frozen tundra. This is Alaska distilled.',
+    tag: 'Must-See',
+    gradient: 'linear-gradient(135deg, #0F3460 0%, #16213E 100%)',
+  },
+  {
+    month: 'Feb',
+    monthIndex: 1,
+    name: 'Yukon Quest International Sled Dog Race',
+    location: 'Fairbanks (finish) or Whitehorse YT (start)',
+    dates: 'Early February',
+    description: 'Harder and more remote than the Iditarod. The Yukon Quest runs 1,000 miles between Fairbanks and Whitehorse with fewer checkpoints — mushers carry more gear, teams are smaller, the wilderness is denser. Watch the finish in Fairbanks for raw emotion as frost-covered mushers and exhausted dogs cross the line after 10+ days on trail. The Quest community is tight-knit and welcoming to spectators who seek it out.',
+    tag: 'Adventure',
+    gradient: 'linear-gradient(135deg, #2C3E50 0%, #4CA1AF 100%)',
+  },
+  {
+    month: 'Jun',
+    monthIndex: 5,
+    name: 'Sitka Summer Music Festival',
+    location: 'Sitka',
+    dates: 'June (three weeks)',
+    description: 'Chamber music in a rain forest fishing town — and it works brilliantly. Professional musicians from major orchestras worldwide spend three weeks in Sitka performing evening concerts and free noon recitals in Harrigan Centennial Hall. The setting — surrounded by the sea, mountains, and old-growth Tongass National Forest — is absurdly beautiful. Tickets run $15–40. Sitka itself is one of Alaska\'s most charming towns and worth visiting regardless.',
+    tag: 'Culture',
+    gradient: 'linear-gradient(135deg, #134E5E 0%, #71B280 100%)',
+  },
+  {
+    month: 'Apr',
+    monthIndex: 3,
+    name: 'Juneau Jazz & Classics',
+    location: 'Juneau',
+    dates: 'May (10 days)',
+    description: 'Jazz and classical performances at venues across Alaska\'s capital city — breweries, theaters, church halls, outdoor stages. Many events are free. The festival draws world-class artists who appreciate the excuse to spend a week in one of America\'s most dramatic capital cities. Juneau is only accessible by air or sea, which makes showing up here feel like a deliberate choice. Whale watching is at peak season simultaneously.',
+    tag: 'Culture',
+    gradient: 'linear-gradient(135deg, #1A2980 0%, #26D0CE 100%)',
+  },
+  {
+    month: 'Jun',
+    monthIndex: 5,
+    name: 'World Eskimo-Indian Olympics',
+    location: 'Fairbanks',
+    dates: 'Late July',
+    description: 'The most unique sporting event I\'ve ever witnessed. Traditional Alaska Native athletic events — the one-foot high kick, two-foot high kick, ear weight, knuckle hop, and the Eskimo stick pull — alongside cultural performances, blanket toss, and Native regalia. These events aren\'t recreations. They\'re rooted in survival skills that kept communities alive through Arctic winters. Fairbanks hosts this every July and the arena is packed with families across Alaska Native nations.',
+    tag: 'Cultural Heritage',
+    gradient: 'linear-gradient(135deg, #FF6B35 0%, #F7C59F 100%)',
+  },
+  {
+    month: 'Jun',
+    monthIndex: 5,
+    name: 'Golden Days',
+    location: 'Fairbanks',
+    dates: 'Third week of July',
+    description: 'Fairbanks celebrates its gold rush heritage with a week of events centered on Felix Pedro — the Italian immigrant who discovered gold here in 1902 and gave birth to a city. Street fairs, parade, rubber duck race down the Chena River, gold panning competitions, and the Golden Days Grand Parade. Locals dress in period costume. The city goes full gold rush for the week and it\'s genuinely fun rather than forced.',
+    tag: 'Heritage',
+    gradient: 'linear-gradient(135deg, #F7971E 0%, #FFD200 100%)',
+  },
+  {
+    month: 'Jul',
+    monthIndex: 6,
+    name: 'Alaska State Fair',
+    location: 'Palmer (Mat-Su Valley)',
+    dates: 'Late August through Labor Day (12 days)',
+    description: 'Alaska does state fairs different from the Lower 48 — the produce alone is worth the visit. Palmer\'s Matanuska Valley grows vegetables of genuinely absurd proportions: 100-pound cabbages, 35-pound beets, turnips the size of basketballs. The midnight sun and rich volcanic soil produce vegetables you have to see to believe. Beyond the giant produce, excellent fair food, carnival rides, concert performances, livestock shows, and the Alaska Pioneer Homes exhibit. $15 adult admission.',
+    tag: 'Family',
+    gradient: 'linear-gradient(135deg, #56ab2f 0%, #a8e063 100%)',
+  },
+  {
+    month: 'Sep',
+    monthIndex: 8,
+    name: 'Kodiak Crab Festival',
+    location: 'Kodiak',
+    dates: 'Memorial Day Weekend (late May)',
+    description: 'Kodiak Island\'s annual celebration of survival and seafood — the Crab Festival honors the fishing fleet that works some of the world\'s most dangerous waters and feeds the crowd extremely well in the process. Parade, carnival, survival suit race, blessing of the fleet, and more Dungeness crab than you\'ve likely eaten in your life. The island is beautiful, brown bears outnumber people in the surrounding wilderness, and the community spirit here is real.',
+    tag: 'Local Favorite',
+    gradient: 'linear-gradient(135deg, #C94B4B 0%, #4B134F 100%)',
+  },
+];
+
+const months = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December',
+];
+
+const monthGradients = [
+  'linear-gradient(135deg, #1E3A5F 0%, #2E86AB 100%)',
+  'linear-gradient(135deg, #0F3460 0%, #16213E 100%)',
+  'linear-gradient(135deg, #1A2980 0%, #26D0CE 100%)',
+  'linear-gradient(135deg, #134E5E 0%, #71B280 100%)',
+  'linear-gradient(135deg, #1A2980 0%, #26D0CE 100%)',
+  'linear-gradient(135deg, #134E5E 0%, #71B280 100%)',
+  'linear-gradient(135deg, #F7971E 0%, #FFD200 100%)',
+  'linear-gradient(135deg, #56ab2f 0%, #a8e063 100%)',
+  'linear-gradient(135deg, #C94B4B 0%, #4B134F 100%)',
+  'linear-gradient(135deg, #FF6B35 0%, #F7C59F 100%)',
+  'linear-gradient(135deg, #2C3E50 0%, #4CA1AF 100%)',
+  'linear-gradient(135deg, #1E3A5F 0%, #2E86AB 100%)',
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  breadcrumbs={breadcrumbs}
+>
+
+<style>
+  /* ================================================================
+     HERO
+     ================================================================ */
+  .fest-hero {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 var(--space-6) 60px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0F3460 0%, #1E3A5F 50%, #16213E 100%);
+  }
+
+  .fest-hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.35;
+  }
+
+  .fest-hero-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 52, 96, 0.92) 0%, rgba(15, 52, 96, 0.3) 60%, transparent 100%);
+  }
+
+  .fest-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+  }
+
+  .fest-hero-eyebrow {
+    font-size: 0.72rem;
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #4DB8FF;
+    margin-bottom: var(--space-3);
+  }
+
+  .fest-hero-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    line-height: 1.15;
+    margin: 0 0 var(--space-4);
+  }
+
+  .fest-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.6;
+    margin: 0 0 var(--space-6);
+    max-width: 600px;
+  }
+
+  .fest-hero-meta {
+    display: flex;
+    gap: var(--space-6);
+    flex-wrap: wrap;
+  }
+
+  .fest-hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .fest-hero-meta-label {
+    font-size: 0.68rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .fest-hero-meta-value {
+    font-size: 1.4rem;
+    font-weight: var(--weight-bold);
+    color: #fff;
+  }
+
+  /* ================================================================
+     INTRO / PERSONAL QUOTE
+     ================================================================ */
+  .fest-personal {
+    padding-block: var(--space-8);
+  }
+
+  .fest-personal-quote {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-8);
+    border-left: 4px solid #2E86AB;
+    background: var(--color-sky, #f0f7ff);
+    border-radius: 0 12px 12px 0;
+  }
+
+  .fest-personal-quote p {
+    font-size: var(--text-body, 1.05rem);
+    color: var(--color-heading, #1a2332);
+    line-height: 1.7;
+    font-style: italic;
+    margin-bottom: var(--space-3);
+  }
+
+  .fest-personal-quote cite {
+    font-size: 0.85rem;
+    color: #2E86AB;
+    font-weight: var(--weight-semibold);
+    font-style: normal;
+  }
+
+  /* ================================================================
+     FESTIVAL CARDS
+     ================================================================ */
+  .fest-section {
+    padding: var(--space-6) 0 var(--space-10);
+  }
+
+  .fest-section-heading {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night, #1a2332);
+    margin: 0 0 var(--space-2);
+    text-align: center;
+  }
+
+  .fest-section-sub {
+    font-size: 1rem;
+    color: var(--color-slate, #5a6a7a);
+    text-align: center;
+    margin: 0 0 var(--space-8);
+  }
+
+  .fest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .fest-card {
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--color-white, #fff);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fest-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  }
+
+  .fest-card-header {
+    padding: var(--space-5) var(--space-5) var(--space-4);
+    min-height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .fest-card-tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(4px);
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: var(--space-2);
+    width: fit-content;
+  }
+
+  .fest-card-name {
+    font-size: 1.15rem;
+    font-weight: var(--weight-bold);
+    color: #fff;
+    line-height: 1.3;
+    margin: 0 0 4px;
+  }
+
+  .fest-card-location {
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: var(--weight-medium);
+  }
+
+  .fest-card-body {
+    padding: var(--space-4) var(--space-5) var(--space-5);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .fest-card-dates {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 0.8rem;
+    font-weight: var(--weight-semibold);
+    color: #2E86AB;
+  }
+
+  .fest-card-dates::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #2E86AB;
+    flex-shrink: 0;
+  }
+
+  .fest-card-desc {
+    font-size: 0.88rem;
+    color: var(--color-body, #3d4d5e);
+    line-height: 1.65;
+    flex: 1;
+  }
+
+  /* ================================================================
+     TIPS SECTION
+     ================================================================ */
+  .fest-tips {
+    padding: var(--space-8) 0;
+    background: linear-gradient(135deg, #0F3460 0%, #1E3A5F 100%);
+  }
+
+  .fest-tips-inner {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+  }
+
+  .fest-tips-heading {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    margin: 0 0 var(--space-6);
+    text-align: center;
+  }
+
+  .fest-tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .fest-tip-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: var(--space-4) var(--space-5);
+  }
+
+  .fest-tip-icon {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-2);
+  }
+
+  .fest-tip-title {
+    font-size: 0.9rem;
+    font-weight: var(--weight-bold);
+    color: #fff;
+    margin-bottom: var(--space-2);
+  }
+
+  .fest-tip-text {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.6;
+  }
+
+  /* ================================================================
+     CTA SECTION
+     ================================================================ */
+  .fest-cta-section {
+    padding: var(--space-8) 0;
+  }
+
+  .fest-cta-card {
+    background: linear-gradient(135deg, #0F3460 0%, #1A2980 100%);
+    border-radius: 20px;
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+    color: #fff;
+  }
+
+  .fest-cta-heading {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: var(--weight-bold);
+    margin: 0 0 var(--space-3);
+    color: #fff;
+  }
+
+  .fest-cta-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 520px;
+    margin: 0 auto var(--space-5);
+    line-height: 1.6;
+  }
+
+  .fest-cta-button {
+    display: inline-block;
+    background: #2E86AB;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: var(--weight-semibold);
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .fest-cta-button:hover {
+    background: #1a6a8a;
+    transform: translateY(-2px);
+  }
+
+  /* ================================================================
+     CROSSLINKS
+     ================================================================ */
+  .fest-crosslinks {
+    padding: 0 0 var(--space-10);
+  }
+
+  .fest-crosslinks-heading {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night, #1a2332);
+    text-align: center;
+    margin: 0 0 var(--space-4);
+  }
+
+  .fest-crosslinks-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
+    .fest-crosslinks-grid { grid-template-columns: 1fr; }
+    .fest-grid { grid-template-columns: 1fr; }
+    .fest-hero { padding: 0 var(--space-4) 40px; min-height: 55vh; }
+  }
+
+  .fest-crosslink-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-5) var(--space-4);
+    background: var(--color-white, #fff);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .fest-crosslink-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .fest-crosslink-icon { font-size: 1.8rem; }
+  .fest-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night, #1a2332); }
+  .fest-crosslink-desc { font-size: 0.78rem; color: var(--color-slate, #5a6a7a); line-height: 1.4; }
+
+  /* Reveal animation */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+</style>
+
+  <!-- Hero -->
+  <header class="fest-hero">
+    <video class="fest-hero-video" autoplay muted loop playsinline preload="metadata">
+      <source src="/videos/pillar/festivals-hero.mp4" type="video/mp4" />
+    </video>
+    <div class="fest-hero-gradient"></div>
+
+    <div class="fest-hero-content">
+      <p class="fest-hero-eyebrow">Alaska Events & Festivals</p>
+      <h1 class="fest-hero-title">Alaska Festival Calendar 2026</h1>
+      <p class="fest-hero-subtitle">Dog sled races, gold rush celebrations, Native cultural gatherings, and summer music under the midnight sun — Alaska's festivals match the scale of the state itself.</p>
+      <div class="fest-hero-meta">
+        <div class="fest-hero-meta-item">
+          <span class="fest-hero-meta-label">Events</span>
+          <span class="fest-hero-meta-value">9</span>
+        </div>
+        <div class="fest-hero-meta-item">
+          <span class="fest-hero-meta-label">Season</span>
+          <span class="fest-hero-meta-value">Year-Round</span>
+        </div>
+        <div class="fest-hero-meta-item">
+          <span class="fest-hero-meta-label">Best Month</span>
+          <span class="fest-hero-meta-value">Feb / July</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal Intro -->
+  <section class="fest-personal reveal">
+    <div class="container-content">
+      <blockquote class="fest-personal-quote">
+        <p>Alaska's festivals aren't polished tourism events dressed up for visitors — they're the real thing. Fur Rondy started because Anchorage needed something to do in February. The Iditarod exists because dog mushing is woven into Alaska's survival story. The World Eskimo-Indian Olympics preserves skills that kept indigenous communities alive through Arctic winters. Even the State Fair in Palmer is just Alaskans showing off vegetables they genuinely could not grow anywhere else on earth. Plan your trip around at least one of these and you'll leave understanding the state at a level most visitors never reach.</p>
+        <cite>— Scott Murray, Discover Alaska</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Festival Cards -->
+  <section class="fest-section reveal">
+    <div class="container-content">
+      <h2 class="fest-section-heading">Alaska's Top Festivals & Events</h2>
+      <p class="fest-section-sub">Organized by season — plan your trip around the ones that speak to you.</p>
+
+      <div class="fest-grid">
+        {festivals.map((fest) => (
+          <div class="fest-card reveal">
+            <div class="fest-card-header" style={`background: ${fest.gradient};`}>
+              {fest.tag && <span class="fest-card-tag">{fest.tag}</span>}
+              <h3 class="fest-card-name">{fest.name}</h3>
+              <div class="fest-card-location">{fest.location}</div>
+            </div>
+            <div class="fest-card-body">
+              <div class="fest-card-dates">{fest.dates}</div>
+              <p class="fest-card-desc">{fest.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Scott's Tips -->
+  <section class="fest-tips reveal">
+    <div class="fest-tips-inner">
+      <h2 class="fest-tips-heading">Scott's Alaska Festival Tips</h2>
+      <div class="fest-tips-grid">
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#10052;</div>
+          <div class="fest-tip-title">Dress for actual Alaska winter</div>
+          <p class="fest-tip-text">Fur Rondy and Iditarod start weekend are genuinely cold — subtract 20°F from what you think you need and add hand warmers. Layering is the only strategy that works when you're standing outside for hours.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#9992;</div>
+          <div class="fest-tip-title">Book far ahead for Iditarod week</div>
+          <p class="fest-tip-text">Anchorage accommodations fill months out for Iditarod start weekend. If you want to also see the restart in Willow, rent a car — it's 70 miles north and the vibe is completely different (more intimate, mushers still accessible).</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127774;</div>
+          <div class="fest-tip-title">Summer festivals under midnight sun</div>
+          <p class="fest-tip-text">Fairbanks festivals in July happen under continuous daylight. Bring an eye mask, embrace the strangeness, and plan afternoon events just as enthusiastically as morning ones — the light doesn't change.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127981;</div>
+          <div class="fest-tip-title">Palmer State Fair is worth the drive</div>
+          <p class="fest-tip-text">It's 45 minutes from Anchorage. The giant vegetable competition alone justifies the trip — a 100-pound cabbage puts everything else in perspective. Go on a weekday to avoid weekend crowds.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#128247;</div>
+          <div class="fest-tip-title">World Eskimo-Indian Olympics: buy tickets early</div>
+          <p class="fest-tip-text">The WEIO is a real competition with real athletes, not a performance for tourists. The arena gets packed. Buy tickets at the door first morning, plan to stay all day. The one-foot high kick is jaw-dropping.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127932;</div>
+          <div class="fest-tip-title">Sitka Music Festival: don't sleep on it</div>
+          <p class="fest-tip-text">This is world-class chamber music in one of the most beautiful small towns in North America. The free noon recitals at Harrigan Centennial Hall let you experience it without paying for evening seats. Combine with sea kayaking and brown bear viewing nearby.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="fest-cta-section reveal">
+    <div class="container-content">
+      <div class="fest-cta-card">
+        <h2 class="fest-cta-heading">Plan Your Alaska Festival Trip</h2>
+        <p class="fest-cta-text">Let our AI travel planner build a custom itinerary around the Alaska events you want to experience — with logistics, accommodation, and seasonal timing dialed in.</p>
+        <a href="/plan/" class="fest-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQ items={[
+    { question: "When is the Iditarod and how do I watch the start?", answer: "The Iditarod begins the first Saturday of March with a ceremonial start in downtown Anchorage at 4th Avenue. Around 30,000 spectators line the route. The official restart happens the next day in Willow (about 70 miles north), which is worth attending for a more intimate experience. Accommodation in Anchorage books out months ahead — plan by December for a March trip." },
+    { question: "What is Fur Rondy (Fur Rendezvous)?", answer: "Fur Rendezvous is Alaska's oldest and largest winter festival, running for about 10 days in mid-February in Anchorage. Events include the World Championship Sled Dog Race, Running of the Reindeer through downtown, outhouse races, fur auctions, carnival rides, and live entertainment. It started in 1935 as a trading post gathering and has evolved into a full civic celebration. Admission to most events is free; some require tickets." },
+    { question: "What's the World Eskimo-Indian Olympics?", answer: "The WEIO is an annual multi-day athletic event in Fairbanks (late July) showcasing traditional Alaska Native sports and cultural events. Events include the one-foot high kick, two-foot high kick, knuckle hop, ear weight, Eskimo stick pull, and blanket toss. These are ancient skills tied to hunting, survival, and community. Competitors come from across Alaska Native nations. Tickets are available at the door; plan to spend a full day." },
+    { question: "Is the Alaska State Fair worth visiting?", answer: "Yes, especially if you've never seen giant vegetables in person. The Palmer fair runs late August through Labor Day and features produce grown under the midnight sun — 100+ pound cabbages, enormous pumpkins, giant beets. Beyond produce: fair food, carnival rides, concerts, livestock competitions, and the Pioneer pavilion. Adult tickets are around $15. It's 45 minutes from Anchorage and gets crowded on weekends." },
+    { question: "What should I wear to winter festivals in Alaska?", answer: "Assume temperatures between 0°F and 20°F for February/March events in Anchorage and Fairbanks. Wear moisture-wicking base layers, insulating mid-layers, and a windproof outer shell. Insulated, waterproof boots rated to -20°F. Hand warmers, face covering, and insulated gloves are essential for standing outside for hours. Fairbanks is always colder than Anchorage — plan accordingly." },
+    { question: "Are there Alaska Native cultural festivals I can attend?", answer: "Yes. The World Eskimo-Indian Olympics in Fairbanks (July) is the largest and most accessible. The Celebration festival in Juneau (even-numbered years, June) is a major Tlingit, Haida, and Tsimshian cultural gathering. Many communities also host smaller potlatch ceremonies — ask at local visitor centers. Attend as a respectful observer, photograph only with permission, and never touch regalia without being invited." },
+  ]} />
+
+  <!-- Email Capture -->
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get the Alaska Festival Planning Guide"
+      description="Month-by-month breakdown of Alaska's best events with travel logistics, accommodation tips, and what to expect at each festival."
+      bullets={[
+        'All major festivals with exact dates and locations',
+        'What to wear for winter events in Alaska',
+        'How to combine festivals with wildlife and aurora trips',
+        'Insider tips for the Iditarod, Fur Rondy, and State Fair',
+      ]}
+      guideTag="pillar-festivals-alaska"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="fest-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="fest-crosslinks-heading">Keep Exploring Alaska</h3>
+      <div class="fest-crosslinks-grid">
+        <a href="/northern-lights/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#127775;</span>
+          <span class="fest-crosslink-label">Northern Lights</span>
+          <span class="fest-crosslink-desc">When and where to see the aurora borealis in Alaska</span>
+        </a>
+        <a href="/wildlife/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#128059;</span>
+          <span class="fest-crosslink-label">Wildlife Guide</span>
+          <span class="fest-crosslink-desc">Bears, whales, moose — Alaska's iconic animals and where to see them</span>
+        </a>
+        <a href="/destinations/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#127965;</span>
+          <span class="fest-crosslink-label">All Destinations</span>
+          <span class="fest-crosslink-desc">Every Alaska destination we've explored with honest reviews</span>
+        </a>
+        <a href="/practical/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#9992;</span>
+          <span class="fest-crosslink-label">Practical Guide</span>
+          <span class="fest-crosslink-desc">Getting to and around Alaska — flights, ferries, driving, and more</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => { entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); }); },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
