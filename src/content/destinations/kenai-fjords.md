@@ -3,7 +3,7 @@ title: "Kenai Fjords"
 description: "Explore Kenai Fjords National Park near Seward, Alaska. Hike Exit Glacier, cruise past tidewater glaciers, and spot whales, puffins, and sea otters."
 heroVideo: ""
 heroImage: ""
-tagline: "Ice, Ocean, and Wild Shores"
+tagline: "Tidewater glaciers calving into the North Pacific, humpback whales breaching alongside the boat, Steller sea lions hauling out on rocks, and puffins nesting on sea stacks — all accessible by day-cruise from Seward"
 region: southcentral
 bestMonths: [May, June, July, August, September]
 budgetPerDay:

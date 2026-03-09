@@ -3,7 +3,7 @@ title: "Ketchikan"
 description: "Plan your trip to Ketchikan, Alaska's Salmon Capital. Explore totem poles, Creek Street, Misty Fjords, and world-class fishing in this vibrant southeast port."
 heroVideo: ""
 heroImage: ""
-tagline: "Where Totems Guard the Tides"
+tagline: "The salmon capital of the world, the totem pole capital of the world, and the first port for most Alaska Inside Passage cruises — Creek Street, Potlatch Totem Park, and Misty Fjords National Monument just 30 minutes east by floatplane"
 region: southeast
 bestMonths: [May, June, July, August, September]
 budgetPerDay:

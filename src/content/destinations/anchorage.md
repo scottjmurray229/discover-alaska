@@ -3,7 +3,7 @@ title: "Anchorage"
 description: "Discover Anchorage, Alaska's vibrant urban gateway to wilderness. Plan your trip with guides to trails, wildlife, dining, and mountain adventures."
 heroVideo: ""
 heroImage: ""
-tagline: "Where City Meets Wild"
+tagline: "Alaska biggest city is the practical gateway to everything north — Chugach Mountains visible from downtown, the best sushi outside Japan (seriously), and the hub for bush plane flights to the rest of the state"
 region: southcentral
 bestMonths: [May, June, July, August, September]
 budgetPerDay:

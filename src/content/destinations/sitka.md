@@ -3,7 +3,7 @@ title: "Sitka"
 description: "Discover Sitka, Alaska — where Russian heritage meets Tlingit culture in a stunning rainforest setting. Whale watching, totem poles, and raw coastal beauty."
 heroVideo: ""
 heroImage: ""
-tagline: "Where Cultures and Tides Converge"
+tagline: "Russia sold Alaska from this town — the onion domes of Saint Michael Cathedral still rise above the harbor, and the Sitka National Historical Park preserves the battleground where Tlingit and Russian forces fought in 1804"
 region: southeast
 bestMonths: [May, June, July, August, September]
 budgetPerDay:

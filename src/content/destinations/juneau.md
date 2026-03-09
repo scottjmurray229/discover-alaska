@@ -3,7 +3,7 @@ title: "Juneau"
 description: "Plan your Juneau, Alaska trip. Visit the state capital for Mendenhall Glacier, whale watching, rainforest hiking, and Southeast Alaska's rich culture."
 heroVideo: ""
 heroImage: ""
-tagline: "Capital City Among Glaciers"
+tagline: "Alaska capital is accessible only by plane or boat, which keeps it genuine — the Mendenhall Glacier ends in a lake 12 miles from downtown, whale watching is exceptional, and the hiking above town is legitimately world-class"
 region: southeast
 bestMonths: [May, June, July, August, September]
 budgetPerDay:

@@ -3,7 +3,7 @@ title: "Fairbanks"
 description: "Plan your Fairbanks, Alaska trip. Northern lights capital, midnight sun, gold rush history, hot springs, and gateway to the Arctic and Interior Alaska."
 heroVideo: ""
 heroImage: ""
-tagline: "Aurora Skies and Midnight Sun"
+tagline: "Aurora borealis viewing from December through March, midnight sun lasting 22 hours in June, the University of Alaska Museum of the North, and the pipeline that changed everything bisecting town on its way to Prudhoe Bay"
 region: interior
 bestMonths: [March, June, July, August, September, December, January, February]
 budgetPerDay:

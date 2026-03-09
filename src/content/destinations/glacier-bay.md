@@ -3,7 +3,7 @@ title: "Glacier Bay"
 description: "Plan your Glacier Bay National Park trip. Witness massive tidewater glaciers calving, whale watching, kayaking, and pristine Alaska wilderness by boat."
 heroVideo: ""
 heroImage: ""
-tagline: "Where Ice Meets the Sea"
+tagline: "A national park and UNESCO World Heritage Site where the ice retreated so recently (1750) that succession ecology is visibly happening in real-time — only cruise ships and small tour boats access the calving glacier faces"
 region: southeast
 bestMonths: [May, June, July, August, September]
 budgetPerDay:
