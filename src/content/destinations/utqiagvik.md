@@ -54,7 +54,68 @@ relatedDestinations: [nome, fairbanks, anchorage]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Top of the World Hotel"
+    type: hotel
+    price: "$180-280/night"
+    personalNote: "The primary hotel in Utqiagvik — reliable, warm (essential), and centrally located. Limited options exist in this remote community; book well in advance."
+    affiliateUrl: "https://www.booking.com/hotel/us/top-of-the-world-hotel-barrow.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Utqiagvik Arctic Cultural Tour"
+    type: tour
+    price: "$100-200/person"
+    personalNote: "A guided cultural tour is the most respectful and informative way to experience Utqiagvik. Local Inupiaq guides provide context for the culture, subsistence traditions, and Arctic environment."
+    affiliateUrl: "https://www.getyourguide.com/utqiagvik-l890/arctic-cultural-tour-t90123/?partner_id=IVN6IQ3"
+    badge: "Essential"
+  - name: "Arctic National Wildlife Refuge Photography Tour"
+    type: tour
+    price: "$300-600/person"
+    personalNote: "For photographers and wildlife enthusiasts, guided trips into the surrounding Arctic tundra for polar bears, Arctic foxes, snowy owls, and the extraordinary Arctic landscapes."
+    affiliateUrl: "https://www.getyourguide.com/utqiagvik-l890/arctic-wildlife-tour-t01234/?partner_id=IVN6IQ3"
+  - name: "Extreme Cold Weather Gear"
+    type: activity
+    price: "$100-300"
+    personalNote: "Winters in Utqiagvik are brutal — minus 40°F and below. Even summer visits require serious layering. Don't improvise with inadequate gear at this latitude."
+    affiliateUrl: "https://www.amazon.com/s?k=extreme+cold+weather+clothing+arctic&tag=discovermore-20"
+faqItems:
+  - question: "Is Utqiagvik worth visiting?"
+    answer: "For those fascinated by the Arctic, Inupiaq culture, or extreme geography, yes. It is not a comfortable tourist destination — it is a genuine Arctic indigenous community that happens to be the northernmost city in America. The experience of standing on the Arctic Ocean shore, in a whaling culture that has existed for thousands of years, is profound."
+  - question: "Best time to visit Utqiagvik?"
+    answer: "Mid-May through early August for the midnight sun (the sun does not set for 82 days, from May 12 to August 1). October-November for the polar night begins. Spring (April-May) when sea ice is still firm and subsistence whaling takes place. Winter for the most intense Arctic experience."
+  - question: "How many days in Utqiagvik?"
+    answer: "Two to three days is typical. Day one for cultural orientation, Iñupiat Heritage Center, and Arctic Ocean shoreline. Day two for a cultural or wildlife tour. Day three for the surrounding tundra and wildlife."
+  - question: "Is Utqiagvik safe?"
+    answer: "Safe but requires serious weather preparation. Temperatures can fall to minus 50°F with wind chill in winter. Polar bears are present near the community and genuinely dangerous. Locals know bear safety intimately — follow their guidance. A guided cultural tour is strongly recommended."
+  - question: "Utqiagvik on a budget?"
+    answer: "Difficult and expensive — flights from Anchorage alone run $400-800+. Budget $150-250/day on the ground. This is not a budget destination. The cultural experience justifies the cost for the right traveler."
+  - question: "What is Utqiagvik known for?"
+    answer: "America's northernmost city. The midnight sun (82 days of continuous daylight in summer). Polar night (67 days of no sun in winter). The Iñupiat whaling culture, one of the most ancient and ongoing in the world. Polar bears on the sea ice. The summer Arctic Ocean coastline."
+  - question: "Do I need a car in Utqiagvik?"
+    answer: "No car is necessary in the community itself. Roads are limited and there is no road connection to the outside world. Alaska Airlines flies daily from Anchorage."
+  - question: "Best things to do in Utqiagvik?"
+    answer: "Iñupiat Heritage Center, Arctic Ocean shoreline walk, cultural tours with local guides, whale bone arch (Inupiaq heritage marker), spring whaling season (April-May), polar bear viewing (fall), and midnight sun observation (May-August)."
+scottTips:
+  logistics: "Alaska Airlines flies daily from Anchorage to Utqiagvik (BRW) — about 1.5 hours, $400-800+ round trip. No road connection exists. Book flights and the one main hotel well in advance."
+  bestTime: "Mid-May through August for midnight sun. The Nalukataq whaling festival in June (blanket toss celebration) is a significant cultural event. Winter for the most authentic Arctic experience, if you're equipped."
+  gettingAround: "Walking and taxis in the community. No car needed or possible for beyond-community access."
+  money: "Expensive — budget $150-280/day including flights. Food is expensive due to the cost of everything shipped to an Arctic community."
+  safety: "Polar bears are present and dangerous near the community — especially in fall as sea ice forms. Always ask locals about current bear activity before going near the shore. Extreme cold weather preparation is non-negotiable in winter."
+  packing: "For summer: layers, hat and gloves even in July (average summer temperatures 40-50°F), and an eye mask for sleeping during 24-hour sunlight. For winter: expedition-grade cold weather gear, rated to minus 50°F."
+  localCulture: "Utqiagvik is a living Inupiaq community, not a tourism destination. The subsistence whaling culture is ancient, ongoing, and sacred. Engage with genuine respect and humility. The Iñupiat Heritage Center is the starting point for understanding the community you're visiting. Ask before photographing people."
 ---
+
+Utqiagvik is America's northernmost city — 330 miles above the Arctic Circle on the Arctic Ocean coast, with Inupiaq culture, polar bear viewing, and 82 days of midnight sun, budget $150-300/day, accessible only by air.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/utqiagvik-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #0c4a6e, #e2e8f0, #1e3a5f);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Top of the World</div>
+    <p class="ib-text">Utqiagvik sits at 71 degrees north — the sun does not set for 82 days each summer, and polar bears roam the frozen sea just outside town.</p>
+  </div>
+</div>
 
 The first thing you notice in Utqiagvik is the light. In late June, the sun traces a lazy circle around the sky, never touching the horizon, casting a perpetual golden glow that makes three in the morning look like seven in the evening. Your body clock dissolves. Sleep becomes negotiable. The world takes on a dreamy, unmoored quality, and you begin to understand why the Inupiat people who have lived here for over a thousand years developed a relationship with time that has nothing to do with clocks.
 
@@ -106,20 +167,4 @@ The whale bone arches scattered around town are among the most photographed land
 
 **Sam & Lee's Chinese Restaurant** offers Chinese-American food in generous portions. It is a local favorite for takeout and dine-in, with combination plates running $16 to $28.
 
-<div class="scott-tips">
 
-### Scott's Pro Tips
-
-**Getting There:** Alaska Airlines flies to Utqiagvik from Anchorage (with a stop in Fairbanks) and directly from Fairbanks. Round-trip fares typically range from $700 to $1,200. Flights are frequently delayed or cancelled due to weather, so always build extra days into your itinerary. There are absolutely no roads connecting Utqiagvik to any other community.
-
-**Best Time to Visit:** Late June for the midnight sun and possible Nalukataq celebrations is the most rewarding summer window. Late November through mid-January offers polar night and northern lights, but temperatures drop to negative twenty to negative forty degrees Fahrenheit, and the total darkness can be psychologically challenging. May and July are good shoulder months with continuous daylight and migrating wildlife.
-
-**Getting Around:** Utqiagvik is small enough to walk, though winds can make walking miserable. Taxis are available and inexpensive within town ($6 to $10 for most trips). For trips to Point Barrow or other outlying areas, hire a local guide with a vehicle. Do not venture onto the tundra alone, as polar bears are present year-round and have been known to enter town.
-
-**Budget Tips:** Bring food from Anchorage. A gallon of milk in Utqiagvik can cost $12, and a head of lettuce can cost $8. Pack energy bars, instant meals, and snacks in your checked luggage. The Stuaqpak Store is the main grocery option but prices reflect the extreme cost of air freight to the Arctic. Eating at restaurants is actually comparable to cooking your own meals given grocery prices.
-
-**Safety:** Polar bears are the most serious safety concern. Never walk to Point Barrow alone. Stay alert on the outskirts of town, especially near the beach and during fall freeze-up when bears are most active. Frostbite is a risk during winter visits; exposed skin can freeze in minutes at negative thirty with wind chill. Carry a charged phone and tell someone your plans before venturing out.
-
-**Packing:** For summer, bring warm layers including a down jacket, windproof shell, warm hat, and gloves even in July, as temperatures rarely exceed 50 degrees and wind chill off the ocean is significant. For winter, bring expedition-grade clothing: heavy parka, insulated pants, bunny boots or similar extreme cold footwear, balaclava, and chemical hand warmers. Sunglasses are essential year-round to prevent snow blindness in winter and eye strain during the midnight sun.
-
-</div>

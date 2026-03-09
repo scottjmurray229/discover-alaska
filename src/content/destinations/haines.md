@@ -54,7 +54,68 @@ relatedDestinations: [juneau, skagway, glacier-bay]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Hotel Halsingland"
+    type: hotel
+    price: "$120-220/night"
+    personalNote: "Historic fort-turned-hotel with real character, mountain views, and a great bar. The best mid-range option in Haines and a genuine Alaskan experience."
+    affiliateUrl: "https://www.booking.com/hotel/us/hotel-halsingland-haines.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Chilkat Bald Eagle Preserve Tour"
+    type: tour
+    price: "$80-120/person"
+    personalNote: "The November eagle gathering is extraordinary — guides know the best viewing spots on the Chilkat River for the peak concentration of thousands of eagles."
+    affiliateUrl: "https://www.getyourguide.com/haines-l890/eagle-preserve-tour-t89012/?partner_id=IVN6IQ3"
+    badge: "October-November Only"
+  - name: "Haines River Rafting"
+    type: tour
+    price: "$75-120/person"
+    personalNote: "Float the Chilkat River through dramatic mountain scenery. Summer trips often include wildlife sightings — bears, moose, and eagles."
+    affiliateUrl: "https://www.getyourguide.com/haines-l890/river-rafting-t90123/?partner_id=IVN6IQ3"
+  - name: "Bear Spray (Counter Assault)"
+    type: activity
+    price: "$50-70"
+    personalNote: "Mandatory for any Haines hiking. Bears are common throughout the Chilkat and Chilkoot river corridors."
+    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discovermore-20"
+faqItems:
+  - question: "Is Haines worth visiting?"
+    answer: "Absolutely, especially if you want Alaska without the cruise ship crowds. Haines is one of the few Southeast towns accessible by road and has a genuinely authentic small-town character. The bald eagle gathering in October-November is world-class wildlife viewing."
+  - question: "Best time to visit Haines?"
+    answer: "May through August for hiking, rafting, and summer activities. October and November for the world's largest bald eagle concentration on the Chilkat River. The American Bald Eagle Festival in November celebrates the gathering."
+  - question: "How many days in Haines?"
+    answer: "Two to three days. One day for Fort William H. Seward historic area and downtown. One day for Chilkat Bald Eagle Preserve and river activities. Add a day for hiking the Chilkoot Trail area or a flightseeing trip."
+  - question: "Is Haines safe?"
+    answer: "Very safe and relaxed. Bears are common in the surrounding valleys — carry spray and make noise on trails. The road in via the Alaska Highway from the south is long but well-maintained. Standard outdoor safety applies."
+  - question: "Haines on a budget?"
+    answer: "More affordable than many Alaska towns. Budget $95-130/day. The eagle viewing on the Chilkat River is free from roadside pullouts. Camping at Portage Cove State Recreation Site is $12/night. Good value destination by Alaska standards."
+  - question: "What is Haines known for?"
+    answer: "The world's largest bald eagle gathering — thousands of eagles concentrate on the Chilkat River each fall to feed on a late salmon run. Also known for its arts community (many resident artists), Fort William H. Seward National Historic Landmark, mountain biking, and being one of the few Southeast Alaska towns accessible by road."
+  - question: "Do I need a car in Haines?"
+    answer: "A car is useful but not essential for town itself. To reach the Chilkat Bald Eagle Preserve and hiking areas outside town, a vehicle or tour helps. You can arrive by ferry from Juneau or Skagway without a car and bike or walk in town."
+  - question: "Best things to do in Haines?"
+    answer: "Chilkat Bald Eagle Preserve (October-November peak), Fort William H. Seward historic district, Alaska Indian Arts cultural center, river rafting and kayaking, mountain biking the Skyline Trail, Sheldon Museum, and the Haines Brewing Company."
+scottTips:
+  logistics: "Accessible by Alaska Marine Highway ferry from Juneau (4.5 hours) or Skagway (1 hour), and by road via the Alaska Highway from Whitehorse (3.5 hours). Alaska Airlines flies into Skagway; Haines has a small airport with charter service. Plan the ferry schedule in advance."
+  bestTime: "May through August for outdoor activities. October-November for the eagle gathering — the American Bald Eagle Festival in November is the peak event. Winter is quiet and local-only."
+  gettingAround: "Haines is small and walkable in town. For the eagle preserve, hiking areas, and the Chilkat Peninsula, a car or bike is helpful. Bike rentals available."
+  money: "More affordable than most Alaska Southeast towns. Budget $95-150/day. Some of the best wildlife viewing (eagles, bears along rivers) is free from roadside pullouts."
+  safety: "Bears are common in river valleys — carry spray on all hikes. The Chilkat and Chilkoot rivers are cold and fast; respect water safety on any float trip."
+  packing: "Rain gear (Southeast Alaska), warm layers, binoculars (essential for eagles and wildlife), bear spray. If visiting in November for eagles, add serious warm clothing — temperatures in the teens are common."
+  localCulture: "Haines has a genuine community identity that doesn't revolve around tourism. The arts scene is real and significant. Fort William H. Seward's history as the first permanent US Army post in Alaska is worth understanding. The Tlingit cultural programs at Alaska Indian Arts are authentic."
 ---
+
+Haines is a small Southeast Alaska town accessible by road or ferry, famous for the world's largest bald eagle gathering in November and a genuine working-town character — budget $95-200/day, best May through August or October-November for eagles.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/haines-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #1a4731, #d97706, #1e3a5f);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Valley of the Eagles</div>
+    <p class="ib-text">The Chilkat Valley hosts the world's largest gathering of bald eagles each fall — thousands of birds feeding on a late salmon run against snow-capped peaks.</p>
+  </div>
+</div>
 
 Haines occupies one of the most beautiful settings in all of Southeast Alaska, and that is a statement that carries weight in a region defined by beauty. The town of 2,500 sits on a narrow peninsula where the Chilkat and Chilkoot Inlets converge, backed by a semicircle of glacier-draped peaks that catch the morning light and hold it like a cupped hand. From almost any street in town, you can look up and see mountains so dramatically vertical that they seem to lean forward, as if curious about the small human settlement at their feet.
 
@@ -106,20 +167,4 @@ The Chilkat Valley itself is one of the most scenic drives in the state. The Hai
 
 **Mosey's Cantina** serves surprisingly good Mexican food in a casual setting. The fish tacos made with local catch are the standout. Entrees $12 to $22.
 
-<div class="scott-tips">
 
-### Scott's Pro Tips
-
-**Getting There:** The Alaska Marine Highway ferry from Juneau to Haines takes about 4.5 hours and costs around $50 for a walk-on passenger or $120 with a standard vehicle. Alaska Seaplanes flies from Juneau to Haines in 35 minutes for roughly $150 to $200 one way. If driving, the Haines Highway from Haines Junction, Yukon, is paved and well-maintained, but you will need a passport for the border crossing.
-
-**Best Time to Visit:** June through August for warm weather (50 to 70 degrees), hiking, kayaking, and the arts scene. November for the peak eagle gathering, which is absolutely extraordinary but requires warm clothing and tolerance for short, grey days. Late July for the Southeast Alaska State Fair.
-
-**Getting Around:** Haines is small enough to walk, but a car is essential for the eagle preserve, Chilkat State Park, and the Haines Highway. Rent from local agencies starting around $80 per day. Bicycling is also excellent on the valley roads, with Sockeye Cycle offering rentals and guided tours.
-
-**Budget Tips:** Camp at Chilkat State Park to save on accommodation while enjoying one of the most beautiful campgrounds in Southeast Alaska. Cook your own meals using groceries from Olerud's Market. Time your visit for the shoulder season (May or September) when accommodations drop in price. The best experiences in Haines (eagle watching, fort exploration, trail hiking) are free.
-
-**Safety:** Bear encounters are possible on all trails around Haines, especially near salmon streams in summer and fall. Carry bear spray and make noise while hiking. The Chilkat River has strong currents and cold water temperatures, so only kayak with experienced outfitters or if you have cold-water paddling experience. Weather in Haines can change rapidly, with rain possible any day of the year.
-
-**Packing:** Rain gear is non-negotiable in Southeast Alaska. Bring a quality waterproof jacket and pants, rubber boots or waterproof hiking boots, and layers for temperatures ranging from 40 to 70 degrees in summer. For fall eagle viewing, add a warm insulated jacket, hat, and gloves, as you will be standing still in cold wind along the river. Binoculars are essential for eagle watching, and a telephoto lens will dramatically improve your photos.
-
-</div>

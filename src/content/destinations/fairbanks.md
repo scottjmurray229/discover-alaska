@@ -54,9 +54,70 @@ relatedDestinations: [denali-national-park, anchorage, nome]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Chena Hot Springs Resort"
+    type: hotel
+    price: "$200-380/night"
+    personalNote: "An hour east of Fairbanks, this is the premier northern lights base. Heated viewing cabins, the Aurora Ice Museum, and natural hot springs make it the full package for a winter trip."
+    affiliateUrl: "https://www.booking.com/hotel/us/chena-hot-springs-resort.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Northern Lights Photography Tour"
+    type: tour
+    price: "$120-175/person"
+    personalNote: "Worth every dollar if this is your first aurora chase. Guides drive you to the darkest skies, teach long-exposure photography basics, and know when to wake you up for a good show."
+    affiliateUrl: "https://www.getyourguide.com/fairbanks-l775/northern-lights-tour-t45678/?partner_id=IVN6IQ3"
+    badge: "Must Do"
+  - name: "Gold Dredge No. 8 Tour"
+    type: tour
+    price: "$45/person"
+    personalNote: "Pan for real Fairbanks gold and keep what you find. Genuinely fun, educational about the gold rush era, and you almost certainly leave with something."
+    affiliateUrl: "https://www.getyourguide.com/fairbanks-l775/gold-dredge-tour-t56789/?partner_id=IVN6IQ3"
+  - name: "Extreme Cold Weather Gear (rental)"
+    type: activity
+    price: "$30-50/day"
+    personalNote: "If visiting in winter and lacking serious cold-weather gear, rent rated-to-minus-40 boots, a balaclava, and heavy mittens in Fairbanks. Don't improvise at these temperatures."
+    affiliateUrl: "https://www.amazon.com/s?k=minus+40+winter+boots+alaska&tag=discovermore-20"
+faqItems:
+  - question: "Is Fairbanks worth visiting?"
+    answer: "For the northern lights, absolutely — Fairbanks sits under the auroral oval and is one of the best aurora destinations on Earth. For the midnight sun experience in summer, also yes. It is a gritty, real Alaskan city, not polished for tourists, and that authenticity is part of the appeal. Go in with the right expectations and it delivers."
+  - question: "Best time to visit Fairbanks?"
+    answer: "For northern lights, late September through early April — with September/October and February/March being sweet spots (dark skies, more tolerable cold). For midnight sun and outdoor activities, mid-June through July. Winter solstice in December has only 3.5 hours of daylight but the aurora potential is high."
+  - question: "How many days in Fairbanks?"
+    answer: "Three to four days is ideal. Two days minimum for aurora chasers — you need backup nights in case of clouds. Add a day for Gold Dredge, the Museum of the North, and Chena Hot Springs. Dalton Highway day trips require a full day each way."
+  - question: "Is Fairbanks safe?"
+    answer: "Generally safe for tourists. The biggest safety concerns are the extreme cold in winter — frostbite is a real risk at minus 30°F and below — and driving on icy roads. Moose collisions on highways are common. Standard urban precautions apply in town. Summer brings legendary mosquitoes rather than cold."
+  - question: "Fairbanks on a budget?"
+    answer: "Aurora viewing is free if you drive 20-30 minutes out of town. The University of Alaska Museum of the North ($16) is worth every penny. Fairbanks is roughly 10-15% cheaper than Anchorage for lodging and food. Budget $85-120/day for hostel and simple meals."
+  - question: "What is Fairbanks known for?"
+    answer: "The aurora borealis capital of Alaska. Also the midnight sun, gold rush history, access to the Dalton Highway and Arctic Circle, extreme weather (minus 40°F winters, 80°F summers), Chena Hot Springs, and the University of Alaska Fairbanks which conducts world-leading arctic research."
+  - question: "Do I need a car in Fairbanks?"
+    answer: "Yes. Fairbanks is spread out, and key attractions like Chena Hot Springs (60 miles away), aurora viewing locations, and the Dalton Highway all require a vehicle. In winter, make sure your rental comes with good winter tires or chains."
+  - question: "Best things to do in Fairbanks?"
+    answer: "Northern lights viewing (August-April), Chena Hot Springs (aurora viewing plus natural hot springs), Gold Dredge No. 8 gold panning, Museum of the North, Riverboat Discovery cruise, Midnight Sun Festival (June solstice), and the Dalton Highway drive to the Arctic Circle."
+scottTips:
+  logistics: "Fly into Fairbanks International (FAI) — Alaska Airlines serves it direct from Anchorage (50 min) and Seattle. Driving from Anchorage is 5.5-6 hours on the Parks Highway — consider stopping at Denali. Car rental is essential; book early for summer and be sure to get a winter-capable vehicle in cold months."
+  bestTime: "Winter (late Sep - Mar) for northern lights — best viewing is September-October and February-March when it's dark but not yet brutal cold. Summer (June-July) for midnight sun and outdoor activities. Deep winter (December-January) is for serious cold-weather enthusiasts only."
+  gettingAround: "Rental car required. Roads are paved in town but gravel on the Dalton. In winter, check road conditions via Alaska 511. Some aurora tour companies offer pickup from hotels — useful if you don't want to drive at midnight in winter."
+  money: "Slightly cheaper than Anchorage but still Alaska prices. Budget $85-130/day. Chena Hot Springs is the biggest splurge (worth it). Fuel up in Fairbanks before any highway drive — prices spike dramatically once you leave the city."
+  safety: "Winter cold is the primary hazard — at minus 30°F and below, exposed skin gets frostbitten in minutes. Always carry emergency supplies in your vehicle. In summer, mosquitoes are genuinely extreme — bring maximum-strength DEET and a head net for any outdoor activity."
+  packing: "Winter: rated-to-minus-40 boots (non-negotiable), layered base/mid/shell system, balaclava, heavy mittens, hand warmers. Many outfitters rent extreme-cold gear. Summer: layers (40-80°F swings), rain jacket, and your best DEET bug spray — this is serious mosquito country."
+  localCulture: "Fairbanks is a university town, military town, and frontier town all at once. The University of Alaska research culture is real and fascinating — the aurora forecast the geophysics institute posts is legitimately used by locals. The gold rush DNA is authentic, not theme park. People here chose this place for a reason."
 ---
 
-Fairbanks exists in extremes. In June, the sun barely dips below the horizon, bathing the city in golden light for nearly 22 hours. In January, darkness dominates, the temperature plunges to minus forty, and the northern lights ripple across the sky in curtains of green and violet. This is not a place of moderation. It is a city that has learned to celebrate both ends of the spectrum, and visitors who embrace that ethos are richly rewarded.
+Fairbanks is Alaska's interior capital and the best place on Earth to see the northern lights — sitting under the auroral oval with dark winter skies and a budget from $85/day, best visited in September-October or February-March for aurora, June for the midnight sun. It is not a place of moderation: minus 40°F winters and 80°F summers, 3.5 hours of daylight in December and 22 hours in June.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/fairbanks-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #4c1d95, #16a34a, #1e1b4b);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Under the Aurora</div>
+    <p class="ib-text">Fairbanks sits beneath the auroral oval — one of the best places on Earth to watch the northern lights paint the winter sky green and violet.</p>
+  </div>
+</div>
+
+In June, the sun barely dips below the horizon, bathing the city in golden light for nearly 22 hours. In January, darkness dominates, the temperature plunges to minus forty, and the northern lights ripple across the sky in curtains of green and violet. This is not a place of moderation. It is a city that has learned to celebrate both ends of the spectrum, and visitors who embrace that ethos are richly rewarded.
 
 Situated along the Chena River in the heart of Interior Alaska, Fairbanks began as a gold rush boomtown in 1902 when an Italian immigrant named Felix Pedro struck gold in the hills north of town. That scrappy, fortune-seeking energy has never fully left. Today Fairbanks is a university town, a military hub, and the last real outpost of civilization before the road stretches north to the Arctic Ocean via the Dalton Highway. It is gritty, genuine, and wholly unconcerned with polishing itself for tourists.
 
@@ -106,20 +167,3 @@ The cultural depth here often surprises visitors. The University of Alaska Fairb
 
 **Alaska Coffee Roasting Company** — The best coffee in Fairbanks, with beans roasted on-site. A good spot to warm up, plan your day, or wait for aurora forecast updates on a winter evening.
 
-<div class="scott-tips">
-
-### Scott's Pro Tips for Fairbanks
-
-**Getting There:** Fly into FAI for the easiest access. Alaska Airlines operates multiple daily flights from Anchorage (about 50 minutes). Driving from Anchorage takes 5.5-6 hours on the Parks Highway, which passes through Denali National Park — consider making it a two-day road trip with a Denali stop.
-
-**Best Time to Visit:** This depends entirely on your goal. For northern lights, come late September or early March — you get dark skies with temperatures around 0-20°F rather than the brutal minus-40 of deep winter. For midnight sun and outdoor activities, late June is magical. July and August offer warm weather and long days.
-
-**Getting Around:** A rental car is essential. Fairbanks is spread out, and attractions like Chena Hot Springs, the Dalton Highway, and viewing spots outside the city's light pollution all require driving. Roads are well-maintained in town but carry tire chains in winter and check road conditions on the 511 system.
-
-**Budget Tips:** Fairbanks is slightly cheaper than Anchorage for food and lodging but still 20-30% above Lower 48 prices. The best aurora viewing is free if you drive 20-30 minutes out of town — you do not need an expensive tour, though guides help with photography. Fill up your gas tank before any highway drive; fuel prices climb dramatically in remote areas.
-
-**Safety:** Cold is the primary winter safety concern. At minus 30°F and below, exposed skin can get frostbitten in minutes. Keep your car's engine block heater plugged in (every parking spot has an outlet). In summer, mosquitoes are legendary — bring DEET-based repellent and a head net for backcountry excursions. Moose are common on roads, especially at dusk.
-
-**Packing:** Winter visitors need serious cold-weather gear: rated-to-minus-40 boots, layered insulation, a face-covering balaclava, and heavy mittens. Many lodges and tour operators will loan or rent extreme cold-weather gear. Summer visitors should bring layers (40-80°F range in a single day), rain gear, and high-DEET bug spray.
-
-</div>

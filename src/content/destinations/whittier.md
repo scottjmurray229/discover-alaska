@@ -54,7 +54,67 @@ relatedDestinations: [anchorage, seward, valdez]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Prince William Sound Cruise"
+    type: tour
+    price: "$130-180/person"
+    personalNote: "The definitive reason to come to Whittier — Phillips Cruises and Tours runs excellent day trips through the sound with tidewater glaciers, humpback whales, sea otters, and dramatic fjord scenery."
+    affiliateUrl: "https://www.getyourguide.com/whittier-l890/prince-william-sound-cruise-t01234/?partner_id=IVN6IQ3"
+    badge: "Must Do"
+  - name: "Whittier Glacier Kayaking"
+    type: tour
+    price: "$150-300/person"
+    personalNote: "Prince William Sound kayaking from Whittier puts you in some of Alaska's most dramatic and accessible fjord landscapes. Guided day trips can reach glacier faces that larger boats cannot."
+    affiliateUrl: "https://www.getyourguide.com/whittier-l890/glacier-kayaking-t12345/?partner_id=IVN6IQ3"
+  - name: "Portage Glacier Visitor Center"
+    type: activity
+    price: "$15-30/person"
+    personalNote: "On the drive to Whittier, stop at Portage Glacier — a free visitor center with a Portage Lake boat tour that approaches the glacier face. The 5-mile Portage Glacier Road is also worth driving."
+    affiliateUrl: "https://www.getyourguide.com/portage-glacier-l901/glacier-boat-tour-t23456/?partner_id=IVN6IQ3"
+  - name: "Sea Kayak Dry Bag (waterproof)"
+    type: activity
+    price: "$20-40"
+    personalNote: "Essential for kayaking in Prince William Sound — everything from your phone to extra clothing must stay dry. Glacier-fed water is dangerously cold."
+    affiliateUrl: "https://www.amazon.com/s?k=dry+bag+kayaking+waterproof&tag=discovermore-20"
+faqItems:
+  - question: "Is Whittier worth visiting?"
+    answer: "Yes, as a day trip from Anchorage or as a base for Prince William Sound kayaking. The town itself is fascinating in an unusual way — its military history and one-building residential structure are genuinely strange. The sound boat tours from Whittier are excellent and shorter to reach than Seward."
+  - question: "Best time to visit Whittier?"
+    answer: "May through September. The Anton Anderson Memorial Tunnel is open year-round. Boat tours and kayaking operate May-September. Humpback whale activity peaks July-August."
+  - question: "How many days in Whittier?"
+    answer: "One to two days is typical. Day one for the town exploration and a boat tour. Day two for a kayaking trip. Most visitors do Whittier as a day trip from Anchorage (60 miles)."
+  - question: "Is Whittier safe?"
+    answer: "Safe. The Anton Anderson tunnel has strict traffic direction schedules — know when it is open to your direction before departing. Standard boat and kayaking safety applies."
+  - question: "Whittier on a budget?"
+    answer: "Budget $80-130/day. The boat tour ($130-180) is the main expense. The drive from Anchorage through the tunnel is inexpensive. Portage Glacier stop on the way adds minimal cost."
+  - question: "What is Whittier known for?"
+    answer: "The Anton Anderson Memorial Tunnel — one of the longest road/rail shared tunnels in North America (2.5 miles). The Begich Towers condominium building where most of Whittier's 250 residents live. Prince William Sound glacier and wildlife tours. Its origin as a WWII military port. The world's highest average precipitation (over 200 inches per year)."
+  - question: "Do I need a car in Whittier?"
+    answer: "Yes to get here — Whittier is reached via the Anton Anderson tunnel from Portage (Highway 1). The tunnel schedule is specific; plan your timing. Once in town, everything is walkable."
+  - question: "Best things to do in Whittier?"
+    answer: "Prince William Sound day cruise, glacier kayaking, exploring Begich Towers building, walking the Shotgun Cove trail, visiting Portage Glacier on the way in, and the Whittier Museum (WWII history and community story)."
+scottTips:
+  logistics: "Drive from Anchorage: 60 miles via Seward Highway to the Portage tunnel entrance. The Anton Anderson tunnel operates on alternating single-direction schedules — check the schedule at dot.alaska.gov before you drive. The tunnel toll is $13 each way."
+  bestTime: "June through August for boat tours and optimal weather. The drive through the Chugach Mountains to the tunnel is scenic year-round."
+  gettingAround: "Car to get here. Town is completely walkable. Boat tours depart from the small boat harbor."
+  money: "Budget $80-130/day. More affordable than Seward for a similar Prince William Sound experience. The tunnel toll is the hidden cost ($13 each direction)."
+  safety: "Tunnel schedule timing is critical — you can be stranded for an hour on the wrong side if you miss the window. Boat tours: cold water, proper gear for kayaking."
+  packing: "Rain gear (Whittier is one of the rainiest places in Alaska — over 200 inches/year), warm layers, binoculars."
+  localCulture: "Whittier has one of the strangest community stories in America — a WWII military port that became a civilian town where everyone literally lives in the same building. The Begich Towers residents have created a genuine community inside a concrete tower originally built for military personnel. The Whittier Museum tells this unusual story well."
 ---
+
+Whittier is an unusual Alaska town accessible only by road-rail tunnel — the primary Prince William Sound access for kayaking, glacier tours, and whale watching, budget $80-200/day, best May through September.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/whittier-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #1e3a5f, #134e4a, #1c1917);"></div>
+  <div class="ib-content">
+    <div class="ib-title">One Tunnel Town</div>
+    <p class="ib-text">Whittier is reached through a single shared road-rail tunnel — 250 people, mostly in one building, surrounded by glaciers and Prince William Sound.</p>
+  </div>
+</div>
 
 Whittier is the strangest town in Alaska, which is saying something in a state where strangeness is practically a civic virtue. To reach it, you drive through a mountain. Literally. The Anton Anderson Memorial Tunnel, bored through the base of Maynard Mountain, stretches two and a half miles and operates on a scheduled alternating one-way traffic pattern, meaning you must arrive at the portal at designated times and wait your turn to enter. Cars and trains share the same tunnel. When you emerge on the other side, blinking into the grey light of Prince William Sound, you find a community where nearly all two hundred year-round residents live in a single fourteen-story concrete building called Begich Towers, a former Cold War military barracks that contains apartments, a post office, a laundromat, a convenience store, and a medical clinic.
 
@@ -106,20 +166,4 @@ The kayaking here is considered some of the best in Alaska. Sheltered waters, ab
 
 **Inn at Whittier Restaurant** serves the most upscale meals in town, with fresh seafood, steaks, and pasta in a dining room overlooking the sound. Entrees $22 to $45. Breakfast is also available for hotel guests and walk-ins.
 
-<div class="scott-tips">
 
-### Scott's Pro Tips
-
-**Getting There:** The Anton Anderson Memorial Tunnel operates on a strict schedule with alternating directions every half hour. Check the current schedule at the tunnel portal or online before you go, and arrive at least fifteen minutes before your desired crossing time. The tunnel toll is $13 for a passenger vehicle. In summer, waits of thirty to sixty minutes are common during peak travel times. The tunnel is closed overnight. The Alaska Railroad also runs through the tunnel with passenger service from Anchorage.
-
-**Best Time to Visit:** June through August for glacier cruises, kayaking, and the best weather, though "best" is relative in Whittier, which receives rain on roughly 250 days per year. July and August offer the warmest temperatures (55 to 65 degrees) and the longest operating seasons for tour operators. September is quieter with fall colors and fewer crowds but reduced tour availability.
-
-**Getting Around:** Whittier is tiny and entirely walkable. You do not need a car once you arrive unless you plan to hike Portage Pass, which starts a short drive back toward the tunnel. All tour operators are within a few minutes' walk of the harbor parking area.
-
-**Budget Tips:** Whittier works brilliantly as a day trip from Anchorage, which saves on accommodation costs. Pack a lunch to eat on the waterfront between activities. The Portage Pass hike is free and rivals any paid tour for views. If booking a glacier cruise, look for early-season or late-season discounts. Combining Whittier with a drive to Portage Glacier (on the Anchorage side of the tunnel) makes for a full, affordable day.
-
-**Safety:** Prince William Sound waters are cold, typically 40 to 50 degrees Fahrenheit. Wear the gear provided by your kayak or boat tour operator, including spray skirts and life jackets. Hypothermia sets in rapidly if you capsize. On glacier cruises, stay behind safety lines when near calving glaciers, as falling ice creates waves that can rock boats violently. On the Portage Pass trail, be prepared for sudden weather changes and carry rain gear.
-
-**Packing:** Rain gear is absolutely essential in Whittier. A waterproof jacket and pants are the minimum; consider waterproof gloves and a hat as well. Layers for 40 to 60 degree temperatures, even in July. Binoculars for wildlife viewing on cruises. A dry bag for electronics if kayaking. Rubber boots or waterproof footwear for the harbor area and trails. And bring a camera with a zoom lens, because you will see glaciers, whales, otters, and eagles, often all in the same day.
-
-</div>

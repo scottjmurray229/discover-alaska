@@ -54,9 +54,73 @@ relatedDestinations: [kenai-fjords, denali-national-park, seward]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Hotel Captain Cook"
+    type: hotel
+    price: "$350-700/night"
+    personalNote: "Anchorage's landmark luxury property with three towers overlooking Cook Inlet. The classic Alaska elegance and prime downtown location make it worth the splurge for a special trip."
+    affiliateUrl: "https://www.booking.com/hotel/us/captain-cook.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Lakefront Anchorage Hotel"
+    type: hotel
+    price: "$180-280/night"
+    personalNote: "Sits right on Lake Spenard near the floatplane base. Mountain views, convenient to the airport, and a solid mid-range option for exploring the city."
+    affiliateUrl: "https://www.booking.com/hotel/us/lakefront-anchorage.html?aid=2778866"
+  - name: "Anchorage City Food Tour"
+    type: tour
+    price: "$75/person"
+    personalNote: "The best way to hit Anchorage's food scene fast — reindeer sausage, fresh halibut, local craft beer, and stories from a guide who actually lives here."
+    affiliateUrl: "https://www.getyourguide.com/anchorage-l763/anchorage-food-tour-t12345/?partner_id=IVN6IQ3"
+    badge: "Best Intro"
+  - name: "Anchorage Glacier Flightseeing"
+    type: tour
+    price: "$220-350/person"
+    personalNote: "60-90 minutes over glaciers and the Alaska Range from Lake Hood. Rust's Flying Service runs reliable trips. On a clear day this is one of the best experiences in Alaska."
+    affiliateUrl: "https://www.getyourguide.com/anchorage-l763/glacier-flightseeing-t23456/?partner_id=IVN6IQ3"
+  - name: "Bear Spray (Counter Assault)"
+    type: activity
+    price: "$50-70"
+    personalNote: "Non-negotiable for any Chugach State Park hike. Buy or rent in Anchorage before heading into the backcountry — don't skip this."
+    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discovermore-20"
+faqItems:
+  - question: "Is Anchorage worth visiting?"
+    answer: "Absolutely. Most visitors treat it as a layover en route to Denali or the Kenai Peninsula, but Anchorage rewards those who linger. World-class trails, a genuinely diverse food scene, the best Alaska Native cultural museum in the state, and a natural setting unlike any other city in America — Denali visible from downtown, moose in suburban yards, salmon running through the city."
+  - question: "Best time to visit Anchorage?"
+    answer: "Late June through mid-August for warmth and maximum daylight (19+ hours in June). September brings fall colors, smaller crowds, and lower prices. Winter visitors come for the Iditarod ceremonial start in March and the Fur Rendezvous festival in February. Avoid May if you're sensitive to cold — it's transitional and often wet."
+  - question: "How many days in Anchorage?"
+    answer: "Two to three days is ideal as a base. Day one for downtown — the Museum, Ship Creek, Coastal Trail. Day two for Chugach State Park hiking or a drive down the Seward Highway to Girdwood and Alyeska. Day three for a flightseeing trip or day trip toward the Kenai Peninsula. Most Alaska itineraries build in two nights minimum."
+  - question: "Is Anchorage safe?"
+    answer: "Generally yes. Downtown and tourist areas are safe. The most common safety concerns are moose encounters (never approach a cow with calves — they will charge) and bears in Chugach State Park. Carry bear spray on any hike. The Turnagain Arm mud flats look walkable but are dangerous quicksand-like silt — stay on shore."
+  - question: "Anchorage on a budget?"
+    answer: "The city's best experiences are free: the Coastal Trail, Flattop Mountain, Ship Creek salmon viewing, and the Seward Highway drive. Buy groceries at Costco or Fred Meyer instead of eating every meal out — restaurant prices run 20-30% higher than the Lower 48. Budget $95-120/day for hostel plus meals. An Alaska State Parks pass ($60) pays off quickly if you're hiking."
+  - question: "What is Anchorage known for?"
+    answer: "Alaska's largest city and gateway to the state. Known for its unique urban-wilderness character — moose in city limits, salmon in downtown creek, Denali visible from the skyline. The Ted Stevens Airport is the cargo hub for all of Asia-North America trade. The Iditarod Sled Dog Race starts its ceremonial run here each March."
+  - question: "Do I need a car in Anchorage?"
+    answer: "Yes, for anything beyond downtown. The Coastal Trail, Flattop Mountain, Girdwood, and the Seward Highway are all essential Anchorage experiences that require wheels. Uber and Lyft operate but are unreliable outside downtown. Rent a car — it opens up the entire Southcentral region."
+  - question: "Best things to do in Anchorage?"
+    answer: "Tony Knowles Coastal Trail (11 miles, moose country), Flattop Mountain hike (panoramic views, 20 min from downtown), Anchorage Museum (best Alaska Native collection in the state), Ship Creek salmon viewing (June-September, free), flightseeing over glaciers from Lake Hood, Alyeska Resort tram in Girdwood, and the Alaska Wildlife Conservation Center 50 miles south."
+scottTips:
+  logistics: "Fly into Ted Stevens Anchorage International (ANC) — major hub with direct flights from Seattle, Portland, Minneapolis, Denver, Chicago, and more. Alaska Airlines dominates Alaska routes. Car rental at the airport is essential — book early, summer inventory depletes fast."
+  bestTime: "Late June through mid-August for warmth and the midnight sun phenomenon. June 21 brings 19+ hours of daylight, which is genuinely disorienting — bring an eye mask for sleeping. September is excellent: fall colors, lower prices, fewer crowds. Winter for Iditarod and northern lights in the Chugach."
+  gettingAround: "Rent a car — non-negotiable for anything beyond downtown. The city is spread over nearly 2,000 square miles. People Mover buses cover main corridors but are slow. Uber/Lyft exist but are unreliable. Within downtown, walking works fine."
+  money: "Alaska is expensive. Budget minimum $150-200/day including mid-range lodging and meals. Restaurant prices run 20-30% higher than the Lower 48. Save by cooking in — buy groceries at Fred Meyer or Costco. The best activities (trails, salmon viewing, Seward Highway drive) are free."
+  safety: "Moose are the primary urban hazard — 1,500 live in city limits. Never approach, especially a cow with calves. Bears are present in Chugach State Park; carry bear spray on every hike. Turnagain Arm tidal flats are dangerous quicksand — stay on shore. Midnight sun can cause disorientation and poor sleep."
+  packing: "Layers for wildly variable weather — a June morning can start at 45°F and hit 70°F by afternoon. Waterproof shell mandatory. Sunglasses and sunscreen year-round — UV is intense at these latitudes during 19-hour days. Sturdy hiking shoes for Chugach trails. Bring bear spray or rent on arrival ($15-20/day at REI)."
+  localCulture: "Anchorage is genuinely multicultural — over 100 languages spoken in the school district. Alaska Native culture is present and significant; the Anchorage Museum's Smithsonian Arctic Studies Center has 600 artifacts and is essential context. The city has a frontier independence streak — people choose to live here despite the costs and cold. Respect that."
 ---
 
-Anchorage is the rare city where you can catch a salmon in the morning, browse world-class art over lunch, and spot a moose on your evening jog — all without leaving the municipality. Nestled on a coastal plain between the Chugach Mountains and the waters of Cook Inlet, Alaska's largest city is a paradox that works: a modern urban center of nearly 300,000 people surrounded by genuine, untamed wilderness on every side.
+Anchorage is Alaska's urban gateway where a city of 300,000 coexists with moose in the streets, salmon in the creek, and Denali visible on the horizon — budget $150-200/day and visit June through August for the full midnight-sun experience. Nestled on a coastal plain between the Chugach Mountains and Cook Inlet, it is a modern city paradox: genuine wilderness begins where the suburbs end.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/anchorage-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #0369a1, #059669, #334155);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Gateway to Alaska</div>
+    <p class="ib-text">Where a city of 300,000 meets wilderness on every side — the only place you can catch salmon downtown, hike alpine trails in an hour, and watch Denali float on the horizon.</p>
+  </div>
+</div>
 
 Most visitors treat Anchorage as a layover, a brief stop on the way to Denali or the Kenai Peninsula. That is a mistake. The city rewards those who linger. Spend a few days here and you will find a place with a distinct cultural identity — shaped by its Indigenous heritage, military history, and the independent spirit of people who choose to live at 61 degrees north latitude. The restaurant scene has evolved well beyond the moose-burger-and-sourdough cliches, the trail system rivals any city in North America, and the arts community punches far above its weight.
 
@@ -108,20 +172,3 @@ Anchorage also carries the scars and stories of the 1964 Great Alaska Earthquake
 
 **Yak & Yeti** — Authentic Himalayan and Indian cuisine that reflects Anchorage's diverse population. Generous portions, reasonable prices ($14-20 entrees), and a loyal local following.
 
-<div class="scott-tips">
-
-### Scott's Pro Tips for Anchorage
-
-**Getting There:** Fly into ANC — it is a major hub with competitive fares from the Lower 48, especially on Alaska Airlines and Delta. If driving from the Kenai Peninsula or Fairbanks, the highways into town are straightforward but watch for moose, especially at dawn and dusk.
-
-**Best Time to Visit:** Late June through mid-August delivers the warmest weather and longest days. September brings fall colors, smaller crowds, and lower prices but shorter days. Winter visitors come for the Fur Rendezvous festival in February and the Iditarod ceremonial start in early March.
-
-**Getting Around:** Rent a car. Anchorage is spread out, and you will want to explore the Seward Highway corridor, Girdwood, and Chugach State Park. Uber and Lyft operate in Anchorage but can be unreliable outside downtown. The People Mover bus system covers the main corridors but is slow.
-
-**Budget Tips:** Buy groceries at Costco or Fred Meyer rather than eating every meal out — restaurant prices are 20-30% higher than the Lower 48. The city's best attractions — trails, salmon viewing, and scenic drives — are free. Get an annual Alaska State Parks pass ($60) if you plan to hike more than a few times.
-
-**Safety:** Moose are the most common safety concern. Never approach them. A cow with calves will charge. Bears are present in Chugach State Park and occasionally in town — carry bear spray on hikes. Turnagain Arm mud flats look walkable but are quicksand-like glacial silt that has trapped and killed people.
-
-**Packing:** Layers are essential even in summer. A morning can start at 50°F, warm to 70°F by afternoon, and drop again by evening. Bring a waterproof shell, sturdy hiking shoes, sunglasses, and sunscreen — at this latitude, summer UV is surprisingly intense during 19-hour days.
-
-</div>

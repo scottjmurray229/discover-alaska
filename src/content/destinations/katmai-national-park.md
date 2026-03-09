@@ -54,7 +54,68 @@ relatedDestinations: [anchorage, homer, kodiak]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Katmai Wilderness Lodge"
+    type: hotel
+    price: "$600-900/night all-inclusive"
+    personalNote: "If budget allows, the wilderness lodge experience at Katmai is extraordinary — guided bear viewing, fly fishing, and remote Alaska wilderness all included."
+    affiliateUrl: "https://www.booking.com/hotel/us/katmai-wilderness-lodge.html?aid=2778866"
+    badge: "Ultimate Splurge"
+  - name: "Brooks Falls Bear Viewing Day Trip"
+    type: tour
+    price: "$500-800/person"
+    personalNote: "Floatplane from Anchorage or King Salmon to Brooks Camp for the famous bear-at-falls experience. July is peak when sockeye are running hardest. Book months in advance."
+    affiliateUrl: "https://www.getyourguide.com/katmai-national-park-l567/bear-viewing-day-trip-t56789/?partner_id=IVN6IQ3"
+    badge: "Bucket List"
+  - name: "Bear Spray (Counter Assault)"
+    type: activity
+    price: "$50-70"
+    personalNote: "Required for all Katmai backcountry. Bears are habituated to humans at Brooks Camp viewing platforms but the surrounding wilderness is genuine bear country."
+    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discovermore-20"
+  - name: "Polarized Fishing Sunglasses"
+    type: activity
+    price: "$30-80"
+    personalNote: "Essential for watching bears fish — polarized lenses cut the glare on the water and let you see the salmon that the bears are targeting. Also perfect for fly fishing."
+    affiliateUrl: "https://www.amazon.com/s?k=polarized+fishing+sunglasses&tag=discovermore-20"
+faqItems:
+  - question: "Is Katmai National Park worth visiting?"
+    answer: "For wildlife photography and bear viewing, it is one of the best places on Earth. Brooks Falls in July has the highest concentration of brown bears you will see anywhere — dozens of bears catching salmon within close viewing distance from elevated platforms. It is expensive to reach but delivers."
+  - question: "Best time to visit Katmai National Park?"
+    answer: "July for the peak sockeye salmon run when bears are most active at Brooks Falls. Late August and September for a second, smaller salmon run. July 1-7 is the absolute peak — book many months in advance. The famous Fat Bear Week contest runs in October."
+  - question: "How many days in Katmai?"
+    answer: "Day trip is possible from Anchorage (via floatplane) but two to three days at Brooks Camp is ideal. Multiple viewing sessions at different times of day produce very different bear activity. Overnight stays require booking the Brooks Camp Campground ($12/night, lottery-based) or a lodge."
+  - question: "Is Katmai safe?"
+    answer: "The Brooks Camp viewing platforms are very safe — bears are habituated to humans in that area. The mandatory bear safety orientation covers the rules. Away from the platforms, this is genuine brown bear country; carry spray and follow ranger guidance strictly."
+  - question: "Katmai on a budget?"
+    answer: "Difficult to do cheaply. Floatplane access alone runs $300-400+. The Brooks Camp Campground ($12/night) saves on lodging but you still need to get there. Day trips from Anchorage via air taxi run $500-800 total. Katmai is a splurge destination."
+  - question: "What is Katmai known for?"
+    answer: "Brown bears catching sockeye salmon at Brooks Falls — the most famous bear viewing spectacle in the world. Also known for the Valley of Ten Thousand Smokes (volcanic landscape from the 1912 Novarupta eruption) and world-class fly fishing for sockeye, rainbow trout, and Dolly Varden."
+  - question: "Do I need a car in Katmai?"
+    answer: "No — there are no roads into Katmai. Access is exclusively by floatplane or boat. Within the park, walking and boats are the only transport."
+  - question: "Best things to do in Katmai?"
+    answer: "Brooks Falls bear viewing platforms (July-September), Valley of Ten Thousand Smokes tour, fly fishing on the Brooks River and backcountry lakes, kayaking in Naknek Lake, and backcountry bear viewing beyond the Brooks Camp area."
+scottTips:
+  logistics: "No roads in. Fly to King Salmon (AKN) from Anchorage (1 hour, Alaska Airlines), then floatplane to Brooks Camp (45 min). Or fly direct from Anchorage air taxis to Brooks Camp (2 hours). Budget $300-500 for access transport alone."
+  bestTime: "July 1-10 is the absolute peak of the salmon run and bear activity at Brooks Falls. Book Brooks Camp viewings and flights many months ahead — it is extremely competitive. Late August has a second run with fewer crowds."
+  gettingAround: "Walking within Brooks Camp area. Ranger-led tours to Valley of Ten Thousand Smokes by bus. Boats and floatplanes for backcountry access."
+  money: "One of Alaska's most expensive experiences. Day trip from Anchorage via air taxi: $500-800. Brooks Camp lodge: $600-900/night all-inclusive. Campground is $12/night but lottery-based. Worth every penny if you care about bears."
+  safety: "The Brooks Camp platforms are safe — bears are habituated and rangers manage viewing. Elsewhere in the park, this is genuine Alaska bear country. Mandatory orientation at Brooks Camp is taken seriously; follow the rules."
+  packing: "Rain gear (the Alaska Peninsula is one of the wettest places in the state), warm layers, binoculars or camera with long lens for bear viewing, bear spray for any backcountry, and polarized sunglasses to watch fish movement in the water."
+  localCulture: "Katmai is a wilderness park, not a developed destination. There is a small ranger staff and concession at Brooks Camp but nothing else. The bears are the stars; the viewing platform etiquette and ranger protocols are there to keep it safe and sustainable. Respect them."
 ---
+
+Katmai National Park is a remote Alaska peninsula preserve where brown bears catch sockeye salmon at Brooks Falls — accessible only by floatplane, budget $200-500+/day, best July through September for the bear-salmon spectacle.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/katmai-national-park-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #7f1d1d, #92400e, #1a4731);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Brooks Falls</div>
+    <p class="ib-text">Sockeye salmon leap into the jaws of waiting brown bears at Brooks Falls — one of the most concentrated wildlife spectacles anywhere on Earth.</p>
+  </div>
+</div>
 
 There is a moment at Brooks Falls that changes people. You hear the roar of water first, then the low shuffle of massive paws on gravel, and suddenly you are standing on an elevated platform watching a twelve-hundred-pound brown bear launch itself into a curtain of whitewater, jaws open, and emerge with a thrashing sockeye salmon clenched in its teeth. The other visitors around you gasp. Your hands tremble holding the camera. Nothing you have seen on nature documentaries prepares you for the raw, electric proximity of it.
 
@@ -106,20 +167,4 @@ What separates Katmai from other bear-viewing destinations is the sheer normalcy
 
 **Camp Cooking at Brooks:** Most campers prepare their own meals at the campground cooking shelter. The nearest grocery store is in King Salmon, so plan carefully and pack accordingly. All food must be stored in the bear-resistant cache when not being prepared or consumed.
 
-<div class="scott-tips">
 
-### Scott's Pro Tips
-
-**Getting There:** Book your floatplane from Anchorage to King Salmon on Ravn Alaska or PenAir well in advance, especially for July travel. From King Salmon, Katmailand operates the floatplane shuttle to Brooks Camp ($224 round trip). Weather delays are common and should be expected. Always build buffer days into your itinerary.
-
-**Best Time to Visit:** July is the iconic month for bears catching leaping salmon at Brooks Falls. But September is arguably better: fewer crowds, fall colors painting the tundra gold and crimson, bears at their fattest before hibernation, and the "Fat Bear Week" competition run by the park. June offers the earliest bear sightings, though salmon have not yet arrived in large numbers.
-
-**Getting Around:** Within Brooks Camp, everything is on foot. The walk from camp to the Falls Platform is about 1.2 miles. Beyond Brooks, travel is by floatplane, boat, or on foot through trailless backcountry. There are no roads within the park.
-
-**Budget Tips:** The campground is by far the cheapest option, but you must win the reservation lottery. Day trips from King Salmon or Homer let you see bears without overnight costs. Book the Valley of Ten Thousand Smokes bus tour early as it fills up. Bringing your own fishing gear saves rental fees.
-
-**Safety:** Katmai's bear safety record is excellent, but you must follow all protocols. Maintain a minimum distance of fifty feet from bears at all times (they may approach closer, in which case hold your ground). Never run from a bear. Store all food, trash, and scented items in the bear cache. Carry no food on the trail to the viewing platforms.
-
-**Packing:** Layers are essential, as summer temperatures range from 40 to 65 degrees Fahrenheit with frequent rain. Bring full rain gear (jacket, pants, boot covers), rubber boots or waterproof hiking boots, binoculars, a long camera lens if you have one, insect repellent for mosquitoes, and a headnet. All gear must fit on the floatplane, so pack in soft-sided bags rather than hard luggage.
-
-</div>

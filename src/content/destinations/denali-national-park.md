@@ -54,7 +54,68 @@ relatedDestinations: [fairbanks, anchorage, talkeetna]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Camp Denali / North Face Lodge"
+    type: hotel
+    price: "$400-800/night all-inclusive"
+    personalNote: "The park's premier wilderness lodge at mile 89 near Wonder Lake — unobstructed Denali views, naturalist programs, and genuine wilderness immersion. Minimum 3-night stay. Book very early."
+    affiliateUrl: "https://www.booking.com/hotel/us/camp-denali.html?aid=2778866"
+    badge: "Ultimate Denali"
+  - name: "Denali Wilderness Bus to Eielson"
+    type: tour
+    price: "$58/person"
+    personalNote: "The essential Denali experience — ride the transit bus to Eielson Visitor Center (mile 66) for the best roadside Denali views. Bring food, water, and binoculars for wildlife."
+    affiliateUrl: "https://www.getyourguide.com/denali-national-park-l234/eielson-bus-tour-t34567/?partner_id=IVN6IQ3"
+    badge: "Must Do"
+  - name: "Talkeetna Flightseeing Glacier Landing"
+    type: tour
+    price: "$300-400/person"
+    personalNote: "Fly from Talkeetna (150 miles south) to land on a Denali glacier. The best mountain views possible — on clear days the Alaska Range from the air is extraordinary."
+    affiliateUrl: "https://www.getyourguide.com/talkeetna-l678/denali-glacier-landing-t45678/?partner_id=IVN6IQ3"
+  - name: "Bear Spray (Counter Assault)"
+    type: activity
+    price: "$50-70"
+    personalNote: "Required for all Denali backcountry hiking. Grizzlies are present throughout the park — this is not optional."
+    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discovermore-20"
+faqItems:
+  - question: "Is Denali National Park worth visiting?"
+    answer: "Yes — it is one of the most extraordinary wilderness experiences in America. Six million acres with a single 92-mile road, wildlife density rivaling East Africa, and North America's tallest mountain. The bus system that replaced private vehicles has made it feel genuinely wild even when thousands visit daily."
+  - question: "Best time to visit Denali National Park?"
+    answer: "Mid-June through mid-August for warmest weather and longest days. Early June is less crowded but some facilities may not be fully open. Late August and September bring fall colors and the September road lottery (private vehicles allowed for 4 days). Denali is visible only about 30% of summer days — weather is variable."
+  - question: "How many days in Denali National Park?"
+    answer: "Minimum two days. Day one: entrance area trails, visitor center, sled dog kennel demonstration. Day two: full bus trip to Eielson (mile 66) or Wonder Lake (mile 85). Add a third day for backcountry hiking or a second bus trip. Backcountry campers need at least 4-5 days."
+  - question: "Is Denali National Park safe?"
+    answer: "Safe with preparation. Bear safety is critical: carry bear spray always, store food in provided bear canisters, be alert for grizzlies on all off-trail travel. River crossings in the backcountry are the biggest hazard — glacial rivers are cold, fast, and unpredictable. Weather changes from 65°F sunny to 40°F rainy in hours; be prepared for hypothermia risk."
+  - question: "Denali National Park on a budget?"
+    answer: "Entry fee is $15/person. Camping at Riley Creek or Savage River ($15-30/night) is affordable and rewarding. Transit buses ($35-58) are cheaper than narrated tour buses ($100+) and give you freedom. Pack all your food — dining options at the entrance are expensive. Budget $75-120/day camping."
+  - question: "What is Denali National Park known for?"
+    answer: "North America's tallest mountain (20,310 ft). Six million acres of protected wilderness. The single-road safari experience — private vehicles prohibited beyond mile 15. Extraordinary wildlife density: grizzlies, wolves, caribou, Dall sheep, moose, golden eagles. No maintained trails beyond the entrance area — pure backcountry wilderness."
+  - question: "Do I need a car in Denali National Park?"
+    answer: "Yes, to get here — the park entrance is 240 miles north of Anchorage on the Parks Highway (4-5 hours). Inside the park, private vehicles are prohibited beyond mile 15. All park travel is by the bus system, which is the experience."
+  - question: "Best things to do in Denali National Park?"
+    answer: "Transit bus to Eielson Visitor Center (mile 66) for Denali views, Wonder Lake bus (mile 85, 11-hour round trip), sled dog kennel demonstration (free), backcountry hiking off the bus, Horseshoe Lake Trail and Savage River Loop near the entrance, and flightseeing from Talkeetna."
+scottTips:
+  logistics: "Drive from Anchorage (240 miles, 4-5 hours on Parks Highway) or take the Alaska Railroad Denali Star (scenic, 8 hours, $60-100+). Book bus tickets through the park concessioner (reservedenali.com) well in advance — popular routes sell out weeks ahead for July and August."
+  bestTime: "Mid-June through mid-August is peak. Late August brings fall colors and thinner crowds. The September road lottery (4 days of private vehicle access) is a unique experience — enter months ahead. Plan for rain and cold any time — weather is highly variable."
+  gettingAround: "Inside the park, bus only beyond mile 15. Free shuttles run between campgrounds, visitor center, and facilities near the entrance. Outside the park, the Parks Highway commercial area has a free Denali Connector shuttle in summer."
+  money: "Camping is best value ($15-30/night). Transit buses ($35-58) give more freedom than tour buses ($100+). Pack all your food — park entrance dining is expensive. Budget $75-160/day depending on lodging choice."
+  safety: "Bear safety is non-negotiable: carry spray, store food in bear canisters, never run from a bear. Glacial river crossings in the backcountry are serious — cold, fast water, no bridges. Denali creates its own weather systems; hypothermia is a year-round backcountry risk. Book backcountry permits 4+ months ahead."
+  packing: "Binoculars (absolutely essential for wildlife from the bus), layers for 40-70°F range, waterproof shell and pants, sturdy hiking boots for backcountry, bear spray, food for your bus trip (no services), and a daypack for any off-bus hike."
+  localCulture: "Denali is a philosophy as much as a park — the no-private-vehicle policy creates a fundamentally different experience from Yellowstone or Yosemite. The bus system feels like a safari because it is. The park service makes deliberate choices to maintain wildness over convenience. Appreciate rather than fight that ethos."
 ---
+
+Denali is North America's tallest mountain and one of the world's greatest wilderness experiences — six million acres with a single 92-mile road, budget $75-240/day, best visited mid-June through mid-August, though Denali itself is visible only about 30% of summer days.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/denali-national-park-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #92400e, #e5e7eb, #1e3a5f);"></div>
+  <div class="ib-content">
+    <div class="ib-title">The Great One</div>
+    <p class="ib-text">North America's tallest mountain rises 20,310 feet above the surrounding tundra — visible from 200 miles away on the 30% of summer days when clouds permit.</p>
+  </div>
+</div>
 
 Denali does not require superlatives, but they come naturally. North America's tallest mountain. Six million acres of unbroken wilderness. A single 92-mile road as the only way in. No maintained trails beyond the park entrance area. Grizzly bears, wolves, caribou, Dall sheep, and moose roaming a landscape that has never been logged, mined, or developed. This is wilderness on a scale that the Lower 48 simply cannot offer, and encountering it changes how you think about what land can be when humans choose to leave it alone.
 
@@ -106,20 +167,3 @@ What you will not find in Denali is the over-developed infrastructure of parks l
 
 **King Salmon Restaurant** — Located at the McKinley Chalet Resort, offering breakfast buffets and dinner with standard but reliable Alaska fare. Convenient if you are staying at the resort. Breakfast buffet about $20, dinner entrees $25-40.
 
-<div class="scott-tips">
-
-### Scott's Pro Tips for Denali
-
-**Getting There:** The drive from Anchorage is 4-5 hours on the Parks Highway, which is paved and well-maintained. The Alaska Railroad offers a scenic and relaxing alternative — the Denali Star runs daily in summer between Anchorage and Fairbanks with a stop at the park. The train takes about 8 hours from Anchorage but the scenery is spectacular. Book bus tickets through the park's concessioner well in advance — popular routes sell out weeks ahead.
-
-**Best Time to Visit:** Mid-June through mid-August offers the warmest weather and longest days. Early June means fewer crowds but some park facilities may not yet be open and snow may linger at higher elevations. Late August and early September bring fall colors, thinner crowds, and the September road lottery, which allows private vehicles on the Park Road for four days. Wildlife viewing is excellent all season.
-
-**Getting Around:** Within the park, you are on the bus system. No alternatives exist beyond mile 15, and that is what makes the park special. At the park entrance, free shuttle buses run between the visitor center, campgrounds, and key facilities. Outside the park, the commercial area along the Parks Highway has a free Denali Connector shuttle in summer.
-
-**Budget Tips:** Camping is the most affordable way to experience Denali, and the campground experience here is genuine — no hookups, no WiFi, just wilderness. Transit buses ($35-58) are cheaper than tour buses ($100+) and give you more freedom. Pack all your food — there are very few dining options and they are expensive. Fill up on gas in Cantwell or Healy, where prices are lower than at the park entrance.
-
-**Safety:** Bear safety is critical. Carry bear spray on all hikes and store food in bear-resistant containers (provided free for backcountry campers). River crossings are the biggest backcountry hazard — glacial rivers are cold, fast, and unpredictable. Never cross above knee-depth alone. Hypothermia is a year-round risk; weather can change from sunny and 65°F to rainy and 40°F in hours.
-
-**Packing:** Layers, layers, layers. A warm base layer, insulating fleece, and waterproof shell are essential. Temperatures on the bus can vary wildly — sunny windows heat up while open windows at a wildlife stop let in cold air. Bring binoculars (indispensable for spotting wildlife from the bus), a daypack with food and water for any bus trip, and sturdy hiking boots if you plan to go off-trail. Mosquito repellent and a head net are critical in June and July.
-
-</div>

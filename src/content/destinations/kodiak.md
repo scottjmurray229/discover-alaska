@@ -54,7 +54,68 @@ relatedDestinations: [homer, katmai-national-park, anchorage]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Best Western Kodiak Inn"
+    type: hotel
+    price: "$140-220/night"
+    personalNote: "The most reliable mid-range option in Kodiak with a harbor-view location and solid amenities. The fishing fleet is visible from the dining room — authentic Kodiak."
+    affiliateUrl: "https://www.booking.com/hotel/us/best-western-kodiak-inn.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Kodiak Bear Viewing Tour"
+    type: tour
+    price: "$400-800/person"
+    personalNote: "Floatplane to remote viewing spots on the Kodiak National Wildlife Refuge for close encounters with the world's largest brown bears. An experience rivaling Katmai for a fraction of the logistics."
+    affiliateUrl: "https://www.getyourguide.com/kodiak-l901/bear-viewing-tour-t01234/?partner_id=IVN6IQ3"
+    badge: "Must Do"
+  - name: "Kodiak Sport Fishing Charter"
+    type: tour
+    price: "$300-400/person"
+    personalNote: "Halibut, king salmon, silver salmon — Kodiak's waters are some of the most productive in Alaska. The fishing is serious and the scenery spectacular."
+    affiliateUrl: "https://www.getyourguide.com/kodiak-l901/fishing-charter-t12345/?partner_id=IVN6IQ3"
+  - name: "Bear Spray (Counter Assault)"
+    type: activity
+    price: "$50-70"
+    personalNote: "Required for any hiking on Kodiak Island. The bear density here is the highest in North America — trail encounters are not uncommon."
+    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discovermore-20"
+faqItems:
+  - question: "Is Kodiak worth visiting?"
+    answer: "Yes for the right traveler — someone who wants genuine wilderness Alaska, world-class fishing or bear viewing, and doesn't mind being off the tourist trail. Kodiak has very little infrastructure for leisure tourism. It rewards the independently minded."
+  - question: "Best time to visit Kodiak?"
+    answer: "May through September. June-August for the full range of activities. July for pink and sockeye salmon runs. August for silver salmon. Bear viewing is excellent May through October. The Kodiak Crab Festival in late May is a major local event."
+  - question: "How many days in Kodiak?"
+    answer: "Three to five days. Day one for town, the Kodiak National Wildlife Refuge Visitor Center, and the Baranov Museum. Day two for a bear viewing flight. Day three for fishing. Days four and five for hiking and the road system beaches."
+  - question: "Is Kodiak safe?"
+    answer: "Safe in town. Bear density on the island is the highest in North America — carry spray on every hike and be extremely bear-aware. The road system is limited to about 100 miles; beyond it is floatplane-accessible wilderness."
+  - question: "Kodiak on a budget?"
+    answer: "Difficult to do cheaply — flights and the ferry ride are expensive, and bear viewing requires a floatplane. Budget $100-150/day minimum. Fishing licenses required ($25/day). Some of the island's beaches and hiking are free and spectacular."
+  - question: "What is Kodiak known for?"
+    answer: "The Kodiak brown bear — the largest bear subspecies in the world. Also one of Alaska's largest commercial fishing ports (king crab, halibut, salmon), the US Coast Guard's largest air station, and one of the most remote communities of 6,000 people in America."
+  - question: "Do I need a car in Kodiak?"
+    answer: "Yes — the town is spread out and the road system (limited as it is) requires a vehicle for beaches, hiking, and fishing spots. Car rentals available at the airport."
+  - question: "Best things to do in Kodiak?"
+    answer: "Kodiak National Wildlife Refuge bear viewing flight, sport fishing (halibut, salmon), Baranov Museum, Fort Abercrombie State Historical Park, hiking the Pillar Mountain trail, the harbor and fish processing docks, Buskin River salmon viewing, and beach exploring on the road system."
+scottTips:
+  logistics: "Alaska Airlines flies from Anchorage to Kodiak (ADQ) in about 1 hour. The Alaska Marine Highway ferry from Homer takes 9 hours — a scenic option but time-consuming. Car rental at the airport is essential; book ahead."
+  bestTime: "May through September. June-August for peak activities. The Crab Festival in late May is a genuine community event worth catching. Winter is quiet, dark, and for serious outdoor enthusiasts only."
+  gettingAround: "Car required. The road system covers about 100 miles — beyond that it's floatplane or boat. Kodiak town is walkable but spread out."
+  money: "Budget $100-160/day. Bear viewing flights ($400-800) are the premium experience. Fresh king crab at the Kodiak harbors is remarkably affordable direct from the boats if you're there at the right time."
+  safety: "Bear density on Kodiak is among the highest in the world. Carry spray on every hike, no exceptions. Make noise constantly on trails. Read the Kodiak National Wildlife Refuge bear safety guidelines before any backcountry activity."
+  packing: "Rain gear (Kodiak averages 60+ inches annually), bear spray, binoculars, layered clothing. If fishing, bring polarized sunglasses. Sturdy waterproof boots for trail and beach hiking."
+  localCulture: "Kodiak is a working community — the fishing industry, Coast Guard, and Native communities are all significant. The Alutiiq Museum preserves one of Alaska's most important Indigenous heritage collections. Respect that this is not a tourism-first community; the infrastructure reflects that."
 ---
+
+Kodiak is Alaska's second largest island — home of the world's largest brown bears, a major commercial fishing fleet, and genuine frontier wilderness, budget $100-250/day, accessible by Alaska Airlines from Anchorage.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/kodiak-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #3b0764, #166534, #7c2d12);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Island of Giants</div>
+    <p class="ib-text">Kodiak Island is home to the world's largest brown bears and one of Alaska's busiest fishing ports — where wilderness and working Alaska overlap completely.</p>
+  </div>
+</div>
 
 # Kodiak: Alaska's Emerald Isle
 
@@ -104,20 +165,4 @@ Kodiak's remoteness is its defining characteristic. Unlike Juneau, Ketchikan, or
 
 **El Chicano** — A longtime local Mexican restaurant that also serves American fare. Generous portions, friendly service, and some of the best fish tacos on the island. Meals $12-$24.
 
-<div class="scott-tips">
 
-## Scott's Pro Tips
-
-**Getting There:** Alaska Airlines flies from Anchorage to Kodiak daily (about 1 hour), with fares typically running $200-$400 round trip. The Alaska Marine Highway ferry from Homer takes about 10 hours and offers a spectacular ocean crossing, but sailings are limited to a few per month — check the schedule carefully and book vehicle space far in advance. There is no road to Kodiak; all access is by air or sea.
-
-**Best Time to Visit:** Late June through August is ideal for weather, bear viewing, and fishing. July offers peak salmon runs and the best bear activity. May and early June can be cool and wet but offer uncrowded fishing and early wildflower blooms. September brings silver salmon, fall colors on the hillsides, and fewer visitors. Kodiak's maritime climate means you can expect rain at any time of year — truly sunny days are gifts, not guarantees.
-
-**Getting Around:** A rental car is essential for exploring beyond downtown Kodiak. The road system extends about 40 miles in each direction from town, reaching Fort Abercrombie, Anton Larsen Bay, Pasagshak Bay, and Fossil Beach. Road conditions are generally good, though some routes are gravel. For anything beyond the road system — including the best bear viewing and fishing — you will need a bush plane or boat charter. Taxis are available in town.
-
-**Budget Tips:** Hike Barometer Mountain and Fort Abercrombie for free — both are outstanding and accessible. Bank fishing on the Buskin River costs only a fishing license ($20 for a day permit for non-residents). The museums are inexpensive ($7 each) and worth the visit. Buy fresh fish directly from the harbor or at local fish markets for a fraction of restaurant prices. If camping, Fort Abercrombie's sites are beautiful and cheap.
-
-**Safety:** Bear awareness is critical everywhere on Kodiak — even on the road system. Carry bear spray on all hikes and know how to use it. Make noise on trails, especially near salmon streams. Kodiak's weather can change rapidly, with fog, wind, and rain rolling in without warning. If you are on a floatplane trip, be prepared for potential weather delays — bush pilots will not fly in unsafe conditions, and you should budget flexibility into your schedule. Ocean conditions around the island can be rough; take seasickness precautions if boat-based activities are planned.
-
-**Packing:** Rain gear is your most important gear on Kodiak — bring a quality waterproof jacket and pants. Rubber boots (Xtratufs) are the standard Kodiak footwear and are perfect for beaches, trails, and wet conditions. Bring warm layers even in summer — fog and wind can make 55°F feel much colder. Binoculars are valuable for bear, eagle, and whale spotting. If you are heading into the backcountry, bring a GPS device and detailed maps, as trails outside the road system are minimal and navigation can be challenging in fog.
-
-</div>

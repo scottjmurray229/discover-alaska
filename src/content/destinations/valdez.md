@@ -54,7 +54,68 @@ relatedDestinations: [whittier, anchorage, wrangell-st-elias]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Best Western Valdez Harbor Inn"
+    type: hotel
+    price: "$140-240/night"
+    personalNote: "The most reliable lodging option in Valdez with harbor views and walking distance to boat tour departures. Book in advance for summer weekends."
+    affiliateUrl: "https://www.booking.com/hotel/us/best-western-valdez-harbor-inn.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Columbia Glacier Boat Tour"
+    type: tour
+    price: "$100-160/person"
+    personalNote: "Columbia Glacier is one of the largest tidewater glaciers in the world — a full-day boat tour from Valdez navigates through icebergs to the massive calving face. Wildlife sightings (orcas, sea lions, seals) are common."
+    affiliateUrl: "https://www.getyourguide.com/valdez-l789/columbia-glacier-tour-t89012/?partner_id=IVN6IQ3"
+    badge: "Must Do"
+  - name: "Valdez Kayaking in Prince William Sound"
+    type: tour
+    price: "$80-200/person"
+    personalNote: "Day kayak tours from Valdez through the fjords of Prince William Sound — bald eagles overhead, sea otters in the kelp, and mountain reflections in the water. Excellent guided options available."
+    affiliateUrl: "https://www.getyourguide.com/valdez-l789/kayaking-prince-william-sound-t90123/?partner_id=IVN6IQ3"
+  - name: "Binoculars (10x42)"
+    type: activity
+    price: "$150-300"
+    personalNote: "Essential for the Columbia Glacier tour — the iceberg field requires binoculars to spot the wildlife and the detail of the glacier face from the boat."
+    affiliateUrl: "https://www.amazon.com/s?k=10x42+binoculars+birdwatching&tag=discovermore-20"
+faqItems:
+  - question: "Is Valdez worth visiting?"
+    answer: "Yes — the Columbia Glacier boat tour alone justifies the trip. One of the world's largest tidewater glaciers, navigating through icebergs the size of buildings, with orcas surfacing nearby — it is a world-class Alaska experience. The fjord scenery and Columbia Glacier icefield backdrop are extraordinary."
+  - question: "Best time to visit Valdez?"
+    answer: "May through September. July and August for glacier tours and the calmest weather. The Trans-Alaska Pipeline Terminal tours are available summer only. Extreme skiing (heli-ski and Valdez is known globally for it) runs March-April."
+  - question: "How many days in Valdez?"
+    answer: "Two to three days. Day one: town, pipeline terminal area, Cropper Mineral Trail. Day two: Columbia Glacier full-day boat tour. Day three: Prince William Sound kayaking."
+  - question: "Is Valdez safe?"
+    answer: "Safe. The boat tours are professionally operated. The Richardson Highway connecting Valdez to the Glenn Highway is a stunning but remote drive — be prepared for winter driving conditions in shoulder seasons. Bears in the surrounding area."
+  - question: "Valdez on a budget?"
+    answer: "Budget $90-140/day. The Columbia Glacier tour ($100-160) is the main expense. The pipeline terminal area viewpoint is free. Keystone Canyon waterfall walk is free and stunning."
+  - question: "What is Valdez known for?"
+    answer: "The Columbia Glacier — one of the world's largest tidewater glaciers. The terminus of the 800-mile Trans-Alaska Pipeline. Extreme heli-skiing on some of the most radical terrain in North America. Keystone Canyon with its ice climbing routes. The 1989 Exxon Valdez oil spill (the environmental tragedy that transformed US maritime law)."
+  - question: "Do I need a car in Valdez?"
+    answer: "Yes — Valdez is 304 miles from Anchorage via the Richardson Highway, one of Alaska's most dramatic drives. The road section through Keystone Canyon is spectacular. Once in town, a car is useful for the terminal area and hiking trailheads."
+  - question: "Best things to do in Valdez?"
+    answer: "Columbia Glacier full-day boat tour, Prince William Sound kayaking, Keystone Canyon waterfall hike, Trans-Alaska Pipeline Terminal viewpoint, Valdez Museum (1964 earthquake and oil spill history), Mineral Creek hiking trail, and the Richardson Highway drive from Anchorage."
+scottTips:
+  logistics: "Drive from Anchorage: 304 miles via Glenn and Richardson Highways — a magnificent 6-7 hour drive through Matanuska Valley, Wrangell St. Elias mountains, and Keystone Canyon. Alaska Airlines flies seasonally. Book boat tours in advance for summer."
+  bestTime: "May through September for boat tours and hiking. March-April for extreme skiing on Valdez's famous steep terrain."
+  gettingAround: "Car to get here. Town is small and walkable. Boat tours depart from the harbor."
+  money: "Budget $90-160/day. Columbia Glacier tour ($100-160) is the main expense. The Richardson Highway drive itself is free and extraordinary."
+  safety: "Columbia Glacier boat tours: icebergs can roll without warning — operators maintain safe distances. Richardson Highway is beautiful but remote — carry emergency supplies, especially in shoulder seasons. Bears near trails."
+  packing: "Warm layers for glacier boat tours (much colder near the ice face), rain gear, binoculars for wildlife and glacier detail, camera."
+  localCulture: "Valdez rebuilt itself after the 1964 Good Friday Earthquake destroyed the original townsite — the current town is a planned community relocated 4 miles from the original. The 1989 Exxon Valdez spill scars are still visible in the community's environmental consciousness. The pipeline and the spill are two defining chapters in the same story."
 ---
+
+Valdez is a small Prince William Sound port surrounded by dramatic fjord scenery — the Trans-Alaska Pipeline terminus and base for Columbia Glacier tours, budget $90-220/day, best May through September.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/valdez-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #1e3a5f, #0c4a6e, #334155);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Prince William Sound</div>
+    <p class="ib-text">Valdez sits deep in a fjord encircled by 5,000-foot peaks — the head of Prince William Sound and terminus of the Trans-Alaska Pipeline.</p>
+  </div>
+</div>
 
 # Valdez: The Glacier-Carved Jewel of Prince William Sound
 
@@ -106,20 +167,4 @@ Valdez is Prince William Sound's most accessible port. While Whittier provides a
 
 **Rogue's Garden Bistro** — A newer addition to the Valdez dining scene, featuring farm-inspired cuisine with local ingredients, craft cocktails, and a rotating seasonal menu. Entrees $18-$36.
 
-<div class="scott-tips">
 
-## Scott's Pro Tips
-
-**Getting There:** The drive from Anchorage to Valdez (305 miles, 5.5 hours) traverses three stunning mountain passes and is one of Alaska's great road trips. The Glenn Highway to Glennallen passes through the Matanuska Valley, and the Richardson Highway from Glennallen to Valdez crosses Thompson Pass with jaw-dropping scenery. The road is paved and well-maintained year-round, though winter conditions at Thompson Pass can be severe. Ravn Alaska flies from Anchorage to Valdez ($200-$350 round trip). The Alaska Marine Highway ferry connects Valdez to Whittier and Cordova.
-
-**Best Time to Visit:** June through August is peak season with the warmest weather and all tours operating. July brings peak pink salmon runs and the longest days. August offers silver salmon fishing and slightly smaller crowds. May and September are shoulder months with lower prices and excellent scenery — fall colors in September along the Richardson Highway are spectacular. Winter visitors come for heli-skiing (February-April) and ice climbing in Keystone Canyon.
-
-**Getting Around:** A car is valuable for exploring the Richardson Highway corridor, Thompson Pass, and Worthington Glacier. The town itself is walkable, and the harbor area where most tours depart is compact. Rental cars are available but limited — book well in advance for summer. Bike rentals are an option for exploring town and nearby trails. All boat tours and kayak trips depart from the small boat harbor downtown.
-
-**Budget Tips:** Worthington Glacier and Keystone Canyon are free and among the most impressive roadside attractions in Alaska. Shore fishing at Allison Point requires only a fishing license. The Valdez Museum is inexpensive and excellent. Camp at one of the several campgrounds in the area to save significantly on lodging. Pack lunch for glacier cruises — most boats allow you to bring food. The town's public library offers free WiFi and a warm, dry place to relax.
-
-**Safety:** Prince William Sound weather can change rapidly — dress warmly for boat tours even on sunny days, as temperatures on the water are significantly cooler than on shore. If sea kayaking, understand tidal patterns and stay alert for calving glaciers, which can generate dangerous waves. The road over Thompson Pass requires caution in any season — check conditions before driving, especially from October through April. Bears are present throughout the Valdez area; carry bear spray when hiking. The Allison Point fishing area attracts bears during salmon runs — be aware and keep a clean camp.
-
-**Packing:** Layer up for maritime weather: a waterproof shell, fleece mid-layer, and moisture-wicking base layer are essential. Bring warm gloves and a hat for glacier cruises, even in July — calving ice creates cold winds. Rubber boots or waterproof hiking boots are recommended. Binoculars enhance every boat tour and wildlife experience. If driving from Anchorage, bring snacks and water for the road — services between Glennallen and Valdez are very limited. For winter heli-skiing, operators provide avalanche safety equipment, but bring your own high-performance cold-weather ski gear.
-
-</div>

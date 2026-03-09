@@ -54,7 +54,69 @@ relatedDestinations: [utqiagvik, fairbanks, anchorage]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Nome Nugget Inn"
+    type: hotel
+    price: "$130-200/night"
+    personalNote: "The main hotel in Nome with a solid restaurant and central location. In a town with limited lodging options, the Nugget Inn is a reliable choice for the Iditarod or summer wildlife visits."
+    affiliateUrl: "https://www.booking.com/hotel/us/nome-nugget-inn.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Nome Wildlife Tundra Tour"
+    type: tour
+    price: "$150-250/person"
+    personalNote: "Guided van tour on Nome's unique road system for musk oxen, reindeer, caribou, and shorebirds. The roads to Council and Teller pass through extraordinary tundra scenery."
+    affiliateUrl: "https://www.getyourguide.com/nome-l234/tundra-wildlife-tour-t34567/?partner_id=IVN6IQ3"
+    badge: "Best Wildlife"
+  - name: "Iditarod Finish Line Experience"
+    type: tour
+    price: "$200-500/person (March only)"
+    personalNote: "Being at the Nome burlab arch when the first mushers arrive after 1,000 miles of racing is one of Alaska's most emotional experiences. Book accommodations and flights months ahead."
+    affiliateUrl: "https://www.getyourguide.com/nome-l234/iditarod-finish-experience-t45678/?partner_id=IVN6IQ3"
+    badge: "March Only"
+  - name: "Portable Water Filter (Sawyer)"
+    type: activity
+    price: "$30-50"
+    personalNote: "Useful for tundra day hikes in the Nome backcountry where fresh water sources exist but quality varies. The Sawyer Squeeze is lightweight and reliable."
+    affiliateUrl: "https://www.amazon.com/s?k=sawyer+squeeze+water+filter&tag=discovermore-20"
+faqItems:
+  - question: "Is Nome worth visiting?"
+    answer: "For the right traveler — yes. Nome is not a comfortable, developed tourist destination. It is a remote Arctic town with a wild history, extraordinary tundra wildlife, and the Iditarod finish line. If you want genuine frontier Alaska and don't mind the expense and logistics, Nome delivers something found nowhere else."
+  - question: "Best time to visit Nome?"
+    answer: "March for the Iditarod finish (book many months ahead — hotels fill completely). June through August for tundra wildlife: musk oxen are present year-round on the Kougarok Road, migratory shorebirds arrive in May-June, and the Nome road system's wildlife is excellent in summer. Winter is extremely cold and dark."
+  - question: "How many days in Nome?"
+    answer: "Three to four days. Day one for downtown, the Bering Sea waterfront, and gold rush history. Day two for the Kougarok Road wildlife drive (musk oxen). Day three for the Council Road and shorebirds/seabirds. Add a fourth for backcountry gold panning."
+  - question: "Is Nome safe?"
+    answer: "Safe in town. The tundra roads outside Nome are remote and have no services — a vehicle breakdown can be serious. Go with a full tank, carry emergency supplies, and let someone know your route. The Bering Sea coast can have sudden severe weather."
+  - question: "Nome on a budget?"
+    answer: "Expensive to reach — flights from Anchorage run $300-500 round trip. Budget $100-150/day on the ground. Some of the best wildlife viewing (musk oxen on the Kougarok Road) is free from a rental car. Gold panning on the beach is free (find out which tidal zones are open to the public)."
+  - question: "What is Nome known for?"
+    answer: "The Iditarod Sled Dog Race finish line. Gold rush history — gold was discovered in the beach sand in 1899 and Nome briefly had a larger population than Seattle. Musk oxen, reindeer herds, and extraordinary tundra wildlife. The Bering Sea coast. The last frontier atmosphere."
+  - question: "Do I need a car in Nome?"
+    answer: "Yes — Nome is one of the few Alaska bush communities with an actual road system (about 300 miles of roads). A rental car is essential for the wildlife drives on the Kougarok, Council, and Teller Roads that are the primary reason to visit."
+  - question: "Best things to do in Nome?"
+    answer: "Iditarod finish line visit (March), Kougarok Road musk oxen viewing, Council Road shorebird and seabird viewing, Bering Sea gold panning beaches, Carrie M. McLain Memorial Museum, Nome's historic Front Street, backcountry wildlife drives, and Nome Gnome hunt (hidden gnome statues around town)."
+scottTips:
+  logistics: "Fly from Anchorage to Nome (OME) on Alaska Airlines — 1.5 hours, $250-500 round trip. No road connects Nome to the rest of Alaska. Book lodging very far in advance for the Iditarod (March) — hotels sell out months ahead."
+  bestTime: "March for the Iditarod finish (extremely competitive lodging). June-August for wildlife and birding. The Bering Land Bridge Visitor Center in Nome has current wildlife intel."
+  gettingAround: "Rental car essential for the 300-mile road network. Downtown Nome is walkable. The famous roads (Kougarok, Council, Teller) are gravel and generally passable in summer with a regular car."
+  money: "Budget $100-180/day. Flights are the main expense. Food and lodging are expensive but lower than Juneau or Anchorage by Alaska standards. Beer at the Bering Sea Bar is remarkably affordable."
+  safety: "Remote road drives require preparation: full gas tank, emergency supplies, satellite communicator for backcountry. Bering Sea weather can change instantly. Permafrost thaw makes some tundra areas unstable."
+  packing: "Layers for 30-60°F summer temperatures, waterproof gear, binoculars (essential for wildlife drives), bug spray (tundra mosquitoes are significant in June-July), and a good camera for musk oxen and shorebirds."
+  localCulture: "Nome's Inupiaq heritage is significant and ongoing. The Nome Eskimo Community and Kawerak organization are important institutions. The gold rush history is fascinating and complicated. The Iditarod community (mushers, race volunteers, locals) is welcoming and passionate — if you're there for the finish, engage with it fully."
 ---
+
+Nome is a remote Arctic Alaska gold rush town on the Bering Sea — the Iditarod finish line, surrounded by extraordinary tundra wildlife including musk oxen, budget $100-220/day, best March for the Iditarod or June through August for wildlife.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/nome-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #1c1917, #92400e, #1a4731);"></div>
+  <div class="ib-content">
+    <div class="ib-title">End of the Iditarod</div>
+    <p class="ib-text">Nome's Front Street burlab arch marks the finish of the world's most grueling sled dog race — 1,000 miles across Alaska's most remote wilderness.</p>
+  </div>
+</div>
 
 Nome sits on the edge of the Bering Sea like a sentence that was never quite finished. The town of roughly 3,800 people clings to a narrow gravel spit on the southern coast of the Seward Peninsula, two miles of weathered storefronts and colorful houses facing an ocean that freezes solid each winter and thaws into a pewter expanse each spring. There is no road to Nome from anywhere else. You fly in, or you don't come at all. And yet for more than a century, people have been arriving here chasing something: gold, glory, adventure, or simply the feeling of standing at the edge of the known world.
 
@@ -106,20 +168,4 @@ Nome also serves as the jumping-off point for the Bering Land Bridge National Pr
 
 **Twin Dragons** rounds out the dining scene with Chinese-American fare that hits the spot after a long day on the tundra roads. Combination plates $16 to $24.
 
-<div class="scott-tips">
 
-### Scott's Pro Tips
-
-**Getting There:** Alaska Airlines operates daily jet service from Anchorage to Nome, with round-trip fares typically ranging from $500 to $900 depending on season and advance purchase. Book early for Iditarod week in March, when fares spike and flights sell out. Bering Air offers additional regional flights and charters.
-
-**Best Time to Visit:** March for the Iditarod is the most festive time. Late May through early July is prime for birding, wildflowers, and the longest days. August offers berry picking and early fall colors. Winters are brutally cold and dark, but the northern lights are spectacular from November through February if you can handle temperatures dropping to negative thirty or colder.
-
-**Getting Around:** Rent a car if you want to explore the road system, which is the main draw for summer visitors. In town, everything is walkable. Taxis are available but limited. For destinations beyond the road system, charter flights are the only option.
-
-**Budget Tips:** Bring food from Anchorage. Groceries in Nome cost roughly double Anchorage prices due to air freight. Stock up on snacks, energy bars, and lunch supplies before flying in. Rent a gold pan instead of buying one. The free beach panning is genuinely entertaining and costs nothing beyond the pan rental.
-
-**Safety:** The Bering Sea coast is bitterly cold even in summer. Hypothermia is a real risk if you get wet. The road system has no services, no cell coverage, and limited traffic, so carry emergency supplies, extra fuel, food, and water. Bear encounters are possible on all three roads, so carry bear spray.
-
-**Packing:** Dress in layers for summer with a warm waterproof outer shell. Temperatures range from 35 to 60 degrees Fahrenheit June through August. Bring binoculars even if you are not a birder. Rubber boots or waterproof hiking boots are essential for tundra walking. A spotting scope is invaluable for birding. And bring a good book for weather delays, which are inevitable in Nome.
-
-</div>

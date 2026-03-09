@@ -54,7 +54,68 @@ relatedDestinations: [denali-national-park, anchorage, fairbanks]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Talkeetna Alaskan Lodge"
+    type: hotel
+    price: "$250-450/night"
+    personalNote: "The premium Talkeetna option with stunning views of the Alaska Range including Denali on clear days. The deck at sunset with the mountain lit pink is extraordinary."
+    affiliateUrl: "https://www.booking.com/hotel/us/talkeetna-alaskan-lodge.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Denali Flightseeing with Glacier Landing"
+    type: tour
+    price: "$300-400/person"
+    personalNote: "Land on a glacier on Denali with K2 Aviation or Talkeetna Air Taxi. On a clear day this is one of the best experiences in Alaska — close views of the Alaska Range that are impossible from the ground."
+    affiliateUrl: "https://www.getyourguide.com/talkeetna-l678/denali-flightseeing-t78901/?partner_id=IVN6IQ3"
+    badge: "Don't Miss"
+  - name: "Talkeetna River Rafting"
+    type: tour
+    price: "$75-120/person"
+    personalNote: "Float the Talkeetna River through spruce and birch forests with mountain views. A relaxed option that shows the landscape from water level."
+    affiliateUrl: "https://www.getyourguide.com/talkeetna-l678/river-rafting-t89012/?partner_id=IVN6IQ3"
+  - name: "Alaska Range Summit Photography Book"
+    type: activity
+    price: "$30-50"
+    personalNote: "If the mountain captures you, Bradford Washburn's photography of Denali and the Alaska Range from the air is incomparable context for what you're seeing."
+    affiliateUrl: "https://www.amazon.com/s?k=denali+alaska+range+photography+book&tag=discovermore-20"
+faqItems:
+  - question: "Is Talkeetna worth visiting?"
+    answer: "Yes — especially combined with Denali National Park. The flightseeing over the Alaska Range is superb, the town has genuine bohemian character (residents elected a cat as honorary mayor for years), and it is the authentic base for Denali climbers. A day or two here adds enormous value to any Denali trip."
+  - question: "Best time to visit Talkeetna?"
+    answer: "May through September. May-June for Denali climbing season and spring conditions. June-July for maximum daylight and warmth. The Talkeetna Bluegrass Festival in August is excellent. September for fall colors and fewer tourists."
+  - question: "How many days in Talkeetna?"
+    answer: "One to two days is typical — most visitors stop en route to or from Denali. One day for the flightseeing trip and the Main Street walk. Two days to add river rafting and properly experience the quirky town culture."
+  - question: "Is Talkeetna safe?"
+    answer: "Very safe and relaxed. The flightseeing is conducted by FAA-certified operators with decades of experience. River rafting is on Class II water appropriate for families. Bears are present on backcountry trails."
+  - question: "Talkeetna on a budget?"
+    answer: "Budget $80-120/day. The flightseeing ($300-400) is the main splurge. Talkeetna's bars and restaurants are reasonably priced. The Railroad Depot Museum is modest and free."
+  - question: "What is Talkeetna known for?"
+    answer: "The base for Denali climbing expeditions — all climbers must register here with the National Park Service. Denali flightseeing with glacier landings. A famously quirky small-town character. The Alaska Railroad depot and the Susitna and Talkeetna Rivers confluence. Nagley's Store, where Stubbs the cat was honorary mayor for over two decades."
+  - question: "Do I need a car in Talkeetna?"
+    answer: "Yes to get here — Talkeetna is 115 miles north of Anchorage via Parks Highway, then 14 miles on the Talkeetna Spur Road. The Alaska Railroad also stops here (scenic, slower option). In town, everything is walkable."
+  - question: "Best things to do in Talkeetna?"
+    answer: "Denali flightseeing with glacier landing, Talkeetna River float trip, Main Street walk (quirky local shops and bars), Alaska Range views from the hilltop, Denali National Park Service ranger station (climber registration), Nagley's Store, and the Talkeetna Historical Museum."
+scottTips:
+  logistics: "Drive from Anchorage: 115 miles north on Parks Highway to the Talkeetna Spur Road, then 14 miles to town (about 2.5 hours). Or take the Alaska Railroad from Anchorage (about 4 hours, very scenic). Car rental in Anchorage is the most flexible option."
+  bestTime: "Late May through early September. May-June during Denali climbing season when you can watch expeditions depart. Late September for fall colors — the birch turn gold and the light is extraordinary."
+  gettingAround: "Tiny town — everything walkable. Car for getting here."
+  money: "Moderate by Alaska standards. Budget $80-150/day. Flightseeing ($300-400) is the big expense. Food and accommodation are reasonable."
+  safety: "Very safe. Flightseeing operators are experienced. Backcountry areas have bears — carry spray."
+  packing: "Layers for variable weather, camera (the Alaska Range views are extraordinary), binoculars for spotting wildlife and climbers on the mountain."
+  localCulture: "Talkeetna has a genuine counterculture streak — artists, guides, climbers, and independent spirits who chose this remote small town. The climbing community is serious and respected. Don't treat the mountaineers like attractions. Nagley's Store is 100 years old and still a community hub."
 ---
+
+Talkeetna is a tiny quirky Alaska town — the base for Denali climbing expeditions and flightseeing over the Alaska Range, with a bohemian character unlike anywhere else in the state, budget $80-200/day, best May through September.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/talkeetna-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #1c1917, #0c4a6e, #166534);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Denali Basecamp</div>
+    <p class="ib-text">Talkeetna launches climbers toward Denali each spring — the same Main Street bars serve mountaineers and tourists in equal measure.</p>
+  </div>
+</div>
 
 Talkeetna is the kind of town that makes people reconsider their life choices. Not in a crisis way, but in the way that standing on a gravel bar on the Susitna River at nine in the evening, watching alpenglow turn the summit of Denali from white to pink to gold while a bald eagle circles overhead, makes you think: What if I just stayed? It is a question many people have asked, which is why this former railroad and mining supply town of eleven hundred souls has evolved into one of the most charmingly eccentric communities in Alaska.
 
@@ -106,20 +167,4 @@ The town's character is equally magnetic. Talkeetna has attracted a community of
 
 **Twister Creek Restaurant** at the Talkeetna Alaskan Lodge offers upscale dining with panoramic mountain views. The menu emphasizes Alaskan seafood and game, with entrees from $28 to $52. The lounge serves lighter fare and craft cocktails.
 
-<div class="scott-tips">
 
-### Scott's Pro Tips
-
-**Getting There:** Drive the Parks Highway from Anchorage (2.5 hours) or Denali National Park entrance (2.5 hours south). The Alaska Railroad stops in Talkeetna on its Anchorage-to-Denali route, with one-way fares around $100 to $175. The train ride itself is spectacular, winding through river valleys with mountain views. Talkeetna's spur road meets the Parks Highway at mile 98.7.
-
-**Best Time to Visit:** June through August for the best weather and longest days. July offers the best statistical chance of clear Denali views for flightseeing. May and September are quieter and cheaper but cooler, with more overcast skies. Winter visits offer northern lights, dog mushing, and a magical quiet, but most tourist services close from October through April.
-
-**Getting Around:** Talkeetna's downtown is entirely walkable, and most outfitters will pick you up from your accommodation. A car is useful for exploring the spur road and nearby trailheads but not essential if you are staying in town. The Alaska Railroad and Talkeetna shuttle services can get you here without a vehicle.
-
-**Budget Tips:** The hostel and campground make Talkeetna one of the more affordable Alaska destinations for backpackers. Cook at the hostel kitchen or pick up groceries at Nagley's Store. The Roadhouse breakfast is an enormous value and can carry you through lunch. Main Street wandering, ranger station visits, and river walks are all free. If flightseeing is out of budget, the Talkeetna Riverfront Park offers clear-day Denali views for free.
-
-**Safety:** River currents around Talkeetna are deceptively strong and cold. Never wade into the rivers without proper gear, and always wear a life jacket when rafting. Bear encounters are possible on trails and along riverbanks, so carry bear spray. If your flightseeing tour is cancelled due to weather, do not pressure pilots to fly; these conditions are genuinely dangerous.
-
-**Packing:** Layers for temperatures ranging from 45 to 75 degrees Fahrenheit in summer. A rain jacket is essential. Binoculars for mountain viewing and wildlife. Sunglasses and sunscreen for glacier landings, where the reflected glare off ice and snow is intense. Comfortable walking shoes for Main Street and trail shoes for hikes. If you plan to fish, quick-dry layers and waterproof waders can often be rented from outfitters.
-
-</div>

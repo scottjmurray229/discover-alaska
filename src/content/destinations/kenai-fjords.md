@@ -54,7 +54,67 @@ relatedDestinations: [anchorage, seward, homer]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Major Marine Tours — Kenai Fjords Cruise"
+    type: tour
+    price: "$140-200/person"
+    personalNote: "The definitive Kenai Fjords experience — full-day cruise to Northwestern Fjord or Fox Island with tidewater glaciers, wildlife, and a hot meal included. One of the best day trips in Alaska."
+    affiliateUrl: "https://www.getyourguide.com/seward-l678/kenai-fjords-cruise-t78901/?partner_id=IVN6IQ3"
+    badge: "Don't Miss"
+  - name: "Kenai Fjords Glacier Kayaking"
+    type: tour
+    price: "$180-350/person"
+    personalNote: "Paddle among icebergs at the face of a tidewater glacier. Guided day trips include transport from Seward to Resurrection Bay launch points. A very different experience from the boat tours."
+    affiliateUrl: "https://www.getyourguide.com/seward-l678/glacier-kayaking-t89012/?partner_id=IVN6IQ3"
+  - name: "Exit Glacier Guides — Harding Icefield Hike"
+    type: tour
+    price: "$150-250/person"
+    personalNote: "The Harding Icefield Trail is one of the best day hikes in Alaska — guided trips ensure safety on the upper section. Views of the icefield are extraordinary on clear days."
+    affiliateUrl: "https://www.getyourguide.com/seward-l678/harding-icefield-hike-t90123/?partner_id=IVN6IQ3"
+  - name: "Hiking Poles"
+    type: activity
+    price: "$30-80"
+    personalNote: "Essential for the Harding Icefield Trail — the steep upper section has significant loose rock and the poles dramatically reduce strain on the knees on the descent."
+    affiliateUrl: "https://www.amazon.com/s?k=trekking+poles+collapsible&tag=discovermore-20"
+faqItems:
+  - question: "Is Kenai Fjords worth visiting?"
+    answer: "Yes — it delivers the Alaska coastal wilderness experience efficiently and reliably. A full-day boat tour covers marine wildlife (orcas, sea lions, puffins, humpback whales), tidewater glacier calving, and dramatic fjord scenery. Exit Glacier near Seward is accessible by a short walk and shows glacier retreat vividly."
+  - question: "Best time to visit Kenai Fjords?"
+    answer: "May through September. June through August for the full range of activities and the best wildlife variety. May has calmer seas and late spring bird activity. September is quieter with fall approaching. The park is accessible year-round but most boat tours run May-September."
+  - question: "How many days in Kenai Fjords?"
+    answer: "Two to three days. Day one: Exit Glacier and the Harding Icefield trail. Day two: full-day boat tour of Northwestern Fjord. Day three: sea kayaking or a second fjord cruise."
+  - question: "Is Kenai Fjords safe?"
+    answer: "Safe with standard outdoor precautions. The boat tours are professionally operated. The Harding Icefield trail is strenuous (3,000 ft gain in 4 miles) — start early and be off the high section before afternoon weather builds. Bears are present near Exit Glacier."
+  - question: "Kenai Fjords on a budget?"
+    answer: "The Exit Glacier trail and Exit Glacier nature center are free. The park visitor center in Seward is free. Budget the full-day boat tour ($140-200) as your one essential expense. Seward accommodation is moderate at $100-180/night."
+  - question: "What is Kenai Fjords known for?"
+    answer: "The Harding Icefield — one of the largest icefields in the US — feeding 40+ glaciers to the sea. Tidewater glacier calving in the fjords. World-class marine wildlife: orcas, humpback whales, Steller sea lions, sea otters, and massive seabird colonies. Exit Glacier is the only road-accessible glacier in the park."
+  - question: "Do I need a car in Kenai Fjords?"
+    answer: "Yes to get to Seward (127 miles from Anchorage, 2.5 hours via Seward Highway). The Seward Highway drive is one of Alaska's most scenic roads. Once in Seward, the small harbor town is walkable; boat tours depart from Seward harbor."
+  - question: "Best things to do in Kenai Fjords?"
+    answer: "Full-day glacier and wildlife boat cruise (Northwestern Fjord or Resurrection Bay), Exit Glacier hike, Harding Icefield Trail, sea kayaking in Resurrection Bay, Fox Island beach landing, and whale watching from the Seward harbor."
+scottTips:
+  logistics: "Drive from Anchorage — 127 miles, 2.5 hours on the Seward Highway (one of Alaska's most scenic drives, hugging Turnagain Arm). The Alaska Railroad also serves Seward in summer (3.5 hours, $70-100 each way). Book boat tours before you arrive — summer dates sell out."
+  bestTime: "June through August for peak wildlife and calm seas. Early June has less competition for boat tour spots. July and August are the warmest but most crowded. Book Major Marine or Kenai Fjords Tours well in advance."
+  gettingAround: "Car to get here. Seward harbor is walkable once you arrive. Boat tours depart from the harbor."
+  money: "Seward is moderately priced by Alaska standards. Budget $80-150/day plus the boat tour ($140-200). The Harding Icefield trail is free and among the best hikes in the state."
+  safety: "Harding Icefield trail: start before 8am for a summit attempt, be off exposed sections by early afternoon when weather builds. Bears near Exit Glacier — carry spray. Glacier-calved icebergs in the fjords; boat operators know the safe distances."
+  packing: "Rain gear essential, warm layers for boat trips (much colder on the water than on shore), sun protection (strong UV on snow and water), hiking poles for the Harding Icefield trail, binoculars for wildlife."
+  localCulture: "Seward is a fishing town that tourism has layered on top of, not replaced. The commercial fishing fleet shares the harbor with tour boats. The Seward Polar Bear Jump in January (yes, people jump into the 34°F ocean) tells you something about local character. The town history around the 1964 earthquake and tsunami is significant."
 ---
+
+Kenai Fjords National Park is a dramatic coastal Alaska wilderness south of Seward — glacier-carved fjords, tidewater glaciers, and marine wildlife including orcas and puffins, budget $80-220/day, best May through September.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/kenai-fjords-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #1e3a5f, #0891b2, #064e3b);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Glacier to Sea</div>
+    <p class="ib-text">The Harding Icefield sends its glaciers cascading to the sea, creating one of Alaska's most dramatic coastal wildernesses with world-class marine wildlife.</p>
+  </div>
+</div>
 
 The Seward Highway south from Anchorage is one of America's great scenic drives — mountains on both sides, waterfalls threading down cliffs, Dall sheep visible on the ridgelines, Turnagain Arm stretching silver toward the horizon. But the real payoff comes at the end: the small port town of Seward, gateway to Kenai Fjords National Park, where the Harding Icefield spills nearly forty glaciers down mountain valleys and into the sea.
 
@@ -106,20 +166,4 @@ The park's marine ecosystem is the other half of the story. The continental shel
 
 **The Salmon Bake at Resurrect Beach** — A seasonal outdoor cookout featuring grilled wild salmon, halibut, and side dishes. Communal picnic tables, mountain views, and live music some evenings. Plates $18-28.
 
-<div class="scott-tips">
 
-### Scott's Pro Tips for Kenai Fjords
-
-**Getting There:** The drive from Anchorage to Seward on the Seward Highway is one of Alaska's most scenic routes — budget extra time for stops at turnouts along Turnagain Arm, where bore tides and beluga whales are sometimes visible. The Alaska Railroad's Coastal Classic train is an alternative that lets you enjoy the scenery without driving. If driving, watch for moose on the road, particularly near Moose Pass (aptly named).
-
-**Best Time to Visit:** Late June through mid-August is prime season. The Harding Icefield Trail is typically snow-free by early July, and marine wildlife activity peaks in July and August. May and September are cooler and rainier but far less crowded, with lower tour prices. Exit Glacier Road is typically open May through October, weather permitting.
-
-**Getting Around:** In Seward, most lodging, restaurants, and the boat harbor are within walking distance. You will need a car to reach Exit Glacier (12 miles from town). The free Seward trolley runs along the waterfront in summer. If you are kayaking or taking a water taxi to remote areas, outfitters handle logistics.
-
-**Budget Tips:** Exit Glacier is free to visit (just the $15 parking fee) and the Harding Icefield Trail is one of Alaska's best free hiking experiences. Half-day wildlife cruises are significantly cheaper than full-day glacier tours and still deliver great wildlife viewing. Pack lunch for boat tours even when meals are included — you may want more food than provided. Grocery prices in Seward are high, so stock up in Anchorage.
-
-**Safety:** Seasickness on the boat tours is a real concern — the Gulf of Alaska can be rough. Take medication before boarding (Bonine or Dramamine), not after you start feeling ill. On the Harding Icefield Trail, conditions can change rapidly above treeline — bring warm layers and rain gear even on sunny days. Snow bridges on the upper trail can be deceptive in early summer; follow cairns and use trekking poles. Stay on marked trails near Exit Glacier — ice falls and calving happen unpredictably.
-
-**Packing:** Bring layers for boat tours — even on a sunny 60°F day in Seward, the temperature on the water near glaciers can feel like 35°F. A waterproof outer layer is essential for both hiking and boating. Binoculars dramatically improve wildlife viewing on boat tours. If you plan the Harding Icefield hike, bring trekking poles, microspikes or light crampons for snow patches, sunscreen, and 2-3 liters of water. Sunglasses are critical on the icefield — snow glare is intense.
-
-</div>

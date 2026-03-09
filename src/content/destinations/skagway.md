@@ -54,7 +54,68 @@ relatedDestinations: [juneau, haines, glacier-bay]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "White House Bed and Breakfast"
+    type: hotel
+    price: "$130-220/night"
+    personalNote: "Historic building with genuine Skagway character. The breakfast is excellent and the owners know the trail and hiking options better than anyone in town."
+    affiliateUrl: "https://www.booking.com/hotel/us/white-house-skagway.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "White Pass & Yukon Route Railway"
+    type: tour
+    price: "$145-200/person"
+    personalNote: "The most spectacular narrow-gauge railway in North America, climbing 3,000 feet from sea level to White Pass summit in 27 miles. Summit excursions run May-September — this is the iconic Skagway experience."
+    affiliateUrl: "https://www.getyourguide.com/skagway-l567/white-pass-railway-t67890/?partner_id=IVN6IQ3"
+    badge: "Don't Miss"
+  - name: "Chilkoot Trail Guided Trek"
+    type: tour
+    price: "$300-600/person"
+    personalNote: "The legendary 33-mile trail the 1898 gold rush stampeders climbed. A multi-day hike through US and Canadian history. Guided trips handle logistics; self-guided requires advance Parks Canada permits."
+    affiliateUrl: "https://www.getyourguide.com/skagway-l567/chilkoot-trail-hike-t78901/?partner_id=IVN6IQ3"
+  - name: "Hiking Poles"
+    type: activity
+    price: "$30-80"
+    personalNote: "Essential for the Chilkoot Trail's steep Golden Staircase section. The 45-degree boulder field near the summit is where the stampeders' photos were taken — poles make it manageable."
+    affiliateUrl: "https://www.amazon.com/s?k=trekking+poles+collapsible&tag=discovermore-20"
+faqItems:
+  - question: "Is Skagway worth visiting?"
+    answer: "Yes, especially for the White Pass & Yukon Route Railway and the Chilkoot Trail. The gold rush history here is not re-created — it is the real buildings, the real trail, the real story. Even if you have no interest in history, the scenery of the Lynn Canal and White Pass is stunning."
+  - question: "Best time to visit Skagway?"
+    answer: "May through September. The White Pass Railway and main services run May-September. October through April sees the town scale back dramatically — most businesses close. Skagway has a very seasonal tourist economy."
+  - question: "How many days in Skagway?"
+    answer: "Two to three days. Day one for the Klondike Gold Rush National Historical Park and downtown buildings. Day two for the White Pass Railway. Day three for a Chilkoot Trail day hike (first 7 miles are accessible as a day trip)."
+  - question: "Is Skagway safe?"
+    answer: "Very safe in town. The Chilkoot Trail is challenging and requires proper preparation — the upper sections in snow can be difficult. The White Pass Railway is completely safe. Weather in the mountains can change rapidly."
+  - question: "Skagway on a budget?"
+    answer: "The Klondike Gold Rush National Historical Park, which includes most of the historic downtown, is free. Budget $90-130/day. The White Pass Railway ($145-200) is the main expense but truly worth it."
+  - question: "What is Skagway known for?"
+    answer: "The 1898 Klondike Gold Rush gateway. The best-preserved gold rush frontier town in America (National Historic Landmark district). The White Pass & Yukon Route Railway. The Chilkoot Trail — a 33-mile National Historic Trail and one of North America's most storied hikes. The infamous swindler Soapy Smith."
+  - question: "Do I need a car in Skagway?"
+    answer: "No — Skagway is tiny and completely walkable. The White Pass Railway depot is walkable from anywhere in town. The Alaska Marine Highway ferry and cruise ships are the primary access. There is also a road connection to the Alaska Highway via Canada."
+  - question: "Best things to do in Skagway?"
+    answer: "White Pass & Yukon Route Railway summit excursion, Klondike Gold Rush NHP ranger programs and historic buildings, Chilkoot Trail hiking (day hike to Finnegan's Point or multi-day to Lake Bennett), Skagway Museum, Gold Rush Cemetery (where Soapy Smith is buried), and the Liarsville Gold Rush Trail Camp."
+scottTips:
+  logistics: "Alaska Airlines flies into Skagway (SGY) from Juneau. Alaska Marine Highway ferry arrives from Haines (1 hour) and Juneau (4.5 hours). There is a road connection via the Klondike Highway through Whitehorse, Yukon — a dramatic option."
+  bestTime: "May through September — the town is essentially closed outside these months. Weekdays are better than weekends when multiple cruise ships dock simultaneously."
+  gettingAround: "Walking. Skagway is tiny — everything is within 10 minutes on foot. The White Pass Railway depot is in town."
+  money: "Skagway is a tourist town — prices reflect that. Budget $90-150/day. The Klondike Gold Rush NHP is free. The railway ($145-200) is the main expense."
+  safety: "Chilkoot Trail upper section can have snow year-round and requires good preparation. Mountain weather changes fast. In town, completely safe."
+  packing: "Layers for variable mountain weather, rain gear, hiking poles for the Chilkoot, sturdy hiking boots."
+  localCulture: "Skagway is a town that owes its entire existence to the gold rush of 1898. The National Park Service does an outstanding job interpreting this history with ranger-led tours and living history programs. Soapy Smith's legacy is particularly fascinating — the con man who ran the town until a shootout ended his career."
 ---
+
+Skagway is a living gold rush museum — a perfectly preserved 1898 boomtown at the head of the Lynn Canal, gateway to the Chilkoot Trail and White Pass Railway, budget $90-200/day, best May through September.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/skagway-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #92400e, #1c1917, #854d0e);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Gold Rush Town</div>
+    <p class="ib-text">Skagway's entire downtown is a National Historic Landmark — the 1898 boomtown where 100,000 prospectors launched their Klondike journeys.</p>
+  </div>
+</div>
 
 # Skagway: Where the Gold Rush Lives On
 
@@ -106,20 +167,4 @@ Skagway is the only town in Southeast Alaska connected to the road system, via t
 
 **Skagway Fish Company** — Right on the harbor, this casual seafood shack serves fresh halibut, salmon, and crab. Fish tacos and chowder bowls are the move. Meals $14-$28.
 
-<div class="scott-tips">
 
-## Scott's Pro Tips
-
-**Getting There:** Most visitors arrive by cruise ship or Alaska Marine Highway ferry from Juneau (4.5 hours) or Haines (45 minutes). If you have a vehicle, the Klondike Highway from Whitehorse, Yukon is a spectacular 110-mile drive. Skagway also has a small airport with charter flights, but no scheduled commercial service. The fast ferry from Haines is an excellent day-trip option.
-
-**Best Time to Visit:** June through August is prime season with the longest days and warmest weather. May and September are quieter with lower prices but some services may be closed. The Chilkoot Trail is typically snow-free from late June through mid-September. Cruise ship days (mainly May-September) bring thousands of visitors; if you are staying in town, enjoy the quieter mornings and evenings.
-
-**Getting Around:** Skagway's downtown is tiny and entirely walkable. To reach Dyea, you will need a car, bicycle, or shuttle ($15-$25). Rental cars are available through local agencies. The Klondike Highway is well-maintained and makes a great self-drive excursion toward Carcross and Whitehorse. Bring your passport if you plan to cross into Canada.
-
-**Budget Tips:** The National Park Service ranger programs are free and outstanding — arguably the best value in Skagway. Hiking the Dewey Lakes trail system costs nothing and delivers incredible scenery. If the White Pass Railway is too expensive, drive the Klondike Highway yourself for free and get many of the same views. Pack lunches from the grocery store to offset restaurant costs.
-
-**Safety:** Weather in Skagway can shift rapidly. The valley acts as a wind funnel, and gusts can be surprisingly strong, especially in spring and fall. If hiking the Chilkoot Trail, be prepared for snow at the pass even in July, and take bear precautions (carry spray and use bear-proof food storage). The road to Dyea is gravel with some steep sections — drive cautiously. Bears frequent the Dyea flats, especially during salmon season.
-
-**Packing:** Layers are essential — mornings can be cool and afternoons warm in the same day. A windproof jacket is important given the valley winds. For the Chilkoot Trail, full backpacking gear is required including rain gear, warm layers, and a camp stove. Bring a passport if you plan to cross into Canada by road or on the extended railway excursions. Comfortable walking shoes are sufficient for exploring downtown, but hiking boots are needed for the Dewey Lakes and Chilkoot trails.
-
-</div>

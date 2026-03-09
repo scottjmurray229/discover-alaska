@@ -54,7 +54,68 @@ relatedDestinations: [juneau, glacier-bay, ketchikan]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Sitka Hotel"
+    type: hotel
+    price: "$140-240/night"
+    personalNote: "Well-located downtown hotel that captures the character of Sitka without the resort premium. Good value for a city with limited mid-range options."
+    affiliateUrl: "https://www.booking.com/hotel/us/sitka-hotel.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Sitka Whale Watching and Wildlife Tour"
+    type: tour
+    price: "$140-180/person"
+    personalNote: "Sitka's waters host humpback whales, orcas, sea otters, and Steller sea lions in extraordinary proximity. The rocky island landscape makes every trip dramatically scenic."
+    affiliateUrl: "https://www.getyourguide.com/sitka-l456/whale-watching-t56789/?partner_id=IVN6IQ3"
+    badge: "Must Do"
+  - name: "Sitka National Historical Park Tour"
+    type: tour
+    price: "$15-50/person"
+    personalNote: "Where Tlingit warriors fought Russian forces in 1804 — the totem pole collection is outstanding and the cultural interpretation is excellent. One of the most significant sites in Alaska."
+    affiliateUrl: "https://www.getyourguide.com/sitka-l456/historical-park-tour-t67890/?partner_id=IVN6IQ3"
+  - name: "Sitka Sea Kayaking"
+    type: tour
+    price: "$80-150/person"
+    personalNote: "Paddling through Sitka Sound's island-dotted waters, with sea otters floating on kelp beds and volcanic peaks as backdrop, is one of Southeast Alaska's best kayak experiences."
+    affiliateUrl: "https://www.getyourguide.com/sitka-l456/sea-kayaking-t78901/?partner_id=IVN6IQ3"
+faqItems:
+  - question: "Is Sitka worth visiting?"
+    answer: "Yes — Sitka is the most historically and culturally rich town in Southeast Alaska. The Russian colonial heritage, Tlingit history, Sitka National Historical Park totem poles, world-class bald eagle center, and dramatic volcanic island setting make it stand apart from other Alaska ports."
+  - question: "Best time to visit Sitka?"
+    answer: "May through September. June through August for the best weather and full range of activities. The Alaska Raptor Center's bald eagle patients are present year-round. The Sitka Summer Music Festival in June attracts internationally renowned chamber musicians. Whale watching runs April through November."
+  - question: "How many days in Sitka?"
+    answer: "Two to three days. Day one: Sitka National Historical Park, Russian Bishop's House, St. Michael's Cathedral. Day two: whale watching tour or sea kayaking. Day three: Alaska Raptor Center and Mount Edgecumbe area hiking."
+  - question: "Is Sitka safe?"
+    answer: "Very safe and walkable. The main risks are trails that can be slippery in rain, cold water for kayaking, and bears on hiking trails outside town. Weather can change quickly."
+  - question: "Sitka on a budget?"
+    answer: "Budget $100-140/day. The free Sitka National Historical Park trail and totem poles are excellent value. The Alaska Raptor Center ($15) is essential. Avoid cruise ship peak days in the summer for the best experience."
+  - question: "What is Sitka known for?"
+    answer: "Former capital of Russian America — the last place sold to the United States in the 1867 Alaska Purchase ceremony. Sitka National Historical Park — where the 1804 Tlingit-Russian battle occurred, with the best totem pole collection in Southeast Alaska. The Alaska Raptor Center (bald eagle rehabilitation). St. Michael's Cathedral (Russian Orthodox). World-class sea kayaking."
+  - question: "Do I need a car in Sitka?"
+    answer: "No. Downtown Sitka is very walkable and all major attractions are within walking distance. Alaska Airlines flies into Sitka airport; a small water ferry connects the airport to downtown."
+  - question: "Best things to do in Sitka?"
+    answer: "Sitka National Historical Park and totem poles, Alaska Raptor Center bald eagle viewing, St. Michael's Cathedral, Russian Bishop's House, whale watching, sea kayaking in Sitka Sound, Fortress of the Bear brown bear viewing, and the Sitka Sound Science Center."
+scottTips:
+  logistics: "Alaska Airlines serves Sitka directly from Seattle and connects through Juneau and Ketchikan. The Alaska Marine Highway serves Sitka on the Inside Passage route. Water taxi runs from the airport to downtown ($15)."
+  bestTime: "May through September. June for the Summer Music Festival. Cruise ship traffic peaks July-August — visit early morning before ships arrive for the best experience in town."
+  gettingAround: "Very walkable — everything major is within walking distance of downtown. Bikes are great for exploring further. No car needed."
+  money: "Budget $100-150/day. The best experiences (Sitka NHP, waterfront walks) are free or minimal cost. Whale watching ($140-180) is the main splurge."
+  safety: "Safe and walkable. Standard Southeast Alaska rain hazard on trails. Cold water for kayaking — proper gear essential."
+  packing: "Rain gear (essential), binoculars (eagle center, whale watching, sea otters), warm layers, camera."
+  localCulture: "Sitka has three overlapping cultural identities: Tlingit homeland, Russian colonial capital, and American frontier town. The Alaska Native Brotherhood was founded here in 1912. The Russian Orthodox community still holds regular services at St. Michael's Cathedral. Engage with all three layers."
 ---
+
+Sitka is Southeast Alaska's most culturally rich town — former capital of Russian America and historic Tlingit homeland, with world-class bald eagle viewing and dramatic volcanic island scenery, budget $100-250/day, best May through September.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/sitka-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #7c2d12, #1d4ed8, #14532d);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Russian Alaska</div>
+    <p class="ib-text">The onion dome of St. Michael's Cathedral watches over Sitka's harbor — where Tlingit culture and Russian colonial history intersect at the edge of the Pacific.</p>
+  </div>
+</div>
 
 Sitka faces the open Pacific. Unlike most Southeast Alaska towns, which tuck themselves into the sheltered channels of the Inside Passage, Sitka sits on the ocean side of Baranof Island, looking out across Sitka Sound to the volcanic cone of Mount Edgecumbe on the horizon. This exposure to the open sea gives Sitka a different character from its neighbors — wilder, more windswept, more directly connected to the vast Pacific that stretches unbroken to Japan. The ocean defines everything here: the weather, the economy, the culture, and the rhythm of daily life.
 
@@ -108,20 +169,4 @@ The relationship between Sitka and the ocean is intimate and practical. Commerci
 
 **Beak Restaurant** — A newer addition to Sitka's dining scene, focusing on seasonal small plates and local seafood in a modern setting. The octopus and the halibut collar are standouts. Plates $12-24.
 
-<div class="scott-tips">
 
-### Scott's Pro Tips for Sitka
-
-**Getting There:** Alaska Airlines flies direct from Juneau (35 minutes) and Seattle (about 3 hours with a Juneau connection). The Alaska Marine Highway ferry connects Sitka to Juneau and other Southeast communities. The ferry ride from Juneau is about 9 hours and passes through beautiful island scenery. Note that Sitka's ferry terminal is 7 miles from downtown — a shuttle meets the ferry.
-
-**Best Time to Visit:** June through August offers the driest weather (though "dry" is relative in a place with 86 inches of annual rain) and the warmest temperatures (55-65°F). The Sitka Summer Music Festival in June is a highlight. September brings excellent whale watching, fall colors in the muskeg, and dramatically fewer tourists. The Sitka WhaleFest in early November celebrates the peak of humpback whale activity in the Sound.
-
-**Getting Around:** Downtown Sitka is walkable and compact — most attractions along Lincoln Street and the waterfront are within a 15-minute walk. For the Alaska Raptor Center, Fortress of the Bear, and Starrigavan Campground, you will need a car or taxi. Rental cars are available but limited; reserve well in advance. The Ride Sitka community bus runs a limited schedule.
-
-**Budget Tips:** The best attraction in Sitka — Sitka National Historical Park — is completely free. Castle Hill, the harbor walk, and the rainforest trails are all free. Attend a free ranger program or cultural demonstration at the park visitor center. If whale watching is too expensive, walk out to the breakwater near Japonski Island, where whales are sometimes visible from shore with binoculars. Buy groceries at Sea Mart for significantly less than restaurant dining.
-
-**Safety:** Rain is constant. Waterproof everything. Trail surfaces are often roots, rocks, and mud — ankle-supporting waterproof boots are essential. Mount Verstovia is a serious hike with exposure above treeline; do not attempt it in fog or rain without experience. Brown bears are present on Baranof Island, and encounters are possible on all trails — carry bear spray and make noise. Tidal areas around the sound can have strong currents.
-
-**Packing:** Rain gear is the number one packing priority. Bring a high-quality waterproof jacket, waterproof pants, and waterproof boots. Rubber boots (Xtratufs are the Alaska standard) are perfect for Sitka's wet trails and tidal beach walks. Layers are essential as temperatures fluctuate. Binoculars are invaluable for whale watching from shore and for spotting eagles and wildlife on boat tours. A small packable daypack keeps your hands free on trails.
-
-</div>

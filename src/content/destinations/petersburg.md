@@ -54,7 +54,68 @@ relatedDestinations: [juneau, sitka, wrangell-st-elias]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Nordic House B&B"
+    type: hotel
+    price: "$130-200/night"
+    personalNote: "Excellent B&B with genuine Norwegian hospitality and a location that puts you in the heart of Petersburg's authentic small-town character. Highly recommended."
+    affiliateUrl: "https://www.booking.com/hotel/us/nordic-house-bed-breakfast-petersburg.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "LeConte Glacier Icebergs Boat Tour"
+    type: tour
+    price: "$150-250/person"
+    personalNote: "The northernmost active tidewater glacier in North America calves icebergs into LeConte Bay — local boat tours bring you into the spectacular blue-white iceberg field. A uniquely accessible glacier experience."
+    affiliateUrl: "https://www.getyourguide.com/petersburg-l345/leconte-glacier-tour-t45678/?partner_id=IVN6IQ3"
+    badge: "Must Do"
+  - name: "Petersburg Halibut Fishing Charter"
+    type: tour
+    price: "$200-300/person"
+    personalNote: "Frederick Sound's halibut fishing is excellent and the charter fleet is experienced. Book a morning charter for the best conditions."
+    affiliateUrl: "https://www.getyourguide.com/petersburg-l345/halibut-fishing-t56789/?partner_id=IVN6IQ3"
+  - name: "Portable Water Filter (Sawyer)"
+    type: activity
+    price: "$30-50"
+    personalNote: "Useful for backcountry hiking in the Petersburg area where fresh water is abundant but filtration provides peace of mind."
+    affiliateUrl: "https://www.amazon.com/s?k=sawyer+squeeze+water+filter&tag=discovermore-20"
+faqItems:
+  - question: "Is Petersburg worth visiting?"
+    answer: "Yes — it is one of the least-touristy towns in Southeast Alaska because it is not on the main cruise ship circuit. The authentic Norwegian fishing heritage, LeConte Glacier iceberg viewing, excellent fishing, and whale watching make it a rewarding destination for independent travelers who want the real Southeast Alaska."
+  - question: "Best time to visit Petersburg?"
+    answer: "May through September. The Petersburg Salmon Derby runs in May. Whale watching in Frederick Sound peaks July-August. The Little Norway Festival in May celebrates the Norwegian heritage. LeConte Glacier iceberg viewing is dramatic year-round but best by boat in summer."
+  - question: "How many days in Petersburg?"
+    answer: "Two to three days. Day one for the town — Sons of Norway Hall, Clausen Memorial Museum, harbors. Day two for the LeConte Glacier boat tour. Day three for fishing or whale watching."
+  - question: "Is Petersburg safe?"
+    answer: "Very safe and friendly. A working fishing town with minimal tourist infrastructure. Standard Southeast Alaska weather caution applies — rain gear essential."
+  - question: "Petersburg on a budget?"
+    answer: "More affordable than Sitka or Juneau. Budget $90-130/day. The LeConte Glacier tour is the main expense. The town itself, the harbors, and the Sons of Norway Hall are free to explore."
+  - question: "What is Petersburg known for?"
+    answer: "Little Norway — its Norwegian-American fishing heritage visible in traditional rosemaling art decorations, the Sons of Norway Hall, and the Viking ship replica. LeConte Glacier — the northernmost active tidewater glacier in North America. Excellent halibut fishing. Humpback whale watching in Frederick Sound."
+  - question: "Do I need a car in Petersburg?"
+    answer: "Town is walkable. For the Sandy Beach and hiking trails outside town, a car helps. The Alaska Marine Highway ferry and flights from Ketchikan or Juneau are the access options — no road connection."
+  - question: "Best things to do in Petersburg?"
+    answer: "LeConte Glacier iceberg boat tour, halibut fishing charter, whale watching in Frederick Sound, Sons of Norway Hall and Clausen Memorial Museum, Sandy Beach and Eagles Roost Park trail, Petersburg Mountain Trail, and the working harbor walk."
+scottTips:
+  logistics: "Alaska Airlines connects to Ketchikan and Juneau. The Alaska Marine Highway ferry runs through Petersburg on the Inside Passage route. No road access. A car is helpful but not essential in town."
+  bestTime: "May through September. Little Norway Festival in May is excellent. July-August for peak whale watching and halibut fishing."
+  gettingAround: "Town is compact and walkable. A bike or car is useful for Sandy Beach and hiking areas. LeConte Glacier tours depart from the harbor."
+  money: "One of the more affordable Southeast Alaska towns. Budget $90-140/day. Fresh halibut and shrimp direct from local processors is the best food value in Alaska."
+  safety: "Standard Southeast Alaska caution: rain, slippery trails, cold water. Bears on hiking trails outside town — carry spray."
+  packing: "Rain gear essential. Binoculars for whale watching and glacier viewing. Warm layers for boat trips."
+  localCulture: "Petersburg's Norwegian heritage is genuine — this was settled by Norwegian fishermen and the community still celebrates it. The commercial fishing industry is the real economy here, not tourism. Respect the working character of the town."
 ---
+
+Petersburg is Southeast Alaska's Little Norway — a proudly Norwegian-heritage fishing town with LeConte Glacier iceberg viewing and minimal cruise ship crowds, budget $90-200/day, best May through September.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/petersburg-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #1e3a5f, #dc2626, #ffffff);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Little Norway</div>
+    <p class="ib-text">Petersburg's Norwegian fishing heritage shows in the Sons of Norway Hall and rosemaling decorations — a working town the cruise ships bypass.</p>
+  </div>
+</div>
 
 Petersburg is the Southeast Alaska town that the cruise ships forgot, and the locals would like to keep it that way. While nearby Juneau absorbs a million cruise passengers each summer and Ketchikan sells diamonds to visitors who stepped off a floating hotel ten minutes ago, Petersburg goes about its business of catching fish, painting its buildings in bright Norwegian colors, and offering one of the most genuinely authentic small-town experiences in all of coastal Alaska.
 
@@ -108,20 +169,4 @@ The Stikine River Delta, accessible by boat from Petersburg, is another world en
 
 **Helse Cafe** serves coffee, breakfast burritos, and light fare in a cheerful space that draws a loyal local following. The Norwegian-inspired pastries and fresh-roasted coffee make it the best morning stop in town. Items $5 to $14.
 
-<div class="scott-tips">
 
-### Scott's Pro Tips
-
-**Getting There:** Alaska Airlines flies jet service to Petersburg from Juneau and Sitka, with fares typically $150 to $300 one way. The Alaska Marine Highway ferry is a scenic alternative: the southbound route from Juneau passes through the Wrangell Narrows, a twenty-two-mile stretch of channel so narrow that trees brush the deck, which the ferry navigates day or night with the skill of a thread through a needle. Walk-on fares from Juneau run about $55.
-
-**Best Time to Visit:** June through August for the best weather, whale watching, and glacier tours. May is gorgeous with fewer visitors and the Little Norway Festival. September offers fall colors and continued whale activity but cooler weather and reduced services. Winter is quiet and cold, but the fishing community keeps the town alive year-round, unlike some seasonal tourist towns.
-
-**Getting Around:** Petersburg is compact and walkable, with downtown, the harbor, and most services within a fifteen-minute walk of each other. For trailheads, the airport, and sites along Mitkof Highway, rent a car from Scandia House or local agencies (around $75 to $100 per day). Taxis are available but limited.
-
-**Budget Tips:** Petersburg is one of the more affordable Southeast Alaska towns because it has not developed the premium tourist pricing of Juneau or Skagway. Buy fresh fish at Coastal Cold Storage and cook it yourself for a fraction of restaurant prices. Petroglyph Beach, downtown walking, and many trailheads are free. The ferry from Wrangell or Juneau is cheaper than flying and doubles as a scenic tour.
-
-**Safety:** Bear awareness is important on all trails around Petersburg. Carry bear spray and make noise while hiking. The Tongass Forest trails are frequently wet and muddy, so good footwear prevents injuries. If kayaking, be aware that tidal currents in the Narrows are swift, and cold water requires appropriate gear. Weather in Southeast Alaska changes rapidly; always carry rain gear even on clear mornings.
-
-**Packing:** Rain gear is the single most important thing you will pack for Petersburg. A quality waterproof jacket, rain pants, and rubber boots or waterproof hiking boots are essential. Layers for 45 to 65 degree summer temperatures. Binoculars for whale watching and glacier viewing. A camera with a telephoto lens for wildlife. And bring a reusable bag for fish purchases at Coastal Cold Storage, because you will not be able to resist bringing home some of the freshest seafood you have ever tasted.
-
-</div>

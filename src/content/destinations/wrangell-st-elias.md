@@ -54,7 +54,68 @@ relatedDestinations: [valdez, anchorage, denali-national-park]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Kennicott Glacier Lodge"
+    type: hotel
+    price: "$280-450/night"
+    personalNote: "Historic lodge in the heart of the Kennicott copper mining ghost town, surrounded by glaciers and mountains. An extraordinary location — you wake up in wilderness history."
+    affiliateUrl: "https://www.booking.com/hotel/us/kennicott-glacier-lodge.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Root Glacier Guided Ice Walk"
+    type: tour
+    price: "$75-150/person"
+    personalNote: "Walk on the Root Glacier with crampons and guides — one of the most accessible glacier walking experiences in Alaska. The blue ice and crevasse views are extraordinary."
+    affiliateUrl: "https://www.getyourguide.com/wrangell-st-elias-l012/root-glacier-ice-walk-t12345/?partner_id=IVN6IQ3"
+    badge: "Must Do"
+  - name: "Kennicott Historic Mine Tour"
+    type: tour
+    price: "$25-55/person"
+    personalNote: "The Kennicott copper mine processed $200 million in copper and then was abandoned overnight in 1938 — the buildings and equipment are frozen in time. A fascinating industrial ghost tour."
+    affiliateUrl: "https://www.getyourguide.com/wrangell-st-elias-l012/kennicott-mine-tour-t23456/?partner_id=IVN6IQ3"
+  - name: "Bear Spray (Counter Assault)"
+    type: activity
+    price: "$50-70"
+    personalNote: "Required for all Wrangell-St. Elias backcountry. Grizzly and black bear populations are significant throughout the park."
+    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discovermore-20"
+faqItems:
+  - question: "Is Wrangell-St. Elias worth visiting?"
+    answer: "Yes — it is the most undiscovered major national park in America. Six times the size of Yellowstone, with the largest non-polar glacier system in the world, active volcanoes, and the best-preserved copper mining ghost town in North America. Far fewer visitors than any comparable park."
+  - question: "Best time to visit Wrangell-St. Elias?"
+    answer: "June through August. The Nabesna and McCarthy Roads are most passable June-August. McCarthy and Kennicott services are seasonal. May and September can be beautiful but road conditions are variable. Winter access is extremely limited and backcountry conditions serious."
+  - question: "How many days in Wrangell-St. Elias?"
+    answer: "Minimum three days. Day one: drive the McCarthy Road (5-6 hours of gravel), arrive at McCarthy/Kennicott. Day two: Root Glacier ice walk and Kennicott mine tour. Day three: backcountry hiking or flightseeing. Five to seven days allows more exploration."
+  - question: "Is Wrangell-St. Elias safe?"
+    answer: "Safe with preparation. The McCarthy Road is 60 miles of gravel and requires a high-clearance vehicle — flat tires are common, carry two spares. The backcountry has grizzlies; carry spray. The Kennicott buildings (historic mine structures) are accessed by guided tours only for safety."
+  - question: "Wrangell-St. Elias on a budget?"
+    answer: "Budget $80-150/day camping. The park has no entrance fee. Camping at Kennicott is $12/night. The Root Glacier walk ($75-150) is the essential guided experience. The historic buildings of McCarthy are free to explore."
+  - question: "What is Wrangell-St. Elias known for?"
+    answer: "America's largest national park (13.2 million acres). Nine of the 16 highest peaks in the US. The largest non-polar glacier system in the world (the Bagley Icefield). Kennicott — a perfectly preserved copper mining ghost town. Active volcanoes (Mt. Wrangell). No entrance fee."
+  - question: "Do I need a car in Wrangell-St. Elias?"
+    answer: "Yes — a high-clearance vehicle with at least two spare tires is required for the McCarthy Road. The road is 60 miles of gravel with significant washboard sections. Do not drive a standard sedan. Fly-in via air taxi is the alternative."
+  - question: "Best things to do in Wrangell-St. Elias?"
+    answer: "Root Glacier ice walk (crampons provided), Kennicott historic mine tour, McCarthy town exploration, Wrangell Mountains flightseeing, Bonanza Mine Ridge hike from Kennicott, Erie Lake overlook, and backcountry wilderness camping."
+scottTips:
+  logistics: "Drive from Anchorage: 5-6 hours to the McCarthy Road turnoff (via Glenn Highway through Glennallen). Then 60 miles of gravel McCarthy Road to the footbridge and McCarthy/Kennicott. High-clearance vehicle with two spares is mandatory. Air taxi from Gulkana is an alternative."
+  bestTime: "June through August. July has the driest weather and most stable road conditions. Leave early on the McCarthy Road to arrive by afternoon."
+  gettingAround: "Car to the McCarthy Road end, then walk across the footbridge. The Kennicott shuttle runs the 4.5 miles from McCarthy to Kennicott ($5 each way). Within Kennicott, everything is walkable."
+  money: "No entrance fee — one of the great bargains in the park system. Budget $80-200/day depending on lodging choice. The Kennicott Glacier Lodge is a splurge worth making at least one night."
+  safety: "McCarthy Road flat tires are common — bring two full-size spares, a pump, and tire plugs. Grizzlies throughout the park; carry spray. Don't enter historic Kennicott mine buildings without a guide."
+  packing: "High-clearance vehicle kit (two spares, pump, patch kit, tow strap), layers, rain gear, bear spray, binoculars, sturdy hiking boots, food for the drive (no services on the McCarthy Road)."
+  localCulture: "McCarthy and Kennicott are genuine communities of year-round residents who chose this extreme remoteness. Respect that. The Kennicott copper mine history is fascinating — $200 million in copper extracted between 1903 and 1938, then the company simply walked away and left everything in place. The buildings are historic artifacts, not a theme park."
 ---
+
+Wrangell-St. Elias is the largest national park in America — bigger than Switzerland — a remote Alaska wilderness of glaciers, volcanoes, and the Kennicott copper ghost town, budget $80-300/day, best June through August.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/wrangell-st-elias-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #14532d, #7c2d12, #0c4a6e);"></div>
+  <div class="ib-content">
+    <div class="ib-title">America's Largest Park</div>
+    <p class="ib-text">Wrangell-St. Elias is six times the size of Yellowstone — active volcanoes, the largest non-polar glacier system in the world, and the Kennicott ghost town frozen in 1938.</p>
+  </div>
+</div>
 
 # Wrangell-St. Elias: A Wilderness Beyond Comprehension
 
@@ -104,20 +165,4 @@ No other national park in America offers this combination of scale, remoteness, 
 
 **Pack Your Own** — Seriously. McCarthy has a small general store with limited and expensive provisions. If you are staying more than a day or two, bring food from Anchorage, Glennallen, or Chitina. The nearest full-service grocery store is in Glennallen, 200+ miles from McCarthy.
 
-<div class="scott-tips">
 
-## Scott's Pro Tips
-
-**Getting There:** The McCarthy Road is 60 miles of gravel, following the old railroad bed. It takes approximately 2-3 hours to drive and features rough patches, railroad spikes, and one-lane sections. High-clearance vehicles are recommended but most standard cars with good tires make the drive in summer. Check tire condition before you go, carry a full-size spare, and drive slowly. The road ends at a footbridge across the Kennicott River — no vehicles cross. From the footbridge, it is a 0.5-mile walk to McCarthy or 5 miles to Kennecott. A shuttle van ($10 one way) runs between the footbridge and Kennecott. Alternatively, bush flights from Chitina or Anchorage bypass the road entirely ($250-$400 one way).
-
-**Best Time to Visit:** Late June through mid-September is the accessible window. July and August offer the best weather and the longest days. The McCarthy Road typically opens in late May and becomes impassable by late October. September brings spectacular fall colors, fewer visitors, and potentially the first dustings of snow on the peaks. June can be wet but is the least crowded month with full services.
-
-**Getting Around:** There are no cars in McCarthy or Kennecott — everything is on foot or by shuttle van. The walk from McCarthy to Kennecott is 5 miles on a flat gravel road, which is pleasant but takes 1.5-2 hours. Most people use the shuttle ($10 one way, $15 round trip). Within Kennecott, trails to the Root Glacier and surrounding viewpoints are well-marked. For anything beyond the immediate area, you will need a bush plane or guide service.
-
-**Budget Tips:** Wrangell-St. Elias charges no entrance fee — it is one of the few major national parks that is completely free. The NPS ranger talks and Kennecott walking tours are the best value in the park. Bring all your food from a larger town to avoid the markup at McCarthy's small store. Camp at one of the basic campgrounds to keep costs low. The Root Glacier hike to the ice edge is free (only the guided crampons-on-ice tour costs money). Sharing a bush flight with other travelers can reduce flightseeing costs.
-
-**Safety:** This is genuine wilderness. Cell phone service does not exist in McCarthy or Kennecott — bring a satellite communicator (such as a Garmin inReach) if you plan any backcountry travel. Bears are present throughout the park; carry bear spray and use bear-proof food containers. River crossings in the backcountry can be dangerous — glacial rivers fluctuate dramatically with temperature and weather. The McCarthy Road has no services for its entire 60-mile length — carry extra fuel, water, and emergency supplies. Weather can strand bush plane travelers for days; always build buffer days into your itinerary.
-
-**Packing:** Bring everything you will need — McCarthy has almost no retail. A full-size spare tire for the drive is strongly recommended. Pack layers for temperatures ranging from 40°F to 70°F, plus rain gear. Sturdy hiking boots are essential. For glacier hikes, bring warm layers, as ice generates its own cold microclimate. A headlamp, first aid kit, and bear spray are necessary for any time spent outside of the immediate townsite. Bring cash — some businesses do not accept credit cards, and there is no ATM in McCarthy. If backpacking, a GPS unit and topographic maps are essential, as trails in the backcountry are minimal to nonexistent.
-
-</div>

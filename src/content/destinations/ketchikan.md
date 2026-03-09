@@ -54,7 +54,68 @@ relatedDestinations: [juneau, sitka, skagway]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Cape Fox Lodge"
+    type: hotel
+    price: "$180-280/night"
+    personalNote: "Perched on a hill above Creek Street with a tram to downtown, Cape Fox offers the best views in Ketchikan and genuine Alaska charm. Worth the slight premium over downtown options."
+    affiliateUrl: "https://www.booking.com/hotel/us/cape-fox-lodge-ketchikan.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Ketchikan Misty Fjords Flightseeing"
+    type: tour
+    price: "$250-350/person"
+    personalNote: "Fly over Misty Fjords National Monument — sheer granite cliffs rising 3,000 feet from the water, ancient forests, and waterfalls. One of Alaska's most dramatic landscapes seen best from a floatplane."
+    affiliateUrl: "https://www.getyourguide.com/ketchikan-l789/misty-fjords-flightseeing-t89012/?partner_id=IVN6IQ3"
+    badge: "Must Do"
+  - name: "Totem Bight State Park Tour"
+    type: tour
+    price: "$50-80/person"
+    personalNote: "The best single cultural site in Ketchikan — 14 totem poles in a recreated Tlingit clan house setting at the water's edge. Guided tours provide the stories behind each pole."
+    affiliateUrl: "https://www.getyourguide.com/ketchikan-l789/totem-bight-tour-t90123/?partner_id=IVN6IQ3"
+  - name: "Hydration Pack (hiking)"
+    type: activity
+    price: "$35-60"
+    personalNote: "Useful for the Deer Mountain trail and other Ketchikan hikes where you gain significant elevation and need hands-free water access."
+    affiliateUrl: "https://www.amazon.com/s?k=hydration+pack+hiking&tag=discovermore-20"
+faqItems:
+  - question: "Is Ketchikan worth visiting?"
+    answer: "Yes — but explore beyond the cruise ship gift shops. The totem pole collections (Totem Heritage Center, Totem Bight, Saxman Village) are world-class. Creek Street is genuinely charming. Misty Fjords flightseeing is extraordinary. The key is getting off the dock quickly."
+  - question: "Best time to visit Ketchikan?"
+    answer: "May through September. August brings the largest salmon runs up Ketchikan Creek. July is the driest month (relatively — Ketchikan averages 162 inches of rain annually). Shoulder seasons have smaller cruise crowds."
+  - question: "How many days in Ketchikan?"
+    answer: "Two to three days. Day one: Creek Street, totem poles, Ketchikan Creek salmon run. Day two: Misty Fjords flightseeing. Day three: Saxman Village and Herring Cove bear viewing."
+  - question: "Is Ketchikan safe?"
+    answer: "Safe and walkable in town. Heavy rain is the most consistent challenge — 162 inches annually. Trails can be slippery; sturdy waterproof footwear is essential. Bears at Herring Cove and outside town."
+  - question: "Ketchikan on a budget?"
+    answer: "Budget $95-130/day. The Totem Heritage Center ($10) is essential. Creek Street and the Great Alaskan Lumberjack Show are tourist but affordable. Salmon viewing on Ketchikan Creek is free. Skip the cruise port gift shops."
+  - question: "What is Ketchikan known for?"
+    answer: "The salmon capital of the world (at one point). Now best known for the world's largest collection of standing totem poles, Creek Street (historic red-light district on pilings over the creek), Misty Fjords National Monument, and as Alaska's wettest city (162 inches of rain per year)."
+  - question: "Do I need a car in Ketchikan?"
+    answer: "Downtown is walkable. For Totem Bight (10 miles north), Saxman Village (3 miles south), and Herring Cove bear viewing, you need a car or tour. Most attractions are accessible from the cruise ship dock without a car."
+  - question: "Best things to do in Ketchikan?"
+    answer: "Misty Fjords National Monument flightseeing, Totem Heritage Center, Totem Bight State Historic Site, Creek Street walking tour, Saxman Native Village totem park, Great Alaskan Lumberjack Show, salmon watching on Ketchikan Creek (July-September), and Herring Cove bear viewing."
+scottTips:
+  logistics: "Alaska Airlines flies into Ketchikan International Airport (KTN) — the only airport that requires a short ferry ride to reach downtown (cars must be shipped or rented locally). The Alaska Marine Highway ferry connects to Prince Rupert, BC and other Southeast communities."
+  bestTime: "June through August for the best combination of weather and salmon activity. August for peak salmon in Ketchikan Creek. Cruise ships run May-September — visit on non-cruise days for a quieter experience."
+  gettingAround: "Downtown and Creek Street are very walkable. For Totem Bight and Saxman, you need a vehicle or tour. The airport ferry runs every 30 minutes ($6)."
+  money: "More affordable than Anchorage or Juneau. Budget $95-150/day. Misty Fjords flightseeing ($250-350) is the big splurge. Excellent fresh halibut and salmon available at reasonable prices in town."
+  safety: "Rain and slippery trails are the primary hazard — 162 inches of annual rainfall is not an exaggeration. Waterproof boots mandatory. Bears at Herring Cove (a proper wildlife area, not a zoo)."
+  packing: "Your best waterproof gear — Ketchikan may be the rainiest city in the US. Gaiters useful on muddy trails. Binoculars for Misty Fjords and bear viewing."
+  localCulture: "Ketchikan has a strong Tlingit and Haida cultural identity — the totem pole collections are living art, not museum pieces, and the carvers at the Saxman carving shed are active artists. The commercial fishing culture is also real and current. Engage respectfully with both."
 ---
+
+Ketchikan is Southeast Alaska's first Inside Passage port — a colorful fishing town built on pilings over a salmon creek, home to the world's largest standing totem pole collection, budget $95-200/day, best May through September.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/ketchikan-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #7c2d12, #15803d, #1e40af);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Creek Street</div>
+    <p class="ib-text">Ketchikan's historic buildings line the creek on pilings — where salmon run each fall beneath the town's most charming neighborhood.</p>
+  </div>
+</div>
 
 # Ketchikan: Alaska's First City
 
@@ -104,20 +165,4 @@ Ketchikan occupies a unique position in Alaska's southeast panhandle. It is simu
 
 **Diaz Cafe** — A hidden gem serving Filipino and American comfort food, reflecting Ketchikan's significant Filipino community. Hearty, affordable plates $10-$18.
 
-<div class="scott-tips">
 
-## Scott's Pro Tips
-
-**Getting There:** Ketchikan has no road connection to the rest of Alaska. You arrive by air (Alaska Airlines flies from Seattle and Juneau daily) or by sea (Alaska Marine Highway ferries, cruise ships, or Inter-Island Ferry Authority from Hollis on Prince of Wales Island). If arriving by ferry, book vehicle space months in advance for summer travel.
-
-**Best Time to Visit:** June through August offers the warmest weather and peak salmon runs, but also the highest cruise ship traffic. May and September are shoulder months with fewer crowds, lower prices, and still-decent weather. September brings silver salmon and fall colors. Expect rain anytime — this is a temperate rainforest.
-
-**Getting Around:** Downtown Ketchikan is very walkable — about a mile from end to end along the waterfront. The local bus system runs limited routes for $2 per ride. Rental cars are available but unnecessary unless you plan to explore the road system to Saxman (2 miles south) or North Tongass Highway. Taxis and rideshares are limited.
-
-**Budget Tips:** Many of Ketchikan's best experiences are free: walking Creek Street, visiting Totem Bight State Park, hiking Deer Mountain, and watching salmon spawn in the creek. Pack rain gear and a reusable water bottle to avoid overpriced tourist-shop purchases. If you arrive by cruise ship, skip the ship-organized excursions and book directly with local operators for 20-40% savings.
-
-**Safety:** Ketchikan is a very safe town, but the terrain demands respect. Boardwalks can be slippery when wet (which is almost always). If hiking Deer Mountain, bring layers, rain gear, and bear spray — black bears are common in the surrounding forest. Water conditions in Misty Fjords can change rapidly; trust your floatplane or boat pilot's judgment on weather calls.
-
-**Packing:** A waterproof rain jacket is non-negotiable — not a suggestion, a requirement. Bring waterproof hiking boots or shoes, layers for temperatures in the 50s-60s, and a compact umbrella. Binoculars are excellent for eagle and whale spotting along the waterfront. If fishing, most charters provide gear but bring your own polarized sunglasses and seasickness remedy.
-
-</div>

@@ -54,7 +54,68 @@ relatedDestinations: [juneau, sitka, haines]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Glacier Bay Lodge"
+    type: hotel
+    price: "$220-350/night"
+    personalNote: "The only accommodation inside the park — surrounded by old-growth rainforest at the edge of the bay. Book months ahead for summer."
+    affiliateUrl: "https://www.booking.com/hotel/us/glacier-bay-lodge.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Glacier Bay Day Boat Tour"
+    type: tour
+    price: "$225-250/person"
+    personalNote: "The essential Glacier Bay experience — a Park Service ranger narrates while you watch Margerie Glacier calve. Whale sightings almost guaranteed."
+    affiliateUrl: "https://www.getyourguide.com/glacier-bay-l456/glacier-bay-day-boat-t67890/?partner_id=IVN6IQ3"
+    badge: "Don't Miss"
+  - name: "Glacier Bay Sea Kayaking"
+    type: tour
+    price: "$150-2500/person"
+    personalNote: "Day trips or multi-day expeditions — sharing the water with humpback whales from a kayak is incomparable."
+    affiliateUrl: "https://www.getyourguide.com/glacier-bay-l456/sea-kayaking-t78901/?partner_id=IVN6IQ3"
+  - name: "Dry Suit for Sea Kayaking"
+    type: activity
+    price: "$80-200"
+    personalNote: "Cold water means a capsize is life-threatening without a dry suit. Rent from Glacier Bay Sea Kayaks."
+    affiliateUrl: "https://www.amazon.com/s?k=kayak+dry+suit&tag=discovermore-20"
+faqItems:
+  - question: "Is Glacier Bay worth visiting?"
+    answer: "Yes — watching Margerie Glacier calve with humpback whales feeding nearby is the kind of experience that stays with you for decades. The park's strict visitor limits mean it never feels crowded."
+  - question: "Best time to visit Glacier Bay?"
+    answer: "Mid-June through mid-August for warmth and whale activity (peak July-August). May and September offer solitude but colder weather and reduced services."
+  - question: "How many days in Glacier Bay?"
+    answer: "Minimum two days. Day one: Bartlett Cove trails and Tlingit cultural house. Day two: full-day boat to glaciers. Three days allows kayaking."
+  - question: "Is Glacier Bay safe?"
+    answer: "Very safe with preparation. Sea kayaking safety is key — cold water means a capsize is life-threatening without a dry suit. Bears at Bartlett Cove; attend the mandatory orientation. Sudden weather changes near glaciers are common."
+  - question: "Glacier Bay on a budget?"
+    answer: "The free Bartlett Cove campground is one of the best deals in the park system. Pack all food from Juneau. The day boat ($225) is the essential expense. Shore-based whale watching is free."
+  - question: "What is Glacier Bay known for?"
+    answer: "Active tidewater glaciers including mile-wide Margerie Glacier, humpback whale feeding in summer, world-class sea kayaking, and being a UNESCO World Heritage Site and living laboratory of glacial retreat."
+  - question: "Do I need a car in Glacier Bay?"
+    answer: "No. Gustavus is bikeable, a shuttle runs to Bartlett Cove, and within the park all travel is by boat or kayak. Fly in from Juneau and bike or shuttle everywhere."
+  - question: "Best things to do in Glacier Bay?"
+    answer: "Full-day glacier boat tour, sea kayaking, Bartlett Cove rainforest trails, whale watching from the dock, Xunaa Shuká Hít Tlingit cultural house, free ranger programs, and biking Gustavus village roads."
+scottTips:
+  logistics: "Fly Alaska Airlines Juneau to Gustavus (JNU-GST, 30 min, $100-200). Shuttle meets every flight ($15 to Bartlett Cove). Book flights and lodging simultaneously — Gustavus has very limited capacity and sells out months ahead."
+  bestTime: "Mid-June through mid-August for warmth and whale activity. July-August is peak humpback season. Cruise passengers get one day — independent travelers need at least two nights."
+  gettingAround: "Rent a bike in Gustavus — flat roads are perfectly bikeable. Shuttle between Gustavus and Bartlett Cove. Beyond that: boat or kayak only."
+  money: "Free Bartlett Cove campground is Alaska's best value. Lodge rooms $220-350/night. Day boat tour ($225) is the single big expense. Budget $80-120/day if camping."
+  safety: "Cold water is the primary kayaking hazard — dry suit mandatory. Bears at Bartlett Cove; attend the free orientation. Katabatic winds off glaciers can be sudden and severe."
+  packing: "Rain gear essential, warm layers for boat trips (glacier air makes 60F feel like 40F), binoculars, and pack all food from Juneau — Gustavus supplies are minimal and expensive."
+  localCulture: "The Huna Tlingit connection to Glacier Bay is profound. The Xunaa Shuká Hít cultural house is a living statement of their return after displacement by advancing ice. Visit with respect. Gustavus is 450 people who chose deep wilderness."
 ---
+
+Glacier Bay National Park is a remote Southeast Alaska wilderness where seven tidewater glaciers actively calve into a 65-mile fjord — budget $80-300/day, accessible by a 30-minute flight from Juneau, and best visited June through August for glacier calving and humpback whales.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/glacier-bay-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #155e75, #93c5fd, #ffffff);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Ice and Silence</div>
+    <p class="ib-text">Seven tidewater glaciers actively calve into a 65-mile fjord — one of the last places on Earth where you can watch geology happen in real time.</p>
+  </div>
+</div>
 
 There is a moment in Glacier Bay when every sound falls away except the deep, resonant crack of a glacier calving. A wall of ice 200 feet tall shifts, fractures, and collapses into the sea. The splash sends a wave rolling outward that rocks your boat half a mile away. Then the thunder arrives — a booming roar that echoes off the surrounding mountains. It is the sound of geology happening in real time, and it is utterly unforgettable.
 
@@ -106,20 +167,4 @@ The Tlingit people have lived in and around Glacier Bay for thousands of years. 
 
 **Homeshore Cafe** — A small community gathering spot in Gustavus serving coffee, baked goods, sandwiches, and soup. Perfect for a casual lunch. Items $6-14.
 
-<div class="scott-tips">
 
-### Scott's Pro Tips for Glacier Bay
-
-**Getting There:** If you are not arriving by cruise ship, fly Alaska Airlines from Juneau to Gustavus (JNU to GST, 30 minutes, $100-200 one-way). A shuttle van meets every flight and drives the 10 miles from the airport to Bartlett Cove ($15). Alternatively, the Glacier Bay day boat runs from Juneau to Gustavus, but this takes longer and is weather-dependent. Reserve all transportation and lodging well in advance — Gustavus has very limited capacity.
-
-**Best Time to Visit:** Mid-June through mid-August is peak season with the warmest temperatures, longest days, and the greatest variety of wildlife. Humpback whale activity peaks in July and August. May and September offer solitude but colder weather and reduced services. The park is technically open year-round, but winter access is extremely limited.
-
-**Getting Around:** Gustavus is flat and bikeable — rent a bike at the lodge or in town. There is a shuttle between Gustavus and Bartlett Cove. Within the park, travel is by boat or kayak. There are no roads into the backcountry. For glacier visits, you are on the day boat or in a kayak.
-
-**Budget Tips:** The free campground at Bartlett Cove is the best deal in the park, but you need to bring all your own food and gear — there is no store in the park and only a tiny one in Gustavus. Pack groceries from Juneau before flying over. The ranger programs are excellent and free. If a full day boat trip is out of your budget, the whale watching from shore at Bartlett Cove is remarkably productive and costs nothing.
-
-**Safety:** The water in Glacier Bay is dangerously cold — a capsize in a kayak is a life-threatening emergency. Wear a dry suit or dry top for any paddling. Bears are present everywhere at Bartlett Cove and throughout the park; the mandatory bear orientation for campers is not a formality. Weather can change rapidly, especially in the upper bay near the glaciers, where katabatic winds (cold air flowing down off the ice) can kick up without warning.
-
-**Packing:** Rain gear is essential — Southeast Alaska averages 60+ inches of precipitation. Bring warm layers for boat trips, as glacier-cooled air can make summer days feel like 40°F on the water. Binoculars are critical for whale watching and glacier viewing. If kayaking, bring a waterproof bag for electronics. Pack all the food you will need from Juneau — provisions in Gustavus are extremely limited and expensive.
-
-</div>

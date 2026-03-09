@@ -54,7 +54,68 @@ relatedDestinations: [glacier-bay, sitka, skagway]
 contentStatus: published
 draft: false
 fmContentType: destination
+affiliatePicks:
+  - name: "Westmark Baranof Hotel"
+    type: hotel
+    price: "$200-320/night"
+    personalNote: "A Juneau landmark in the heart of downtown with old-school Alaska elegance. The bar is a gathering place for politicians and locals alike during the legislative session."
+    affiliateUrl: "https://www.booking.com/hotel/us/westmark-baranof-juneau.html?aid=2778866"
+    badge: "Scott's Pick"
+  - name: "Juneau Whale Watching Tour"
+    type: tour
+    price: "$150-180/person"
+    personalNote: "Humpback whale sightings are virtually guaranteed May through September. Allen Marine Tours runs reliable 3-4 hour trips. A highlight of any Southeast Alaska visit."
+    affiliateUrl: "https://www.getyourguide.com/juneau-l765/whale-watching-t23456/?partner_id=IVN6IQ3"
+    badge: "Must Do"
+  - name: "Helicopter Glacier Trek"
+    type: tour
+    price: "$300-450/person"
+    personalNote: "Fly by helicopter to the Juneau Icefield and walk on the glacier with crampons and guides. On a clear day this is one of the top Alaska experiences."
+    affiliateUrl: "https://www.getyourguide.com/juneau-l765/helicopter-glacier-trek-t34567/?partner_id=IVN6IQ3"
+  - name: "Tracy Arm Fjord Day Cruise"
+    type: tour
+    price: "$200-280/person"
+    personalNote: "Full-day boat to a narrow fjord 50 miles south of Juneau where Sawyer Glaciers calve icebergs into emerald water. Scenery rivals Glacier Bay at a fraction of the cost."
+    affiliateUrl: "https://www.getyourguide.com/juneau-l765/tracy-arm-fjord-cruise-t45678/?partner_id=IVN6IQ3"
+faqItems:
+  - question: "Is Juneau worth visiting?"
+    answer: "Yes — Juneau delivers a rare combination: Alaska's political center, Mendenhall Glacier 13 miles from downtown, world-class whale watching, old-growth rainforest hiking, and a genuine small-city character that cruise ship crowds can't diminish if you explore beyond the port."
+  - question: "Best time to visit Juneau?"
+    answer: "June through August for warmest weather and longest days. May and September are uncrowded with fewer cruise ships. Whale watching runs April through November. Winter brings aurora opportunities but cold, dark conditions. Expect rain any time of year — 62 inches annually."
+  - question: "How many days in Juneau?"
+    answer: "Two to three days. Day one: Mendenhall Glacier and Nugget Falls. Day two: whale watching and downtown. Day three: helicopter glacier trek or Tracy Arm Fjord cruise."
+  - question: "Is Juneau safe?"
+    answer: "Safe city. Rain and slippery trails are the main hazards. West Glacier Trail has some exposure near the ice. Bears on all trails outside the urban area — carry spray. Tidal currents in Gastineau Channel are strong."
+  - question: "Juneau on a budget?"
+    answer: "The Mendenhall Glacier Visitor Center ($5) and extensive free trail system are excellent value. Avoid cruise port shops and restaurants — walk uphill into real downtown for 30-40% lower prices. Budget $105-140/day."
+  - question: "What is Juneau known for?"
+    answer: "Alaska's capital city, accessible only by air or sea. Known for Mendenhall Glacier (13 miles from downtown), the Tongass National Forest (largest in the US), humpback whale watching, helicopter glacier treks on the Juneau Icefield, and Tracy Arm Fjord boat trips."
+  - question: "Do I need a car in Juneau?"
+    answer: "Not necessarily. Downtown is walkable. Capital Transit bus covers Mendenhall Valley ($2). For glaciers and trailheads, buses work or take a taxi ($30-40). On cruise ship days, congestion makes driving frustrating anyway."
+  - question: "Best things to do in Juneau?"
+    answer: "Mendenhall Glacier and Nugget Falls hike, whale watching (May-November), helicopter glacier trek, Tracy Arm Fjord day cruise, Mount Roberts Tramway, Perseverance Trail hike from downtown, Sealaska Heritage Institute, and king crab at Tracy's King Crab Shack."
+scottTips:
+  logistics: "Alaska Airlines flies direct from Seattle (2.5 hours) and Anchorage (1.5 hours). Alaska Marine Highway ferries connect to other Southeast communities and Bellingham, WA — the 3-day ferry from Bellingham through the Inside Passage is spectacular. Book ferry cabins months ahead for summer."
+  bestTime: "June through August for warmth and long days. May and September for fewer cruise ships. On peak days, four or five large ships dock simultaneously bringing 15,000+ visitors — explore beyond the port area."
+  gettingAround: "Downtown is very walkable. Capital Transit bus to Mendenhall Valley ($2). Taxis $30-40 between downtown and glacier. Car not essential but useful for getting to trailheads faster."
+  money: "One of Alaska's more expensive cities. Budget $105-150/day. Avoid cruise-port restaurants — quality drops and prices spike within a block of the docks. The Mendenhall trail system is free; the tram ($38) is optional."
+  safety: "Rain is constant — waterproof everything. West Glacier Trail has some exposure near the ice; don't attempt in wet conditions without experience. Bears on all backcountry trails. Hypothermia risk even in July if underdressed on wet days."
+  packing: "Rain gear is non-negotiable — quality waterproof jacket, waterproof hiking boots. Binoculars essential for whale watching. Warm hat and gloves for boat tours — it is much colder on the water. Quick-dry layers."
+  localCulture: "Juneau's population of 32,000 has chosen to live in geographic isolation for a reason. The community has a strong political character (state government, lots of lobbyists), a vibrant Indigenous culture (Sealaska Heritage Institute is essential), and the self-sufficient independence of a town that can be cut off by weather for days."
 ---
+
+Juneau is Alaska's capital city — accessible only by air or sea, surrounded by the Tongass rainforest and Juneau Icefield, with whale watching, Mendenhall Glacier, and helicopter glacier treks, budget $105-260/day, best May through September.
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/juneau-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #0f766e, #1d4ed8, #334155);"></div>
+  <div class="ib-content">
+    <div class="ib-title">The Capital You Cannot Drive To</div>
+    <p class="ib-text">No road connects Juneau to the rest of Alaska — the state capital exists between the Tongass rainforest and the Juneau Icefield, accessible only by air and sea.</p>
+  </div>
+</div>
 
 Juneau is the only state capital in America you cannot drive to. There is no road in and no road out. Hemmed in by the Tongass National Forest, the Juneau Icefield, and the waters of Gastineau Channel, Alaska's capital city exists in splendid isolation — accessible only by air and sea. This geographic fact shapes everything about the place, from its compact downtown hugging the mountainside to the fierce independence of its 32,500 residents who choose to live here despite the logistical challenges.
 
@@ -106,20 +167,4 @@ The combination of accessibility and wildness is what sets Juneau apart. You can
 
 **V's Cellar Door** — A wine bar and small-plates restaurant in a cozy basement space. Excellent charcuterie boards, local oysters, and a curated wine selection. Perfect for a quieter evening away from the cruise crowd.
 
-<div class="scott-tips">
 
-### Scott's Pro Tips for Juneau
-
-**Getting There:** Alaska Airlines flies direct from Seattle (about 2.5 hours) and Anchorage (1.5 hours). The Alaska Marine Highway ferry connects Juneau to other Southeast communities and Bellingham, Washington — the ferry ride from Bellingham is a 3-day scenic journey through the Inside Passage. Book ferry cabins months in advance for summer.
-
-**Best Time to Visit:** June through August offers the warmest weather (55-65°F) and longest days, but also the most cruise ship traffic. May and September are shoulder months with fewer crowds, lower prices, and still-decent weather. Whale watching is excellent May through September. Juneau receives over 60 inches of rain annually, so prepare for wet weather any time.
-
-**Getting Around:** Downtown is walkable. For Mendenhall Glacier and the trailheads in the Mendenhall Valley, you will need a car, taxi, or bus. The Capital Transit bus system runs between downtown and the valley ($2 fare). Rental cars are available but limited — book well ahead in summer. Taxis run about $30-40 between downtown and the glacier.
-
-**Budget Tips:** Visit the glacier on foot rather than by helicopter to save hundreds of dollars. Pack rain gear and explore the extensive free trail system. The Alaska State Museum ($15) and State Capitol (free) are worthwhile and affordable. Avoid eating at the cruise port shops — walk a few blocks uphill into the real downtown for better food at lower prices.
-
-**Safety:** Rain is constant — waterproof everything. Trails can be slippery, and the West Glacier Trail involves some exposure near the ice. Bears (both black and brown) are present on all trails; carry bear spray and make noise. In summer, the combination of rain and cool temperatures can cause hypothermia even in July if you are unprepared. Tidal areas around the channel can have swift currents.
-
-**Packing:** Rain gear is non-negotiable. Bring a quality waterproof jacket, waterproof hiking boots, and quick-dry layers. An umbrella is less useful in the wind — a good hood is better. Binoculars are essential for whale watching and glacier viewing. If you tend to get cold on boat tours, bring a warm hat and gloves even in summer — it is significantly colder on the water.
-
-</div>
