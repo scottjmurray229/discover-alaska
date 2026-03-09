@@ -701,8 +701,8 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
     mapEl.parentElement!.style.display = 'block';
 
     itinMap = new google.maps.Map(mapEl, {
-      zoom: 6,
-      center: { lat: 27.8, lng: -82.5 },
+      zoom: 5,
+      center: { lat: 64.0, lng: -153.0 },
       mapTypeControl: false,
       streetViewControl: false,
       fullscreenControl: false,
@@ -1161,8 +1161,8 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
     if (!mapEl) return;
 
     var map = new google.maps.Map(mapEl, {
-      center: { lat: 27.8, lng: -82.5 },
-      zoom: 6,
+      center: { lat: 64.0, lng: -153.0 },
+      zoom: 5,
       mapTypeId: 'terrain',
       disableDefaultUI: true,
       zoomControl: true,
@@ -1171,7 +1171,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
       minZoom: 5,
       maxZoom: 12,
       restriction: {
-        latLngBounds: { north: 31.5, south: 24, east: -79, west: -88 },
+        latLngBounds: { north: 72, south: 54, east: -130, west: -180 },
         strictBounds: false,
       },
     });
