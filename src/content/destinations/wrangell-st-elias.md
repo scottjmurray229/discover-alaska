@@ -76,7 +76,7 @@ affiliatePicks:
     type: activity
     price: "$50-70"
     personalNote: "Required for all Wrangell-St. Elias backcountry. Grizzly and black bear populations are significant throughout the park."
-    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discoverphili-20"
 faqItems:
   - question: "Is Wrangell-St. Elias worth visiting?"
     answer: "Yes — it is the most undiscovered major national park in America. Six times the size of Yellowstone, with the largest non-polar glacier system in the world, active volcanoes, and the best-preserved copper mining ghost town in North America. Far fewer visitors than any comparable park."

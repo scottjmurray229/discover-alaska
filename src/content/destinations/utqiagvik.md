@@ -76,7 +76,7 @@ affiliatePicks:
     type: activity
     price: "$100-300"
     personalNote: "Winters in Utqiagvik are brutal — minus 40°F and below. Even summer visits require serious layering. Don't improvise with inadequate gear at this latitude."
-    affiliateUrl: "https://www.amazon.com/s?k=extreme+cold+weather+clothing+arctic&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=extreme+cold+weather+clothing+arctic&tag=discoverphili-20"
 faqItems:
   - question: "Is Utqiagvik worth visiting?"
     answer: "For those fascinated by the Arctic, Inupiaq culture, or extreme geography, yes. It is not a comfortable tourist destination — it is a genuine Arctic indigenous community that happens to be the northernmost city in America. The experience of standing on the Arctic Ocean shore, in a whaling culture that has existed for thousands of years, is profound."

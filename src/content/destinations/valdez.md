@@ -76,7 +76,7 @@ affiliatePicks:
     type: activity
     price: "$150-300"
     personalNote: "Essential for the Columbia Glacier tour — the iceberg field requires binoculars to spot the wildlife and the detail of the glacier face from the boat."
-    affiliateUrl: "https://www.amazon.com/s?k=10x42+binoculars+birdwatching&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=10x42+binoculars+birdwatching&tag=discoverphili-20"
 faqItems:
   - question: "Is Valdez worth visiting?"
     answer: "Yes — the Columbia Glacier boat tour alone justifies the trip. One of the world's largest tidewater glaciers, navigating through icebergs the size of buildings, with orcas surfacing nearby — it is a world-class Alaska experience. The fjord scenery and Columbia Glacier icefield backdrop are extraordinary."

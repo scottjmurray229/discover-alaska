@@ -75,7 +75,7 @@ affiliatePicks:
     type: activity
     price: "$20-40"
     personalNote: "Essential for kayaking in Prince William Sound — everything from your phone to extra clothing must stay dry. Glacier-fed water is dangerously cold."
-    affiliateUrl: "https://www.amazon.com/s?k=dry+bag+kayaking+waterproof&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=dry+bag+kayaking+waterproof&tag=discoverphili-20"
 faqItems:
   - question: "Is Whittier worth visiting?"
     answer: "Yes, as a day trip from Anchorage or as a base for Prince William Sound kayaking. The town itself is fascinating in an unusual way — its military history and one-building residential structure are genuinely strange. The sound boat tours from Whittier are excellent and shorter to reach than Seward."

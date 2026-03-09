@@ -76,7 +76,7 @@ affiliatePicks:
     type: activity
     price: "$50-70"
     personalNote: "Required for any hiking on Kodiak Island. The bear density here is the highest in North America — trail encounters are not uncommon."
-    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discoverphili-20"
 faqItems:
   - question: "Is Kodiak worth visiting?"
     answer: "Yes for the right traveler — someone who wants genuine wilderness Alaska, world-class fishing or bear viewing, and doesn't mind being off the tourist trail. Kodiak has very little infrastructure for leisure tourism. It rewards the independently minded."

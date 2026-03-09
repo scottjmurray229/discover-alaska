@@ -23,7 +23,7 @@ export const ALASKA_CONFIG: PackingConfig = {
   currency: 'USD',
   plugType: 'Type A/B',
   plugVoltage: '120V',
-  affiliateTag: 'discovermore-20',
+  affiliateTag: 'discoverphili-20',
   destinationEssentials: ALASKA_ESSENTIALS,
   gearRecommendations: ALASKA_GEAR_RECOMMENDATIONS,
 };

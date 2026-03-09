@@ -75,7 +75,7 @@ affiliatePicks:
     type: activity
     price: "$30-80"
     personalNote: "Essential for the Harding Icefield Trail — the steep upper section has significant loose rock and the poles dramatically reduce strain on the knees on the descent."
-    affiliateUrl: "https://www.amazon.com/s?k=trekking+poles+collapsible&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=trekking+poles+collapsible&tag=discoverphili-20"
 faqItems:
   - question: "Is Kenai Fjords worth visiting?"
     answer: "Yes — it delivers the Alaska coastal wilderness experience efficiently and reliably. A full-day boat tour covers marine wildlife (orcas, sea lions, puffins, humpback whales), tidewater glacier calving, and dramatic fjord scenery. Exit Glacier near Seward is accessible by a short walk and shows glacier retreat vividly."

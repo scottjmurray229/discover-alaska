@@ -76,7 +76,7 @@ affiliatePicks:
     type: activity
     price: "$80-200"
     personalNote: "Cold water means a capsize is life-threatening without a dry suit. Rent from Glacier Bay Sea Kayaks."
-    affiliateUrl: "https://www.amazon.com/s?k=kayak+dry+suit&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=kayak+dry+suit&tag=discoverphili-20"
 faqItems:
   - question: "Is Glacier Bay worth visiting?"
     answer: "Yes — watching Margerie Glacier calve with humpback whales feeding nearby is the kind of experience that stays with you for decades. The park's strict visitor limits mean it never feels crowded."

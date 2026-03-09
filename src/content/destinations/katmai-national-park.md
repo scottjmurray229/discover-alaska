@@ -71,12 +71,12 @@ affiliatePicks:
     type: activity
     price: "$50-70"
     personalNote: "Required for all Katmai backcountry. Bears are habituated to humans at Brooks Camp viewing platforms but the surrounding wilderness is genuine bear country."
-    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discoverphili-20"
   - name: "Polarized Fishing Sunglasses"
     type: activity
     price: "$30-80"
     personalNote: "Essential for watching bears fish — polarized lenses cut the glare on the water and let you see the salmon that the bears are targeting. Also perfect for fly fishing."
-    affiliateUrl: "https://www.amazon.com/s?k=polarized+fishing+sunglasses&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=polarized+fishing+sunglasses&tag=discoverphili-20"
 faqItems:
   - question: "Is Katmai National Park worth visiting?"
     answer: "For wildlife photography and bear viewing, it is one of the best places on Earth. Brooks Falls in July has the highest concentration of brown bears you will see anywhere — dozens of bears catching salmon within close viewing distance from elevated platforms. It is expensive to reach but delivers."

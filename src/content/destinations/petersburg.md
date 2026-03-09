@@ -76,7 +76,7 @@ affiliatePicks:
     type: activity
     price: "$30-50"
     personalNote: "Useful for backcountry hiking in the Petersburg area where fresh water is abundant but filtration provides peace of mind."
-    affiliateUrl: "https://www.amazon.com/s?k=sawyer+squeeze+water+filter&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=sawyer+squeeze+water+filter&tag=discoverphili-20"
 faqItems:
   - question: "Is Petersburg worth visiting?"
     answer: "Yes — it is one of the least-touristy towns in Southeast Alaska because it is not on the main cruise ship circuit. The authentic Norwegian fishing heritage, LeConte Glacier iceberg viewing, excellent fishing, and whale watching make it a rewarding destination for independent travelers who want the real Southeast Alaska."

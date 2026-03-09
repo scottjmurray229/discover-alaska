@@ -76,7 +76,7 @@ affiliatePicks:
     type: activity
     price: "$50-70"
     personalNote: "Mandatory for any Haines hiking. Bears are common throughout the Chilkat and Chilkoot river corridors."
-    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discoverphili-20"
 faqItems:
   - question: "Is Haines worth visiting?"
     answer: "Absolutely, especially if you want Alaska without the cruise ship crowds. Haines is one of the few Southeast towns accessible by road and has a genuinely authentic small-town character. The bald eagle gathering in October-November is world-class wildlife viewing."

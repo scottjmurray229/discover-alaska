@@ -76,7 +76,7 @@ affiliatePicks:
     type: activity
     price: "$25/day or $145/season"
     personalNote: "Required for any halibut or salmon fishing. Buy before your charter — the captain will confirm you have one."
-    affiliateUrl: "https://www.amazon.com/s?k=alaska+fishing+license&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=alaska+fishing+license&tag=discoverphili-20"
 faqItems:
   - question: "Is Homer worth visiting?"
     answer: "Yes — Homer is one of the most rewarding small towns in Alaska. The combination of world-class halibut fishing, Kachemak Bay scenery, a genuine arts community, and access to Katmai bear viewing makes it a destination in its own right, not just a stop on the way."

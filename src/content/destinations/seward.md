@@ -76,7 +76,7 @@ affiliatePicks:
     type: activity
     price: "$30-80"
     personalNote: "The Harding Icefield trail gains 3,000 feet — trekking poles make the descent significantly less painful on your knees."
-    affiliateUrl: "https://www.amazon.com/s?k=trekking+poles+collapsible&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=trekking+poles+collapsible&tag=discoverphili-20"
 faqItems:
   - question: "Is Seward worth visiting?"
     answer: "Yes — it is the most accessible major Alaska wildlife and glacier destination from Anchorage. The Seward Highway drive alone is worth the trip. The Kenai Fjords boat tours are among the best Alaska experiences period. The town itself is charming, small, and has excellent seafood."

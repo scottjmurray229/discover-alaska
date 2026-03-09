@@ -76,7 +76,7 @@ affiliatePicks:
     type: activity
     price: "$50-70"
     personalNote: "Required for all Denali backcountry hiking. Grizzlies are present throughout the park — this is not optional."
-    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discoverphili-20"
 faqItems:
   - question: "Is Denali National Park worth visiting?"
     answer: "Yes — it is one of the most extraordinary wilderness experiences in America. Six million acres with a single 92-mile road, wildlife density rivaling East Africa, and North America's tallest mountain. The bus system that replaced private vehicles has made it feel genuinely wild even when thousands visit daily."

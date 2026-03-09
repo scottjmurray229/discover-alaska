@@ -76,7 +76,7 @@ affiliatePicks:
     type: activity
     price: "$30-50/day"
     personalNote: "If visiting in winter and lacking serious cold-weather gear, rent rated-to-minus-40 boots, a balaclava, and heavy mittens in Fairbanks. Don't improvise at these temperatures."
-    affiliateUrl: "https://www.amazon.com/s?k=minus+40+winter+boots+alaska&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=minus+40+winter+boots+alaska&tag=discoverphili-20"
 faqItems:
   - question: "Is Fairbanks worth visiting?"
     answer: "For the northern lights, absolutely — Fairbanks sits under the auroral oval and is one of the best aurora destinations on Earth. For the midnight sun experience in summer, also yes. It is a gritty, real Alaskan city, not polished for tourists, and that authenticity is part of the appeal. Go in with the right expectations and it delivers."

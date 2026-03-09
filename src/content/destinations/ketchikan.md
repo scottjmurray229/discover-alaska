@@ -76,7 +76,7 @@ affiliatePicks:
     type: activity
     price: "$35-60"
     personalNote: "Useful for the Deer Mountain trail and other Ketchikan hikes where you gain significant elevation and need hands-free water access."
-    affiliateUrl: "https://www.amazon.com/s?k=hydration+pack+hiking&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=hydration+pack+hiking&tag=discoverphili-20"
 faqItems:
   - question: "Is Ketchikan worth visiting?"
     answer: "Yes — but explore beyond the cruise ship gift shops. The totem pole collections (Totem Heritage Center, Totem Bight, Saxman Village) are world-class. Creek Street is genuinely charming. Misty Fjords flightseeing is extraordinary. The key is getting off the dock quickly."

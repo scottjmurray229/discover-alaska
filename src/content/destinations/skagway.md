@@ -76,7 +76,7 @@ affiliatePicks:
     type: activity
     price: "$30-80"
     personalNote: "Essential for the Chilkoot Trail's steep Golden Staircase section. The 45-degree boulder field near the summit is where the stampeders' photos were taken — poles make it manageable."
-    affiliateUrl: "https://www.amazon.com/s?k=trekking+poles+collapsible&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=trekking+poles+collapsible&tag=discoverphili-20"
 faqItems:
   - question: "Is Skagway worth visiting?"
     answer: "Yes, especially for the White Pass & Yukon Route Railway and the Chilkoot Trail. The gold rush history here is not re-created — it is the real buildings, the real trail, the real story. Even if you have no interest in history, the scenery of the Lynn Canal and White Pass is stunning."

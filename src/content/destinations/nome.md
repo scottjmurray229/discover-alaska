@@ -77,7 +77,7 @@ affiliatePicks:
     type: activity
     price: "$30-50"
     personalNote: "Useful for tundra day hikes in the Nome backcountry where fresh water sources exist but quality varies. The Sawyer Squeeze is lightweight and reliable."
-    affiliateUrl: "https://www.amazon.com/s?k=sawyer+squeeze+water+filter&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=sawyer+squeeze+water+filter&tag=discoverphili-20"
 faqItems:
   - question: "Is Nome worth visiting?"
     answer: "For the right traveler — yes. Nome is not a comfortable, developed tourist destination. It is a remote Arctic town with a wild history, extraordinary tundra wildlife, and the Iditarod finish line. If you want genuine frontier Alaska and don't mind the expense and logistics, Nome delivers something found nowhere else."

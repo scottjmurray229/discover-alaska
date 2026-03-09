@@ -81,7 +81,7 @@ affiliatePicks:
     type: activity
     price: "$50-70"
     personalNote: "Non-negotiable for any Chugach State Park hike. Buy or rent in Anchorage before heading into the backcountry — don't skip this."
-    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=counter+assault+bear+spray&tag=discoverphili-20"
 faqItems:
   - question: "Is Anchorage worth visiting?"
     answer: "Absolutely. Most visitors treat it as a layover en route to Denali or the Kenai Peninsula, but Anchorage rewards those who linger. World-class trails, a genuinely diverse food scene, the best Alaska Native cultural museum in the state, and a natural setting unlike any other city in America — Denali visible from downtown, moose in suburban yards, salmon running through the city."

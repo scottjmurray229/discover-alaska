@@ -76,7 +76,7 @@ affiliatePicks:
     type: activity
     price: "$30-50"
     personalNote: "If the mountain captures you, Bradford Washburn's photography of Denali and the Alaska Range from the air is incomparable context for what you're seeing."
-    affiliateUrl: "https://www.amazon.com/s?k=denali+alaska+range+photography+book&tag=discovermore-20"
+    affiliateUrl: "https://www.amazon.com/s?k=denali+alaska+range+photography+book&tag=discoverphili-20"
 faqItems:
   - question: "Is Talkeetna worth visiting?"
     answer: "Yes — especially combined with Denali National Park. The flightseeing over the Alaska Range is superb, the town has genuine bohemian character (residents elected a cat as honorary mayor for years), and it is the authentic base for Denali climbers. A day or two here adds enormous value to any Denali trip."
