@@ -2,6 +2,7 @@
 title: "Denali National Park: Everything You Need to Know Before You Go"
 description: "Bus system, permits, wildlife, lodging, best time to visit — the complete practical guide to Denali National Park from someone who has been multiple times."
 pubDate: 2026-03-08
+dateModified: 2026-03-08
 heroImage: ""
 heroVideo: ""
 author: "Scott"

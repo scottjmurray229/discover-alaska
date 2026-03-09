@@ -2,6 +2,7 @@
 title: "Alaska Cruise vs Independent Travel: Which Is Right for You?"
 description: "Cruise ship covers the Inside Passage, glaciers, and Southeast Alaska efficiently. Independent travel opens Denali, Fairbanks, and the real wilderness. Here is how to choose."
 pubDate: 2026-03-08
+dateModified: 2026-03-08
 heroImage: ""
 heroVideo: ""
 author: "Scott"
