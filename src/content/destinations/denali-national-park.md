@@ -3,6 +3,7 @@ title: "Denali National Park"
 description: "Plan your Denali National Park trip. See North America's tallest peak, spot grizzlies and caribou, and explore 6 million acres of Alaska wilderness."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Snow-capped Denali peak towering above forested Alaskan wilderness"
 tagline: "North America highest peak at 20,310 feet dominates the horizon on clear days from 100 miles away — one road, private vehicles prohibited past mile 15, and wildlife so dense that grizzly bears are the traffic hazard"
 region: interior
 bestMonths: [June, July, August, September]

@@ -3,6 +3,7 @@ title: "Petersburg"
 description: "Explore Petersburg, Alaska - Southeast Alaska's 'Little Norway'. An authentic fishing town with LeConte Glacier access, Norwegian heritage, and no cruise ship crowds."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Norwegian-heritage fishing village of Petersburg surrounded by Alaska fjords"
 tagline: "Alaska's Authentic Little Norway"
 region: southeast
 bestMonths: [May, June, July, August, September]

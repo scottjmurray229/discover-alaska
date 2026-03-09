@@ -3,6 +3,7 @@ title: "Seward"
 description: "Discover Seward, Alaska — gateway to Kenai Fjords National Park. Explore Exit Glacier, spot whales on boat tours, and enjoy world-class fishing in this charming port."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Exit Glacier blue ice face and rocky moraine plain near Seward, Alaska"
 tagline: "Where Mountains Meet the Sea"
 region: southcentral
 bestMonths: [May, June, July, August, September]

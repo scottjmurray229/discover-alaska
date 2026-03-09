@@ -3,6 +3,7 @@ title: "Kodiak"
 description: "Discover Kodiak Island, Alaska — home to the legendary Kodiak brown bear. Explore emerald wilderness, world-class fishing, and a rich maritime heritage."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Kodiak brown bear foraging along a salmon stream on Kodiak Island, Alaska"
 tagline: "The Kodiak brown bear is the largest land predator on Earth and this island has one of the highest densities of them anywhere — fishing lodges, bear-viewing flights, and a coastline that few people ever see"
 region: southwest
 bestMonths: [May, June, July, August, September]

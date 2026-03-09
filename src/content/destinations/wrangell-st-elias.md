@@ -3,6 +3,7 @@ title: "Wrangell-St. Elias"
 description: "Explore Wrangell-St. Elias National Park, the largest national park in the US. Visit the ghost town of Kennecott, massive glaciers, and epic backcountry wilderness."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Vast Wrangell–St. Elias wilderness with glaciated volcanic peaks, Alaska"
 tagline: "America's Last True Frontier"
 region: southcentral
 bestMonths: [June, July, August, September]

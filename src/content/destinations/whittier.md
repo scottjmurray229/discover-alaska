@@ -3,6 +3,7 @@ title: "Whittier"
 description: "Discover Whittier, Alaska - a one-tunnel town and gateway to Prince William Sound. Glaciers, kayaking, wildlife cruises, and a community that lives in one building."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Dramatic granite cliffs and glaciers surrounding the tiny port of Whittier, Alaska"
 tagline: "One Tunnel, Infinite Wilderness"
 region: southcentral
 bestMonths: [May, June, July, August, September]

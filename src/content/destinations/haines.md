@@ -3,6 +3,7 @@ title: "Haines"
 description: "Plan your trip to Haines, Alaska - home to the world's largest bald eagle gathering, vibrant arts scene, and stunning Chilkat Valley. Your complete travel guide."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Bald eagle soaring over the Chilkat River valley near Haines, Alaska"
 tagline: "Valley of the Eagles"
 region: southeast
 bestMonths: [May, June, July, August, October, November]

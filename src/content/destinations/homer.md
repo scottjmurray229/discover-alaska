@@ -3,6 +3,7 @@ title: "Homer"
 description: "Visit Homer, Alaska — the Halibut Fishing Capital of the World. Explore the Homer Spit, vibrant art scene, and bear viewing across stunning Kachemak Bay."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Homer Spit extending into Kachemak Bay with Kenai Mountains beyond, Alaska"
 tagline: "The End of the Road"
 region: southcentral
 bestMonths: [May, June, July, August, September]

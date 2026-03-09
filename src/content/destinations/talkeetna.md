@@ -3,6 +3,7 @@ title: "Talkeetna"
 description: "Plan your trip to Talkeetna, Alaska - gateway to Denali, quirky small-town charm, world-class flightseeing, river adventures, and unforgettable mountain views."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Small floatplane over the Alaska Range above Talkeetna's river confluence"
 tagline: "A tiny railroad town where Denali climbers stage their expeditions and bush pilots fly daily reconnaissance over the Alaska Range — the Roadhouse is the best breakfast in the state and the views from the airstrip are overwhelming"
 region: interior
 bestMonths: [May, June, July, August, September]

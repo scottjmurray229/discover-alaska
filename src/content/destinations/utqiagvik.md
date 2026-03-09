@@ -3,6 +3,7 @@ title: "Utqiagvik"
 description: "Visit Utqiagvik (Barrow), the northernmost city in the United States. Experience midnight sun, polar night, Inupiat culture, and Arctic wildlife at the top of the world."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Polar bear on sea ice at the Arctic Ocean near Utqiagvik, Alaska"
 tagline: "Life at the Top of the World"
 region: arctic
 bestMonths: [May, June, July, November, January]

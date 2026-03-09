@@ -3,6 +3,7 @@ title: "Katmai National Park"
 description: "Plan your trip to Katmai National Park, Alaska. Watch brown bears catch salmon at Brooks Falls, explore the Valley of Ten Thousand Smokes, and experience true wilderness."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Brown bears catching sockeye salmon at Brooks Falls, Katmai, Alaska"
 tagline: "Where Giants Feast on Silver"
 region: southwest
 bestMonths: [June, July, August, September]

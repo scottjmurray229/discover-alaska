@@ -3,6 +3,7 @@ title: "Valdez"
 description: "Explore Valdez, Alaska — 'Little Switzerland' of the North. Discover Columbia Glacier, world-class skiing, the pipeline terminus, and Prince William Sound adventures."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Snow-capped peaks and oil terminal reflected in the harbor at Valdez, Alaska"
 tagline: "Alaska's Little Switzerland"
 region: southcentral
 bestMonths: [May, June, July, August, September]

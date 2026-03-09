@@ -3,6 +3,7 @@ title: "Nome"
 description: "Discover Nome, Alaska - the end of the Iditarod trail, a gold rush frontier town on the Bering Sea coast. Plan your trip with travel tips, costs, and local insights."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Endless Arctic tundra and golden horizon along Nome's Bering Sea coast, Alaska"
 tagline: "Where the Trail Meets the Sea"
 region: arctic
 bestMonths: [March, May, June, July, August]

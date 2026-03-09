@@ -3,6 +3,7 @@ title: "Skagway"
 description: "Explore Skagway, Alaska's Gold Rush gateway. Ride the White Pass & Yukon Route railway, hike the Chilkoot Trail, and step back in time on historic Broadway."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Historic Gold Rush-era storefronts lining Broadway Street in Skagway, Alaska"
 tagline: "Gateway to the Gold Rush"
 region: southeast
 bestMonths: [May, June, July, August, September]
