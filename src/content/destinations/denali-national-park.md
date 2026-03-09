@@ -3,6 +3,14 @@ title: "Denali National Park"
 description: "Plan your Denali National Park trip. See North America's tallest peak, spot grizzlies and caribou, and explore 6 million acres of Alaska wilderness."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Snow-capped Denali peak towering above forested Alaskan wilderness"
 tagline: "North America highest peak at 20,310 feet dominates the horizon on clear days from 100 miles away — one road, private vehicles prohibited past mile 15, and wildlife so dense that grizzly bears are the traffic hazard"
 region: interior
@@ -134,7 +142,7 @@ The bus system works. Transit buses (green) operate like hop-on, hop-off shuttle
 
 What you will not find in Denali is the over-developed infrastructure of parks like Yellowstone or Yosemite. Beyond the park entrance area, there are no restaurants, no gas stations, no lodges, and no paved trails. The park entrance area at mile 1-15 has campgrounds, a visitor center, a few short maintained trails, and a sled dog kennel that the park service operates year-round. Everything else is raw, unmaintained wilderness — and that is exactly the point.
 
-## Things to Do
+## What Are the Top Things to Do in Denali National Park?
 
 **Transit Bus to Eielson Visitor Center** — The most popular day trip in the park. The bus departs early morning from the Wilderness Access Center, takes about 4 hours each way to Eielson at mile 66, and offers the best roadside views of Denali. Round-trip fare is about $58 for adults. Bring food, water, and layers — there are no services along the way.
 
@@ -148,7 +156,7 @@ What you will not find in Denali is the over-developed infrastructure of parks l
 
 **Flightseeing from Talkeetna** — The small town of Talkeetna, 150 miles south of the park entrance, is the base for glacier landings on Denali. A flightseeing tour with glacier landing costs $300-400 per person and offers views of the mountain that are impossible to get from the Park Road. Talkeetna Air Taxi and K2 Aviation are the primary operators.
 
-## Where to Stay
+## Where Should I Stay in Denali National Park?
 
 **Budget ($40-90/night)** — The park has six campgrounds along the Park Road. Riley Creek (mile 0.5) and Savage River (mile 13) are the most accessible. Sites run $15-30/night and book out months in advance through Recreation.gov. The Teklanika campground (mile 29) requires a minimum three-night stay but puts you deeper into the park. Several hostels near the park entrance offer dorms for $40-60/night.
 
@@ -156,7 +164,7 @@ What you will not find in Denali is the over-developed infrastructure of parks l
 
 **Luxury ($400-800/night)** — Camp Denali and North Face Lodge, located at mile 89 near Wonder Lake, are the park's premier wilderness lodges with all-inclusive packages, naturalist-guided programs, and unobstructed Denali views. Minimum three-night stays. Sheldon Chalet, a remote luxury lodge on a glacial nunatak inside the park, is accessible only by helicopter and costs upward of $2,400/night.
 
-## Where to Eat
+## What Should I Eat in Denali National Park?
 
 **229 Parks Restaurant and Tavern** — The finest dining near Denali, located at mile 229 of the Parks Highway. Chef Laura Cole creates seasonal menus using Alaska-sourced ingredients. Dinner entrees $28-48. Reservations essential. A 15-minute drive south of the park entrance.
 

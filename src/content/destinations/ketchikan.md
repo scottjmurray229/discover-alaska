@@ -3,6 +3,14 @@ title: "Ketchikan"
 description: "Plan your trip to Ketchikan, Alaska's Salmon Capital. Explore totem poles, Creek Street, Misty Fjords, and world-class fishing in this vibrant southeast port."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Colorful Creek Street boardwalk houses perched on stilts over Ketchikan Creek, Alaska"
 tagline: "The salmon capital of the world, the totem pole capital of the world, and the first port for most Alaska Inside Passage cruises — Creek Street, Potlatch Totem Park, and Misty Fjords National Monument just 30 minutes east by floatplane"
 region: southeast
@@ -132,7 +140,7 @@ Ketchikan is also the gateway to Misty Fjords National Monument, a 2.3-million-a
 
 Ketchikan occupies a unique position in Alaska's southeast panhandle. It is simultaneously a major cruise port — welcoming nearly a million visitors each summer — and a fiercely independent small town with deep Tlingit, Filipino, and Scandinavian roots. The result is a place with genuine cultural complexity that rewards curious visitors willing to look beyond the tourist shops on Mission Street. Creek Street, a former red-light district built on boardwalks above the creek, has been reinvented as a quirky strip of galleries, shops, and cafes, but its history remains delightfully unvarnished. The town's compactness is another asset: nearly everything worth seeing is within walking distance of the cruise ship docks, yet the surrounding wilderness is vast and immediate.
 
-## Things to Do
+## What Are the Top Things to Do in Ketchikan?
 
 **Totem Heritage Center & Totem Parks** — Visit the Totem Heritage Center ($6 admission) to see original 19th-century poles recovered from abandoned Tlingit and Haida villages. Then walk through Totem Bight State Historical Park (free) and Saxman Native Village ($5-$40 depending on tour) to see poles in outdoor settings. Guided cultural tours with Tlingit interpreters run $40-$65 per person and are worth every cent.
 
@@ -146,7 +154,7 @@ Ketchikan occupies a unique position in Alaska's southeast panhandle. It is simu
 
 **Tongass National Forest Hiking** — The Rainbird Trail and Deer Mountain Trail are both accessible from downtown. Deer Mountain is a strenuous 5-mile round trip with 3,000 feet of elevation gain, rewarding hikers with panoramic views on clear days. No fees required.
 
-## Where to Stay
+## Where Should I Stay in Ketchikan?
 
 **Budget** — The Rain Forest Inn offers clean rooms starting around $90-$120 per night. For the true budget traveler, the Eagle's Roost Campground operated by the Forest Service provides tent sites for $10-$15 per night just north of town.
 
@@ -154,7 +162,7 @@ Ketchikan occupies a unique position in Alaska's southeast panhandle. It is simu
 
 **Luxury** — The Narrows Inn on the waterfront runs $280-$450 per night with spacious suites and water views. For a true splurge, book a private lodge at a remote fishing resort like Salmon Falls Resort, where all-inclusive packages start around $600 per person per night.
 
-## Where to Eat
+## What Should I Eat in Ketchikan?
 
 **Annabelle's Famous Keg and Chowder House** — Located inside the historic Gilmore Hotel, Annabelle's serves award-winning clam chowder and fresh halibut fish and chips. Entrees $18-$35. A local institution since the 1980s.
 

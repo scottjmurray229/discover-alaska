@@ -3,6 +3,14 @@ title: "Sitka"
 description: "Discover Sitka, Alaska — where Russian heritage meets Tlingit culture in a stunning rainforest setting. Whale watching, totem poles, and raw coastal beauty."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Russian Orthodox Cathedral dome reflected in the calm waters of Sitka Sound, Alaska"
 tagline: "Russia sold Alaska from this town — the onion domes of Saint Michael Cathedral still rise above the harbor, and the Sitka National Historical Park preserves the battleground where Tlingit and Russian forces fought in 1804"
 region: southeast
@@ -134,7 +142,7 @@ St. Michael's Cathedral, the Russian Orthodox church in the center of town, is a
 
 The relationship between Sitka and the ocean is intimate and practical. Commercial fishing — primarily for salmon, halibut, and black cod — remains a cornerstone of the economy. The Sitka Sound Sac Roe Herring Fishery, which takes place over just a few frantic days each spring, is one of Alaska's most intense and valuable fisheries. Walk the harbor and you will see working fishing boats, not just tour vessels. This is a town that still makes its living from the sea.
 
-## Things to Do
+## What Are the Top Things to Do in Sitka?
 
 **Sitka National Historical Park** — Walk the Totem Trail through old-growth rainforest, view the totem poles, and visit the Cultural Center to watch Tlingit artists at work. Admission is free. The trail is flat and accessible, taking 30-60 minutes at a leisurely pace. The park's interpretive programs are excellent.
 
@@ -150,7 +158,7 @@ The relationship between Sitka and the ocean is intimate and practical. Commerci
 
 **Sea Kayaking** — Guided kayak tours explore the islands and channels around Sitka Sound, with opportunities to see otters, seals, eagles, and the rainforest shoreline up close. Half-day tours run $100-150 per person. Sitka Sound Ocean Adventures offers well-regarded paddles.
 
-## Where to Stay
+## Where Should I Stay in Sitka?
 
 **Budget ($80-120/night)** — The Sitka International Hostel, housed in a historic building near downtown, offers dorms and private rooms at reasonable rates. Ann's Gavan Hill B&B provides budget-friendly rooms with a kitchen. For camping, the Starrigavan Campground (Forest Service, $16-24/night) sits on the coast 7 miles north of town near a salmon stream and is one of Alaska's most beautiful campgrounds.
 
@@ -158,7 +166,7 @@ The relationship between Sitka and the ocean is intimate and practical. Commerci
 
 **Luxury ($400-700/night)** — The Sitka Sound Science Center Guest Suites offer a unique waterfront stay in a working marine research facility. For remote luxury, the Sitka Point Lodge on the outer coast provides all-inclusive fishing and wildlife-viewing packages accessible by floatplane. Wild Strawberry Lodge combines upscale accommodations with guided adventure packages.
 
-## Where to Eat
+## What Should I Eat in Sitka?
 
 **Ludvig's Bistro** — Sitka's culinary gem, a tiny Mediterranean-meets-Alaska restaurant on Lincoln Street. Chef-owner Colette Nelson sources local seafood and produces intensely flavored dishes. The paella with Sitka spot prawns is extraordinary. Dinner entrees $28-50. Reservations are absolutely essential — the restaurant seats about 30 people.
 

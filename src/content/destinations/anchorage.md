@@ -3,6 +3,14 @@ title: "Anchorage"
 description: "Discover Anchorage, Alaska's vibrant urban gateway to wilderness. Plan your trip with guides to trails, wildlife, dining, and mountain adventures."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Downtown Anchorage skyline with the Chugach Mountains rising behind it, Alaska"
 tagline: "Alaska biggest city is the practical gateway to everything north — Chugach Mountains visible from downtown, the best sushi outside Japan (seriously), and the hub for bush plane flights to the rest of the state"
 region: southcentral
@@ -137,7 +145,7 @@ The city's geography is extraordinary. The municipality covers nearly 2,000 squa
 
 Anchorage also carries the scars and stories of the 1964 Great Alaska Earthquake, the most powerful ever recorded in North America at magnitude 9.2. Earthquake Park preserves the landslide bluffs created that day, and interpretive signs tell the story of the destruction and rebuilding that followed.
 
-## Things to Do
+## What Are the Top Things to Do in Anchorage?
 
 **Tony Knowles Coastal Trail** — Walk, run, or bike this paved 11-mile trail from downtown to Kincaid Park. Bike rentals are available near the trailhead at 2nd Avenue for about $35-45 per day. Watch for moose, especially in spring and fall.
 
@@ -153,7 +161,7 @@ Anchorage also carries the scars and stories of the 1964 Great Alaska Earthquake
 
 **Alyeska Resort and Tram** — Forty miles south in Girdwood, ride the aerial tram to 2,300 feet for glacier and ocean views. Tram tickets are $35 for adults. The mountaintop restaurant, Seven Glaciers, is one of Alaska's finest dining experiences.
 
-## Where to Stay
+## Where Should I Stay in Anchorage?
 
 **Budget ($80-130/night)** — The Bent Prop Inn & Hostel in Midtown offers clean dorms and private rooms. Base Camp Anchorage is a well-reviewed hostel with a communal kitchen. For camping, Centennial Campground near the Anchorage Museum operates from late May through September at $40/night.
 
@@ -161,7 +169,7 @@ Anchorage also carries the scars and stories of the 1964 Great Alaska Earthquake
 
 **Luxury ($350-700/night)** — Hotel Captain Cook is the city's landmark luxury property, with three towers overlooking Cook Inlet and a classic old-Alaska elegance. The Alyeska Resort in Girdwood, 40 miles south, is a full mountain resort with a ski-in restaurant, spa, and aerial tram.
 
-## Where to Eat
+## What Should I Eat in Anchorage?
 
 **Moose's Tooth Pub & Pizzeria** — Consistently ranked among the best pizza in the US, this local institution serves creative pies and house-brewed beer. The apricot chicken pizza is legendary. Expect a 30-60 minute wait on weekends. Pizzas run $16-28.
 

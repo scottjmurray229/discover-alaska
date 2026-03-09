@@ -3,6 +3,14 @@ title: "Glacier Bay"
 description: "Plan your Glacier Bay National Park trip. Witness massive tidewater glaciers calving, whale watching, kayaking, and pristine Alaska wilderness by boat."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Calving tidewater glacier meeting blue fjord waters in Glacier Bay, Alaska"
 tagline: "A national park and UNESCO World Heritage Site where the ice retreated so recently (1750) that succession ecology is visibly happening in real-time — only cruise ships and small tour boats access the calving glacier faces"
 region: southeast
@@ -136,7 +144,7 @@ The marine environment is equally rich. Glacier Bay's waters support humpback wh
 
 The Tlingit people have lived in and around Glacier Bay for thousands of years. When the ice advanced roughly 4,000 years ago, Tlingit oral history records the displacement of villages and the loss of ancestral lands to the glacier. The subsequent retreat of the ice and the return of the Huna Tlingit to their homeland is a story of resilience that is woven into the park's interpretation. The Xunaa Shuká Hít (Huna Tribal House) at Bartlett Cove, completed in 2016, stands as a powerful affirmation of the Tlingit connection to this place.
 
-## Things to Do
+## What Are the Top Things to Do in Glacier Bay?
 
 **Day Boat to Glaciers** — The park concessioner operates daily boats from Bartlett Cove deep into the bay to the tidewater glaciers. The full-day trip (about 8 hours) costs roughly $225-250 per adult and includes a National Park Service ranger on board providing narration. This is the best way for independent travelers to experience the glaciers up close. Whale sightings are common.
 
@@ -150,7 +158,7 @@ The Tlingit people have lived in and around Glacier Bay for thousands of years. 
 
 **Ranger Programs** — The Park Service runs free evening programs at the Glacier Bay Lodge, daily guided walks, and presentations on the park's natural and cultural history. Check the visitor center for schedules. The ranger talk on glaciology and climate change is particularly compelling.
 
-## Where to Stay
+## Where Should I Stay in Glacier Bay?
 
 **Budget ($40-80/night)** — The Bartlett Cove Campground is free with a mandatory bear-orientation talk. It has 33 walk-in sites in the rainforest with bear-proof food caches, a warming shelter, and fire rings. This is one of the great free campgrounds in the national park system. In Gustavus, a few vacation rental cabins offer basic accommodations from $80/night.
 
@@ -158,7 +166,7 @@ The Tlingit people have lived in and around Glacier Bay for thousands of years. 
 
 **Luxury ($500-900/night)** — Bear Track Inn, 7 miles from Gustavus, is an all-inclusive lodge experience with gourmet meals, guided excursions, and a stunning log-and-stone building on a private meadow. Glacier Bay Lodge's premium rooms with bay views approach this tier in setting if not in amenity.
 
-## Where to Eat
+## What Should I Eat in Glacier Bay?
 
 **Glacier Bay Lodge Restaurant** — The park's only full-service restaurant serves breakfast, lunch, and dinner with an emphasis on Alaska seafood. Halibut, salmon, and crab feature prominently. Dinner entrees $22-42. The setting overlooking the bay is the real draw. Open mid-May through mid-September.
 

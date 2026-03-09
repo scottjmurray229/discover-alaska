@@ -3,6 +3,14 @@ title: "Haines"
 description: "Plan your trip to Haines, Alaska - home to the world's largest bald eagle gathering, vibrant arts scene, and stunning Chilkat Valley. Your complete travel guide."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Bald eagle soaring over the Chilkat River valley near Haines, Alaska"
 tagline: "Valley of the Eagles"
 region: southeast
@@ -134,7 +142,7 @@ Unlike Skagway, thirty minutes away by fast ferry, Haines receives relatively fe
 
 The Chilkat Valley itself is one of the most scenic drives in the state. The Haines Highway winds through a broad glacial valley flanked by mountains, past the eagle preserve, through stands of cottonwood and spruce, with the Chilkat River braiding silver channels across a wide gravel floodplain. In fall, the cottonwoods turn electric gold against the first snows on the peaks, and the eagles gather like dark punctuation marks in the bare branches.
 
-## Things to Do
+## What Are the Top Things to Do in Haines?
 
 **Visit the Alaska Chilkat Bald Eagle Preserve** along the Chilkat River, accessible by car from the Haines Highway between mile 18 and mile 24. Peak eagle concentrations occur from mid-October through mid-December, with November being the best month. Several pullouts offer viewing access, and the Council Grounds area has interpretive signs. Guided tours by local operators run $75 to $125 per person. The preserve is free to visit independently.
 
@@ -148,7 +156,7 @@ The Chilkat Valley itself is one of the most scenic drives in the state. The Hai
 
 **Attend the Southeast Alaska State Fair** in late July or early August, a beloved community event with livestock shows, local food, live music, craft vendors, and a parade that somehow involves the entire town. Admission is around $12 for adults.
 
-## Where to Stay
+## Where Should I Stay in Haines?
 
 **Budget:** **Bear Creek Cabins and Hostel** offers dormitory beds for $38 to $45 per night and basic private cabins starting around $95. Located a few miles out of town in a peaceful forest setting, it is the best budget option in Haines. Chilkat State Park campground, seven miles south of town, offers gorgeous waterfront sites for $15 per night with pit toilets and no hookups.
 
@@ -156,7 +164,7 @@ The Chilkat Valley itself is one of the most scenic drives in the state. The Hai
 
 **Luxury:** **A Sheltered Harbor B&B** and other waterfront bed-and-breakfasts offer elegant rooms with private baths, gourmet breakfasts, and stunning views over the Lynn Canal. Rates range from $275 to $450 per night. For a truly special experience, several vacation rental homes on the outskirts of town provide privacy, mountain views, and full kitchens at $300 to $500 per night.
 
-## Where to Eat
+## What Should I Eat in Haines?
 
 **The Fireweed Restaurant** is Haines's culinary star, serving creative dishes featuring local seafood, garden-fresh produce, and house-baked bread in a warm, art-filled space. The halibut preparations change seasonally and are consistently excellent. Entrees $22 to $42. Reservations recommended in summer.
 

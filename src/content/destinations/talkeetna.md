@@ -3,6 +3,14 @@ title: "Talkeetna"
 description: "Plan your trip to Talkeetna, Alaska - gateway to Denali, quirky small-town charm, world-class flightseeing, river adventures, and unforgettable mountain views."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Small floatplane over the Alaska Range above Talkeetna's river confluence"
 tagline: "A tiny railroad town where Denali climbers stage their expeditions and bush pilots fly daily reconnaissance over the Alaska Range — the Roadhouse is the best breakfast in the state and the views from the airstrip are overwhelming"
 region: interior
@@ -134,7 +142,7 @@ For the rest of us, flightseeing tours are the way to experience Denali up close
 
 The town's character is equally magnetic. Talkeetna has attracted a community of artists, river guides, bush pilots, and cheerful misfits who have built a culture of creativity and hospitality. The annual Moose Dropping Festival in July is exactly what it sounds like: dried moose droppings are numbered and dropped from a balloon, and whoever's number lands closest to a target wins. Winterfest in December brings wilderness woman and bachelor auction contests, snowshoe softball, and other delightfully absurd competitions. These events are not staged for tourists; they are genuine expressions of a community that refuses to take itself too seriously.
 
-## Things to Do
+## What Are the Top Things to Do in Talkeetna?
 
 **Denali Flightseeing with Glacier Landing** is the must-do activity. Talkeetna Air Taxi, K2 Aviation, and Sheldon Air Service all offer tours ranging from one to three hours. A standard Denali flight with glacier landing runs $325 to $375 per person. A longer grand tour circling the entire mountain costs $400 to $500. Flights operate weather-permitting from May through September. Book early and be flexible, as clouds can delay or cancel flights.
 
@@ -148,7 +156,7 @@ The town's character is equally magnetic. Talkeetna has attracted a community of
 
 **Zipline and Aerial Adventure** courses through the forest canopy are offered by Denali Zipline Tours, with courses running $149 to $179 per person for a two-to-three-hour experience.
 
-## Where to Stay
+## Where Should I Stay in Talkeetna?
 
 **Budget:** **Talkeetna Hostel International** offers dormitory beds for $28 to $35 per night in a cozy log building near Main Street. Private rooms are available for $85 to $110. The hostel has a shared kitchen, making it easy to cook your own meals. **Talkeetna River Park Campground** on the south edge of town provides tent sites for $20 to $25 per night.
 
@@ -156,7 +164,7 @@ The town's character is equally magnetic. Talkeetna has attracted a community of
 
 **Luxury:** **Talkeetna Alaskan Lodge** sits on a bluff above town with panoramic views of Denali and the Alaska Range. Rooms run $300 to $550 per night, and the lodge restaurant and lounge offer the best mountain views in town. **Sheldon Chalet**, for those with serious budgets, is an exclusive fly-in lodge perched on a nunatak in the Don Sheldon Amphitheater at five thousand feet on Denali, with rates starting at $2,500 per person per night for a minimum two-night stay.
 
-## Where to Eat
+## What Should I Eat in Talkeetna?
 
 **Talkeetna Roadhouse** serves legendary breakfasts that draw crowds from Anchorage on summer weekends. The sourdough pancakes are the size of hubcaps, the cinnamon rolls could anchor a small boat, and the coffee is bottomless. Breakfast $10 to $18. They also serve excellent pies and sandwiches for lunch.
 

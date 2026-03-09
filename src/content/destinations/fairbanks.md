@@ -3,6 +3,14 @@ title: "Fairbanks"
 description: "Plan your Fairbanks, Alaska trip. Northern lights capital, midnight sun, gold rush history, hot springs, and gateway to the Arctic and Interior Alaska."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Aurora borealis rippling in green ribbons over snowy Fairbanks, Alaska"
 tagline: "Aurora borealis viewing from December through March, midnight sun lasting 22 hours in June, the University of Alaska Museum of the North, and the pipeline that changed everything bisecting town on its way to Prudhoe Bay"
 region: interior
@@ -134,7 +142,7 @@ The city is also the gateway to some of Alaska's most remote and adventurous des
 
 The cultural depth here often surprises visitors. The University of Alaska Fairbanks campus houses the Museum of the North, an architecturally striking building with outstanding collections on Alaska's natural and cultural history. The university's research programs in geophysics, arctic biology, and permafrost science draw scholars from around the world. Fairbanks is thinking about climate change, northern sustainability, and Indigenous knowledge in ways that are both academic and urgently practical.
 
-## Things to Do
+## What Are the Top Things to Do in Fairbanks?
 
 **Northern Lights Viewing** — Aurora season runs from late August through mid-April. The best viewing is September-October and February-March, when skies are dark but temperatures are more tolerable than deep winter. Several lodges outside town offer heated viewing cabins and wake-up calls. Guided tours run $100-175 per person and will drive you to the darkest skies.
 
@@ -148,7 +156,7 @@ The cultural depth here often surprises visitors. The University of Alaska Fairb
 
 **Midnight Sun Drive to the Arctic Circle** — From mid-May through late July, you can drive the Dalton Highway to the Arctic Circle sign (198 miles north) in continuous daylight. The gravel road requires preparation and a suitable vehicle, but the braided Yukon River crossing and vast boreal landscape are unforgettable. Guided day trips are available for about $250 per person.
 
-## Where to Stay
+## Where Should I Stay in Fairbanks?
 
 **Budget ($70-120/night)** — Billie's Backpackers Hostel is a Fairbanks institution with dorms, private rooms, and a communal kitchen. The Golden North Motel offers no-frills rooms near downtown. For camping, the Chena River State Recreation Area has sites from $20-30/night about 25 miles east of town.
 
@@ -156,7 +164,7 @@ The cultural depth here often surprises visitors. The University of Alaska Fairb
 
 **Luxury ($350-600/night)** — Chena Hot Springs Resort offers the most distinctive upscale experience, though it is an hour from town. In Fairbanks proper, the Westmark Fairbanks is the traditional full-service hotel. For a unique splurge, book a cabin at A Taste of Alaska Lodge, perched on a ridge south of town with sweeping views of the Alaska Range and Denali.
 
-## Where to Eat
+## What Should I Eat in Fairbanks?
 
 **Lavelle's Bistro** — Fairbanks' best fine dining, with a sophisticated menu featuring Alaska seafood, game meats, and an impressive wine list. Dinner entrees $30-55. Reservations strongly recommended.
 

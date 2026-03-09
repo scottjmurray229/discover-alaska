@@ -3,6 +3,14 @@ title: "Homer"
 description: "Visit Homer, Alaska — the Halibut Fishing Capital of the World. Explore the Homer Spit, vibrant art scene, and bear viewing across stunning Kachemak Bay."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Homer Spit extending into Kachemak Bay with Kenai Mountains beyond, Alaska"
 tagline: "The End of the Road"
 region: southcentral
@@ -130,7 +138,7 @@ Across the bay, accessible by water taxi, lies Kachemak Bay State Park — 400,0
 
 Homer's magic lies in the combination of end-of-the-road isolation and unexpected cultural richness. This is not a town that exists solely for tourism — it is a real, working community with a commercial fishing fleet, a vibrant arts economy, and a population that chose to live here because the landscape and the lifestyle are irreplaceable. The views alone would justify a visit: on a clear day, the panorama from the bluffs above town encompasses glaciers, volcanoes, a bay teeming with marine life, and some of the most complex coastal topography in the state. But it is the people — the artists, the boat captains, the farmers selling greens at the Saturday market — who give Homer its distinctive character.
 
-## Things to Do
+## What Are the Top Things to Do in Homer?
 
 **Halibut Fishing Charter** — Homer's signature activity. Full-day charters (8-10 hours) on Kachemak Bay or Cook Inlet target halibut that can exceed 200 pounds. Expect to pay $325-$450 per person including gear, bait, and fish processing. Half-day trips run $225-$300. Peak season is June through August. Salmon fishing charters are also available, targeting kings in May-June and silvers in August-September.
 
@@ -144,7 +152,7 @@ Homer's magic lies in the combination of end-of-the-road isolation and unexpecte
 
 **Gallery Walks and Studio Tours** — Homer's First Friday gallery walk (monthly, year-round) is a highlight. Bunnell Street Arts Center, Ptarmigan Arts, and Fireweed Gallery are among the best. Several artists open their studios to visitors — ask at the Homer Chamber of Commerce for a studio tour map. Most galleries are free.
 
-## Where to Stay
+## Where Should I Stay in Homer?
 
 **Budget** — The Homer Spit Campground offers beachfront tent and RV sites for $15-$40 per night — one of the most scenic campgrounds in Alaska. Karen Hornaday Park, a city campground on the bluff, has sites for $15-$25. The Homer Hostel (seasonal) offers dorm beds for around $40.
 
@@ -152,7 +160,7 @@ Homer's magic lies in the combination of end-of-the-road isolation and unexpecte
 
 **Luxury** — The Tutka Bay Lodge, a boutique wilderness lodge across Kachemak Bay accessible only by boat, offers all-inclusive packages starting at $500-$800 per person per night, including gourmet meals, guided excursions, and unmatched seclusion. On the Homer side, the Homer Inn & Spa provides upscale rooms for $280-$450 per night.
 
-## Where to Eat
+## What Should I Eat in Homer?
 
 **The Little Mermaid** — A Homer institution serving fresh seafood right on the Spit. The halibut fish and chips are among the best in Alaska, and the Kachemak Bay oysters (sourced from local oyster farms) are unmissable. Meals $16-$34.
 

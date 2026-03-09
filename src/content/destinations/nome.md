@@ -3,6 +3,14 @@ title: "Nome"
 description: "Discover Nome, Alaska - the end of the Iditarod trail, a gold rush frontier town on the Bering Sea coast. Plan your trip with travel tips, costs, and local insights."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Endless Arctic tundra and golden horizon along Nome's Bering Sea coast, Alaska"
 tagline: "Where the Trail Meets the Sea"
 region: arctic
@@ -135,7 +143,7 @@ The cultural fabric of Nome is equally compelling. The town is a hub for the sur
 
 Nome also serves as the jumping-off point for the Bering Land Bridge National Preserve, one of the most remote units in the National Park System. This vast tundra landscape preserves the remnants of the land bridge that once connected Asia and North America, and it harbors ancient lava flows, hot springs, and archaeological sites dating back thousands of years.
 
-## Things to Do
+## What Are the Top Things to Do in Nome?
 
 **Watch the Iditarod Finish** if you visit in mid-March. The entire town turns out to cheer mushers as they cross under the burled arch on Front Street. Events include a banquet, community celebrations, and the chance to meet mushers and their dog teams up close. Most Iditarod events are free. Hotels fill months ahead, so book early.
 
@@ -149,7 +157,7 @@ Nome also serves as the jumping-off point for the Bering Land Bridge National Pr
 
 **Bering Land Bridge National Preserve** requires a charter flight from Nome (starting around $600 per person for a day trip). Serpentine Hot Springs is the most popular destination within the preserve, offering a rustic bathhouse and extraordinary tundra hiking. The preserve is free to enter.
 
-## Where to Stay
+## Where Should I Stay in Nome?
 
 **Budget:** **Nome's Aurora Inn** offers basic but clean rooms starting around $130 per night, which is budget-tier for Nome. Alternatively, a handful of informal vacation rentals are available through local listings. There is no hostel in Nome, and camping within town is not practical, though wilderness camping along the road system is possible for the self-sufficient.
 
@@ -157,7 +165,7 @@ Nome also serves as the jumping-off point for the Bering Land Bridge National Pr
 
 **Luxury:** **Nome options top out at mid-range by most standards**, but the best available rooms at Dredge No. 7 Inn or Aurora Inn suites run $280 to $350 per night. For a more exclusive experience, consider chartering a fly-out day trip to a remote lodge or hot spring, which adds luxury through experience rather than thread count.
 
-## Where to Eat
+## What Should I Eat in Nome?
 
 **Airport Pizza** is a Nome institution and arguably the best pizza in Arctic Alaska. Located right on Front Street, it serves creative pies, burgers, pasta, and surprisingly good salads. Entrees $14 to $28. The restaurant is packed during Iditarod week, so expect a wait.
 

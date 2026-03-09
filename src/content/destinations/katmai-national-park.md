@@ -3,6 +3,14 @@ title: "Katmai National Park"
 description: "Plan your trip to Katmai National Park, Alaska. Watch brown bears catch salmon at Brooks Falls, explore the Valley of Ten Thousand Smokes, and experience true wilderness."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Brown bears catching sockeye salmon at Brooks Falls, Katmai, Alaska"
 tagline: "Where Giants Feast on Silver"
 region: southwest
@@ -134,7 +142,7 @@ But Katmai's defining feature is the annual salmon run. Beginning in late June a
 
 What separates Katmai from other bear-viewing destinations is the sheer normalcy of the encounters. Bears walk through camp. They fish twenty feet from kayakers. Cubs play on the beach where floatplanes taxi. The park has maintained a remarkable safety record precisely because the bears here have never learned to associate humans with food, and visitors are required to follow strict protocols that keep it that way.
 
-## Things to Do
+## What Are the Top Things to Do in Katmai National Park?
 
 **Brooks Falls Bear Viewing** is the signature experience. Access is free with your park entrance, but you must attend a mandatory bear safety orientation upon arrival at Brooks Camp. The three platforms (Falls, Riffles, and Lower River) offer different perspectives. Falls Platform is the iconic spot where bears catch leaping salmon. Peak viewing is July, but September brings a second surge as bears fatten before hibernation, and the fall colors are extraordinary. No additional cost beyond getting to Brooks Camp.
 
@@ -148,7 +156,7 @@ What separates Katmai from other bear-viewing destinations is the sheer normalcy
 
 **Savonoski Loop** is a premier multi-day backcountry kayaking and portage route, covering roughly eighty miles over five to seven days through the park's lake system. You will see bears, moose, eagles, and no other humans. Permits are free but required.
 
-## Where to Stay
+## Where Should I Stay in Katmai National Park?
 
 **Budget:** Brooks Camp Campground is the only accommodation within the core park area. Sites cost $12 per night and must be reserved through recreation.gov, often many months in advance. The campground has a food cache, cooking shelter, and elevated platforms surrounded by an electric fence to keep bears out. Expect to bring all your own food and gear, flown in by floatplane.
 
@@ -156,7 +164,7 @@ What separates Katmai from other bear-viewing destinations is the sheer normalcy
 
 **Luxury:** Remote wilderness lodges scattered throughout the Katmai region, such as Kulik Lodge and Grosvenor Lodge, offer all-inclusive fly-in experiences with private cabins, gourmet meals, guided fishing, and bear viewing. Expect $1,200 to $2,500 per person per night with multi-night minimums. These are among the most exclusive wilderness experiences in Alaska.
 
-## Where to Eat
+## What Should I Eat in Katmai National Park?
 
 **Brooks Lodge Dining Room** serves three meals daily to lodge guests and is open to campers for individual meals (around $15 to $35 per meal). The menu is hearty Alaskan fare: grilled salmon, prime rib, halibut, and fresh-baked bread. Reservations required for non-lodge guests.
 

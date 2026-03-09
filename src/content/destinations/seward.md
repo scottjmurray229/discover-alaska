@@ -3,6 +3,14 @@ title: "Seward"
 description: "Discover Seward, Alaska — gateway to Kenai Fjords National Park. Explore Exit Glacier, spot whales on boat tours, and enjoy world-class fishing in this charming port."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Exit Glacier blue ice face and rocky moraine plain near Seward, Alaska"
 tagline: "Where Mountains Meet the Sea"
 region: southcentral
@@ -132,7 +140,7 @@ There is something about Seward's scale that feels exactly right. It is large en
 
 Seward's location is its superpower. It sits at the precise intersection of road, rail, and ocean, making it accessible by car, train, or boat while simultaneously serving as the threshold to genuine wilderness. Kenai Fjords National Park begins just miles from downtown, yet you can drive here from Anchorage in under three hours. This combination of accessibility and wildness is rare in Alaska, where getting to remarkable places often requires expensive bush flights or multi-day ferry trips. Seward delivers world-class glaciers, marine wildlife, and mountain scenery with a fraction of the logistical complexity.
 
-## Things to Do
+## What Are the Top Things to Do in Seward?
 
 **Kenai Fjords National Park Boat Tour** — The quintessential Seward experience. Full-day cruises (6-8 hours) to Northwestern Fjord or Aialik Bay visit tidewater glaciers and pass through waters rich with humpback whales, orcas, sea otters, puffins, and Steller sea lions. Major Chiswell Islands seabird rookeries are included. Full-day tours run $200-$260 per adult with operators like Major Marine Tours and Kenai Fjords Tours. Half-day options (3-4 hours) focusing on Resurrection Bay cost $100-$150.
 
@@ -146,7 +154,7 @@ Seward's location is its superpower. It sits at the precise intersection of road
 
 **Caines Head State Recreation Area** — Hike the coastal trail from Lowell Point (accessible only at low tide for the first 2 miles) to reach the WWII-era Fort McGilvray military installation, perched on cliffs above the bay. A 9-mile round trip, this is one of Alaska's most unique day hikes. Free.
 
-## Where to Stay
+## Where Should I Stay in Seward?
 
 **Budget** — The Moby Dick Hostel offers dorm beds for $45-$55 and private rooms for $100-$130. Waterfront Park Campground, operated by the city, has tent and RV sites for $20-$50 per night right on the bay. The Exit Glacier area has a basic NPS campground with walk-in sites for $15.
 
@@ -154,7 +162,7 @@ Seward's location is its superpower. It sits at the precise intersection of road
 
 **Luxury** — The Seward Windsong Lodge, nestled in a forest setting along the Resurrection River, offers premium rooms and suites for $350-$550 per night. For a true wilderness luxury experience, the Kenai Fjords Glacier Lodge — the only lodge inside Kenai Fjords National Park — runs $600-$900 per night all-inclusive with guided excursions.
 
-## Where to Eat
+## What Should I Eat in Seward?
 
 **The Cookery** — Seward's finest dining experience, featuring creative Alaska seafood preparations with local and seasonal ingredients. The halibut and Kachemak Bay oysters are exceptional. Entrees $24-$42. Reservations strongly recommended.
 

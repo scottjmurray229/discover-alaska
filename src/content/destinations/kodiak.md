@@ -3,6 +3,14 @@ title: "Kodiak"
 description: "Discover Kodiak Island, Alaska — home to the legendary Kodiak brown bear. Explore emerald wilderness, world-class fishing, and a rich maritime heritage."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Kodiak brown bear foraging along a salmon stream on Kodiak Island, Alaska"
 tagline: "The Kodiak brown bear is the largest land predator on Earth and this island has one of the highest densities of them anywhere — fishing lodges, bear-viewing flights, and a coastline that few people ever see"
 region: southwest
@@ -132,7 +140,7 @@ Kodiak also carries a layered human history that few places in Alaska can match.
 
 Kodiak's remoteness is its defining characteristic. Unlike Juneau, Ketchikan, or Seward, Kodiak is not on the cruise ship circuit. There are no massive dock facilities, no jewelry stores lining the main street, no buses waiting to shuttle thousands of day-trippers to a scenic overlook. What you find instead is a real Alaskan island community where people fish for a living, the grocery store stocks Alutiiq art alongside canned goods, and the landscape beyond the small road system is genuinely wild. The Kodiak road network covers only about 100 miles — beyond that, every bay, valley, and mountainside is accessible only by boat or bush plane. This is not curated wilderness; it is the real thing.
 
-## Things to Do
+## What Are the Top Things to Do in Kodiak?
 
 **Bear Viewing by Floatplane** — The premier Kodiak experience. Bush plane operators fly you to remote salmon streams and coastal meadows on the Kodiak National Wildlife Refuge, where guides lead you on foot to within safe viewing distance of feeding bears. Full-day trips run $700-$950 per person, including flight, guide, and lunch. Peak viewing is July through September when salmon are running. Operators like Kodiak Brown Bear Center and Andrew Airways have decades of experience.
 
@@ -146,7 +154,7 @@ Kodiak's remoteness is its defining characteristic. Unlike Juneau, Ketchikan, or
 
 **Hiking the Island** — Kodiak's road-accessible trails offer remarkable diversity. The Barometer Mountain Trail (a steep 2.5-mile climb to 2,452 feet) delivers sweeping views of the island. The Termination Point Trail is an easy 5-mile coastal walk. Pillar Mountain, right behind town, provides a quick hike with panoramic harbor views. All free.
 
-## Where to Stay
+## Where Should I Stay in Kodiak?
 
 **Budget** — Fort Abercrombie State Park has campsites for $15-$20 per night in a beautiful spruce forest near the ocean. Buskin River State Recreation Site offers camping for $15 near the airport. In town, the Shelikof Lodge has basic rooms starting at $100-$140.
 
@@ -154,7 +162,7 @@ Kodiak's remoteness is its defining characteristic. Unlike Juneau, Ketchikan, or
 
 **Luxury** — Remote fishing and bear-viewing lodges are where Kodiak's luxury offerings shine. Kodiak Resort at Larsen Bay offers all-inclusive fishing packages starting at $500-$700 per person per night. The Afognak Wilderness Lodge, located on nearby Afognak Island, provides an exclusive wilderness experience for $700-$900 per person per night including meals, guides, and activities.
 
-## Where to Eat
+## What Should I Eat in Kodiak?
 
 **Henry's Great Alaskan Restaurant** — The most established restaurant in Kodiak, serving steak, seafood, and pasta in a comfortable setting. The king crab legs (when available) and prime rib are local favorites. Entrees $18-$45.
 

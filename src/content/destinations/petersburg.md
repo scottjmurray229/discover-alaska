@@ -3,6 +3,14 @@ title: "Petersburg"
 description: "Explore Petersburg, Alaska - Southeast Alaska's 'Little Norway'. An authentic fishing town with LeConte Glacier access, Norwegian heritage, and no cruise ship crowds."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Norwegian-heritage fishing village of Petersburg surrounded by Alaska fjords"
 tagline: "Alaska's Authentic Little Norway"
 region: southeast
@@ -136,7 +144,7 @@ Frederick Sound, the broad waterway that lies between Petersburg and the mainlan
 
 The Stikine River Delta, accessible by boat from Petersburg, is another world entirely: a vast wetland where the Stikine River, one of the largest free-flowing rivers in North America, meets the sea. In spring, the delta hosts millions of migrating shorebirds and the largest gathering of bald eagles in Southeast Alaska outside of Haines. The Stikine River itself is a corridor into the British Columbia interior, and jet boat tours upriver visit natural hot springs, bear viewing areas, and the historic site of the Stikine gold rush.
 
-## Things to Do
+## What Are the Top Things to Do in Petersburg?
 
 **LeConte Glacier Tour** is the premier Petersburg activity. Local operators like Tongass Kayak Adventures and Viking Travel run boat tours to LeConte Bay, where you can view the tidewater glacier calving icebergs into the fjord. The journey includes whale watching, sea lion viewing, and stunning mountain scenery. Full-day tours run $250 to $350 per person. Half-day options are sometimes available for around $200.
 
@@ -150,7 +158,7 @@ The Stikine River Delta, accessible by boat from Petersburg, is another world en
 
 **Kayak the Petersburg waterfront and surrounding islands** with local outfitters. Half-day guided paddles start at $100 per person, while multi-day trips into the LeConte Bay area or Thomas Bay run $400 to $900 depending on duration.
 
-## Where to Stay
+## Where Should I Stay in Petersburg?
 
 **Budget:** **Ohmer Creek Campground**, managed by the Forest Service about twenty-two miles south of town on Mitkof Highway, offers beautiful forest campsites for $10 per night. Closer to town, the **Tent City** area near the waterfront has historically offered basic camping options, though availability and rules change, so check locally. Budget-minded travelers can also find occasional Airbnb rooms starting around $100 per night.
 
@@ -158,7 +166,7 @@ The Stikine River Delta, accessible by boat from Petersburg, is another world en
 
 **Luxury:** **Nordic House B&B** and other upscale bed-and-breakfasts offer waterfront or mountain-view rooms with gourmet breakfasts and local knowledge that no hotel can match. Rates range from $225 to $375 per night. For a wilderness experience, Forest Service cabins in the surrounding Tongass National Forest offer rustic luxury through solitude, at $45 to $75 per night (book far in advance on recreation.gov).
 
-## Where to Eat
+## What Should I Eat in Petersburg?
 
 **Inga's Galley** is a beloved local spot for seafood, burgers, and daily specials that reflect what the fleet just brought in. The fish and chips use halibut that was swimming hours before it reached your plate. Entrees $14 to $28.
 

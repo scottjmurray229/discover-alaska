@@ -3,6 +3,14 @@ title: "Whittier"
 description: "Discover Whittier, Alaska - a one-tunnel town and gateway to Prince William Sound. Glaciers, kayaking, wildlife cruises, and a community that lives in one building."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Dramatic granite cliffs and glaciers surrounding the tiny port of Whittier, Alaska"
 tagline: "One Tunnel, Infinite Wilderness"
 region: southcentral
@@ -133,7 +141,7 @@ But that same geography is what makes Whittier extraordinary for visitors. The f
 
 The kayaking here is considered some of the best in Alaska. Sheltered waters, abundant wildlife, and glacier-fed bays create conditions that are challenging enough to be thrilling but protected enough for guided beginners. Multi-day kayaking trips into the western sound, camping on remote beaches with glaciers as your backdrop, rank among the most memorable wilderness experiences available in the state.
 
-## Things to Do
+## What Are the Top Things to Do in Whittier?
 
 **Prince William Sound Glacier Cruise** is the signature Whittier experience. Major Marine Tours and Phillips Cruises and Tours operate daily departures from late May through mid-September. The most popular route visits twenty-six glaciers in a single day, cruising through College Fjord and Harriman Fjord. Full-day cruises (five to six hours) run $150 to $200 per person. Half-day Blackstone Bay glacier cruises run $130 to $170 and focus on tidewater glaciers and wildlife in a more intimate setting.
 
@@ -147,7 +155,7 @@ The kayaking here is considered some of the best in Alaska. Sheltered waters, ab
 
 **Explore the Whittier waterfront** and the small boat harbor, where you can watch commercial fishing boats unload their catch, spot sea otters playing in the harbor, and visit the Prince William Sound Museum in the Anchor Inn for a small admission fee.
 
-## Where to Stay
+## Where Should I Stay in Whittier?
 
 **Budget:** **Whittier Campground** near the harbor offers basic tent sites for about $20 per night in a gravel lot that is functional if not scenic. Alternatively, many visitors stay in Anchorage and make Whittier a day trip, since the drive is only ninety minutes including the tunnel. Backpackers can keep costs down by bringing a packed lunch and taking a half-day tour.
 
@@ -155,7 +163,7 @@ The kayaking here is considered some of the best in Alaska. Sheltered waters, ab
 
 **Luxury:** **Whittier has limited luxury options**, but several fishing and wilderness lodges accessible by boat from Whittier offer premium experiences. **Orca Island Cabins**, a yurt-based eco-lodge on a private island in Prince William Sound, offers all-inclusive packages starting at $550 per night per person including water taxi, kayaks, and meals. It is one of the most unique accommodations in Alaska.
 
-## Where to Eat
+## What Should I Eat in Whittier?
 
 **Lazy Otter Cafe** is the best restaurant in Whittier and a town gathering spot. Located on the harbor, it serves excellent chowder, fish and chips, halibut burgers, and daily specials using fresh local seafood. The outdoor deck overlooking the harbor is the place to be on a sunny day. Entrees $14 to $28.
 

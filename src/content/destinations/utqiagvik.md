@@ -3,6 +3,14 @@ title: "Utqiagvik"
 description: "Visit Utqiagvik (Barrow), the northernmost city in the United States. Experience midnight sun, polar night, Inupiat culture, and Arctic wildlife at the top of the world."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Polar bear on sea ice at the Arctic Ocean near Utqiagvik, Alaska"
 tagline: "Life at the Top of the World"
 region: arctic
@@ -134,7 +142,7 @@ But what truly makes Utqiagvik special is its living culture. The Inupiat people
 
 The whale bone arches scattered around town are among the most photographed landmarks in Arctic Alaska. These massive jawbones, some standing over twenty feet tall, frame the Arctic Ocean and serve as both cultural markers and monuments to the enduring relationship between the Inupiat and the sea.
 
-## Things to Do
+## What Are the Top Things to Do in Utqiagvik?
 
 **Visit the Inupiat Heritage Center**, a Smithsonian-affiliated museum and cultural center that is the best place to begin understanding Utqiagvik. Exhibits cover traditional and contemporary Inupiat life, from whaling technology to ivory carving to the impacts of climate change on Arctic communities. Artists and elders often demonstrate traditional crafts in the center's workshop space. Admission is around $10.
 
@@ -148,7 +156,7 @@ The whale bone arches scattered around town are among the most photographed land
 
 **Birding at Freshwater Lake and along the coast** during summer months yields sightings of snowy owls, king eiders, spectacled eiders, yellow-billed loons, and other Arctic specialties. The tundra around Utqiagvik has been a research site for Arctic bird studies for decades.
 
-## Where to Stay
+## Where Should I Stay in Utqiagvik?
 
 **Budget:** Options in Utqiagvik are limited and nothing is truly budget-friendly. The most affordable approach is to look for rooms through local hosts or informal vacation rentals, which occasionally appear for $130 to $175 per night. There is no hostel or campground. Wild camping on the tundra outside town is theoretically possible but strongly discouraged due to polar bears and extreme weather.
 
@@ -156,7 +164,7 @@ The whale bone arches scattered around town are among the most photographed land
 
 **Luxury:** **King Eider Inn** provides the most comfortable rooms in Utqiagvik, with modern amenities, a warm atmosphere, and knowledgeable staff who can arrange cultural tours and wildlife excursions. Rooms range from $280 to $400 per night. During peak northern lights season or Nalukataq, rates increase and availability tightens.
 
-## Where to Eat
+## What Should I Eat in Utqiagvik?
 
 **Niggivikput** (which means "the place where we eat" in Inupiaq) is Utqiagvik's sit-down restaurant, serving both American and traditional Inupiat dishes. You can try muktuk, caribou stew, and other subsistence foods alongside burgers and pasta. Entrees $18 to $40. This is one of the only restaurants in the United States where you can eat traditional Arctic indigenous cuisine.
 

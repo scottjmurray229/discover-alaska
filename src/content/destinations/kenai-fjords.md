@@ -3,6 +3,14 @@ title: "Kenai Fjords"
 description: "Explore Kenai Fjords National Park near Seward, Alaska. Hike Exit Glacier, cruise past tidewater glaciers, and spot whales, puffins, and sea otters."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Humpback whale breaching in Resurrection Bay, Kenai Fjords, Alaska"
 tagline: "Tidewater glaciers calving into the North Pacific, humpback whales breaching alongside the boat, Steller sea lions hauling out on rocks, and puffins nesting on sea stacks — all accessible by day-cruise from Seward"
 region: southcentral
@@ -133,7 +141,7 @@ The Harding Icefield, which feeds all of the park's glaciers, is a remnant of th
 
 The park's marine ecosystem is the other half of the story. The continental shelf drops steeply just offshore, and deep ocean currents bring nutrients to the surface that support one of the most productive marine food webs in the North Pacific. This is why the wildlife viewing on Kenai Fjords boat tours is so consistently excellent — the food chain here, from plankton to whale, is robust and concentrated.
 
-## Things to Do
+## What Are the Top Things to Do in Kenai Fjords?
 
 **Exit Glacier Hike** — The paved Edge of the Glacier Trail (1 mile round trip, easy) leads to a viewing area near the glacier's face. The Harding Icefield Trail (8.2 miles round trip, strenuous) climbs through wildflower meadows and snowfields to a jaw-dropping icefield overlook. Allow 6-8 hours for the full Harding Icefield hike. No entrance fee is required, but there is a $15 parking fee at Exit Glacier from Memorial Day through Labor Day.
 
@@ -147,7 +155,7 @@ The park's marine ecosystem is the other half of the story. The continental shel
 
 **Alaska SeaLife Center** — Seward's excellent marine science center and aquarium, located on the waterfront, houses Steller sea lions, harbor seals, octopuses, and seabirds in naturalistic exhibits. It is also a marine mammal research and rehabilitation facility. Admission is $25 for adults. A good rainy-day option.
 
-## Where to Stay
+## Where Should I Stay in Kenai Fjords?
 
 **Budget ($60-110/night)** — The Exit Glacier campground inside the park has 12 walk-in tent sites for $20/night with no reservations — first come, first served. In Seward, the Moby Dick Hostel and the Seward Hostel offer dorms and private rooms. The city-run Waterfront Park campground ($25-40/night) sits right on Resurrection Bay.
 
@@ -155,7 +163,7 @@ The park's marine ecosystem is the other half of the story. The continental shel
 
 **Luxury ($400-800/night)** — Kenai Fjords Glacier Lodge, accessible only by boat, sits on a private lagoon in the park with glacier views and all-inclusive packages. Bear Creek Cabins outside Seward offer high-end private cabins in the woods. For a unique experience, several charter boats offer overnight cruises in the fjords with private staterooms.
 
-## Where to Eat
+## What Should I Eat in Kenai Fjords?
 
 **The Cookery** — Seward's best restaurant, serving creative Pacific Northwest cuisine with an Alaska twist. The daily seafood specials and house-made pasta are standouts. Dinner entrees $24-42. Small space — reservations strongly recommended.
 

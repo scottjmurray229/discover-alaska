@@ -3,6 +3,14 @@ title: "Valdez"
 description: "Explore Valdez, Alaska — 'Little Switzerland' of the North. Discover Columbia Glacier, world-class skiing, the pipeline terminus, and Prince William Sound adventures."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Snow-capped peaks and oil terminal reflected in the harbor at Valdez, Alaska"
 tagline: "Alaska's Little Switzerland"
 region: southcentral
@@ -132,7 +140,7 @@ The town itself is quiet and unassuming — a few thousand people who fish, work
 
 Valdez is Prince William Sound's most accessible port. While Whittier provides a tunnel-dependent gateway to the western Sound, Valdez sits at the eastern end with open road access year-round via the Richardson Highway. This makes it the natural base for exploring a marine environment that many consider the most beautiful in Alaska: a complex maze of fjords, islands, glaciers, and protected waters teeming with marine life. The combination of maritime access, extreme mountain terrain, and documented history — from Gold Rush to earthquake to pipeline — gives Valdez a narrative depth that enriches every outdoor experience.
 
-## Things to Do
+## What Are the Top Things to Do in Valdez?
 
 **Columbia Glacier Cruise** — A full-day boat tour to Columbia Glacier is the highlight of any Valdez visit. The cruise navigates through Prince William Sound past sea otters, harbor seals hauled out on icebergs, and puffin colonies, culminating at the face of the glacier itself — a wall of blue ice 3 miles wide and 300 feet tall. Tours run $150-$200 per person for 6-8 hours. Operators include Stan Stephens Glacier & Wildlife Cruises and Lu-Lu Belle Glacier Wildlife Cruises.
 
@@ -148,7 +156,7 @@ Valdez is Prince William Sound's most accessible port. While Whittier provides a
 
 **Thompson Pass Heli-Skiing** — For winter visitors, Valdez is the undisputed heli-skiing capital of Alaska. Operators like Valdez Heli-Ski Guides access the Chugach Mountains' deep powder and extreme terrain from January through April. Packages start at $1,500-$2,000 per day. This is expert-level skiing in serious avalanche terrain — not for beginners.
 
-## Where to Stay
+## Where Should I Stay in Valdez?
 
 **Budget** — The Bear Paw Camper Park has tent and RV sites for $25-$45 per night right in town. Allison Point Campground ($15-$20 per night) sits on the shore near the terminal, with salmon fishing steps from your tent. The Valdez Glacier Campground ($15) offers stunning glacier views.
 
@@ -156,7 +164,7 @@ Valdez is Prince William Sound's most accessible port. While Whittier provides a
 
 **Luxury** — For a premium experience, the Robe Lake Lodge offers waterfront cabins for $300-$450 per night. Remote wilderness lodges in Prince William Sound, such as Growler Island Camp, provide all-inclusive kayak and wildlife adventures for $500-$700 per person per night with guided excursions.
 
-## Where to Eat
+## What Should I Eat in Valdez?
 
 **The Fat Mermaid** — Valdez's best-known restaurant, perched on the harbor with outdoor seating overlooking the boat docks. Fresh halibut, salmon, and seafood tacos are the specialties. The fish and chips are legendary. Entrees $16-$34.
 

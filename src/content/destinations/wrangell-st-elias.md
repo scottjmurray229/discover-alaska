@@ -3,6 +3,14 @@ title: "Wrangell-St. Elias"
 description: "Explore Wrangell-St. Elias National Park, the largest national park in the US. Visit the ghost town of Kennecott, massive glaciers, and epic backcountry wilderness."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Vast Wrangell–St. Elias wilderness with glaciated volcanic peaks, Alaska"
 tagline: "America's Last True Frontier"
 region: southcentral
@@ -132,7 +140,7 @@ Beyond McCarthy and Kennecott, Wrangell-St. Elias becomes something else entirel
 
 No other national park in America offers this combination of scale, remoteness, and accessibility. Denali has its bus system and single road; Glacier Bay is visited mostly from cruise ships; Gates of the Arctic is almost entirely fly-in. Wrangell-St. Elias allows you to drive to the edge of genuine wilderness, cross a footbridge, and within hours be standing on a glacier or inside a century-old copper mill. The Kennecott story provides a human narrative that grounds the park's natural grandeur in something tangible and deeply compelling. And the park's size means that even at peak season, visitor densities remain remarkably low. You will share the Root Glacier with a handful of other hikers. On a flightseeing tour, you will look out over thousands of square miles with no evidence of human presence.
 
-## Things to Do
+## What Are the Top Things to Do in Wrangell-St. Elias?
 
 **Kennecott Mill Town Tour** — The National Park Service and the Kennecott Wilderness Guides co-op offer ranger-led and commercial guided tours of the Kennecott mill building and surrounding structures. The NPS tour ($25-$30 per person) focuses on the 14-story concentration mill, which you can explore floor by floor. Commercial tours add deeper historical context and access to additional buildings. Tours run 1.5-3 hours and are available daily in summer. Highly recommended — the architecture and engineering are astonishing.
 
@@ -146,7 +154,7 @@ No other national park in America offers this combination of scale, remoteness, 
 
 **Backcountry Backpacking** — For experienced wilderness travelers, Wrangell-St. Elias offers some of the finest and most challenging backcountry hiking on the continent. There are very few maintained trails beyond the Kennecott area — most travel is cross-country, requiring route-finding skills, stream-crossing ability, and bear-country competence. Popular routes include the Goat Trail from McCarthy to the Chitistone Canyon and the Skolai Pass area. No permits required, but registration at the ranger station is recommended.
 
-## Where to Stay
+## Where Should I Stay in Wrangell-St. Elias?
 
 **Budget** — The Kennecott base camp offers glacier-view tent sites for $22-$28 per night. Dispersed camping along the McCarthy Road is free. The Lancaster's Backpacker Hotel in McCarthy provides dorm-style bunk rooms for $38-$55 per night. The Glacier View Campground has basic sites for $20.
 
@@ -154,7 +162,7 @@ No other national park in America offers this combination of scale, remoteness, 
 
 **Luxury** — The Ultima Thule Lodge in the remote Chitina Valley is one of Alaska's premier wilderness lodges, accessible only by bush plane. All-inclusive packages with guided glacier treks, river rafting, flightseeing, and gourmet meals start at $1,900 per person per day. This is a once-in-a-lifetime level of experience, and guests regularly describe it as the most extraordinary stay of their lives.
 
-## Where to Eat
+## What Should I Eat in Wrangell-St. Elias?
 
 **McCarthy Lodge Restaurant** — The finest dining in the McCarthy-Kennecott area, featuring a creative menu with locally sourced ingredients, including garden vegetables and fresh Alaska seafood flown in by bush plane. The pizza nights are legendary. Entrees $18-$38. Reservations are wise given limited seating.
 

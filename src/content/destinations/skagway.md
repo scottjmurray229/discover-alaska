@@ -3,6 +3,14 @@ title: "Skagway"
 description: "Explore Skagway, Alaska's Gold Rush gateway. Ride the White Pass & Yukon Route railway, hike the Chilkoot Trail, and step back in time on historic Broadway."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Historic Gold Rush-era storefronts lining Broadway Street in Skagway, Alaska"
 tagline: "Gateway to the Gold Rush"
 region: southeast
@@ -132,7 +140,7 @@ What strikes most visitors is the contrast between the tiny town and the enormou
 
 Skagway is the only town in Southeast Alaska connected to the road system, via the Klondike Highway to Whitehorse and the Alaska Highway. This gives it a dual identity: it is both a Southeast Alaskan port town and a road-trip destination. The convergence of railroad, trail, highway, and ocean creates a layered travel experience available nowhere else in the state. You can ride a historic narrow-gauge railway in the morning, hike to an alpine lake in the afternoon, and drive into Canada for dinner — all from a town you can walk across in ten minutes. The Gold Rush history is exceptional, but it is this intersection of access and wilderness that truly sets Skagway apart.
 
-## Things to Do
+## What Are the Top Things to Do in Skagway?
 
 **White Pass & Yukon Route Railway** — The signature Skagway experience. The classic Summit Excursion takes 3 hours round-trip to White Pass summit and back, with staggering views of Bridal Veil Falls, Dead Horse Gulch, and the original Trail of '98. Adult tickets run $135-$155. Longer trips to Fraser, BC or Lake Bennett are available for $170-$235. Book well in advance for summer dates.
 
@@ -148,7 +156,7 @@ Skagway is the only town in Southeast Alaska connected to the road system, via t
 
 **Dyea Ghost Town & Slide Cemetery** — Drive the gravel road 9 miles to Dyea, the rival town to Skagway that served as the Chilkoot Trail's trailhead. Almost nothing remains except a few pilings and the haunting Slide Cemetery, where 60+ victims of the 1898 Palm Sunday avalanche are buried. Free and deeply moving.
 
-## Where to Stay
+## Where Should I Stay in Skagway?
 
 **Budget** — The Skagway Mountain View RV Park and Pullen Creek RV Park offer tent sites for $20-$35 per night. The Sergeant Preston's Lodge has basic rooms starting around $95-$130 per night. For backpackers, the Dyea area has free dispersed camping.
 
@@ -156,7 +164,7 @@ Skagway is the only town in Southeast Alaska connected to the road system, via t
 
 **Luxury** — The historic Hotel & Spirits at the Skagway Brewing Company offers well-appointed rooms for $250-$400 per night. For a unique experience, the White Pass Train Car Lodgings let you sleep in a restored 1900s-era train car for $300-$450 per night.
 
-## Where to Eat
+## What Should I Eat in Skagway?
 
 **Skagway Brewing Company** — The town's best restaurant, serving craft beers brewed on-site alongside hearty pub fare: bison burgers, fish and chips, and smoked salmon chowder. Entrees $16-$30. The Spruce Tip Blonde Ale is excellent.
 

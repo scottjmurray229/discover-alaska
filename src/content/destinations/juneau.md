@@ -3,6 +3,14 @@ title: "Juneau"
 description: "Plan your Juneau, Alaska trip. Visit the state capital for Mendenhall Glacier, whale watching, rainforest hiking, and Southeast Alaska's rich culture."
 heroVideo: ""
 heroImage: ""
+aeoFacts:
+  currency: "USD (US Dollar)"
+  plugType: "A/B, 120V"
+  language: "English"
+  bestTime: "June to August (summer)"
+  visaInfo: "US territory — no visa for US citizens"
+  timeZone: "UTC-9 (Alaska Standard Time)"
+  emergencyNumber: "911"
 heroAlt: "Mendenhall Glacier flowing toward its turquoise iceberg lake near Juneau, Alaska"
 tagline: "Alaska capital is accessible only by plane or boat, which keeps it genuine — the Mendenhall Glacier ends in a lake 12 miles from downtown, whale watching is exceptional, and the hiking above town is legitimately world-class"
 region: southeast
@@ -134,7 +142,7 @@ The natural setting is staggering. The Juneau Icefield, the fifth-largest icefie
 
 The combination of accessibility and wildness is what sets Juneau apart. You can watch whales in the morning, tour the state capitol at lunch, hike through old-growth rainforest in the afternoon, and eat fresh-caught halibut for dinner — all without ever getting in a car.
 
-## Things to Do
+## What Are the Top Things to Do in Juneau?
 
 **Mendenhall Glacier Visitor Center** — The Forest Service visitor center provides glacier views, interpretive exhibits, and access to several trails. The moderate Nugget Falls Trail (1 mile round trip) leads to a towering waterfall beside the glacier. Admission is $5. The Photo Point Trail offers the classic glacier viewing spot and is wheelchair accessible.
 
@@ -148,7 +156,7 @@ The combination of accessibility and wildness is what sets Juneau apart. You can
 
 **Helicopter Glacier Trek** — For a splurge, take a helicopter to the Juneau Icefield and walk on the glacier with crampons and guides. Several operators offer tours lasting 2-4 hours. Expect to pay $300-450 per person. It is an extraordinary experience on clear days.
 
-## Where to Stay
+## Where Should I Stay in Juneau?
 
 **Budget ($90-140/night)** — Juneau International Hostel in downtown offers dorms and private rooms at excellent rates. Driftwood Hotel provides basic but clean rooms in a central location. The Forest Service cabins scattered around the Juneau area offer a rustic backcountry option at $45-65/night, bookable through Recreation.gov.
 
@@ -156,7 +164,7 @@ The combination of accessibility and wildness is what sets Juneau apart. You can
 
 **Luxury ($400-750/night)** — Pearson's Pond Luxury Inn & Adventure Spa is an intimate property near Mendenhall Glacier with hot tubs and garden suites. For a wilderness lodge experience, the Alaska's Capital Inn is a beautifully restored mansion above downtown with gourmet breakfasts and stunning views.
 
-## Where to Eat
+## What Should I Eat in Juneau?
 
 **Tracy's King Crab Shack** — A waterfront institution serving fresh Alaskan king crab legs, bisque, and crab cakes. It is not cheap (a king crab combo runs $45-65), but the crab is impeccable and the open-air harbor setting is perfect. Lines form by 11am on cruise ship days.
 
