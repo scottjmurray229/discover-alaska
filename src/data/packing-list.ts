@@ -6,6 +6,26 @@ export const ALASKA_ESSENTIALS: PackingItem[] = [
   { id: 'ak-waterproof', name: 'Waterproof Outer Shell (jacket + pants)', category: 'destination', description: 'Southeast Alaska (Juneau, Ketchikan, Sitka) gets 60–90 inches of rain annually. The Kenai Peninsula is wet. Rain gear isn\'t optional — it\'s daily.', essential: true, climate: ['cold'], amazonSearchFallback: 'waterproof+rain+jacket+pants+outdoor', affiliatePrice: '$80–150' },
   { id: 'ak-binoculars', name: 'Binoculars (8x42 minimum)', category: 'destination', description: 'Bears, moose, Dall sheep, bald eagles, orcas — wildlife is everywhere but rarely close. Quality binoculars transform wildlife viewing from "I think that\'s a bear" to "that\'s a sow with cubs."', essential: true, amazonSearchFallback: 'binoculars+8x42+wildlife+waterproof', affiliatePrice: '$80–200' },
   { id: 'ak-repellent', name: 'DEET Insect Repellent (40%+ strength)', category: 'destination', description: 'Alaskan mosquitoes are legendary — warm summer days bring clouds of them, especially in interior and coastal wetlands. 40% DEET minimum. 100% DEET is not overkill in the interior.', essential: true, amazonSearchFallback: 'deet+40+percent+insect+repellent+strong', affiliatePrice: '$10–18' },
+  {
+    id: 'vpn-subscription',
+    name: 'VPN Subscription',
+    category: 'electronics',
+    description: 'Secure your data on public WiFi — essential for hotel, airport, and cafe networks abroad.',
+    essential: false,
+    affiliateUrl: 'https://go.nordvpn.net/aff_c?offer_id=15&aff_id=XXXXX&url_id=902',
+    affiliatePrice: '~$3/month',
+    affiliatePartner: 'NordVPN',
+  },
+  {
+    id: 'phone-gimbal',
+    name: 'Phone Gimbal for Travel Vlogging',
+    category: 'electronics',
+    description: 'Stabilized video from your phone — no editing needed.',
+    essential: false,
+    affiliateUrl: 'https://www.insta360.com/sal/flow-2-pro?utm_source=AffiliateCenter&utm_medium=copylink&utm_term=INRSG7H5RTR',
+    affiliatePrice: '~$149',
+    affiliatePartner: 'Insta360',
+  },
 ];
 
 export const ALASKA_GEAR_RECOMMENDATIONS: GearRecommendation[] = [
